@@ -2,7 +2,8 @@
     background: $color-semi;
     background: url('/img/pattern-semi.svg');
     @media screen and (min-width: 56em) {
-        background-size: cover;
+        background-size: 140%;
+        background-position: center -190px;
     }
     @-moz-document url-prefix() {
         background: url('/img/pattern-semi.png');; // Mozilla dislikes huge SVG backgrounds
