@@ -11,18 +11,19 @@
   &.section__heading--primary {
     font-size: 2rem; // 32px
     font-style: italic;
-    text-align: center;
     margin-bottom: 2rem; // 32px
   }
   // used for sections
   &.section__heading--secondary {
     font-size: 1.75rem; // 28px
     font-style: italic;
-    text-align: center;
   }
   // used for columns
   &.section__heading--tertiary {
     font-weight: 500;
+  }
+  &.section__heading--centered {
+    text-align: center;
   }
 }
 
@@ -35,4 +36,10 @@
       font-size: 2rem; // 32px
     }
   }
+}
+
+.section__payoff {
+  font-family: $typeface-sans;
+  font-weight: 500;
+  margin-bottom: 3rem; // 32px
 }

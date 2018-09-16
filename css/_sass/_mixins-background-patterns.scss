@@ -1,6 +1,6 @@
 
-@mixin background-pattern-semi-hexagon($background-color: white) {
-  background: $background-color url('/img/pattern-semi-hexagons.svg') -2rem 2rem no-repeat;
+@mixin background-pattern-semi-hexagon($background-color: white, $background-position: -2rem 2rem) {
+  background: $background-color url('/img/pattern-semi-hexagons.svg') $background-position no-repeat;
   background-size: auto;
   @-moz-document url-prefix() {
     background-image: url('/img/pattern-semi-hexagons.png'); // Mozilla dislikes huge SVG backgrounds

@@ -15,15 +15,22 @@
 }
 
 .card {
-    background-color: $color-gray-7;
     display: flex;
     flex: 1;
     flex-direction: column;
     padding: 2em;
+    &:not(.card--pilar) {
+        background-color: $color-gray-7;
+    }
+    &.card--pilar {
+        background-color: $color-white;
+        border: 1px solid $color-gray-5;
+    }
     figure {
         margin-bottom: 0;
     }
-    &.card--theme-weaviate {
+    &.card--theme-weaviate,
+    &.card--theme-weaviate-enterprise {
         .button {
             background-color: $color-semi-accent;
         }
@@ -31,6 +38,15 @@
             background-color: $color-semi-accent;
         }
     }
+    &.card--theme-weaviate-oss {
+        .button {
+            background-color: $color-interactive;
+        }
+        .card__title:after {
+            background-color: $color-interactive;
+        }
+    }
+
 }
 
 .card__icon {
@@ -53,5 +69,10 @@
 }
 
 .card__content {
-    min-height: 7rem;
+    min-height: 5rem;
+    margin-bottom: 2rem;
+
+    .cons {
+        color: $color-gray-5;
+    }
 }
