@@ -11,7 +11,7 @@
   .page--background__second {
     @include background-pattern-semi-hexagon($color-white, 130% 2rem);
   }
-  .page--weaviate-industries > .section__heading {
+  .section--weaviate-industries > .section__heading {
     margin-top: 2rem;
     margin-bottom: 3rem;
   }
@@ -35,16 +35,16 @@
   .cards {
     margin-top: 3rem;
   }
-  .page--img-weaviate-clouds {
+  .section--img-weaviate-clouds {
     max-width: 220px;
   }
-  .page--img-ppf {
+  .section--img-ppf {
     max-width: 310px;
   }
-  .page--img-top-tier-support {
+  .section--img-top-tier-support {
     max-height: 320px;
   }
-  .page--img-playground {
+  .section--img-playground {
     max-width: 380px;
   }
   .section-standout__column {
