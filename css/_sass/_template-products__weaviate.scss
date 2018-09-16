@@ -15,6 +15,13 @@
     margin-top: 2rem;
     margin-bottom: 3rem;
   }
+  .section--video {
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
   .column__image {
     background: transparent url('/img/pattern-semi-hexagons.svg') center 0 no-repeat;
     background-size: contain;
