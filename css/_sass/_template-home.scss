@@ -43,37 +43,8 @@
             color: $color-almostblack;
         }
     }
-    //h2 {
-    //    color: #fff;
-    //    span {
-    //        color: $color-almostblack;
-    //    }
-    //}
     .button--cta {
         margin-bottom: 3em;
-    }
-    .cards {
-        
-    }
-    .card { // RtP specs
-        background: #af9f22;
-        border-radius: 0;
-        color: $color-white;
-        margin-left: 2em;
-        margin-right: 2em;
-        padding: 2em;
-        .button {
-            background: $color-white;
-            color: $color-almostblack;
-            margin-top: 1.5em;
-        }
-        &:last-child {
-            background: $color-almostblack;
-        }
-        a {
-            border-bottom: 2px solid $color-white;
-            color: $color-white;
-        }
     }
 }
 
