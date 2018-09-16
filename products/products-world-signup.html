@@ -5,28 +5,30 @@ description: SeMI's product - SeMI World
 open-graph-type: product
 ---
 
-<article>
-	<section>
-		<h1>Join our pilot!</h1>
-		<p>Thank you for showing interest in our products! Currently, we are running pilots with a selected group of participants. If you reach out to us, we can share what a pilot would mean for you. In the meantime, you can read more about our pilot projects <a href="#">here</a>.</p>
-	</section>
-	<form>
-		<fieldset>
-        	<label for="signup-name">Your name</label>
-        	<input id="signup-name" name="NAME" type="text" />
-        </fieldset>
-        <fieldset>
-        	<label for="signup-email">Your email address</label>
-        	<input id="signup-email" name="EMAIL" type="email" />
-		</fieldset>
-		<fieldset>
-			<label for="signup-product">Which product(s) are you interested in?</label>
-    		<select id="signup-product" name="PRODUCT">
-				<option value="SeMI Local">SeMI Local</option>
-				<option value="SeMI World" selected>SeMI World</option>
-				<option value="Both (not world)">I want both!</option>
-		  	</select>
-		</fieldset>
-    	<input type="button" value="Sign Up!" onclick="toMailchimp('product')" />
-	</form>
+<article class="container">
+	<div class="wrapper">
+		<section>
+			<h1>Join our pilot!</h1>
+			<p>Thank you for showing interest in our products! Currently, we are running pilots with a selected group of participants. If you reach out to us, we can share what a pilot would mean for you. In the meantime, you can read more about our pilot projects <a href="#">here</a>.</p>
+		</section>
+		<form>
+			<fieldset>
+				<label for="signup-name">Your name</label>
+				<input id="signup-name" name="NAME" type="text" />
+			</fieldset>
+			<fieldset>
+				<label for="signup-email">Your email address</label>
+				<input id="signup-email" name="EMAIL" type="email" />
+			</fieldset>
+			<fieldset>
+				<label for="signup-product">Which product(s) are you interested in?</label>
+				<select id="signup-product" name="PRODUCT">
+					<option value="SeMI Local">SeMI Local</option>
+					<option value="SeMI World" selected>SeMI World</option>
+					<option value="Both (not world)">I want both!</option>
+				</select>
+			</fieldset>
+			<input type="button" value="Sign Up!" onclick="toMailchimp('product')" />
+		</form>
+	</div>
 </article>

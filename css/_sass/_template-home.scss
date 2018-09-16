@@ -1,4 +1,13 @@
 .page--home {
+    background: $color-semi;
+    background: url('/img/pattern-semi.svg');
+    @media screen and (min-width: 56em) {
+        background-size: cover;
+    }
+    @-moz-document url-prefix() {
+        background: url('/img/pattern-semi.png');; // Mozilla dislikes huge SVG backgrounds
+        background-size: cover;
+    }
     p a {
         border-color: $color-support-tint-4;
         color: $color-almostblack;
@@ -12,10 +21,6 @@
     #cookie-notification a {
         color: $color-almostblack;
     }
-
-    .header-container {
-        background: $color-almostblack;
-    }
     .nav-main {
         
         li {
@@ -26,17 +31,6 @@
     }
     .nav-main-contact {
         display: none;
-    }
-    main {
-        background: $color-semi;
-        background: url('/img/pattern-semi.svg');
-        @media screen and (min-width: 56em) {
-            background-size: cover;
-        }
-        @-moz-document url-prefix() {
-            background: url('/img/pattern-semi.png');; // Mozilla dislikes huge SVG backgrounds
-            background-size: cover;
-        }
     }
     h1 {
         color: $color-almostblack-tint--3;
@@ -49,20 +43,12 @@
             color: $color-almostblack;
         }
     }
-    h2 {
-        color: #fff;
-        span {
-            color: $color-almostblack;
-        }
-    }
-    .paragraph-intro {
-        color: $color-white;
-        text-align: center;
-        p {
-            margin: 0 3em 1em;
-            max-width: 100%;
-        }
-    }
+    //h2 {
+    //    color: #fff;
+    //    span {
+    //        color: $color-almostblack;
+    //    }
+    //}
     .button--cta {
         margin-bottom: 3em;
     }

@@ -28,9 +28,6 @@ li.list-bullet--disabled {
 }
 
 .article {
-    > ul, > ol {
-        margin-bottom: 2em;
-    }
     li {
     	list-style-position: outside;
 		margin-left: -.25em;
@@ -70,6 +67,10 @@ li.list-bullet--disabled {
             }
         }
     }
+}
+
+.semi-sg-overview {
+  margin-bottom: 2em;
 }
 
 dt {

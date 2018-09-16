@@ -4,30 +4,30 @@ layout: layout-default
 title: SeMI, decentralized knowledge network
 ---
 
-<article class="article">
+<article class="article container">
+	<div class="wrapper">
+		<!-- SEARCH BOX -->
+		<section class="form-inline">
+			<form action="/search/" class="search" method="GET">
+				<section class="search-meta">
+					<label for="search-knowledgebase">Search our knowledge base</label>
+					<input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
+					<input class="button" type="submit" value="Search" />
+				</section>
+			</form>
+		</section>
 
-	<!-- SEARCH BOX -->
-	<section class="form-inline">
-		<form action="/search/" class="search" method="GET">
-			<section class="search-meta">
-				<label for="search-knowledgebase">Search our knowledge base</label>
-				<input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
-				<input class="button" type="submit" value="Search" />
-			</section>
-		</form>
-	</section>
+		<section>
+			<h1>Search results</h1>
+			<div class="noSearch" style="display:none">Please add a query to the url: <code>url/?query=knowledge</code></div>
+		</section>
 
-	<section>
-		<h1>Search results</h1>
-		<div class="noSearch" style="display:none">Please add a query to the url: <code>url/?query=knowledge</code></div>
-	</section>
-
-	<!-- searchbox will be copied to show content-->
-	<ol>
-    	<li class="searchBox" style="display: none">
-    		<h2 class="title"></h2>
-    		<p class="resultHTML">Result</p>
-    	</li>
-	</ol>
-
+		<!-- searchbox will be copied to show content-->
+		<ol>
+			<li class="searchBox" style="display: none">
+				<h2 class="title"></h2>
+				<p class="resultHTML">Result</p>
+			</li>
+		</ol>
+	</div>
 </article>
