@@ -63,28 +63,7 @@ cooltext: false
 			<div class="section-standout__content section-standout__content--single">
 				<h2 class="section__heading section__heading--primary">Products and Services</h2>
 			</div>
-			<ul class="cards">
-				<li class="card card--theme-weaviate">
-					<div class="card__icon">
-						<img src="/img/logo-icon-weaviate.svg" alt="Weaviate logo" />
-					</div>
-					<h3 class="card__title">Weaviate</h3>
-					<div class="card__content">
-						<p>A decentralized knowledge graph.</p>
-					</div>
-					<a class="button" href="#">Learn more</a>
-				</li>
-				<li class="card"><!-- .semi is default theme -->
-					<div class="card__icon">
-						<img src="/img/logo-icon-semi-consulting.svg" alt="SeMI consulting logo" />
-					</div>
-					<h3 class="card__title">SeMI Consulting</h3>
-					<div class="card__content">
-						<p>Enable the exchange of valuable knowledge</p>
-					</div>
-					<a class="button" href="#">Learn more</a>
-				</li>
-			</ul>
+			{% include organism-cards-products.html %}
 		</section>
 		<section class="section-partners">
 			<div class="wrapper">

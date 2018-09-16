@@ -40,6 +40,7 @@
 .card__title {
     font-family: $typeface-sans;
     margin-bottom: 1em;
+    font-weight: 500;
     &:after {
         background: none repeat scroll 0 0 $color-semi;
         bottom: -4px;
