@@ -1,0 +1,45 @@
+
+/**
+ * Section and column headings
+ * For non-running bodycopy decoupled element selectors (h1, h2, h3) from visual representation
+ */
+.section__heading {
+  font-family: $typeface-sans;
+  font-style: normal;
+  font-weight: 800;
+  // used for sections
+  &.section__heading--primary {
+    font-size: 2rem; // 32px
+    font-style: italic;
+    margin-bottom: 2rem; // 32px
+  }
+  // used for sections
+  &.section__heading--secondary {
+    font-size: 1.75rem; // 28px
+    font-style: italic;
+  }
+  // used for columns
+  &.section__heading--tertiary {
+    font-weight: 500;
+  }
+  &.section__heading--centered {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .section__heading {
+    &.section__heading--primary {
+      font-size: 3rem; // 48px
+    }
+    &.section__heading--secondary {
+      font-size: 2rem; // 32px
+    }
+  }
+}
+
+.section__payoff {
+  font-family: $typeface-sans;
+  font-weight: 500;
+  margin-bottom: 3rem; // 32px
+}

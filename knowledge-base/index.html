@@ -7,58 +7,59 @@ description: SeMI's Knowledge Base.
 
 <!-- THIS PAGE CONTAINS THE COMPLETE INDEX -->
 
-<article>
-        
-    <section class="form-inline">
-        <form action="/search/" class="search" method="GET">
-            <section class="search-meta">
-                <label for="search-knowledgebase">Search our knowledge base</label>
-                <input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
-                <input class="button" type="submit" value="Search" />
-            </section>
-        </form>
-    </section>
-
-<!--
-    {% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
-    <ul class="article-index">
-        {% for group in items_grouped %}
-            <li>
-                <section>
-                    <a href="{{ group.name }}">{{ group.name }}</a></h2>
+<article class="container">
+    <div class="wrapper">
+        <section class="form-inline">
+            <form action="/search/" class="search" method="GET">
+                <section class="search-meta">
+                    <label for="search-knowledgebase">Search our knowledge base</label>
+                    <input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
+                    <input class="button" type="submit" value="Search" />
                 </section>
-            </li>
-        {% endfor %}
-    </ul>
--->
+            </form>
+        </section>
 
-    <ul class="article-index">
-        <li class="semi-knowledge-flow-learn">
-            <a href="/knowledge-base/learn/">
-                <div>
-                    <p class="semi-knowledge-flow-select">Learn</p>
-                    <img src="/img/rtp-city-icon--1.svg" alt="">
-                </div>
-            </a>
-            <p>If you are new to SeMI, read these articles to see the value it can bring to your organization.</p>
-        </li>
-        <li class="semi-knowledge-flow-start">
-            <a href="/knowledge-base/start/">
-                <div>
-                    <p class="semi-knowledge-flow-select">Start</p>
-                    <img src="/img/rtp-city-icon--2.svg" alt="">
-                </div>
-            </a>
-            <p>If you are ready to start with your first use case, read these articles to get the necessary input.</p>
-        </li>
-        <li class="semi-knowledge-flow-implement">
-            <a href="/knowledge-base/implement/">
-                <div>
-                    <p class="semi-knowledge-flow-select">Implement</p>
-                    <img src="/img/rtp-city-icon--3.svg" alt="">
-                </div>
-            </a>
-            <p>If you want to implement your use case(s), read these articles to learn all important details.</p>
-        </li>
-    </ul>
+    <!--
+        {% assign items_grouped = site.pages | group_by: 'topic' | sort: 'topic' %}
+        <ul class="article-index">
+            {% for group in items_grouped %}
+                <li>
+                    <section>
+                        <a href="{{ group.name }}">{{ group.name }}</a></h2>
+                    </section>
+                </li>
+            {% endfor %}
+        </ul>
+    -->
+
+        <ul class="article-index">
+            <li class="semi-knowledge-flow-learn">
+                <a href="/knowledge-base/learn/">
+                    <div>
+                        <p class="semi-knowledge-flow-select">Learn</p>
+                        <img src="/img/rtp-city-icon--1.svg" alt="">
+                    </div>
+                </a>
+                <p>If you are new to SeMI, read these articles to see the value it can bring to your organization.</p>
+            </li>
+            <li class="semi-knowledge-flow-start">
+                <a href="/knowledge-base/start/">
+                    <div>
+                        <p class="semi-knowledge-flow-select">Start</p>
+                        <img src="/img/rtp-city-icon--2.svg" alt="">
+                    </div>
+                </a>
+                <p>If you are ready to start with your first use case, read these articles to get the necessary input.</p>
+            </li>
+            <li class="semi-knowledge-flow-implement">
+                <a href="/knowledge-base/implement/">
+                    <div>
+                        <p class="semi-knowledge-flow-select">Implement</p>
+                        <img src="/img/rtp-city-icon--3.svg" alt="">
+                    </div>
+                </a>
+                <p>If you want to implement your use case(s), read these articles to learn all important details.</p>
+            </li>
+        </ul>
+    </div>
 </article>

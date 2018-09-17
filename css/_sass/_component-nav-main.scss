@@ -43,3 +43,10 @@
 .page--contact .nav-main-contact {
     display: none;
 }
+
+@media (min-width: 34em) {
+
+	.main-nav__item-right {
+		margin-left: auto;
+	}
+}

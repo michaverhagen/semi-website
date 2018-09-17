@@ -1,0 +1,11 @@
+
+.list-logos {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
+  li {
+    display: flex;
+    margin: 2rem 1.5rem;
+  }
+}

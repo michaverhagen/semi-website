@@ -1,0 +1,73 @@
+
+@import 'mixins-background-patterns';
+
+.section-standout--secondary {
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+  @include background-pattern-semi-hexagon($color-white);
+}
+
+.section-standout--tertiary {
+  background-color: $color-almostblack;
+
+  h1, h2, h3, p {
+    color: $color-white;
+  }
+}
+
+.section-standout__content,
+.section__content {
+  display: flex;
+}
+
+.section-standout__column {
+  flex: 1;
+  > img {
+    margin: auto;
+    display: flex;
+  }
+  h3 {
+    margin-top: 1.5rem;
+  }
+}
+
+.section-standout__content--single {
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-standout__content--double {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 48em) {
+  .section-standout__content--double {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .section-standout__content--double:not(.section-standout__content--reverse) {
+    flex-direction: row;
+  }
+  .section-standout__content--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.section-standout__text--centered {
+  text-align: center;
+}
+
+.column__image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.column__content {
+  padding: 1rem;
+  .section__heading {
+    margin-bottom: 1rem;
+  }
+}
