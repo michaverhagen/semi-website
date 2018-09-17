@@ -28,9 +28,6 @@ li.list-bullet--disabled {
 }
 
 .article {
-    > ul, > ol {
-        margin-bottom: 2em;
-    }
     li {
     	list-style-position: outside;
 		margin-left: -.25em;
@@ -72,6 +69,10 @@ li.list-bullet--disabled {
     }
 }
 
+.semi-sg-overview {
+  margin-bottom: 2em;
+}
+
 dt {
     font-size: 1.25rem;
     font-weight: 500;
@@ -109,4 +110,12 @@ dd {
     li {
         list-style-image: url(/img/bullet-rtp-green.svg);
     }
+}
+
+.list-benefits {
+  list-style-type: none;
+
+  li {
+    list-style: none;
+  }
 }

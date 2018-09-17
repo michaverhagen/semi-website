@@ -5,29 +5,31 @@ title: SeMI, get in touch with us!
 description: Get in touch with the SeMI team.
 ---
 
-<article>
-	<section>
-		<h1>Contact</h1>
-		<p>To learn more, schedule an introduction call, or let us know what you think of SeMI, please use the contact form below to get in touch.</p>
-		<p>We love to hear from you!</p>
-	</section>
-	<form>
-    	<fieldset>
-        	<label for="contact-name">Your name</label>
-        	<input id="contact-name" type="text" name="NAME" />
-        </fieldset>
-        <fieldset>
-        	<label for="contact-email">Your email address</label>
-        	<input id="contact-email" type="email" name="EMAIL" />
-        </fieldset>
-        <!--fieldset>
-        	<label for="contact-phone">Your phone number <span class="text--secondary">(optional)</span></label>
-        	<input id="contact-phone" type="tel" />
-    	</fieldset-->
-    	<fieldset>
-        	<label for="message">Your message</label>
-        	<textarea id="message" name="MESSAGE"></textarea>
-		</fieldset>
-    	<input type="button" value="Send message" onclick="toMailchimp('general-contact')" />
-	</form>
+<article class="container">
+	<div class="wrapper">
+		<section>
+			<h1>Contact</h1>
+			<p>To learn more, schedule an introduction call, or let us know what you think of SeMI, please use the contact form below to get in touch.</p>
+			<p>We love to hear from you!</p>
+		</section>
+		<form>
+			<fieldset>
+				<label for="contact-name">Your name</label>
+				<input id="contact-name" type="text" name="NAME" />
+			</fieldset>
+			<fieldset>
+				<label for="contact-email">Your email address</label>
+				<input id="contact-email" type="email" name="EMAIL" />
+			</fieldset>
+			<!--fieldset>
+				<label for="contact-phone">Your phone number <span class="text--secondary">(optional)</span></label>
+				<input id="contact-phone" type="tel" />
+			</fieldset-->
+			<fieldset>
+				<label for="message">Your message</label>
+				<textarea id="message" name="MESSAGE"></textarea>
+			</fieldset>
+			<input type="button" value="Send message" onclick="toMailchimp('general-contact')" />
+		</form>
+	</div>
 </article>
