@@ -15,3 +15,36 @@ th {
 th:not(:last-of-type), td:not(:last-of-type) {
     padding-right: 2em;
 }
+
+.table-flex {
+    display: flex;
+    flex-flow: column;
+
+    tr {
+        flex-flow: row;
+        display: flex;
+    }
+}
+
+.table-usage {
+    width: 100%;
+    td, th {
+        font-size: 1rem;
+        padding: 0.375rem;
+    }
+    @media screen and (min-width: 48em) {
+        td, th {
+            padding: 1rem 1.5rem;
+        }
+    }
+}
+
+.table-usage thead {
+    background-color: $color-almostblack-tint--1;
+    color: $color-white;
+}
+
+.table__cell--vertically-middle {
+    vertical-align: middle;
+    text-align: center;
+}
