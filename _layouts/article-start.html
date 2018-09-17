@@ -5,8 +5,8 @@
 {% include component-header.html %}
 
 <main>
-	<article itemscope itemtype="http://schema.org/articleBody">
-
+	<article class="container" itemscope itemtype="http://schema.org/articleBody">
+		<div class="wrapper">
             {% include article-menu.html %}
 
             <section>
@@ -52,8 +52,9 @@
         			{% endfor %}
         		    {{ content }}
                 </section>
-            </section>            
-		</div>        
+            </section>
+
+		</div>
 	</article>
 </main>
 

@@ -1,9 +1,10 @@
 .cards {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
     margin: 0 -1em;
-    @media screen and (min-width: 56em) {
+    @media screen and (min-width: 48em) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -14,15 +15,64 @@
 }
 
 .card {
-    @include background-opacity($color-almostblack, .05);
-    //@include transition-out;
-    border-radius: $border-radius-1;
     display: flex;
     flex: 1;
     flex-direction: column;
-    //justify-content: space-between;
-    padding: 1em;
+    padding: 2em;
+    &:not(.card--pilar) {
+        background-color: $color-gray-7;
+    }
+    &.card--pilar {
+        background-color: $color-white;
+        border: 1px solid $color-gray-5;
+    }
     figure {
         margin-bottom: 0;
+    }
+    &.card--theme-weaviate,
+    &.card--theme-weaviate-enterprise {
+        .button {
+            background-color: $color-semi-accent;
+        }
+        .card__title:after {
+            background-color: $color-semi-accent;
+        }
+    }
+    &.card--theme-weaviate-oss {
+        .button {
+            background-color: $color-interactive;
+        }
+        .card__title:after {
+            background-color: $color-interactive;
+        }
+    }
+
+}
+
+.card__icon {
+    width: 2rem;
+}
+
+.card__title {
+    font-family: $typeface-sans;
+    margin-bottom: 1em;
+    font-weight: 500;
+    &:after {
+        background: none repeat scroll 0 0 $color-semi;
+        bottom: -4px;
+        content: "";
+        display: block;
+        height: 4px;
+        position: relative;
+        width: 30px;
+    }
+}
+
+.card__content {
+    min-height: 5rem;
+    margin-bottom: 2rem;
+
+    .cons {
+        color: $color-gray-5;
     }
 }

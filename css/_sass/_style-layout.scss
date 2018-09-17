@@ -1,4 +1,5 @@
 body {
+    background: $color-white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -6,13 +7,23 @@ body {
 }
 
 main {
-    background: $color-white;
     flex: 1;
     margin-bottom: -1.5em; // Accomodate the Kanagana wave footer
-    padding: 0 1em 3.5em;
-    article {
-        margin: 0 auto;
-        max-width: $component-primary-max-width;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: $component-primary-max-width;
+}
+
+.container {
+    padding-left: $application-gutter;
+    padding-right: $application-gutter;
+
+    // create extra space for the footer
+    // TODO: refactor this into something less generic
+    &:last-child {
+        padding-bottom: 3.5em;
     }
 }
 

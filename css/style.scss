@@ -37,12 +37,16 @@
 //@import 'component-details';
 @import 'component-footer';
 @import 'component-header-main';
+@import 'component-image';
+@import 'component-list-logos';
 @import 'component-lists';
 @import 'component-media';
 @import 'component-nav-main';
 @import 'component-notify';
-@import 'component-pilars';
+@import 'component-quotes';
 @import 'component-search-meta';
+@import 'component-section__heading';
+@import 'component-sections';
 @import 'component-select-menu';
 @import 'component-table';
 @import 'component-toc';
@@ -52,6 +56,8 @@
 @import 'template-article';
 @import 'template-home';
 @import 'template-products';
+@import 'template-products__semi-consulting';
+@import 'template-products__weaviate';
 @import 'template-search';
 
 // Styleguide

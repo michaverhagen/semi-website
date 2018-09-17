@@ -4,49 +4,77 @@ title: SeMI, our style; laying out interface elements
 ---
 
 <article class="article semi-sg">
-    
-    <h2>Layout</h2>
-    
-    <section class="semi-sg-grid">
-        <h3 id="semi-sg-grid">Flexible grid</h3>
-        <p>SeMI’s overall grid is a 12-column grid with a nested 12-column subgrid for the main content area. The grid’s gutter is set at 1em.</p>
-        <ul class="list-ui">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </section>
-    
+    <div class=" container">
+        <div class="wrapper">
+            <h2>Layout</h2>
+
+            <section class="semi-sg-grid">
+                <h3 id="semi-sg-grid">Flexible grid</h3>
+                <p>SeMI’s overall grid is a 12-column grid with a nested 12-column subgrid for the main content area. The grid’s gutter is set at 1em.</p>
+                <ul class="list-ui">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
     <section>
-        <h3>Responsive breakpoints</h3>
-        <p>Five breakpoints are defined for the responsive layout shift. These are <em>not defined towards specific current devices</em>, but rather come in effect when the layout threatens to break for a particular breakpoint.</p>
-        <ol>
-            <li>34em &amp; below</li>
-            <li>42em&#8201;–&#8201;48em</li>
-            <li>48em&#8201;–&#8201;56em</li>
-            <li>56em&#8201;–&#8201;80em</li>
-            <li>80em &amp; above</li>
-        </ol>
+        <div class="container">
+            <div class="wrapper">
+                <h3>Content area (container and wrapper)</h3>
+                <p>The content area is defined by a container and a wrapper. A container has two gutters on each side of the section. The center part is the wrapper. This part is centered in the page and has a max width to optimize legibility of the content inside it.</p>
+            </div>
+        </div>
+
+        <div class="semi-sg-ui-layout">
+            <div class="semi-sg-ui-layout__item"></div><!-- gutter -->
+            <div class="semi-sg-ui-layout__item semi-sg-ui-layout__wrapper"></div><!-- wrapper -->
+            <div class="semi-sg-ui-layout__item"></div><!-- gutter -->
+        </div>
+
     </section>
-    
-    <section>
-        <h3>Negative space</h3>
-        <p>Negative, or white, space is used to provide way-finding throughout the SeMI site and its content.</p>
-    </section>
-    
-    <section id="semi-sg-vert-rhythm">
-        <h3>Modular scaling</h3>
-        <p>Vertical rhythm is established by a <strong>modular scale</strong>. A modular scale defines meaningful ratios of related proportions between page elements in order to create a unified visual rhythm and consistency. The <code>$scale-base</code> variable is the base scale measurement. The modular scale is derived from the variable <code>$scale-interval</code>. This can provide an infinite number of measurements that adhere to a consistent rhythm. Editing the base variable measurement results in a proportional change throughout all variables.</p>
-        <p>The modular scale is used for dimensions (margins, padding, width, height, etc.), typographic scale, etc. The same rhythm is also used for animation speed, opacity levels, and such.</p>
-    </section>
-    
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="semi-sg-section-seperator"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <section>
+                <h3>Responsive breakpoints</h3>
+                <p>Five breakpoints are defined for the responsive layout shift. These are <em>not defined towards specific current devices</em>, but rather come in effect when the layout threatens to break for a particular breakpoint.</p>
+                <ol>
+                    <li>34em &amp; below</li>
+                    <li>42em&#8201;–&#8201;48em</li>
+                    <li>48em&#8201;–&#8201;56em</li>
+                    <li>56em&#8201;–&#8201;80em</li>
+                    <li>80em &amp; above</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>Negative space</h3>
+                <p>Negative, or white, space is used to provide way-finding throughout the SeMI site and its content.</p>
+            </section>
+
+            <section id="semi-sg-vert-rhythm">
+                <h3>Modular scaling</h3>
+                <p>Vertical rhythm is established by a <strong>modular scale</strong>. A modular scale defines meaningful ratios of related proportions between page elements in order to create a unified visual rhythm and consistency. The <code>$scale-base</code> variable is the base scale measurement. The modular scale is derived from the variable <code>$scale-interval</code>. This can provide an infinite number of measurements that adhere to a consistent rhythm. Editing the base variable measurement results in a proportional change throughout all variables.</p>
+                <p>The modular scale is used for dimensions (margins, padding, width, height, etc.), typographic scale, etc. The same rhythm is also used for animation speed, opacity levels, and such.</p>
+            </section>
+        </div>
+    </div>
 </article>

@@ -1,4 +1,15 @@
 .page--home {
+    background: $color-semi;
+    // background: url('/img/pattern-semi.svg');
+    background: url('/img/pattern-semi.png');
+    @media screen and (min-width: 56em) {
+        background-size: 140%;
+        background-position: center -190px;
+    }
+    //@-moz-document url-prefix() {
+    //    background: url('/img/pattern-semi.png'); // Mozilla dislikes huge SVG backgrounds
+    //    background-size: cover;
+    //}
     p a {
         border-color: $color-support-tint-4;
         color: $color-almostblack;
@@ -12,10 +23,6 @@
     #cookie-notification a {
         color: $color-almostblack;
     }
-
-    .header-container {
-        background: $color-almostblack;
-    }
     .nav-main {
         
         li {
@@ -26,17 +33,6 @@
     }
     .nav-main-contact {
         display: none;
-    }
-    main {
-        background: $color-semi;
-        background: url('/img/pattern-semi.svg');
-        @media screen and (min-width: 56em) {
-            background-size: cover;
-        }
-        @-moz-document url-prefix() {
-            background: url('/img/pattern-semi.png');; // Mozilla dislikes huge SVG backgrounds
-            background-size: cover;
-        }
     }
     h1 {
         color: $color-almostblack-tint--3;
@@ -49,45 +45,8 @@
             color: $color-almostblack;
         }
     }
-    h2 {
-        color: #fff;
-        span {
-            color: $color-almostblack;
-        }
-    }
-    .paragraph-intro {
-        color: $color-white;
-        text-align: center;
-        p {
-            margin: 0 3em 1em;
-            max-width: 100%;
-        }
-    }
     .button--cta {
         margin-bottom: 3em;
-    }
-    .cards {
-        
-    }
-    .card { // RtP specs
-        background: #af9f22;
-        border-radius: 0;
-        color: $color-white;
-        margin-left: 2em;
-        margin-right: 2em;
-        padding: 2em;
-        .button {
-            background: $color-white;
-            color: $color-almostblack;
-            margin-top: 1.5em;
-        }
-        &:last-child {
-            background: $color-almostblack;
-        }
-        a {
-            border-bottom: 2px solid $color-white;
-            color: $color-white;
-        }
     }
 }
 
@@ -117,46 +76,8 @@
     }
 }
 
-.section-emphasized { // RtP specs
-    margin: 2em 0 3em;
-    > div {
-        @include background-opacity($color-almostblack, .5);
-        margin: 0 auto;
-        max-width: $component-primary-max-width;
-        padding: 2em;
-        a {
-            color: $color-white;
-        }
-    }
-    h2 {
-        
-    }
-    .semi-usp {
-        @media screen and (min-width: 48em) {
-            display: flex;
-            align-items: center;
-        }
-        div {
-            flex-grow: 0;
-            flex-shrink: 0;
-            text-align: center;
-        }
-    }
-    p {
-        color: #fff;
-        @media screen and (min-width: 48em) {
-            padding: .5rem 5rem .5rem .5rem;
-        }
-    }
-    @media screen and (min-width: 48em) {
-        h2 {
-            margin-left: 2rem;
-            padding: 0 0 0 150px;
-        }
-        p {
-            padding-left: 2rem;
-        }
-    }
+.section-partners {
+    padding: 3rem 0;
 }
 
 .pattern-semi-bg {

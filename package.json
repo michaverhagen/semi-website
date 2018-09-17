@@ -1,0 +1,28 @@
+{
+  "name": "semi-website",
+  "version": "1.0.0",
+  "description": "## Bundler is used",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "html-minifier": "^3.5.20",
+    "uglify-js": "^3.4.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "JEKYLL_ENV=develop bundle exec jekyll build --config \"_config.yml\"",
+    "htmlmin": "html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html",
+    "uglify": "uglifyjs --compress --mangle -o _site/js/semi.js -- _site/js/semi.js",
+    "local": "npm run build && npm run htmlmin && npm run uglify && jekyll serve --incremental"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeMI-network/semi-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeMI-network/semi-website/issues"
+  },
+  "homepage": "https://github.com/SeMI-network/semi-website#readme"
+}
