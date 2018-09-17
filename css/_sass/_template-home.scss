@@ -1,14 +1,15 @@
 .page--home {
     background: $color-semi;
-    background: url('/img/pattern-semi.svg');
+    // background: url('/img/pattern-semi.svg');
+    background: url('/img/pattern-semi.png');
     @media screen and (min-width: 56em) {
         background-size: 140%;
         background-position: center -190px;
     }
-    @-moz-document url-prefix() {
-        background: url('/img/pattern-semi.png');; // Mozilla dislikes huge SVG backgrounds
-        background-size: cover;
-    }
+    //@-moz-document url-prefix() {
+    //    background: url('/img/pattern-semi.png'); // Mozilla dislikes huge SVG backgrounds
+    //    background-size: cover;
+    //}
     p a {
         border-color: $color-support-tint-4;
         color: $color-almostblack;
