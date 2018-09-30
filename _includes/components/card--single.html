@@ -1,21 +1,24 @@
 <section class="card {{ include.themeClass }}">
     {%- if include.imgUrl %}
-    <div class="card__icon">
-        <img src="{{ include.imgUrl }}" alt="Weaviate logo" />
-    </div>
+        <div class="card__icon">
+            <img src="{{ include.imgUrl }}" alt="{{ include.imgAlt }}" />
+        </div>
     {%- endif %}
     {%- if include.title %}
-    <h3 class="card__title">{{ include.title | default: "Card title here" }}</h3>
+        <h3 class="card__title">{{ include.title | default: "Card title here" }}</h3>
     {%- endif %}
-    {%- if include.bodycopy %}
-    <div class="card__content">
-        <p>{{ include.bodycopy }}</p>
-        {%- if include.content %}
-            {{ include.content }}
-        {%- endif %}
-    </div>
+    {%- if include.bodycopy or include.content  %}
+        <div class="card__content">
+            {%- if include.bodycopy %}
+                <p>{{ include.bodycopy }}</p>
+            {%- endif %}
+            {%- if include.content %}
+                {{ include.content }}
+            {%- endif %}
+        </div>
     {%- endif %}
     {%- if include.linkUrl %}
-    <a class="button" href="{{ include.linkUrl }}">{{ include.ctaText | default: "Learn more" }}</a>
+        <a class="card__button button" href="{{ include.linkUrl }}"
+           {% if include.linkExternal == true %} target="_blank" {% endif %}>{{ include.ctaText | default: "Learn more" }}</a>
     {%- endif %}
 </section>
