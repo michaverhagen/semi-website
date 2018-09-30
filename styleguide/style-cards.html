@@ -190,5 +190,84 @@ title: SeMI, our style; our Card component
                 </xmp>
             </section>
         </section>
+
+        <section>
+            <h3>Card pilars</h3>
+            <p>Card pilars are a larger version of cards. Typically used for displaying and comparing different products.</p>
+            <ul class="cards">
+
+                {% capture weaviateOssCardList %}
+                <ul class="list-benefits">
+                    <li>Open source version of Weaviate.</li>
+                    <li>Organize and structure your data into a knowledge graph.</li>
+                    <li>Query your knowledge graph in real time for valuable insights.</li>
+                    <li>Stay in control of your datasets and privacy.</li>
+                </ul>
+                {% endcapture %}
+
+                {% include components/card/card.html
+                themeClass="card--pilar card--theme-weaviate-oss"
+                imgUrl="/img/logo-icon-weaviate-oss.svg"
+                imgAlt="Weaviate OSS logo"
+                title="Weaviate OSS"
+                linkUrl="https://github.com/creativesoftwarefdn/weaviate"
+                linkExternal=true
+                ctaText="Get started with Weaviate OSS on Github"
+                content=weaviateOssCardList
+                %}
+
+                {% capture weaviateEnterpriseCardList %}
+                <ul class="list-benefits">
+                    <li>Enterprise version of Weaviate</li>
+                    <li>Organize and structure your data into a knowledge graph.</li>
+                    <li>Query your knowledge graph in real time for valuable insights</li>
+                    <li>Stay in control of your datasets and privacy.</li>
+                    <li>Enrich your insights by connecting to a peer to peer network of other participants.</li>
+                    <li>Use third party metadata to enhance the value of your insights.</li>
+                    <li>Full scale implementations for multiple cloud vendors.</li>
+                    <li>Full scale on premise implementation.</li>
+                    <li>Support from SeMI's knowledge graph consultants.</li>
+                </ul>
+                {% endcapture %}
+
+                {% include components/card/card.html
+                themeClass="card--pilar card--theme-weaviate-enterprise"
+                imgUrl="/img/logo-icon-weaviate-enterprise.svg"
+                imgAlt="Weaviate enterprise logo"
+                title="Weaviate Enterprise"
+                linkUrl="/contact/"
+                linkExternal=true
+                ctaText="Contact us to get started with Enterprise"
+                content=weaviateEnterpriseCardList
+                %}
+            </ul>
+
+            <section class="semi-sg-codesnippet">
+                <p><abbr>HTML</abbr> code snippet</p>
+                <xmp><ul class="cards">
+                    {% include components/card/card.html
+                        themeClass="card--pilar card--theme-weaviate-oss"
+                        imgUrl="/img/logo-icon-weaviate-oss.svg"
+                        imgAlt="Weaviate OSS logo"
+                        title="Weaviate OSS"
+                        linkUrl="https://github.com/creativesoftwarefdn/weaviate"
+                        linkExternal=true
+                        ctaText="Get started with Weaviate OSS on Github"
+                        content=weaviateOssCardList
+                    %}
+
+                    {% include components/card/card.html
+                        themeClass="card--pilar card--theme-weaviate-enterprise"
+                        imgUrl="/img/logo-icon-weaviate-enterprise.svg"
+                        imgAlt="Weaviate enterprise logo"
+                        title="Weaviate Enterprise"
+                        linkUrl="/contact/"
+                        linkExternal=true
+                        ctaText="Contact us to get started with Enterprise"
+                        content=weaviateEnterpriseCardList
+                    %}
+                </ul></xmp>
+            </section>
+        </section>
     </div>
 </article>
