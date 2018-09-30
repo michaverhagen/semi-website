@@ -9,18 +9,18 @@ title: SeMI, our style; our Card component
         <section>
             <h3>Card collection</h3>
             <p>A card collection is a list of cards contextually related to one another.</p>
-            <p>Card collections are always used in pairs and never alone. For a single instance of a card, refer to an <a href="#styleguide-single-card" title="example of a single card">single card component</a> instead.</p>
+            <p>Card collections are always used in pairs and never alone.For a single instance of a card, refer to an <a href="#styleguide-single-card" title="example of a single card">single card component</a> instead.</p>
             <ul class="cards">
 
-                {% include components/card.html
+                {% include components/card/card.html
                     bodycopy="Cards in a card collection are always an even height. It will take the height of the heighest card as a baseline."
                 %}
 
-                {% include components/card.html
+                {% include components/card/card.html
                     bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil doloremque consectetur illum. "
                 %}
 
-                {% include components/card.html
+                {% include components/card/card.html
                     bodycopy="Lorem ipsum dolor sit amet."
                 %}
 
@@ -28,13 +28,13 @@ title: SeMI, our style; our Card component
             <section class="semi-sg-codesnippet">
                 <p><abbr>HTML</abbr> code snippet</p>
                 <xmp><ul class="cards">
-    {% include components/card.html
+    {% include components/card/card.html
         bodycopy="Cards in a card collection are always an even height. It will take the height of the heighest card as a baseline."
     %}
-    {% include components/card.html
+    {% include components/card/card.html
         bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil doloremque consectetur illum."
     %}
-    {% include components/card.html
+    {% include components/card/card.html
         bodycopy="Lorem ipsum dolor sit amet."
     %}
 </ul></xmp>
@@ -45,12 +45,12 @@ title: SeMI, our style; our Card component
             <h3>Card collection <em>options</em></h3>
             <p>Cards have a few options such as the title, bodycopy and a button.</p>
             <ul class="cards">
-                {% include components/card.html
+                {% include components/card/card.html
                     title="A title"
                     bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
                     linkUrl="/"
                 %}
-                {% include components/card.html
+                {% include components/card/card.html
                     title="Another title"
                     bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
                     linkUrl="/"
@@ -59,12 +59,12 @@ title: SeMI, our style; our Card component
             <section class="semi-sg-codesnippet">
                 <p><abbr>HTML</abbr> code snippet</p>
                 <xmp><ul class="cards">
-                    {% include components/card.html
+                    {% include components/card/card.html
                         title="A title"
                         bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
                         linkUrl="/"
                     %}
-                    {% include components/card.html
+                    {% include components/card/card.html
                         title="Another title"
                         bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
                         linkUrl="/"
@@ -77,14 +77,14 @@ title: SeMI, our style; our Card component
             <h3>Card collection <em>theme variations</em></h3>
             <p>The cards also are available in different themes to communicatie the product section they belong to.</p>
             <ul class="cards">
-                {% include components/card.html
+                {% include components/card/card.html
                     imgUrl="/img/logo-icon-semi-consulting.svg"
                     title="Default theme"
                     bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
                     linkUrl="/"
                 %}
 
-                {% include components/card.html
+                {% include components/card/card.html
                     themeClass="card--theme-weaviate"
                     imgUrl="/img/logo-icon-weaviate.svg"
                     title="Weaviate theme"
@@ -93,14 +93,14 @@ title: SeMI, our style; our Card component
                 %}
             </ul>
             <ul class="cards">
-                {% include components/card.html
+                {% include components/card/card.html
                     themeClass="card--theme-weaviate-oss"
                     imgUrl="/img/logo-icon-weaviate-oss.svg"
                     title="Weaviate OSS theme"
                     bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
                     linkUrl="/"
                 %}
-                {% include components/card.html
+                {% include components/card/card.html
                     themeClass="card--theme-weaviate-enterprise"
                     imgUrl="/img/logo-icon-weaviate-enterprise.svg"
                     title="Weaviate Enterprise theme"
@@ -111,14 +111,14 @@ title: SeMI, our style; our Card component
             <section class="semi-sg-codesnippet">
                 <p><abbr>HTML</abbr> code snippet</p>
                 <xmp><ul class="cards">
-                        {% include components/card.html
+                        {% include components/card/card.html
                         imgUrl="/img/logo-icon-semi-consulting.svg"
                         title="Default theme"
                         bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
                         linkUrl="/"
                         %}
 
-                        {% include components/card.html
+                        {% include components/card/card.html
                         themeClass="card--theme-weaviate"
                         imgUrl="/img/logo-icon-weaviate.svg"
                         title="Weaviate theme"
@@ -127,14 +127,14 @@ title: SeMI, our style; our Card component
                         %}
                     </ul>
                     <ul class="cards">
-                        {% include components/card.html
+                        {% include components/card/card.html
                         themeClass="card--theme-weaviate-oss"
                         imgUrl="/img/logo-icon-weaviate-oss.svg"
                         title="Weaviate OSS theme"
                         bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
                         linkUrl="/"
                         %}
-                        {% include components/card.html
+                        {% include components/card/card.html
                         themeClass="card--theme-weaviate-enterprise"
                         imgUrl="/img/logo-icon-weaviate-enterprise.svg"
                         title="Weaviate Enterprise theme"
@@ -149,14 +149,14 @@ title: SeMI, our style; our Card component
             <h3>Single card</h3>
             <p>A single card is a section of which there are no contextually related other items on this same level in content hierarchy.</p>
 
-            {% include components/card--single.html
+            {% include components/card/card--single.html
                 bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque omnis aliquam velit cupiditate aspernatur accusamus in, facere dolorem blanditiis pariatur. Velit labore fugit libero quidem cumque atque quam consectetur fuga."
             %}
 
             <section class="semi-sg-codesnippet">
                 <p><abbr>HTML</abbr> code snippet</p>
                 <xmp>
-                    {% include components/card--single.html
+                    {% include components/card/card--single.html
                         bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque omnis aliquam velit cupiditate aspernatur accusamus in, facere dolorem blanditiis pariatur. Velit labore fugit libero quidem cumque atque quam consectetur fuga."
                     %}
                 </xmp>
@@ -175,7 +175,7 @@ title: SeMI, our style; our Card component
                 </figure>
             {% endcapture %}
 
-            {% include components/card--single.html
+            {% include components/card/card--single.html
                 bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque omnis aliquam velit cupiditate aspernatur accusamus in, facere dolorem blanditiis pariatur. Velit labore fugit libero quidem cumque atque quam consectetur fuga."
                 content=thisCardContent
             %}
@@ -183,7 +183,7 @@ title: SeMI, our style; our Card component
             <section class="semi-sg-codesnippet">
                 <p><abbr>HTML</abbr> code snippet</p>
                 <xmp>
-                    {% include components/card--single.html
+                    {% include components/card/card--single.html
                         bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque omnis aliquam velit cupiditate aspernatur accusamus in, facere dolorem blanditiis pariatur. Velit labore fugit libero quidem cumque atque quam consectetur fuga."
                         content=thisCardContent
                     %}
