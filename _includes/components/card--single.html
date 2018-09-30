@@ -1,0 +1,21 @@
+<section class="card {{ include.themeClass }}">
+    {%- if include.imgUrl %}
+    <div class="card__icon">
+        <img src="{{ include.imgUrl }}" alt="Weaviate logo" />
+    </div>
+    {%- endif %}
+    {%- if include.title %}
+    <h3 class="card__title">{{ include.title | default: "Card title here" }}</h3>
+    {%- endif %}
+    {%- if include.bodycopy %}
+    <div class="card__content">
+        <p>{{ include.bodycopy }}</p>
+        {%- if include.content %}
+            {{ include.content }}
+        {%- endif %}
+    </div>
+    {%- endif %}
+    {%- if include.linkUrl %}
+    <a class="button" href="{{ include.linkUrl }}">{{ include.ctaText | default: "Learn more" }}</a>
+    {%- endif %}
+</section>

@@ -81,27 +81,28 @@ cooltext: false
 			</div>
 			<!-- these cards are edge to edge -->
 			<ul class="cards">
-				<li class="card">
-					<h3 class="card__title">Explore your first use case</h3>
-					<div class="card__content">
-						<p>Want to explore how SeMI can help your business?</p>
-					</div>
-					<a class="button" href="/contact/">Book a free eplorative workshop</a>
-				</li>
-				<li class="card">
-					<h3 class="card__title">Become a SeMI partner</h3>
-					<div class="card__content">
-						<p>Would you like to become one of our pilot partners?</p>
-					</div>
-					<a class="button" href="/contact/">Join the SeMI World Pilot</a>
-				</li>
-				<li class="card">
-					<h3 class="card__title">In-depth look into SeMI</h3>
-					<div class="card__content">
-						<p>Curious how SeMI works from a technical perspective?</p>
-					</div>
-					<a class="button" href="/knowledge-base/">Go to knowledge base</a>
-				</li>
+
+				{% include components/card.html
+					title="Explore your first use case"
+					bodycopy="Want to explore how SeMI can help your business?"
+					linkUrl="/contact/"
+					ctaText="Book a free eplorative workshop"
+				%}
+
+				{% include components/card.html
+					title="Become a SeMI partner"
+					bodycopy="Would you like to become one of our pilot partners?"
+					linkUrl="/contact/"
+					ctaText="Join the SeMI World Pilot"
+				%}
+
+				{% include components/card.html
+					title="In-depth look into SeMI"
+					bodycopy="Curious how SeMI works from a technical perspective?"
+					linkUrl="/knowledge-base/"
+					ctaText="Go to knowledge base"
+				%}
+
 			</ul>
 		</section>
 	</div>
