@@ -85,41 +85,52 @@ open-graph-type: product
                 <section>
                     <h2 class="section__heading section__heading--tertiary section__heading--centered">Get started with Weaviate</h2>
                     <ul class="cards">
-                        <li class="card card--pilar card--theme-weaviate-oss">
-                            <div class="card__icon">
-                                <img src="/img/logo-icon-weaviate-oss.svg" alt="Weaviate OSS logo" />
-                            </div>
-                            <h3 class="card__title">Weaviate OSS</h3>
-                            <div class="card__content">
-                                <ul class="list-benefits">
-                                    <li>Open source version of Weaviate.</li>
-                                    <li>Organize and structure your data into a knowledge graph.</li>
-                                    <li>Query your knowledge graph in real time for valuable insights.</li>
-                                    <li>Stay in control of your datasets and privacy.</li>
-                                </ul>
-                            </div>
-                            <a class="button" href="https://github.com/creativesoftwarefdn/weaviate" target="_blank">Get started with Weaviate OSS on Github</a>
-                        </li>
-                        <li class="card card--pilar card--theme-weaviate-enterprise">
-                            <div class="card__icon">
-                                <img src="/img/logo-icon-weaviate-enterprise.svg" alt="Weaviate enterprise logo" />
-                            </div>
-                            <h3 class="card__title">Weaviate Enterprise</h3>
-                            <div class="card__content">
-                                <ul class="list-benefits">
-                                    <li>Enterprise version of Weaviate</li>
-                                    <li>Organize and structure your data into a knowledge graph.</li>
-                                    <li>Query your knowledge graph in real time for valuable insights</li>
-                                    <li>Stay in control of your datasets and privacy.</li>
-                                    <li>Enrich your insights by connecting to a peer to peer network of other participants.</li>
-                                    <li>Use third party metadata to enhance the value of your insights.</li>
-                                    <li>Full scale implementations for multiple cloud vendors.</li>
-                                    <li>Full scale on premise implementation.</li>
-                                    <li>Support from SeMI's knowledge graph consultants.</li>
-                                </ul>
-                            </div>
-                            <a class="button" href="/contact/">Contact us to get started with Enterprise</a>
-                        </li>
+
+                        {% capture weaviateOssCardList %}
+                            <ul class="list-benefits">
+                                <li>Open source version of Weaviate.</li>
+                                <li>Organize and structure your data into a knowledge graph.</li>
+                                <li>Query your knowledge graph in real time for valuable insights.</li>
+                                <li>Stay in control of your datasets and privacy.</li>
+                            </ul>
+                        {% endcapture %}
+
+                        {% include components/card/card.html
+                            themeClass="card--pilar card--theme-weaviate-oss"
+                            imgUrl="/img/logo-icon-weaviate-oss.svg"
+                            imgAlt="Weaviate OSS logo"
+                            title="Weaviate OSS"
+                            linkUrl="https://github.com/creativesoftwarefdn/weaviate"
+                            linkExternal=true
+                            ctaText="Get started with Weaviate OSS on Github"
+                            content=weaviateOssCardList
+                        %}
+
+                        {% capture weaviateEnterpriseCardList %}
+                            <ul class="list-benefits">
+                                <li>Enterprise version of Weaviate</li>
+                                <li>Organize and structure your data into a knowledge graph.</li>
+                                <li>Query your knowledge graph in real time for valuable insights</li>
+                                <li>Stay in control of your datasets and privacy.</li>
+                                <li>Enrich your insights by connecting to a peer to peer network of other participants.</li>
+                                <li>Use third party metadata to enhance the value of your insights.</li>
+                                <li>Full scale implementations for multiple cloud vendors.</li>
+                                <li>Full scale on premise implementation.</li>
+                                <li>Support from SeMI's knowledge graph consultants.</li>
+                            </ul>
+                        {% endcapture %}
+
+                        {% include components/card/card.html
+                            themeClass="card--pilar card--theme-weaviate-enterprise"
+                            imgUrl="/img/logo-icon-weaviate-enterprise.svg"
+                            imgAlt="Weaviate enterprise logo"
+                            title="Weaviate Enterprise"
+                            linkUrl="/contact/"
+                            linkExternal=true
+                            ctaText="Contact us to get started with Enterprise"
+                            content=weaviateEnterpriseCardList
+                        %}
+
                     </ul>
                 </section>
                 <section>
@@ -192,26 +203,25 @@ open-graph-type: product
                 <section>
                     <h2 class="section__heading section__heading--centered section__heading--tertiary">Get started now!</h2>
                     <ul class="cards">
-                        <li class="card card--theme-weaviate-oss">
-                            <div class="card__icon">
-                                <img src="/img/logo-icon-weaviate-oss.svg" alt="Weaviate OSS logo" />
-                            </div>
-                            <h3 class="card__title">Weaviate OSS</h3>
-                            <div class="card__content">
-                                <p>Want to explore how SeMI can help your business?</p>
-                            </div>
-                            <a class="button" href="/workshop/">Book a free explorative workshop</a>
-                        </li>
-                        <li class="card card--theme-weaviate-enterprise"><!-- .semi is default theme -->
-                            <div class="card__icon">
-                                <img src="/img/logo-icon-weaviate-enterprise.svg" alt="Weaviate enterprise logo" />
-                            </div>
-                            <h3 class="card__title">Weaviate Enterprise</h3>
-                            <div class="card__content">
-                                <p>Curious how SeMI works from a technical perspective?</p>
-                            </div>
-                            <a class="button" href="/knowledge-base/">Go to knowledge base</a>
-                        </li>
+
+                        {% include components/card/card.html
+                            themeClass="card--theme-weaviate-oss"
+                            imgUrl="/img/logo-icon-weaviate-oss.svg"
+                            title="Weaviate OSS"
+                            bodycopy="Want to explore how SeMI can help your business?"
+                            linkUrl="/workshop/"
+                            ctaText="Book a free eplorative workshop"
+                        %}
+
+                        {% include components/card/card.html
+                            themeClass="card--theme-weaviate-enterprise"
+                            imgUrl="/img/logo-icon-weaviate-enterprise.svg"
+                            title="Weaviate Enterprise"
+                            bodycopy="Curious how SeMI works from a technical perspective?"
+                            linkUrl="/knowledge-base/"
+                            ctaText="Go to knowledge base"
+                        %}
+
                     </ul>
                 </section>
             </div>

@@ -92,20 +92,21 @@ open-graph-type: product
         <section>
             <h2 class="section__heading section__heading--centered section__heading--primary">Get started now!</h2>
             <ul class="cards">
-                <li class="card">
-                    <h3 class="card__title">Explore your first use case</h3>
-                    <div class="card__content">
-                        <p>Want to explore how SeMI can help your business?</p>
-                    </div>
-                    <a class="button" href="/workshop/">Book a free explorative workshop</a>
-                </li>
-                <li class="card">
-                    <h3 class="card__title">Schedule a meeting</h3>
-                    <div class="card__content">
-                        <p>Curious how SeMI works from a technical perspective?</p>
-                    </div>
-                    <a class="button" href="/knowledge-base/">Go to knowledge base</a>
-                </li>
+
+                {% include components/card/card.html
+                    title="Explore your first use case"
+                    bodycopy="Want to explore how SeMI can help your business?"
+                    linkUrl="/workshop/"
+                    ctaText="Book a free explorative workshop"
+                %}
+
+                {% include components/card/card.html
+                    title="Schedule a meeting"
+                    bodycopy="Curious how SeMI works from a technical perspective?"
+                    linkUrl="/knowledge-base/"
+                    ctaText="Go to knowledge base"
+                %}
+
             </ul>
         </section>
 
