@@ -1,18 +1,15 @@
 // Begin: Style guide
 
-@mixin semi-sg-section-seperator() {
+@mixin semi-sg-section-separator() {
 	border-bottom: 6px solid $color-black;
 }
 
-.semi-sg .container .wrapper  {
+.semi-sg .wrapper  {
 
-	// Only direct descendants of semi-sg (styleguide class) should get this styling since
-	// the styleguide elements also represent original application styling and should not
-	// inherit styleguide styling
-	// TODO: refactor element>element selector, since a specific parent selector insists loose coupled CSS hiërarchy and therefore is error prone
-	> section {
+	> .styleguide-section {
     	margin-bottom: 3em;
     	padding-bottom: 3em;
+		@include semi-sg-section-separator;
     	> h3, > h4, > h5 {
         	margin: 2em 0 1em;
     	}
@@ -25,13 +22,9 @@
 	}
 }
 
-.semi-sg > .container .wrapper > .section {
-	@include semi-sg-section-seperator;
-}
-
 .semi-sg-section-seperator {
 	padding-top: 3em;
-	@include semi-sg-section-seperator;
+	@include semi-sg-section-separator;
 }
 
 .semi-sg-overview {
