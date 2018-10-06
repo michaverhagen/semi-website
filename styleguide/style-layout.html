@@ -29,7 +29,7 @@ title: SeMI, our style; laying out interface elements
         </div>
     </div>
 
-    <section class="styleguide-section">
+    <section class="semi-sg-section">
         <div class="container">
             <div class="wrapper">
                 <h3>Content area (container and wrapper)</h3>
@@ -47,13 +47,13 @@ title: SeMI, our style; laying out interface elements
 
     <div class="container">
         <div class="wrapper">
-            <div class="semi-sg-section-seperator"></div>
+            <div class="semi-sg-section-separator-block semi-sg-section-separator-block--spacing"></div>
         </div>
     </div>
 
     <div class="container">
         <div class="wrapper">
-            <section>
+            <section class="semi-sg-section">
                 <h3>Responsive breakpoints</h3>
                 <p>Five breakpoints are defined for the responsive layout shift. These are <em>not defined towards specific current devices</em>, but rather come in effect when the layout threatens to break for a particular breakpoint.</p>
                 <ol>
@@ -65,12 +65,12 @@ title: SeMI, our style; laying out interface elements
                 </ol>
             </section>
 
-            <section>
+            <section class="semi-sg-section">
                 <h3>Negative space</h3>
                 <p>Negative, or white, space is used to provide way-finding throughout the SeMI site and its content.</p>
             </section>
 
-            <section id="semi-sg-vert-rhythm">
+            <section id="semi-sg-vert-rhythm" class="semi-sg-section">
                 <h3>Modular scaling</h3>
                 <p>Vertical rhythm is established by a <strong>modular scale</strong>. A modular scale defines meaningful ratios of related proportions between page elements in order to create a unified visual rhythm and consistency. The <code>$scale-base</code> variable is the base scale measurement. The modular scale is derived from the variable <code>$scale-interval</code>. This can provide an infinite number of measurements that adhere to a consistent rhythm. Editing the base variable measurement results in a proportional change throughout all variables.</p>
                 <p>The modular scale is used for dimensions (margins, padding, width, height, etc.), typographic scale, etc. The same rhythm is also used for animation speed, opacity levels, and such.</p>

@@ -27,78 +27,91 @@ title: SeMI, our style; our Section component
     %}
 {% endcapture %}
 
-
 <article class="semi-sg">
 
-    <div class="wrapper">
-        <section class="styleguide-section">
-            <h2>Standout sections</h2>
-            <p>A standout section is usually used to break the page visually into digestible chucks.</p>
+    <section>
+        <div class="container">
+            <div class="wrapper">
+                <div class="semi-sg-section">
+                    <h2>Standout sections</h2>
+                    <p>A standout section is usually used to break the page visually into digestible chucks.</p>
 
-            <p>The following sections are possible:</p>
-            <!-- TODO lists selector specificly doesn't apply for any other list outside of a <article> element. Refactor so that you can apply a list styling to a list outside of the <article> element. -->
-            <ul>
-                <li><!--a href="#"-->Primary standout section (t.b.d.)<!--/a--></li>
-                <li><a href="#sg-anchor-secondary-standout-section">Secondary standout section</a></li>
-                <li><a href="#sg-anchor-tertiary-standout-section">Tertiary standout section</a></li>
-            </ul>
-            <p>Each one of these sections have the possibility to have <strong>a single</strong> or <strong>double columns</strong>.</p>
-        </section>
-    </div>
+                    <p>The following sections are possible:</p>
+                    <ul class="list-bullet">
+                        <li><!--a href="#"-->Primary standout section (t.b.d.)<!--/a--></li>
+                        <li><a href="#sg-anchor-secondary-standout-section">Secondary standout section</a></li>
+                        <li><a href="#sg-anchor-tertiary-standout-section">Tertiary standout section</a></li>
+                    </ul>
 
-    <!-- TODO refactor inline styling -->
-    <section style="margin-top:3rem;" class="container" id="sg-anchor-secondary-standout-section">
-        <div class="wrapper">
-            <h3>Secondary standout section</h3>
-            <p>...</p>
-            <h4>Example of secondary standout section with a <strong>single column</strong>:</h4>
+                    <p>Each one of these sections have the possibility to have <strong>a single</strong> or <strong>double columns</strong>.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    {% include components/section-standout/section-standout.html
-        type="secondary"
-        content=standoutSectionContent1
-    %}
+    <section id="sg-anchor-secondary-standout-section">
+        <div class="container">
+            <div class="wrapper">
+                <h3>Secondary standout section</h3>
+                <p>A secondary standout section is recognized by the white background and decorative background-image.</p>
+                <h4>Example of secondary standout section with a <strong>single column</strong>:</h4>
+            </div>
+        </div>
+        {% include components/section-standout/section-standout.html
+            type="secondary"
+            content=standoutSectionContent1
+        %}
 
-    <section class="container">
-        <div class="wrapper">
-            <h4>Example of secondary standout section with <strong>double columns</strong>:</h4>
+        <div class="container">
+            <div class="wrapper">
+                <div class="semi-sg-section-separator-block semi-sg-section-separator-block--spacing-bottom"></div>
+                <h4>Example of secondary standout section with <strong>double columns</strong>:</h4>
+            </div>
+        </div>
+        {% include components/section-standout/section-standout.html
+            type="secondary"
+            content=standoutSectionContent2
+        %}
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="semi-sg-section-separator-block"></div>
+            </div>
         </div>
     </section>
 
-    {% include components/section-standout/section-standout.html
-        type="secondary"
-        content=standoutSectionContent2
-    %}
-
-    <section class="container" id="sg-anchor-tertiary-standout-section">
-        <div class="wrapper">
-            <h3>Tertiary standout section</h3>
-            <p>...</p>
+    <section class="semi-sg-section" id="sg-anchor-tertiary-standout-section">
+        <div class="container">
+            <div class="wrapper">
+                <h3>Tertiary standout section</h3>
+                <p>The tertiary standout section uses a dark background with a lighter text on top.</p>
+                <h4 style="margin-bottom:3rem;">Example of tertiary standout section with a <strong>single column</strong>:</h4>
+            </div>
         </div>
-    </section>
 
-    <section class="container">
-        <div class="wrapper">
-            <h4>Example of tertiary standout section with a <strong>single column</strong>:</h4>
+        {% include components/section-standout/section-standout.html
+            type="tertiary"
+            content=standoutSectionContent1
+        %}
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="semi-sg-section-separator-block semi-sg-section-separator-block--spacing-top"></div>
+            </div>
         </div>
-    </section>
 
-    {% include components/section-standout/section-standout.html
-        type="tertiary"
-        content=standoutSectionContent1
-    %}
-
-    <!-- TODO refactor inline styling -->
-    <section style="margin-top:5rem;margin-bottom:5rem;" class="container">
-        <div class="wrapper">
-            <h4>Example of tertiary standout section with <strong>double columns</strong>:</h4>
+        <!-- TODO refactor inline styling -->
+        <div style="margin-top:3rem;margin-bottom:3rem;" class="container">
+            <div class="wrapper">
+                <h4>Example of tertiary standout section with <strong>double columns</strong>:</h4>
+            </div>
         </div>
-    </section>
 
-    {% include components/section-standout/section-standout.html
-        type="tertiary"
-        content=standoutSectionContent2
-    %}
+        {% include components/section-standout/section-standout.html
+            type="tertiary"
+            content=standoutSectionContent2
+        %}
+
+    </section>
 
 </article>
