@@ -10,25 +10,32 @@ title: SeMI, our style; our Section component
     %}
 {% endcapture %}
 
-<!-- TODO add styleguide placeholder images here -->
+{% capture textColumn %}
+    <h3>Standout section double column title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>
+{% endcapture %}
+
+{% capture imageColumn %}
+    <img src="/img/styleguide/example-image_16-9.svg" alt="alternative text for image" />
+{% endcapture %}
+
 {% capture standoutSectionContent2 %}
     {% include components/section-standout/section-standout__content--double.html
-        title="Standout section double column"
-        content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>"
-        img="/img/styleguide/example-image_16-9.svg"
-        imgAlt="alternative text for image"
+        contentColumnOne=textColumn
+        contentColumnTwo=textColumn
+    %}
+    {% include components/section-standout/section-standout__content--double.html
+        contentColumnOne=textColumn
+        contentColumnTwo=imageColumn
     %}
     {% include components/section-standout/section-standout__content--double.html
         columnOrder="reverse"
-        title="Reversed standout section double column"
-        content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>"
-        img="/img/styleguide/example-image_16-9.svg"
-        imgAlt="alternative text for image"
+        contentColumnOne=textColumn
+        contentColumnTwo=imageColumn
     %}
 {% endcapture %}
 
 <article class="semi-sg">
-
     <section>
         <div class="container">
             <div class="wrapper">
@@ -42,13 +49,11 @@ title: SeMI, our style; our Section component
                         <li><a href="#sg-anchor-secondary-standout-section">Secondary standout section</a></li>
                         <li><a href="#sg-anchor-tertiary-standout-section">Tertiary standout section</a></li>
                     </ul>
-
                     <p>Each one of these sections have the possibility to have <strong>a single</strong> or <strong>double columns</strong>.</p>
                 </div>
             </div>
         </div>
     </section>
-
     <section id="sg-anchor-secondary-standout-section">
         <div class="container">
             <div class="wrapper">
@@ -61,7 +66,6 @@ title: SeMI, our style; our Section component
             type="secondary"
             content=standoutSectionContent1
         %}
-
         <div class="container">
             <div class="wrapper">
                 <div class="semi-sg-section-separator-block semi-sg-section-separator-block--spacing-bottom"></div>
@@ -72,14 +76,12 @@ title: SeMI, our style; our Section component
             type="secondary"
             content=standoutSectionContent2
         %}
-
         <div class="container">
             <div class="wrapper">
                 <div class="semi-sg-section-separator-block"></div>
             </div>
         </div>
     </section>
-
     <section class="semi-sg-section" id="sg-anchor-tertiary-standout-section">
         <div class="container">
             <div class="wrapper">
@@ -88,30 +90,24 @@ title: SeMI, our style; our Section component
                 <h4 style="margin-bottom:3rem;">Example of tertiary standout section with a <strong>single column</strong>:</h4>
             </div>
         </div>
-
         {% include components/section-standout/section-standout.html
             type="tertiary"
             content=standoutSectionContent1
         %}
-
         <div class="container">
             <div class="wrapper">
                 <div class="semi-sg-section-separator-block semi-sg-section-separator-block--spacing-top"></div>
             </div>
         </div>
-
         <!-- TODO refactor inline styling -->
         <div style="margin-top:3rem;margin-bottom:3rem;" class="container">
             <div class="wrapper">
                 <h4>Example of tertiary standout section with <strong>double columns</strong>:</h4>
             </div>
         </div>
-
         {% include components/section-standout/section-standout.html
             type="tertiary"
             content=standoutSectionContent2
         %}
-
     </section>
-
 </article>
