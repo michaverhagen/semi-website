@@ -9,7 +9,7 @@
 
 .section-standout--tertiary {
   background-color: $color-almostblack;
-  h1, h2, h3, p {
+  h1, h2, h3, p, figcaption, figcaption a {
     color: $color-white;
   }
   .layout--single {

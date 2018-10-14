@@ -410,4 +410,41 @@
 	font-family: $typeface-body;
 }
 
+.semi-sg-figure {
+	display: flex;
+	flex-direction: column;
+	img {
+		align-self: self-start;
+	}
+    figcaption {
+      .semi-sg-figcaption-text,
+      a[download] {
+        clear: both;
+        display: block;
+        float:left;
+      }
+    }
+}
+
+.semi-sg-figure-graphic {
+  &:not(.semi-sg-figure-graphic--large) img {
+    max-height: 240px;
+  }
+  &.semi-sg-figure-graphic--large img {
+    max-height: 480px;
+  }
+}
+
+.semi-sg-figure-icon {
+  img {
+    align-self: center;
+    max-width: 50%;
+    max-height: 200px;
+    &.semi-sg-graphic-elements-icons-example {
+      width: 550px;
+      max-width: 80%;
+    }
+  }
+}
+
 // End: Style guide
