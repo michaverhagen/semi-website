@@ -3,10 +3,16 @@ layout: styleguide
 title: SeMI, our style; our Section component
 ---
 
+{% capture centeredColumn %}
+    <h2 class="section__heading section__heading--primary">Standout section single column</h2>
+    <div class="section-standout__text--centered">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>
+    </div>
+{% endcapture %}
+
 {% capture standoutSectionContent1 %}
-    {% include components/section-standout/section-standout__content--single.html
-        title='<h2 class="section__heading section__heading--primary">Standout section single column</h2>'
-        content='<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>'
+    {% include components/layout/layout--single.html
+        content=centeredColumn
     %}
 {% endcapture %}
 
@@ -20,15 +26,15 @@ title: SeMI, our style; our Section component
 {% endcapture %}
 
 {% capture standoutSectionContent2 %}
-    {% include components/section-standout/section-standout__content--double.html
+    {% include components/layout/layout--double.html
         contentColumnOne=textColumn
         contentColumnTwo=textColumn
     %}
-    {% include components/section-standout/section-standout__content--double.html
+    {% include components/layout/layout--double.html
         contentColumnOne=textColumn
         contentColumnTwo=imageColumn
     %}
-    {% include components/section-standout/section-standout__content--double.html
+    {% include components/layout/layout--double.html
         columnOrder="reverse"
         contentColumnOne=textColumn
         contentColumnTwo=imageColumn

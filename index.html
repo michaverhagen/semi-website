@@ -6,10 +6,16 @@ description: Get the insights you need and explore what’s possible!
 cooltext: false
 ---
 
+{% capture centeredColumn %}
+	<h2 class="section__heading section__heading--primary">Decentralized services</h2>
+	<div class="section-standout__text--centered">
+		<p>SeMI is pioneering the way in which companies can learn from knowledge in each other\'s data, enabling our customers to enhance products and train <abbr title="Artificial intelligence">AI</abbr>s based on data they never had access to before.</p>
+	</div>
+{% endcapture %}
+
 {% capture standoutSectionContent1 %}
-	{% include components/section-standout/section-standout__content--single.html
-		title='<h2 class="section__heading section__heading--primary">Decentralized services</h2>'
-		content='<p>SeMI is pioneering the way in which companies can learn from knowledge in each other\'s data, enabling our customers to enhance products and train <abbr title="Artificial intelligence">AI</abbr>s based on data they never had access to before.</p>'
+	{% include components/layout/layout--single.html
+		content=centeredColumn
 	%}
 {% endcapture %}
 
@@ -36,14 +42,14 @@ cooltext: false
 {% endcapture %}
 
 {% capture standoutSectionContent2 %}
-	{% include components/section-standout/section-standout__content--double.html
+	{% include components/layout/layout--double.html
 		contentColumnOne=row1Column1
 		contentColumnTwo=row1Column2 %}
-	{% include components/section-standout/section-standout__content--double.html
+	{% include components/layout/layout--double.html
 		columnOrder="reverse"
 		contentColumnOne=row2Column1
 		contentColumnTwo=row2Column2 %}
-	{% include components/section-standout/section-standout__content--double.html
+	{% include components/layout/layout--double.html
 		contentColumnOne=row3Column1
 		contentColumnTwo=row3Column2 %}
 {% endcapture %}
@@ -69,14 +75,14 @@ cooltext: false
 
 	<div class="section-standout--secondary container">
 		<section class="wrapper">
-			<div class="section-standout__content section-standout__content--single">
+			<div class="layout layout--single">
 				<h2 class="section__heading section__heading--primary">Products and Services</h2>
 			</div>
 			{% include organism-cards-products.html %}
 		</section>
 		<!--section class="section-partners">
 			<div class="wrapper">
-				<div class="section-standout__content section-standout__content--single">
+				<div class="layout layout--single">
 					<h2 class="section__heading section__heading--tertiary">Our pilot partners</h2>
 				</div>
 			</div>
@@ -85,7 +91,7 @@ cooltext: false
 			include organism-partner-logos.html
 		</section-->
 		<section>
-			<div class="section-standout__content section-standout__content--single">
+			<div class="layout layout--single">
 				<h2 class="section__heading section__heading--primary">Ready to start?</h2>
 			</div>
 			<!-- these cards are edge to edge -->
