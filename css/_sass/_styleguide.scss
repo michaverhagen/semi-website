@@ -334,6 +334,10 @@
 	}
 }
 
+.semi-sg-ui-layout__fill-column {
+	background: $color-helper-2;
+}
+
 .semi-sg-ui-layout__wrapper {
 	@extend .wrapper;
 	width: 100vw; // make example wrapper full width
