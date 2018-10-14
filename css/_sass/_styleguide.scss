@@ -417,9 +417,29 @@
     align-self: self-start;
   }
   figcaption {
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+// center images on small screen sizes
+@media screen and (max-width: 48em) {
+  .semi-sg-figure {
+    img {
+      align-self: center;
+    }
+    figcaption {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+// figure caption difference between small and large screen sizes
+@media screen and (min-width: 48em) {
+  .semi-sg-figure figcaption {
+    align-items: flex-start;
     .semi-sg-figcaption-text,
     a[download] {
-      clear: both;
       display: block;
       float:left;
     }
@@ -448,6 +468,10 @@
       max-width: 80%;
     }
   }
+  &.semi-sg-figure-icon--small img {
+    width: 100px;
+    height: 160px;
+  }
 }
 
 .semi-sg-figure--background-dark img {
@@ -461,7 +485,7 @@
   color: $color-warning;
 }
 
-.semi-sg-graphic-elements__playground .semi-sg-figure-icon img {
+.semi-sg-page__graphic-playground .semi-sg-figure-icon img {
   width: 100px;
   height: 160px;
 }

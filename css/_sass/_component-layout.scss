@@ -25,29 +25,29 @@
   .layout--double-reverse {
     flex-direction: row-reverse;
   }
-}
 
-// makes a gutter of 2 rem in the center,
-// while keeping the content left and right aligned to the
-// outer borders
-.layout:not(.layout--double-reverse) {
-  .layout__column {
-    &:first-child {
-      padding-right: 1rem;
-    }
-    &:last-child {
-      padding-left: 1rem;
+  // makes a gutter of 2 rem in the center,
+  // while keeping the content left and right aligned to the
+  // outer borders
+  .layout:not(.layout--double-reverse) {
+    .layout__column {
+      &:first-child {
+        padding-right: 1rem;
+      }
+      &:last-child {
+        padding-left: 1rem;
+      }
     }
   }
-}
 
-.layout.layout--double-reverse {
-  .layout__column {
-    &:last-child {
-      padding-right: 1rem;
-    }
-    &:first-child {
-      padding-left: 1rem;
+  .layout.layout--double-reverse {
+    .layout__column {
+      &:last-child {
+        padding-right: 1rem;
+      }
+      &:first-child {
+        padding-left: 1rem;
+      }
     }
   }
 }
