@@ -1,19 +1,15 @@
 // Begin: Style guide
 
-@mixin semi-sg-section-seperator() {
+@mixin semi-sg-section-separator-block() {
 	border-bottom: 6px solid $color-black;
 }
 
-.semi-sg .wrapper {
+.semi-sg .wrapper  {
 
-	// Only direct descendants of semi-sg (styleguide class) should get this styling since
-	// the styleguide elements also represent original application styling and should not
-	// inherit styleguide styling
-	// TODO: refactor element>element selector, since a specific parent selector insists loose coupled CSS hiërarchy and therefore is error prone
-	> section {
+	> .semi-sg-section {
     	margin-bottom: 3em;
     	padding-bottom: 3em;
-		@include semi-sg-section-seperator;
+		@include semi-sg-section-separator-block;
     	> h3, > h4, > h5 {
         	margin: 2em 0 1em;
     	}
@@ -26,10 +22,23 @@
 	}
 }
 
-.semi-sg-section-seperator {
-	padding-top: 3em;
-	@include semi-sg-section-seperator;
+.semi-sg-section-separator-block {
+	@include semi-sg-section-separator-block;
+
+	&.semi-sg-section-separator-block--spacing {
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+
+	&.semi-sg-section-separator-block--spacing-top {
+		margin-top: 3em;
+	}
+
+	&.semi-sg-section-separator-block--spacing-bottom {
+		margin-bottom: 3em;
+	}
 }
+
 
 .semi-sg-overview {
     column-count: 2;
@@ -325,6 +334,10 @@
 	}
 }
 
+.semi-sg-ui-layout__fill-column {
+	background: $color-helper-2;
+}
+
 .semi-sg-ui-layout__wrapper {
 	@extend .wrapper;
 	width: 100vw; // make example wrapper full width
@@ -391,6 +404,90 @@
             opacity: 1;
         }
     }
+}
+
+.sg-svg-image-text {
+	font-family: $typeface-body;
+}
+
+.semi-sg-figure {
+  display: flex;
+  flex-direction: column;
+  img {
+    align-self: self-start;
+  }
+  figcaption {
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+// center images on small screen sizes
+@media screen and (max-width: 48em) {
+  .semi-sg-figure {
+    img {
+      align-self: center;
+    }
+    figcaption {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+// figure caption difference between small and large screen sizes
+@media screen and (min-width: 48em) {
+  .semi-sg-figure figcaption {
+    align-items: flex-start;
+    .semi-sg-figcaption-text,
+    a[download] {
+      display: block;
+      float:left;
+    }
+  }
+}
+
+.semi-sg-figure-graphic {
+  &:not(.semi-sg-figure-graphic--large) img {
+    max-height: 240px;
+  }
+  &.semi-sg-figure-graphic--large img {
+    max-height: 480px;
+  }
+  &.semi-sg-figure-graphic--center img {
+    align-self: center;
+  }
+}
+
+.semi-sg-figure-icon {
+  img {
+    align-self: center;
+    max-width: 50%;
+    max-height: 200px;
+    &.semi-sg-graphic-elements-icons-example {
+      width: 550px;
+      max-width: 80%;
+    }
+  }
+  &.semi-sg-figure-icon--small img {
+    width: 100px;
+    height: 160px;
+  }
+}
+
+.semi-sg-figure--background-dark img {
+  background-color: $color-almostblack;
+}
+
+.semi-sg-color-recommended {
+  color: $color-semi-accent;
+}
+.semi-sg-color-reject {
+  color: $color-warning;
+}
+
+.semi-sg-page__graphic-playground .semi-sg-figure-icon img {
+  width: 100px;
+  height: 160px;
 }
 
 // End: Style guide

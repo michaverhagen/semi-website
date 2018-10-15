@@ -1,0 +1,14 @@
+{% if include.columnOrder == 'reverse' %}
+    {% assign orderClass = 'layout--double-reverse' %}
+{% else %}
+    {% assign orderClass = '' %}
+{% endif %}
+
+<section class="layout layout--double {{ orderClass }}">
+    <div class="layout__column">
+        {{ include.contentColumnOne }}
+    </div>
+    <div class="layout__column">
+        {{ include.contentColumnTwo }}
+    </div>
+</section>
