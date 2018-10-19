@@ -418,7 +418,7 @@
   }
   figcaption {
     flex-direction: column;
-    display: flex;
+    display: inline;
   }
 }
 
@@ -438,11 +438,6 @@
 @media screen and (min-width: 48em) {
   .semi-sg-figure figcaption {
     align-items: flex-start;
-    .semi-sg-figcaption-text,
-    a[download] {
-      display: block;
-      float:left;
-    }
   }
 }
 
@@ -474,6 +469,12 @@
   }
 }
 
+.semi-sg-download {
+  display: inline-block;
+  float: left;
+  clear: left;
+}
+
 .semi-sg-figure--background-dark img {
   background-color: $color-almostblack;
 }
@@ -485,9 +486,34 @@
   color: $color-warning;
 }
 
+// even out images
 .semi-sg-page__graphic-playground .semi-sg-figure-icon img {
   width: 100px;
   height: 160px;
+}
+
+// even out images
+.semi-sg-page__graphic-iconography .semi-sg-figure-icon img {
+  min-height: 170px;
+}
+
+// even out images
+@media screen and (min-width: 48em) {
+  .semi-sg-page__graphic-showcaseimages {
+    .semi-sg-figure-graphic {
+      height: 100%;
+      justify-content: flex-end;
+      img {
+        align-self: center;
+      }
+      // specific image which should be a bit smaller visually
+      &.semi-sg-custom-image-1 {
+        img {
+          height: 170px;
+        }
+      }
+    }
+  }
 }
 
 // End: Style guide
