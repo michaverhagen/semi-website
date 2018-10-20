@@ -1,0 +1,15 @@
+{% include head.html %}
+
+{% if bodyclass == blank %}
+<body class="page--console knowledge-base--{{ page.topic | downcase }}">
+{% else %}
+<body class="{{page.bodyclass}}">
+{% endif %}
+
+{% include organism-header.html %}
+
+<main>
+    {{ content }}
+</main>
+
+{% include organism-footer.html %}
