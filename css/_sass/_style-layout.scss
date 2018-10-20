@@ -19,9 +19,11 @@ main {
 .container {
     padding-left: $application-gutter;
     padding-right: $application-gutter;
+}
 
-    // create extra space for the footer
-    // TODO: refactor this into something less generic
+// create extra space for the footer
+// TODO: refactor this into something less generic
+main > .container {
     &:last-child {
         padding-bottom: 3.5em;
     }
