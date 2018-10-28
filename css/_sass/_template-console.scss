@@ -70,6 +70,9 @@ $ui-font-size: 1rem;
   .page--console .layout {
     flex-direction: column;
   }
+  .tmp-card-data-summary {
+    margin-bottom: 1rem;
+  }
 }
 @media screen and (min-width: 48em) {
   .page--console .layout {
@@ -80,9 +83,15 @@ $ui-font-size: 1rem;
 @media screen and (min-width: 48em) {
   .tmp-layout-aside {
     flex-grow: 1;
+    padding-right: .5rem;
+    // TODO refactor, too specific
+    .tmp-card-paper {
+      margin-bottom: 1rem;
+    }
   }
   .tmp-layout-main {
     flex-grow: 6;
+    padding-left: .5rem;
   }
 }
 
@@ -114,6 +123,9 @@ $ui-font-size: 1rem;
     tr  {
       border-bottom: 1px solid $color-gray-6;
     }
+  }
+  tbody th {
+    min-width: 150px;
   }
   tfoot {
     min-height: 4rem;
@@ -159,6 +171,37 @@ $ui-font-size: 1rem;
 .tmp-table-data__prev-next--disabled {
   img {
     opacity: .2;
+  }
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.tmp-section-page {
+  margin-top: 3rem;
+}
+
+.tmp-typography-heading-3 {
+  // raise specificity
+  // TODO if used, refactor to proper style in _style-typography.scss
+  &.tmp-typography-heading-3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Alegreya Sans",sans-serif;
+    // TODO move to proper header margin surrounding the heading
+    margin-bottom: 1rem;
+  }
+}
+
+.tmp-text-jumbo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.tmp-card-data-summary {
+  padding: 1rem;
+  p {
+    margin-bottom: 0;
   }
 }
 
