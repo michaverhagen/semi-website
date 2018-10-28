@@ -5,22 +5,34 @@ title: SeMI, console login
 description: Console
 ---
 
+{% comment %}
+<!--
+    Please note that all the custom console page elements
+    are prefixed with 'tmp-'. These are elements that are
+    custom for this page. They are defined in the SCSS
+    file: '_template-console.scss', and are possible
+    prospects for general production styling. However,
+    since the console will be eventually build in a react
+    application, this styling will perhaps be deprecated.
+-->
+{% endcomment %}
+
 <article>
-    <section class="app-nav">
+    <section class="tmp-app-nav">
         <div class="container">
             <div class="wrapper">
-                <div class="tab-group">
-                    <div class="tab">
-                        <span class="tab__label tab__label--active">Dashboard</span>
+                <div class="tmp-tab-group">
+                    <div class="tmp-tab">
+                        <span class="tmp-tab__label tmp-tab__label--active">Dashboard</span>
                     </div>
-                    <div class="tab">
-                        <span class="tab__label">Alerts</span>
+                    <div class="tmp-tab">
+                        <span class="tmp-tab__label">Alerts</span>
                     </div>
-                    <div class="tab">
-                        <span class="tab__label">Invoices</span>
+                    <div class="tmp-tab">
+                        <span class="tmp-tab__label">Invoices</span>
                     </div>
-                    <div class="tab tab--pull-right">
-                        <span class="tab__label">Log Out</span>
+                    <div class="tmp-tab tmp-tab--pull-right">
+                        <span class="tmp-tab__label">Log Out</span>
                     </div>
                 </div>
             </div>
@@ -29,7 +41,128 @@ description: Console
     <div class="container">
         <div class="wrapper">
             <section>
-                <h1 class="a11y-hide-element">Dashboard</h1>
+                <h1 class="tmp-a11y-hide-element">Dashboard</h1>
+                <div class="tmp-filters">
+                    <select class="tmp-filters__select">
+                        <option selected="selected">All weaviates</option>
+                        <option>Another option</option>
+                    </select>
+                    <select class="tmp-filters__select">
+                        <option selected="selected">Past month</option>
+                        <option>Another option</option>
+                    </select>
+                </div>
+                <section>
+                    <h2>API consumption overview</h2>
+                    <div class="layout">
+                        <div class="tmp-layout-aside">
+                            <div class="tmp-card-paper">
+                                <p>15,023 USD</p>
+                                <p><small>Total revenue from API requests</small></p>
+                            </div>
+                            <div class="tmp-card-paper">
+                                <p>4,220 USD</p>
+                                <p><small>Total costs of API consumption</small></p>
+                            </div>
+                        </div>
+                        <div class="tmp-layout-main">
+                            <div class="tmp-card-paper">
+                                <p>test</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Earnings — Data valuation</h2>
+                    <div class="tmp-card-paper">
+                        <div class="tmp-table-container">
+                            <table class="tmp-table-data">
+                                <thead>
+                                    <tr>
+                                        <th>Data type name</th>
+                                        <th>Data identifier</th>
+                                        <th class="tmp-table-data__cell--align-right">Earnings this period (USD)</th>
+                                        <th class="tmp-table-data__cell--align-right">Earnings this period (USD)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for item in site.data.earnings %}
+                                        <tr>
+                                            <th>{{ item.name }}</th>
+                                            <td>{{ item.identifier }}</td>
+                                            <td class="tmp-table-data__cell--align-right">{{ item.earnings }}</td>
+                                            <td class="tmp-table-data__cell--align-right">{{ item.value }}</td>
+                                            <td class="tmp-table-data__cell--align-center tmp-table-data__cell-with-img">
+                                                {% include molecule-ui-icon-options.html %}
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                                <tfoot>
+                                    <td colspan="2">
+                                        <button class="button--small">Create new</button>
+                                    </td>
+                                    <td colspan="3" class="tmp-table-data__cell--align-right">
+                                        <span class="tmp-table-data__pagination">1-10 of 100</span>
+                                        <span class="tmp-table-data__prev-next tmp-table-data__prev-next--disabled">
+                                            {% include molecule-ui-icon-left.html %}
+                                        </span>
+                                        <span class="tmp-table-data__prev-next">
+                                            {% include molecule-ui-icon-right.html %}
+                                        </span>
+                                    </td>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Spending — Billing per function</h2>
+                    <div class="tmp-card-paper">
+                        <div class="tmp-table-container">
+                            <table class="tmp-table-data">
+                                <thead>
+                                <tr>
+                                    <th>Function</th>
+                                    <th class="tmp-table-data__cell--align-right">Number of calls</th>
+                                    <th class="tmp-table-data__cell--align-right">Cost per call (USD)</th>
+                                    <th class="tmp-table-data__cell--align-right">Ext. data costs (USD)</th>
+                                    <th class="tmp-table-data__cell--align-right">Total costs (USD)</th>
+                                    <th class="tmp-table-data__cell--align-right">Consumption limit  (USD)</th>
+                                    <th></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for item in site.data.spending %}
+                                    <tr>
+                                        <th>{{ item.function }}</th>
+                                        <td class="tmp-table-data__cell--align-right">{{ item.calls }}</td>
+                                        <td class="tmp-table-data__cell--align-right">{{ item.costsCall }}</td>
+                                        <td class="tmp-table-data__cell--align-right">{{ item.costsData }}</td>
+                                        <td class="tmp-table-data__cell--align-right">{{ item.costsTotal }}</td>
+                                        <td class="tmp-table-data__cell--align-right">{{ item.costsLimit }}</td>
+                                        <td class="tmp-table-data__cell--align-center tmp-table-data__cell-with-img">
+                                            {% include molecule-ui-icon-edit.html %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                                <tfoot>
+                                <td colspan="7" class="tmp-table-data__cell--align-right">
+                                    <span class="tmp-table-data__pagination">11-20 of 100</span>
+                                    <span class="tmp-table-data__prev-next">
+                                        {% include molecule-ui-icon-left.html %}
+                                    </span>
+                                    <span class="tmp-table-data__prev-next">
+                                        {% include molecule-ui-icon-right.html %}
+                                    </span>
+                                </td>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </section>
             </section>
         </div>
     </div>
