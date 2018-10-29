@@ -77,7 +77,7 @@
     "fontWeightRegular": 400,
     "fontWeightMedium": 500,
     "display4": {
-      "fontSize": "7rem",
+      "fontSize": "2.4rem",
       "fontWeight": 300,
       "fontFamily": ["Alegreya Sans", "Helvetica", "Arial", "sans-serif"],
       "letterSpacing": "-.04em",
@@ -86,7 +86,7 @@
       "color": "rgba(0, 0, 0, 0.54)"
     },
     "display3": {
-      "fontSize": "3.5rem",
+      "fontSize": "1.6rem",
       "fontWeight": 400,
       "fontFamily": ["Alegreya Sans", "Helvetica", "Arial", "sans-serif"],
       "letterSpacing": "-.02em",
@@ -95,7 +95,7 @@
       "color": "rgba(0, 0, 0, 0.54)"
     },
     "display2": {
-      "fontSize": "2.8125rem",
+      "fontSize": "1.2rem",
       "fontWeight": 400,
       "fontFamily": ["Alegreya Sans", "Helvetica", "Arial", "sans-serif"],
       "lineHeight": "1.13333em",
@@ -103,7 +103,7 @@
       "color": "rgba(0, 0, 0, 0.54)"
     },
     "display1": {
-      "fontSize": "2.125rem",
+      "fontSize": "1.2rem",
       "fontWeight": 400,
       "fontFamily": ["Alegreya Sans", "Helvetica", "Arial", "sans-serif"],
       "lineHeight": "1.20588em",
