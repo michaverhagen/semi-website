@@ -15,7 +15,12 @@ $scale-6: $scale-5*2; // 256px
 $margin-single: $scale-0; // Single direction margin
 $padding: $scale--1 $scale-0;
 
-$component-primary-max-width: 42em;
+$component-primary-max-width: 42em; // 840px
 
+// Design canvas small screen with = 640
+// Design canvas extra large screen width = 1440
+// Design canvas extra large screen side width = 180px (gutter on both sides of the canvas)
+// Design canvas extra large screen wrapper width = 1440-180= 1260px
+$component-wide-max-width: 63em; // 1260
 
 $application-gutter: 1em;
