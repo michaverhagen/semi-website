@@ -115,9 +115,10 @@ function toMailchimp(t){
  */
 // Set global search variables
 var searchBox 			= document.getElementsByClassName("searchBox")[0],
-	articleSectionName 	= "ol",
-	GoogleApiKey 		= "AIzaSyCV4SC6uTz7bzYu1TmM_3iq2smlvbJOVLg",
-	GoogleSearchId 		= "008702682383656025817:4lkjxykfngo";
+	articleSectionName        = "ol",
+    noResultsElementClassName  = "jsNoSearchResults",
+	GoogleApiKey              = "AIzaSyCV4SC6uTz7bzYu1TmM_3iq2smlvbJOVLg",
+	GoogleSearchId            = "008702682383656025817:4lkjxykfngo";
 
 // get the query param by name
 function getParameterByName(name) {
@@ -142,28 +143,35 @@ function loadResults(i) {
 			// declare newbox and the result
 			var newBox;
 			// load JSON
-			JSON
-				// parse JSON
-				.parse(this.responseText)
-				// find items
-				.items
-				// loop over items
-				.forEach(function(element) {
-					// clone the searchbox;
-					newBox = searchBox.cloneNode(true);
-					// remove display = none
-					newBox.style.display = "block";
-					// Set the title with URL
-					newBox
-						.getElementsByClassName("title")[0]
-						.innerHTML = "<a href=\"" + element.link + "\" target=\"_self\">" + element.htmlTitle + "</a>";
-					// set the inner HTML snippet
-					newBox.getElementsByClassName("resultHTML")[0]
-						.innerHTML = element.htmlSnippet;
-					// append the box to the article
-					document.getElementsByTagName(articleSectionName)[0].appendChild(newBox);
-				});
+          var items = JSON.parse(this.responseText).items;
 
+          // when no results are present show no results div
+          if (JSON.parse(this.queries.request.totalResults) === 0) {
+            // find element by predefined classname
+            var noResultsElement = document.getElementsByClassName(noResultsElementClassName)[0];
+            // if element exists and if it has the display property set to none, show it
+            if (noResultsElement && noResultsElement.style.display === 'none') {
+              noResultsElement.style.display = 'block';
+            }
+          // when results are present
+          } else {
+            // loop over items
+            items.forEach(function (element) {
+              // clone the searchbox;
+              newBox = searchBox.cloneNode(true);
+              // remove display = none
+              newBox.style.display = "block";
+              // Set the title with URL
+              newBox
+                  .getElementsByClassName("title")[0]
+                  .innerHTML = "<a href=\"" + element.link + "\" target=\"_self\">" + element.htmlTitle + "</a>";
+              // set the inner HTML snippet
+              newBox.getElementsByClassName("resultHTML")[0]
+                  .innerHTML = element.htmlSnippet;
+              // append the box to the article
+              document.getElementsByTagName(articleSectionName)[0].appendChild(newBox);
+            });
+          }
 		}
 	};
 	// open the URL
