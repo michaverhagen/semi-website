@@ -1,35 +1,40 @@
-<div class="article-container">
-    <section>
-        <h1>{{ page.tagsToShow | capitalize }} Tags</h1>
-        <p>{{ page.section-intro-text }}</p>
-        
-        <ul class="article-overview">
+
+<div class="container">
+    <div class="wrapper">
+        <div class="article-container">
             <section>
-                <li>
-                    {% assign sorted_pages = site.pages | sort:"menu-order" %}
-                    {% for subpage in sorted_pages %}
-                        {% if subpage.tags contains page.tagsToShow %}
-                            <ol>
-                                <li><h3><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h3>
-                                    <p>
-                                        {{ subpage.description }}
-                                    </p>
-                                    <dl class="tags">
-                                        <dt><i>Tags</i></dt>
-                                        <dd>
-                                            <ul class="tags">
-                                                {% for tag in subpage.tags %}
-                                                    <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
-                                                {% endfor %}
-                                            </ul>
-                                        </dd>
-                                    </dl>
-                                </li>
-                            </ol>
-                        {% endif %}
-                    {% endfor %}
-                </li>
+                <h1>{{ page.tagsToShow | capitalize }} Tags</h1>
+                <p>{{ page.section-intro-text }}</p>
+
+                <ul class="article-overview">
+                    <section>
+                        <li>
+                            {% assign sorted_pages = site.pages | sort:"menu-order" %}
+                            {% for subpage in sorted_pages %}
+                                {% if subpage.tags contains page.tagsToShow %}
+                                    <ol>
+                                        <li><h3><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h3>
+                                            <p>
+                                                {{ subpage.description }}
+                                            </p>
+                                            <dl class="tags">
+                                                <dt><i>Tags</i></dt>
+                                                <dd>
+                                                    <ul class="tags">
+                                                        {% for tag in subpage.tags %}
+                                                            <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </li>
+                                    </ol>
+                                {% endif %}
+                            {% endfor %}
+                        </li>
+                    </section>
+                </ul>
             </section>
-        </ul>
-    </section>
+        </div>
+    </div>
 </div>
