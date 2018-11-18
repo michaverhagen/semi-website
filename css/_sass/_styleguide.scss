@@ -51,7 +51,7 @@
 	background: $color-helper-2;
 	border-radius: $border-radius-2;
 	color: $color-helper-1;
-	content: 'brkpnt 20em – 34em';
+	content: 'brkpnt small';
 	opacity: .5;
 	padding: .5em 3em;
 	right: 0;
@@ -82,32 +82,21 @@
     }
 }
 
-@media (min-width: 34em) {
+@include breakpoint(smallToMedium) {
 	.body--styleguide::before {
-		content: 'brkpnt 34em – 42em';
+		content: 'brkpnt medium';
 	}
 }
-@media (min-width: 42em) {
+@include breakpoint(mediumToLarge) {
 	.body--styleguide::before {
-		content: 'brkpnt 42em – 48em';
+		content: 'brkpnt large';
 	}
 }
-@media (min-width: 48em) {
+@include breakpoint(largeUp) {
 	.body--styleguide::before {
-		content: 'brkpnt 48em – 56em';
+		content: 'brkpnt extralarge';
 	}
 }
-@media (min-width: 56em) {
-	.body--styleguide::before {
-		content: 'brkpnt 56em – 80em';
-	}
-}
-@media (min-width: 80em) {
-	.body--styleguide::before {
-		content: 'brkpnt > 80em';
-	}
-}
-
 
 .dimension {
 	li {
