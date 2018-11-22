@@ -1,5 +1,5 @@
 ---
-layout: styleguide
+layout: styleguide-markdown
 title: SeMI, glossary of terms and how to use them
 ---
 
