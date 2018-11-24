@@ -34,6 +34,7 @@ fieldset {
 	background: $color-white;
 	border: 3px solid transparent;
 	border-bottom-color: $color-semi;
+	border-bottom: 3px solid $color-semi;
 	border-top-left-radius: $scale-1;
 	border-top-right-radius: $scale-1;
 	color: $color-black;
@@ -296,7 +297,6 @@ select[multiple] {
 }
 
 .form-inline {
-    background: $color-gray-7;
     margin-bottom: 2em;
     padding: .5em 1em;
 }
