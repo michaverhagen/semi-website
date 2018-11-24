@@ -18,15 +18,16 @@
     max-width: $component-primary-max-width;
 }
 
-//.section-header {
-//    padding-top: 2rem;
-//}
+.header-page {
+  margin-top: 3rem; // 48px
+  margin-bottom: 3rem; // 48px
+}
 
 .header-section {
   margin-bottom: 2rem; // 32px
 }
 
-.header-section--centered {
+.header--centered {
     text-align: center;
 }
 
