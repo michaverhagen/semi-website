@@ -1,3 +1,8 @@
+/**
+ * Section and column headers
+ * Defines spacing and alignment for titles and headings
+ */
+
 .header-main {
     align-items: center;
     display: flex;
@@ -13,6 +18,20 @@
     max-width: $component-primary-max-width;
 }
 
-.section-header {
-    padding-top: 2rem;
+//.section-header {
+//    padding-top: 2rem;
+//}
+
+.header-section {
+  margin-bottom: 2rem; // 32px
+}
+
+.header-section--centered {
+    text-align: center;
+}
+
+.section__payoff {
+    font-family: $typeface-sans;
+    font-weight: 500;
+    margin-bottom: 3rem; // 32px
 }

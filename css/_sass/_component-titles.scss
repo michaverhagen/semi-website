@@ -7,7 +7,6 @@
   font-family: $typeface-sans;
   font-size: 2rem; // 32px
   font-weight: 800;
-  margin-bottom: 2rem; // 32px
 }
 .title-section {
   font-weight: 500;
@@ -15,7 +14,8 @@
   font-style: italic;
 }
 .title-column {
-  font-size: 1.2rem; // 24px
+  font-family: $typeface-sans;
+  font-size: 1.5rem; // 24px
 }
 
 @include breakpoint(smallToMedium) {

@@ -57,20 +57,20 @@ hr {
 }
 
 @include breakpoint(mediumUp) {
-	h1:not([class^="title-"]) {
+	h1:not([class*="title-"]) {
 		font-size: 2.185rem;
 	}
-	h2:not([class^="title-"]) {
+	h2:not([class*="title-"]) {
 		font-size: 1.875rem;
 	}
-	h3:not([class^="title-"]) {
+	h3:not([class*="title-"]) {
 		font-size: 1.5rem;
 	}
-	h4:not([class^="title-"]) {
+	h4:not([class*="title-"]) {
 		font-size: 1.35rem;
 	}
-	h5:not([class^="title-"]),
-	h6:not([class^="title-"]) {
+	h5:not([class*="title-"]),
+	h6:not([class*="title-"]) {
 		font-size: 1.25rem;
 	}
 	p, li {
