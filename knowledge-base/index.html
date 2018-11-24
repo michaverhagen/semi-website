@@ -20,7 +20,9 @@ description: SeMI's Knowledge Base.
                            name="search"
                            results="15"
                            type="search" />
-                    <input class="button" type="submit" value="Search" />
+                    <button class="button button-ui" type="submit" value="Submit">
+                        <img class="icon icon-medium" src="/img/icon-ui-magnifyingglass.svg">
+                    </button>
                 </section>
             </form>
         </section>
@@ -38,34 +40,29 @@ description: SeMI's Knowledge Base.
         </ul>
     -->
 
-        <ul class="article-index">
-            <li class="semi-knowledge-flow-learn">
-                <a href="/knowledge-base/learn/">
-                    <div>
-                        <p class="semi-knowledge-flow-select">Learn</p>
-                        <img src="/img/rtp-city-icon--1.svg" alt="">
-                    </div>
-                </a>
-                <p>If you are new to SeMI, read these articles to see the value it can bring to your organization.</p>
-            </li>
-            <li class="semi-knowledge-flow-start">
-                <a href="/knowledge-base/start/">
-                    <div>
-                        <p class="semi-knowledge-flow-select">Start</p>
-                        <img src="/img/rtp-city-icon--2.svg" alt="">
-                    </div>
-                </a>
-                <p>If you are ready to start with your first use case, read these articles to get the necessary input.</p>
-            </li>
-            <li class="semi-knowledge-flow-implement">
-                <a href="/knowledge-base/implement/">
-                    <div>
-                        <p class="semi-knowledge-flow-select">Implement</p>
-                        <img src="/img/rtp-city-icon--3.svg" alt="">
-                    </div>
-                </a>
-                <p>If you want to implement your use case(s), read these articles to learn all important details.</p>
-            </li>
-        </ul>
+        {% capture columnOne %}
+            <img src="/img/logo-icon-weaviate.svg" title="Logo weaviate" />
+            <h2 class="header-column header--centered title-column">Weaviate Wiki</h2>
+            <p>Besides doing that inside a single Weaviate instance. You can also create a peer-to-peer…</p>
+            <div class="button-center-container">
+                <a class="button button--cta-inverted" href="#">Learn more</a>
+            </div>
+        {% endcapture %}
+
+        {% capture columnTwo %}
+            <img src="/img/logo-icon-semi-consulting.svg" title="Logo Semi Consulting" />
+            <h2 class="header-column header--centered title-column">SeMi Consulting Wiki</h2>
+            <p>Besides doing that inside a single Weaviate instance. You can also create a peer-to-peer…</p>
+            <div class="button-center-container">
+                <a class="button button--cta-inverted" href="#">Learn more</a>
+            </div>
+        {% endcapture %}
+
+        {% include components/layout/layout--double.html
+            contentColumnOne=columnOne
+            contentColumnTwo=columnTwo
+        %}
+
+        </section>
     </div>
 </article>

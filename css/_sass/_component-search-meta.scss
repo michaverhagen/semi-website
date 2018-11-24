@@ -9,7 +9,8 @@
         flex: 1;
         padding-right: 2.5em;
     	~ [type='submit'] {
-        	margin-left: -2em;
+        	margin-left: -1.5em;
+            padding: 0 .8125em;
         	&:hover, &:focus, &:active {
             	border-bottom-left-radius: 0;
             }
