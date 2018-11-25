@@ -17,8 +17,8 @@ The SeMI Use Case Exploration is a one day workshop, which SeMI offers to its as
 
 > We work with you to discover, define and deploy your first SeMI use case.
 
-<section class="help">
-    In case you are looking for a technology summary, <a href="/workshop/">here</a>.
+<section class="callout">
+    In case you are looking for a technology summary, <a href="/workshop/">click here</a>.
 </section>
 
 ## Methodology

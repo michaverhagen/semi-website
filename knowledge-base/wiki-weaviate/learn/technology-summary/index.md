@@ -88,7 +88,7 @@ An example in two dimensions:
 
 This brings the feature of context. In future machine to machine communication over the P2P network, a SeMI node can express what the data's meaning is when it transfers information. This also means that answers to queries are Fuzzy<sup><a href="https://en.wikipedia.org/wiki/Fuzzy_logic" alt="Fuzzy">(ref)</a></sup> in nature, a SeMI node tries to interpret the question based on the context it has.
 
-<section class="help">
+<section class="callout">
     Learn more about SeMI-node architecture on <a href="https://github.com/creativesoftwarefdn/weaviate/blob/develop/README.md">Weaviate's Github page</a>.
 </section>
 

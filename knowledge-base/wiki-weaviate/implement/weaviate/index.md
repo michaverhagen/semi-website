@@ -11,9 +11,9 @@ menu-order: 3
 open-graph-type: article
 ---
 
-<section class="help">
+<section class="callout">
     This is the documentation page for Weaviate.<br>
-    In case you are looking for a technology summary, <a href="/knowledge-base/learn/technology-summary/">visit this page</a>.
+    In case you are looking for a technology summary, <a href="/knowledge-base/wiki-weaviate/learn/technology-summary/">visit this page</a>.
 </section>
 
 Below you can find the documentation for Weaviate. Please note that Weaviate is not production ready yet, meaning that certain implementations might be due to change.
@@ -112,7 +112,7 @@ $ docker-compose up
 
 ## Configure Weaviate
 
-<section class="help">
+<section class="callout">
 You can download an example file <a href="https://github.com/creativesoftwarefdn/weaviate/blob/master/weaviate.conf.json">here</a>.
 </section>
 
@@ -196,7 +196,7 @@ You can add custom development settings.
 
 ## Available Databases
 
-<section class="help">
+<section class="callout">
 Learn more about the database architecture <a href="https://github.com/creativesoftwarefdn/weaviate#database-connector--graph-interface">here</a>.
 </section>
 
@@ -223,13 +223,13 @@ You can also run Cassandra with Docker directly
 docker run -t --name weaviate_db_1_travis -e CASSANDRA_BROADCAST_ADDRESS=127.0.0.1 -p 7000:7000 -p 9042:9042 -v ~/cassandra:/var/lib/cassandra -d cassandra:3
 ```
 
-<section class="help">
+<section class="callout">
 Weaviate's <a href="#run-with-docker">docker compose</a> also contains Cassandra.
 </section>
 
 ## Ontology Schemas for Things and Actions
 
-<section class="help">
+<section class="callout">
 Learn more about web semantics and the value of ontologies <a href="/weaviate/concept-in-a-nutshell/">here</a>.
 </section>
 
@@ -237,7 +237,7 @@ One of the core features of Weaviate are the ontologies. You will use the ontolo
 
 ### Defining a Things Ontology
 
-<section class="help">
+<section class="callout">
 Classes should always be written with a capital.
 </section>
 
@@ -310,7 +310,7 @@ Ontologies are defined in a <abbr>JSON</abbr> file and should contain the follow
 }
 ```
 
-<section class="help">
+<section class="callout">
 You can find a simple example <a href="https://github.com/creativesoftwarefdn/weaviate/tree/master/test/schema">here</a> or a more complex example <a href="https://github.com/creativesoftwarefdn/weaviate-semantic-schemas">here</a>.
 </section>
 
@@ -318,7 +318,7 @@ You can find a simple example <a href="https://github.com/creativesoftwarefdn/we
 
 With a configuration file and two ontologies (things and actions) you can start running Weaviate.
 
-<section class="help">
+<section class="callout">
 Make sure to fetch the API-token and API-key when running Weaviate for the first time.
 </section>
 
@@ -625,7 +625,7 @@ _Soon online_
 
 ## Using GraphQL
 
-<section class="help">
+<section class="callout">
     GraphQL is currently being restructured and comprehensive documentation will be published asap.
 </section>
 

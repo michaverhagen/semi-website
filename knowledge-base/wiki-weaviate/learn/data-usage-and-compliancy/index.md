@@ -36,7 +36,7 @@ In the example below, you can see how we link meta-data from a bakery and and an
 
 ![some airliner inc and some bakery inc](/img/SeMI-some-airliner-inc_and_some-bakeryinc.jpg)
 
-<section class="help">
+<section class="callout">
     Click <a href="/knowledge-base/learn/technology-summary/">here</a> for a technical summary of how SeMI makes relations in meta-data.
 </section>
 
