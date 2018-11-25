@@ -2,7 +2,8 @@
 layout: article-tech
 title: Weaviate Documentation
 description: Technical documentation for using Weaviate.
-topic: Implement
+topic: wiki-weaviate
+category: implement
 tags: ['technology']
 video-link: 
 video-caption: 

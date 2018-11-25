@@ -2,7 +2,8 @@
 layout: article-start
 title: Data Usage & Compliancy
 description: What does it mean for your organization from a practical, safety and compliance point of view when you use SeMI?
-topic: Learn
+topic: wiki-weaviate
+category: learn
 tags: ['legal', 'technology']
 video-link: 
 video-caption: 
@@ -51,7 +52,7 @@ The raw data itself is never shared or made available.  The API returns only the
 
 We understand that your information sources may contain information about individuals, otherwise known as “personal data”. With the recent development of legislation it is important to manage the information that you share with other participants of the network. 
 
-We have several tools to help you. In our on-boarding workshops, for example, we help you define your ontology (see our [on-boarding primer](/knowledge-base/start/onboarding-brief/)). This ontology is an important mechanism in refining your data into knowledge graphs using our SeMI tool and our knowledge base. This refining process makes it highly impractical to connect personal data to an identifiable person.
+We have several tools to help you. In our on-boarding workshops, for example, we help you define your ontology (see our [on-boarding primer](/knowledge-base/wiki-weaviate/start/onboarding-brief/)). This ontology is an important mechanism in refining your data into knowledge graphs using our SeMI tool and our knowledge base. This refining process makes it highly impractical to connect personal data to an identifiable person.
 
 ## More information?
 If you have any additional questions please do not hesitate to [get in touch](/contact/).

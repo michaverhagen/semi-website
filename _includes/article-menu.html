@@ -1,21 +1,52 @@
-<div class="article-container">
-<a class="show-toc" href="#" onclick="toggle_visibility('toc');">Table of contents</a>
 
-<div class="article-toc-container" id="toc">
-	<dl class="article-toc">
-<!--<a class="show-toc close" href="#" onclick="toggle_visibility('toc');">Close</a> -->
-		{% for single_topic in site.topic_order %}
-			<dt data-group="{{ single_topic }}">{{ single_topic }}</dt>
-			<dd>
-				<ul class="list-ui">
-					{% assign sorted_pages = site.pages | sort:"menu-order" %}
-					{% for page in sorted_pages %}
-						{% if page.topic == single_topic and page.layout != 'article-overview' %}
-							<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</dd>
-		{% endfor %}
-	</dl>
+<div class="article-container">
+    <a class="show-toc" href="#" onclick="toggle_visibility('toc');">Table of contents</a>
+    <div class="article-toc-container" id="toc">
+
+        {% comment %}<!-- TODO: refactor to  data-list (<dt>, <dl>) --> {% endcomment %}
+        <ul class="list-ui">
+        {% comment %}<!-- setup list of all pages sorted by 'menu-order' -->{% endcomment %}
+        {% assign sorted_pages = site.pages | group_by: 'topic' %}
+        {% for topic in sorted_pages %}
+            {% comment %}<!-- don't show pages which have no topic -->{% endcomment %}
+            {% if topic.name != '' %}
+                <li><strong>{{ topic.name }}</strong></li>
+                {% comment %}<!-- setup list of all pages in this topic by 'category' -->{% endcomment %}
+                {% assign items = topic.items | sort: 'category' %}
+                <ul class="list-ui">
+                    <li>Learn:</li>
+                    <ul class="list-ui">
+                        {% for item in items %}
+                        {% if item.topic == topic.name and item.category == 'learn' %}
+                        <li>
+                            <a href="{{ item.url }}">{{ item.category }}: {{ item.title }}</a>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                    <li>Get started:</li>
+                    <ul class="list-ui">
+                    {% for item in items %}
+                        {% if item.topic == topic.name and item.category == 'start' %}
+                        <li>
+                            <a href="{{ item.url }}">{{ item.category }}: {{ item.title }}</a>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                    <li>Implement:</li>
+                    <ul class="list-ui">
+                    {% for item in items %}
+                        {% if item.topic == topic.name and item.category == 'implement' %}
+                        <li>
+                            <a href="{{ item.url }}">{{ item.title }}</a>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                </ul>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
 </div>

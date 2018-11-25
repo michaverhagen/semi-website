@@ -5,57 +5,57 @@
 {% include organism-header.html %}
 
 <main>
-	<article class="container" itemscope itemtype="http://schema.org/articleBody">
-		<div class="wrapper">
+    <article class="container" itemscope itemtype="http://schema.org/articleBody">
+        <div class="wrapper">
             {% include article-menu.html %}
-
             <section>
+                <p>TODO: fix breadcrumb</p>
+                <!--<ol class="breadcrumb">-->
+                    <!--<li><a href="/knowledge-base/">Knowledge base</a></li>-->
+                    <!--<li><a href="#">category</a></li>-->
+                    <!--<li><a href="../">{{ page.topic }}</a></li>-->
+                    <!--<li>{{ page.title }}</li>-->
+                <!--</ol>-->
 
-                <ol class="breadcrumb">
-    				<li><a href="/knowledge-base/">Knowledge base</a></li>
-    				<li><a href="../">{{ page.topic }}</a></li>
-    				<li>{{ page.title }}</li>
-                </ol>
-
-        		<h1>{{ page.title }}</h1>
-        		{% if page.description != null %}
-        			<p class="intro">{{ page.description }}</p>
-        		{% endif %}
+                <h1>{{ page.title }}</h1>
+                {% if page.description != null %}
+                    <p class="intro">{{ page.description }}</p>
+                {% endif %}
                 
                 <dl class="tags">
                     <dt><i>Tags</i></dt>
                     <dd>
-            			<ul class="tags">
-                			{% for tag in page.tags %}
-								<li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
-            				{% endfor %}
-            			</ul>
+                        <ul class="tags">
+                            {% for tag in page.tags %}
+                                <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+                            {% endfor %}
+                        </ul>
                     </dd>
                 </dl>
         
-        		{% if page.related_to != null %}
-        			{% for rels in page.related_to %}
-        				<a href="#">{{ rels }}</a>
-        			{% endfor %}
-        		{% endif %}
+                {% if page.related_to != null %}
+                    {% for rels in page.related_to %}
+                        <a href="#">{{ rels }}</a>
+                    {% endfor %}
+                {% endif %}
         
                 <section class="article">
-        			{% for video in page.video-link %}
-        				<figure class="video-container">
-        				    <div>{{ video }}</div>
-        				    {% for caption in page.video-caption %}
-        				        <figcaption>
-        				            {{ caption }}
+                    {% for video in page.video-link %}
+                        <figure class="video-container">
+                            <div>{{ video }}</div>
+                            {% for caption in page.video-caption %}
+                                <figcaption>
+                                    {{ caption }}
                                 </figcaption>
                             {% endfor %}
                         </figure>
-        			{% endfor %}
-        		    {{ content }}
+                    {% endfor %}
+                    {{ content }}
                 </section>
             </section>
 
-		</div>
-	</article>
+        </div>
+    </article>
 </main>
 
 {% include organism-footer.html %}

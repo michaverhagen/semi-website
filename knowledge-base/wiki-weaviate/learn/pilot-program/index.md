@@ -2,7 +2,8 @@
 layout: article-start
 title: Pilot Program
 description: SeMI wants to finally enable its customers to give meaning to their big data. We believe that our pilot program is the best way to align our products and services with their needs.
-topic: Learn
+topic: wiki-weaviate
+category: learn
 tags: ['business']
 menu-order: 3
 open-graph-type: article
@@ -14,9 +15,9 @@ In the SeMI *pilot program* we offer companies the opportunity to explore the po
 
 > We work with you to discover, define and deploy your first SeMI use case.
 
-We kick off, for example, by offering you an [exploration workshop](/knowledge-base/start/exploration-workshops/) to understand where your business challenges meet SeMI opportunities. In this one-day workshop we introduce SeMI and develop your custom use cases. The outcome of the workshop will enable further steps like: alignment of your internal stakeholders, definition of a Proof of Concept, input into business cases, the possibility to join our Pilot Project, etcetera. 
+We kick off, for example, by offering you an [exploration workshop](/knowledge-base/wiki-weaviate/start/exploration-workshops/) to understand where your business challenges meet SeMI opportunities. In this one-day workshop we introduce SeMI and develop your custom use cases. The outcome of the workshop will enable further steps like: alignment of your internal stakeholders, definition of a Proof of Concept, input into business cases, the possibility to join our Pilot Project, etcetera. 
 
-You can find out more how we help companies deploy SeMI by reading our [on-boarding brief](/knowledge-base/start/onboarding-brief/).
+You can find out more how we help companies deploy SeMI by reading our [on-boarding brief](/knowledge-base/wiki-weaviate/start/onboarding-brief/).
 
 ## Join our pilot program
 

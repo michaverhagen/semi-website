@@ -2,7 +2,8 @@
 layout: article-start
 title: Executive Summary
 description: Why is SeMI a great tool to enrich your current business offerings? In this primer you will learn why SeMI is so valuable for your business.
-topic: Learn
+topic: wiki-weaviate
+category: learn
 tags: ['business', 'summary']
 video-link: 
 video-caption: 
@@ -38,7 +39,7 @@ Existing data analysis and search solutions can generate insights from publicly 
 
 ## Start with the business questions
 
-SeMI starts from the business perspective: which business decisions need data-driven insights? What are the key questions you want answers to? We help you discover and develop your key business questions in our [exploration workshop](/knowledge-base/start/exploration-workshops/). In this workshop, we introduce you to SeMI and develop your custom use cases.
+SeMI starts from the business perspective: which business decisions need data-driven insights? What are the key questions you want answers to? We help you discover and develop your key business questions in our [exploration workshop](/knowledge-base/wiki-weaviate/start/exploration-workshops/). In this workshop, we introduce you to SeMI and develop your custom use cases.
 
 ## SeMI products
 
@@ -53,7 +54,7 @@ For more information about the SeMI products, please refer to our  [product page
 
 ![SeMI network](/img/SeMI-network.jpg)
 
-Because SeMI is a decentralized solution, you stay in complete control of your information: the system of record data is never shared! SeMI focuses on the things that the system of record data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network. This also means there is no central platform. SeMI runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](/knowledge-base/learn/data-usage-and-compliancy/).
+Because SeMI is a decentralized solution, you stay in complete control of your information: the system of record data is never shared! SeMI focuses on the things that the system of record data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network. This also means there is no central platform. SeMI runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](/knowledge-base/wiki-weaviate/learn/data-usage-and-compliancy/).
 
 > There is no central platform.
 

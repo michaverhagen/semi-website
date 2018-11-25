@@ -2,7 +2,8 @@
 layout: article-start
 title: Create an Ontology
 description: Your ontology to describe your data is the most important part of onboarding data. In this article, you will learn all best practices to achieve this.
-topic: Implement
+topic: wiki-weaviate
+category: implement
 tags: ['technology']
 video-link: 
 video-caption: 
@@ -11,7 +12,7 @@ open-graph-type: article
 ---
 
 ## What is an ontology and why do you need it?
-In computer science, an ontology is an explicit description of concepts in a domain (classes), with properties describing features, attributes, and interrelationships of the entities. As a decentralized ecosystem, SeMI connects graph-based [Weaviate](/knowledge-base/implement/weaviate/) instances, where data is semantically stored. Semantic schemas or ontologies form the backbone of a semantic network and are required to link data in Weaviate. A well-formulated ontology is not only valuable for describing the meaning of data within Weaviate instances, it also enables linking data between them. Because ontologies of multiple Weaviate instances share structural elements and semantic definitions, they are ready for data enrichment.
+In computer science, an ontology is an explicit description of concepts in a domain (classes), with properties describing features, attributes, and interrelationships of the entities. As a decentralized ecosystem, SeMI connects graph-based [Weaviate](/knowledge-base/wiki-weaviate/implement/weaviate/) instances, where data is semantically stored. Semantic schemas or ontologies form the backbone of a semantic network and are required to link data in Weaviate. A well-formulated ontology is not only valuable for describing the meaning of data within Weaviate instances, it also enables linking data between them. Because ontologies of multiple Weaviate instances share structural elements and semantic definitions, they are ready for data enrichment.
 
 An ontology together with a set of data instances form a knowledge base. To initialize a Weaviate instance for your knowledge base, all the data should be structured according to the semantic schema you created. A semantic schema supported by Weaviate consists of a list of classes in a domain of discourse, with properties for each concept describing features and attributes of the concept. Properties have datatype restrictions and may be references to other classes. Weaviate ontologies typically do not have a class hierarchy, which enables usage in multiple domains. 
 
