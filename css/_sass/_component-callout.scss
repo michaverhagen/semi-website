@@ -1,0 +1,14 @@
+.callout {
+  background-color: $color-semi-accent-tint--3;
+  border: 1px solid $color-semi-accent;
+  padding: 1rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  a {
+    text-decoration: none;
+    border-bottom: none;
+    color: $color-black;
+  }
+}

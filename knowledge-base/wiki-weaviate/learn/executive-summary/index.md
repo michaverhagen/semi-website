@@ -27,8 +27,8 @@ SeMI is a [decentralized](/nomenclature/#dn) [semantic](/nomenclature/#nlp) know
 
 SeMI focuses on hyper-organized information, also known as "Knowledge graphs." SeMI enables companies to refine their data into knowledge graphs stored in Weaviate: a decentralized Semantic Knowledge Graph that is at the heart of SeMI. 
 
-<section class="help">
-    Click <a href="/knowledge-base/learn/technology-summary/">here</a> for a technical summary.
+<section class="callout">
+    <a href="/knowledge-base/learn/technology-summary/">Click here for a technical summary.</a>
 </section>
 
 ## Enable knowledge sharing on closed datasets
