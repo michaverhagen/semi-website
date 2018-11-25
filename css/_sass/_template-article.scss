@@ -24,6 +24,15 @@
     top: .5em;
 }
 
+.article-toc__category-name {
+    color: $color-almostblack-tint--6;
+    text-transform: uppercase;
+}
+
+.article-toc__list-pages {
+    margin-bottom: 1.25rem;
+}
+
 .show-toc {
     &.close {
         font-size: 1rem;
