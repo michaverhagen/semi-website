@@ -124,10 +124,9 @@
 .article-toc {
     [data-group] {
         border-top-left-radius: 1em;
-        color: $color-white;
+        display: flex;
         margin-bottom: 1em;
         padding: .5em 1em;
-        text-align: center;
         ~ dd {
             border-bottom-right-radius: 1em;
             margin-top: -1.5em;
@@ -136,7 +135,7 @@
         }
     }
 }
-[data-group='Learn'] {
+[data-group='learn'] {
     background: $color-almostblack-tint--5;
     ~ dd {
         border: 1px solid $color-almostblack-tint--5;
@@ -148,7 +147,7 @@
         }
     }
 }
-[data-group='Start'] {
+[data-group='start'] {
     background: $color-almostblack-analogous-tint--5;
     ~ dd {
         border: 1px solid $color-almostblack-analogous-tint--5;
@@ -160,7 +159,7 @@
         }
     }
 }
-[data-group='Implement'] {
+[data-group='implement'] {
     background: $color-almostblack-triadic-tint--5;
     ~ dd {
         border: 1px solid $color-almostblack-triadic-tint--5;

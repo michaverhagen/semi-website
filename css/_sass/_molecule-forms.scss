@@ -34,6 +34,7 @@ fieldset {
 	background: $color-white;
 	border: 3px solid transparent;
 	border-bottom-color: $color-semi;
+	border-bottom: 3px solid $color-semi;
 	border-top-left-radius: $scale-1;
 	border-top-right-radius: $scale-1;
 	color: $color-black;
@@ -228,6 +229,10 @@ fieldset {
 	}
 }
 
+.button:not(.button--small):not(.button-ui) {
+  min-width: 240px;
+}
+
 .button--cta {
     background: $color-support;
     //color: $color-black;
@@ -235,6 +240,14 @@ fieldset {
 		background: $color-black;
 		color: $color-white
 	}
+}
+
+.button--cta-inverted {
+  background: $color-black;
+  color: $color-white;
+  &:hover, &:focus, &:active {
+    background: $color-support;
+  }
 }
 
 .button--small {
@@ -296,7 +309,6 @@ select[multiple] {
 }
 
 .form-inline {
-    background: $color-gray-7;
     margin-bottom: 2em;
     padding: .5em 1em;
 }
@@ -325,4 +337,11 @@ select[multiple] {
 			}
 		}
 	}
+}
+
+.button-center-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

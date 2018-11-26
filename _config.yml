@@ -1,9 +1,4 @@
 weaviate_version: 0.8.6
-topic_order:
-    - _
-    - Learn
-    - Start
-    - Implement
 auto: true
 markdown: kramdown
 kramdown:  

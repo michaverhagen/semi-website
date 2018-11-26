@@ -7,9 +7,10 @@
     [type='search'] {
     	border-top-right-radius: 0;
         flex: 1;
-        padding-right: 2.5em;
+        padding-right: 1.8125em; // 29px
     	~ [type='submit'] {
-        	margin-left: -2em;
+        	margin-left: -1.5em;
+            padding: 0 .8125em;
         	&:hover, &:focus, &:active {
             	border-bottom-left-radius: 0;
             }

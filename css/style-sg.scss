@@ -11,6 +11,10 @@
 
 // Mixins
 @import 'mixins';
+@import 'mixins-breakpoints';
+
+// Accessibility helpers
+@import 'accessibility';
 
 // Cross-browser normalization
 @import 'normalize';
@@ -31,6 +35,7 @@
 // Components
 @import 'component-article-overview';
 @import 'component-breadcrumb';
+@import 'component-callout';
 @import 'component-card-author';
 @import 'component-cards';
 @import 'component-code';
@@ -46,10 +51,10 @@
 @import 'component-notify';
 @import 'component-quotes';
 @import 'component-search-meta';
-@import 'component-section__heading';
 @import 'component-sections';
 @import 'component-select-menu';
 @import 'component-table';
+@import 'component-titles';
 @import 'component-toc';
 
 // Templates
@@ -67,6 +72,3 @@
 
 // IE 10+ bug fixes
 @import 'ie-bugfix';
-
-// Temporary bugfixes
-@import 'temp-bugfixes';

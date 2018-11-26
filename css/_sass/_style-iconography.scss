@@ -1,10 +1,10 @@
+@import 'mixins';
+
 .icon {
     background-repeat: no-repeat;
     background-size: contain;
     border-bottom: none;
     display: block;
-    height: 16px;
-    width: 16px;
     i {
         @include visually-hidden;
     }
@@ -14,6 +14,14 @@
         background-size: contain;
         outline: none;
     }
+  &:not(.icon-medium) {
+    height: 16px;
+    width: 16px;
+  }
+  &.icon-medium {
+    height: 24px;
+    width: 24px;
+  }
 }
 
 .close {

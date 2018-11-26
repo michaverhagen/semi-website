@@ -1,11 +1,13 @@
 
 <div class="container">
     <div class="wrapper">
+        {% include components/searchform/search.html %}
         <div class="article-container">
             <section>
-                <h1>{{ page.tagsToShow | capitalize }} Tags</h1>
-                <p>{{ page.section-intro-text }}</p>
-
+                <header class="header-page">
+                    <h1 class="title-section">{{ page.tagsToShow | capitalize }} Tags</h1>
+                    <p>{{ page.section-intro-text }}</p>
+                </header>
                 <ul class="article-overview">
                     <section>
                         <li>

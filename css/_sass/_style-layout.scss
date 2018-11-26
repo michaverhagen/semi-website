@@ -16,6 +16,11 @@ main {
     max-width: $component-primary-max-width;
 }
 
+.wrapper--wide {
+    margin: 0 auto;
+    max-width: $component-wide-max-width;
+}
+
 .container {
     padding-left: $application-gutter;
     padding-right: $application-gutter;

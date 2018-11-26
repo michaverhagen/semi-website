@@ -1,0 +1,16 @@
+{% comment  %}
+<!--
+@param category = category name used for displaying the corresponding items per category (see _data/categories.yml)
+-->
+{% endcomment %}
+{% assign items = topic.items | sort: 'category' %}
+<ul class="list-ui article-toc__list-pages">
+    {% for item in items %}
+    {% comment  %}<!-- Loop through all items but only show relevant ones -->{% endcomment %}
+    {% if item.topic == topic.name and item.category == include.category %}
+    <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>

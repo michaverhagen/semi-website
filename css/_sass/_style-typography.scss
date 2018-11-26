@@ -56,20 +56,21 @@ hr {
 	border-top: 1em solid $color-semi;
 }
 
-@media screen and (min-width: 48em) {
-	h1:not(.section__heading) {
+@include breakpoint(mediumUp) {
+	h1:not([class*="title-"]) {
 		font-size: 2.185rem;
 	}
-	h2:not(.section__heading) {
+	h2:not([class*="title-"]) {
 		font-size: 1.875rem;
 	}
-	h3:not(.section__heading) {
+	h3:not([class*="title-"]) {
 		font-size: 1.5rem;
 	}
-	h4:not(.section__heading) {
+	h4:not([class*="title-"]) {
 		font-size: 1.35rem;
 	}
-	h5:not(.section__heading), h6:not(.section__heading) {
+	h5:not([class*="title-"]),
+	h6:not([class*="title-"]) {
 		font-size: 1.25rem;
 	}
 	p, li {
