@@ -105,7 +105,7 @@ function toMailchimp(t){
         setTimeout(function(){
             window.location.href = "/thank-you/?response-type=" + t + "&product=" + getVal("PRODUCT");
         }, 1250);
-        
+
     })
 
 }
@@ -114,11 +114,11 @@ function toMailchimp(t){
  * SEARCH HANDLING
  */
 // Set global search variables
-var searchBox             = document.getElementsByClassName("searchBox")[0],
-    articleSectionName        = "ol",
+var searchBox                  = document.getElementsByClassName("searchBox")[0],
+    articleSectionName         = "ol",
     noResultsElementClassName  = "jsNoSearchResults",
-    GoogleApiKey              = "AIzaSyCV4SC6uTz7bzYu1TmM_3iq2smlvbJOVLg",
-    GoogleSearchId            = "008702682383656025817:4lkjxykfngo";
+    GoogleApiKey               = "AIzaSyCV4SC6uTz7bzYu1TmM_3iq2smlvbJOVLg",
+    GoogleSearchId             = "008702682383656025817:4lkjxykfngo";
 
 // get the query param by name
 function getParameterByName(name) {
@@ -156,7 +156,7 @@ function loadResults(i) {
             // when results are present
             } else {
                 // if element exists and if it has the display property set to block, hide it
-                if (noResultsElement && noResultsElement.style.display === 'block') {
+                if (noResultsElement && noResultsElement.style.display === 'block' || noResultsElement.style.display === '') {
                   noResultsElement.style.display = 'none';
                 }
                 // loop over items
