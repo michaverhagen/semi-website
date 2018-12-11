@@ -145,19 +145,13 @@ function loadResults(i) {
             // load JSON
             var items = JSON.parse(this.responseText).items;
             var noResultsElement = document.getElementsByClassName(noResultsElementClassName)[0];
+            var hasResults = typeof(items) !== "undefined";
 
-            // when no results are present show no results div
-            if ( JSON.parse(this.responseText).queries.request.totalResults === 0 ) {
-                // find element by predefined classname
-                // if element exists and if it has the display property set to none, show it
-                if (noResultsElement && noResultsElement.style.display === 'none') {
-                    noResultsElement.style.display = 'block';
-                }
             // when results are present
-            } else {
-                // if element exists and if it has the display property set to block, hide it
-                if (noResultsElement && noResultsElement.style.display === '') {
-                  noResultsElement.style.display = 'none';
+            if (hasResults) {
+                // if the no results  element exists and if it has the display property set to '', hide it
+                if (noResultsElement) {
+                    noResultsElement.style.display = 'none';
                 }
                 // loop over items
                 items.forEach(function (element) {
@@ -175,6 +169,12 @@ function loadResults(i) {
                     // append the box to the article
                     document.getElementsByTagName(articleSectionName)[0].appendChild(newBox);
                 });
+            // when no results are present show the 'no results' div
+            } else {
+                // if element exists and if it has the display property set to none, show it
+                if (noResultsElement && noResultsElement.style.display === 'none') {
+                    noResultsElement.style.display = 'block';
+                }
             }
         }
     };
