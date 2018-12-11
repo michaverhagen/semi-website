@@ -144,11 +144,11 @@ function loadResults(i) {
             var newBox;
             // load JSON
             var items = JSON.parse(this.responseText).items;
+            var noResultsElement = document.getElementsByClassName(noResultsElementClassName)[0];
 
             // when no results are present show no results div
             if ( JSON.parse(this.responseText).queries.request.totalResults === 0 ) {
                 // find element by predefined classname
-                var noResultsElement = document.getElementsByClassName(noResultsElementClassName)[0];
                 // if element exists and if it has the display property set to none, show it
                 if (noResultsElement && noResultsElement.style.display === 'none') {
                     noResultsElement.style.display = 'block';
