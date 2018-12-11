@@ -1,6 +1,11 @@
 
 @import 'mixins-background-patterns';
 
+.section-standout-padding {
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+}
+
 .section-standout--secondary {
   padding-top: 3.5em;
   padding-bottom: 3.5em;
@@ -9,12 +14,9 @@
 
 .section-standout--tertiary {
   background-color: $color-almostblack;
-  h1, h2, h3, p, a, figcaption, figcaption a {
-    color: $color-white;
-  }
+
   .layout--single {
-    padding-top: 3.5em;
-    padding-bottom: 3.5em;
+    @extend .section-standout-padding;
   }
 }
 
@@ -25,6 +27,7 @@
 .section__content {
   display: flex;
 }
+
 
 .column__image {
   align-items: center;

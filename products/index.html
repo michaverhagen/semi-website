@@ -6,15 +6,83 @@ description: An overview of SeMI's products and services.
 open-graph-type: product
 ---
 
-<article class="container">
-    <div class="wrapper">
+<article>
+    <div class="container">
         <section class="section-standout--secondary">
             <div class="wrapper">
                 <div class="layout layout--single">
-                    <h1 class="header-section title-page">Products & Services</h1>
+                    <h1 class="header-section title-page">Weaviate: a decentralized knowledge graph</h1>
+                    <p>Find out how Weaviate works and helps you focus on what you do best</p>
                 </div>
             </div>
         </section>
-        {% include organism-cards-products.html %}
+        <section class="wrapper--wide">
+            <ul class="cards">
+                {% capture carOneContent %}
+                    <p>Any type of content can be placed here</p>
+                    <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
+                    <ul>
+                        <li>Characteristic or benefit</li>
+                    </ul>
+                {% endcapture %}
+
+                {% include components/card/card.html
+                    themeClass="card--pilar card--theme-weaviate-oss"
+                    imgUrl="/img/logo-icon-weaviate-oss.svg"
+                    imgAlt="Weaviate OSS logo"
+                    title="Weaviate OSS"
+                    linkUrl="https://github.com/creativesoftwarefdn/weaviate"
+                    linkExternal=true
+                    ctaText="Get started with Weaviate OSS on Github"
+                    content=carOneContent
+                %}
+
+                {% capture carTwoContent %}
+                    <p>Any type of content can be placed here</p>
+                    <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
+                    <ul>
+                        <li>Whitelabel playground</li>
+                        <li>Playground on  prem</li>
+                    </ul>
+                {% endcapture %}
+
+                {% include components/card/card.html
+                    themeClass="card--pilar card--theme-weaviate-enterprise"
+                    imgUrl="/img/logo-icon-weaviate.svg"
+                    imgAlt="Weaviate Saas Logo"
+                    title="Weaviate Saas"
+                    linkUrl="/products/weaviate.html"
+                    linkExternal=false
+                    ctaText="this is the CTA text"
+                    content=carTwoContent
+                %}
+
+                {% capture carThreeContent %}
+                    <p>Any type of content can be placed here</p>
+                    <p>Lorem ipsum dolor sit amet, consec-tetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
+                    <ul>
+                        <li>Whitelabel playground</li>
+                        <li>Playground on  prem</li>
+                        <li>Custom Knowledge base</li>
+                    </ul>
+                {% endcapture %}
+
+                {% include components/card/card.html
+                    themeClass="card--pilar card--theme-weaviate-enterprise"
+                    imgUrl="/img/logo-icon-weaviate.svg"
+                    imgAlt="Weaviate Paas Logo"
+                    title="Weaviate Paas"
+                    linkUrl="/products/weaviate.html"
+                    linkExternal=false
+                    ctaText="this is the CTA text"
+                    content=carThreeContent
+                %}
+            </ul>
+        </section>
     </div>
+    <section class="section-standout--tertiary section-standout-padding container">
+        <div class="wrapper">
+            {% include organism-cards-products-network-and-consulting.html %}
+        </div>
+    </section>
 </article>
