@@ -10,9 +10,22 @@ title: SeMI, our style; laying out interface elements
     </div>
 {% endcapture %}
 
-{% capture standoutSectionContent1 %}
+{% capture standoutSectionContentRegular %}
     {% include components/layout/layout--single.html
         content=centeredColumn
+    %}
+{% endcapture %}
+
+{% capture centeredColumnLightForeground %}
+    <h2 class="color-light header-section title-page">Standout section single column</h2>
+    <div class="section-standout__text--centered">
+        <p class="color-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>
+    </div>
+{% endcapture %}
+
+{% capture standoutSectionContentLightForeground %}
+    {% include components/layout/layout--single.html
+        content=centeredColumnLightForeground
     %}
 {% endcapture %}
 
@@ -21,11 +34,16 @@ title: SeMI, our style; laying out interface elements
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>
 {% endcapture %}
 
+{% capture textColumnLightForeground %}
+    <h3 class="color-light">Standout section double column title</h3>
+    <p class="color-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>
+{% endcapture %}
+
 {% capture imageColumn %}
     <img src="/img/styleguide/example-image_16-9.svg" alt="alternative text for image" />
 {% endcapture %}
 
-{% capture standoutSectionContent2 %}
+{% capture standoutSectionContentRegularDouble %}
     {% include components/layout/layout--double.html
         contentColumnOne=textColumn
         contentColumnTwo=textColumn
@@ -37,6 +55,22 @@ title: SeMI, our style; laying out interface elements
     {% include components/layout/layout--double.html
         columnOrder="reverse"
         contentColumnOne=textColumn
+        contentColumnTwo=imageColumn
+    %}
+{% endcapture %}
+
+{% capture standoutSectionContentRegularDoubleLightForeground %}
+    {% include components/layout/layout--double.html
+        contentColumnOne=textColumnLightForeground
+        contentColumnTwo=textColumnLightForeground
+    %}
+    {% include components/layout/layout--double.html
+        contentColumnOne=textColumnLightForeground
+        contentColumnTwo=imageColumn
+    %}
+    {% include components/layout/layout--double.html
+        columnOrder="reverse"
+        contentColumnOne=textColumnLightForeground
         contentColumnTwo=imageColumn
     %}
 {% endcapture %}
@@ -227,7 +261,7 @@ title: SeMI, our style; laying out interface elements
         </div>
         {% include components/section-standout/section-standout.html
             type="secondary"
-            content=standoutSectionContent1
+            content=standoutSectionContentRegular
         %}
         <div class="container">
             <div class="wrapper">
@@ -237,7 +271,7 @@ title: SeMI, our style; laying out interface elements
         </div>
         {% include components/section-standout/section-standout.html
             type="secondary"
-            content=standoutSectionContent2
+            content=standoutSectionContentRegularDouble
         %}
         <div class="container">
             <div class="wrapper">
@@ -255,7 +289,7 @@ title: SeMI, our style; laying out interface elements
         </div>
         {% include components/section-standout/section-standout.html
             type="tertiary"
-            content=standoutSectionContent1
+            content=standoutSectionContentLightForeground
         %}
         <div class="container">
             <div class="wrapper">
@@ -270,7 +304,7 @@ title: SeMI, our style; laying out interface elements
         </div>
         {% include components/section-standout/section-standout.html
             type="tertiary"
-            content=standoutSectionContent2
+            content=standoutSectionContentRegularDoubleLightForeground
         %}
     </section>
 
