@@ -156,7 +156,7 @@ function loadResults(i) {
             // when results are present
             } else {
                 // if element exists and if it has the display property set to block, hide it
-                if (noResultsElement && noResultsElement.style.display === 'block' || noResultsElement.style.display === '') {
+                if (noResultsElement && noResultsElement.style.display === '') {
                   noResultsElement.style.display = 'none';
                 }
                 // loop over items
