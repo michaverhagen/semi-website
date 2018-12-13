@@ -1,3 +1,5 @@
+$c-card-border: 1px solid $color-gray-5;
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -20,17 +22,22 @@
     flex-direction: column;
     padding: 2em;
     &:not(.card--pilar) {
-        background-color: $color-gray-7;
+        border: $c-card-border;
     }
     &.card--pilar {
         background-color: $color-white;
-        border: 1px solid $color-gray-5;
+        border: $c-card-border;
+    }
+    &.card--white {
+        background-color: $color-white;
+    }
+    .card__intro {
+        min-height: 6rem;
     }
     figure {
         margin-bottom: 0;
     }
-    &.card--theme-weaviate,
-    &.card--theme-weaviate-enterprise {
+    &.card--theme-weaviate {
         .button {
             background-color: $color-semi-accent;
         }
@@ -45,12 +52,42 @@
         .card__title:after {
             background-color: $color-interactive;
         }
+        li:before {
+            color: $color-interactive;
+        }
+        .card__icon img {
+            margin-top: 7px;
+        }
     }
+    &.card--theme-weaviate-enterprise {
+        background-color: $color-black;
 
+        .button {
+            background-color: $color-semi-accent;
+        }
+        .card__title:after {
+            background-color: $color-semi-accent;
+        }
+        li:before {
+            color: $color-semi-accent;
+        }
+    }
+    &.card--theme-network {
+        .button {
+            background-color: $color-network-accent;
+        }
+        .card__title:after {
+            background-color: $color-network-accent;
+        }
+    }
 }
 
 .card__icon {
-    width: 2rem;
+    width: 3rem;
+    height: 4rem;
+    img {
+        width: 100%; // img width is based on surrounding element
+    }
 }
 
 .card__title {

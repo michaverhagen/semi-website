@@ -7,20 +7,25 @@ open-graph-type: product
 ---
 
 <article>
-    <div class="container">
+    <div class="container background-hexagon">
         <section class="section-standout--secondary">
             <div class="wrapper">
                 <div class="layout layout--single">
+                    <div class="section-standout__logo">
+                        <img src="/img/logo-weaviate-emblem-color.svg" alt="Weaviate logo" />
+                    </div>
                     <h1 class="header-section title-page">The Decentralized Knowledge Graph</h1>
-                    <h3 align="center">Knowledge graphs &#8226; AI-based contextuality &#8226; Decentralized networks</h3
+                    <p align="center">Knowledge graphs &#8226; AI-based contextuality &#8226; Decentralized networks</p>
                 </div>
             </div>
         </section>
         <section class="wrapper--wide">
             <ul class="cards">
                 {% capture carOneContent %}
-                <p><b>Weaviate Open Source gives you the powerful knowledge graph software.</b></p>
-                <ul>
+                <div class="card__intro">
+                    <p><b>Weaviate Open Source gives you the powerful knowledge graph software.</b></p>
+                </div>
+                <ul class="list-bullet">
                     <li>Start deploying use cases right away</li>
                     <li>Easy to use for developers and data scientists</li>
                     <li>Scalable knowledge graph</li>
@@ -42,8 +47,10 @@ open-graph-type: product
                 %}
 
                 {% capture carTwoContent %}
-                <p><b>The power of Weaviate Open Source plus valuable enterprise tools and services.</b></p>
-                <ul>
+                <div class="card__intro">
+                    <p class="color-light"><b>The power of Weaviate Open Source plus valuable enterprise tools and services.</b></p>
+                </div>
+                <ul class="list-bullet color-light">
                     <!-- <li>All the powerful features from Weaviate Open Source</li> -->
                     <li>Scalable knowledge graph</li>
                     <li>Weaviate peer-to-peer network</li>
@@ -58,7 +65,7 @@ open-graph-type: product
 
                 {% include components/card/card.html
                     themeClass="card--pilar card--theme-weaviate-enterprise"
-                    imgUrl="/img/logo-icon-weaviate.svg"
+                    imgUrl="/img/logo-icon-weaviate-enterprise.svg"
                     imgAlt="Weaviate Enterprise logo"
                     title="Weaviate Enterprise"
                     linkUrl="/products/weaviate-enterprise.html"
@@ -68,8 +75,10 @@ open-graph-type: product
                 %}
 
                 {% capture carThreeContent %}
-                    <p><b>Weaviate Enterprise as a customized platform with your branding and advanced monetization tools.</b></p>
-                    <ul>
+                    <div class="card__intro">
+                        <p class="color-light"><b>Weaviate Enterprise as a customized platform with your branding and advanced monetization tools.</b></p>
+                    </div>
+                    <ul class="list-bullet color-light">
                         <!--<li>All the powerfull features from Weaviate Enterprise</li>-->
                         <li>Scalable knowledge graph</li>
                         <li>Weaviate peer-to-peer network</li>
@@ -86,7 +95,7 @@ open-graph-type: product
 
                 {% include components/card/card.html
                     themeClass="card--pilar card--theme-weaviate-enterprise"
-                    imgUrl="/img/logo-icon-weaviate.svg"
+                    imgUrl="/img/logo-icon-weaviate-turnkey.svg"
                     imgAlt="Weaviate Turnkey Platform"
                     title="Weaviate Turnkey Platform"
                     linkUrl="/products/weaviate-turnkey-platform.html"
@@ -97,8 +106,11 @@ open-graph-type: product
             </ul>
         </section>
     </div>
-    <section class="section-standout--tertiary section-standout-padding container">
+    <section class="section-standout--secondary section-standout-padding container">
         <div class="wrapper">
+            <div class="layout layout--single">
+                <h2 class="header-section title-section">Enhancement tools</h2>
+            </div>
             {% include organism-cards-products-network-and-consulting.html %}
         </div>
     </section>
