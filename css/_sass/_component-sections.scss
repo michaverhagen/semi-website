@@ -1,6 +1,4 @@
 
-@import 'mixins-background-patterns';
-
 .section-standout-padding {
   padding-top: 3.5em;
   padding-bottom: 3.5em;
@@ -9,7 +7,6 @@
 .section-standout--secondary {
   padding-top: 3.5em;
   padding-bottom: 3.5em;
-  @include background-pattern-semi-hexagon($color-white);
 }
 
 .section-standout--tertiary {
