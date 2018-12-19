@@ -20,8 +20,8 @@ Also install npm dependencies:
 $ npm install
 ```
 
-To build and start the **development** website:
+To build and start the **local development** website:
 
 ```bash
-$ npm run build
+$ npm run local
 ```
