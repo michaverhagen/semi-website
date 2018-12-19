@@ -23,5 +23,5 @@ $ npm install
 To build and start the local website:
 
 ```bash
-$ npm run local
+$ bundle exec jekyll serve
 ```
