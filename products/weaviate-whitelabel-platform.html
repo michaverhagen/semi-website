@@ -1,7 +1,7 @@
 ---
 bodyclass: page--products--weaviate
 layout: layout-default
-title: Weaviate White-Label Platform
+title: Weaviate Turn Key Platform
 description: A Decentralized Knowledge Graph
 open-graph-type: product
 ---
@@ -14,16 +14,126 @@ open-graph-type: product
                     <div class="section-standout__logo">
                         <img src="/img/logo-icon-weaviate.svg" alt="Weaviate logo" />
                     </div>
-                    <h1 class="header-section title-page header--centered">Weaviate White-Label Platform</h1>
+                    <h1 class="header-section title-page header--centered">Weaviate White Label Platform</h1>
                     <div class="section__payoff">
                         Build and monetize your own Weaviate Network.
                     </div>
                     <div class="section-standout__text--centered">
-                        <p>Weaviate meshes all your data and makes it available as one seamless source of knowledge for contextualized research, reporting, and re-use</p> 
-                        <p>The White-Label Platform version gives you the powerful <a href="/products/weaviate-enterprise.html">Enterprise Weaviate software</a> and full support from us to configure it to your needs. We can add your branding, we can create custom  <a href="/contextionary.html" title="Contextionaries">Contextionaries</a>, and we work with you to discover and add in whatever customisations you need. With that, we provide an SLA, large scale deployment in your own cloud or on premise and support.</p>
+                        <p>Weaviate's Knowledge Graph solves the problem of relating seemingly different datasets to each other allowing you to use one single dataset for multiple use cases. It can be used to compare and describe data from finance 🏦 to car manufacturing 🚗🏭, from zoos 🐘 to space stations 🚀 and from traditional datasets 📊 to Internet of Thing 📱 devices.</p>
                     </div>
                 </section>
-                                <section>
+                <section class="section--video">
+                    <!-- TODO: make responsive -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Azhai5tg6p0?VQ=hd1080" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </section>
+                <section class="section--weaviate-industries">
+                    <h2 class="header-section header--centered title-column">Apply Weaviate's knowledge graph across a wide range of industries</h2>
+                    <div class="section__content">
+                        <article class="section__column">
+                            <div class="column__image">
+                                <img src="/img/finance.png" srcset="/img/finance@2x.png" alt="Weaviate Finance" />
+                            </div>
+                            <div class="column__content">
+                                <h3 class="header-column header--centered title-column">Finance</h3>
+                                <p>Although there is a tremendous amount of information hidden in financial data, it is often used for a single use case like retrieving transaction or generating reports. With the Weaviate knowledge graph, you can unlock all hidden potential hidden in your datasets and even connect those datasets to other institutions securely and straightforwardly.</p>
+                            </div>
+                        </article>
+                        <article class="section__column">
+                            <div class="column__image">
+                                <img src="/img/aviation.png" srcset="/img/aviation@2x.png" alt="Weaviate transportation" />
+                            </div>
+                            <div class="column__content">
+                                <h3 class="header-column header--centered title-column">Transportation</h3>
+                                <p>From complete airports to individual cars, they all generate that contains valuable knowledge. With the Weaviate knowledge graph, you can connect multiple airports, cars or even connected-bikes to exchange information securely and straightforwardly.</p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="section__content">
+                        <article class="section__column">
+                            <div class="column__image">
+                                <img src="/img/retail.png" srcset="/img/retail@2x.png" alt="Weaviate wholesale and retail" />
+                            </div>
+                            <div class="column__content">
+                                <h3 class="header-column header--centered title-column">Wholesale and Retail</h3>
+                                <p>Billions of products move around the world, and the majority of them are stored somewhere in a database. The information hidden in these datasets is enormous and the Weaviate knowledge graph can be used to unlock this knowledge.</p>
+                            </div>
+                        </article>
+                        <article class="section__column">
+                            <div class="column__image">
+                                <img src="/img/engineering.png" srcset="/img/engineering@2x.png" alt="Weaviate engineering" />
+                            </div>
+                            <div class="column__content">
+                                <h3 class="header-column header--centered title-column">Engineering</h3>
+                                <p>Did you know that a car is made of around 30.000 parts? From cars to power plants, they are all created based on complex blueprints which contain many parts. Thanks to the Weaviate, you will be able to map out complex systems into one single knowledge graph.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="page--background__second">
+        <div class="container">
+            <div class="wrapper">
+                <section class="quote--jumbo">
+                    <p class="quote__content">SeMI's Weaviate enables us to safely exchange valuable data and insights with our peers.</p>
+                    <div class="quote__author"><img src="/img/david.jpeg" alt="image of David Toborek" /></div>
+                    <div class="footer">
+                        — <cite><strong>David Toborek</strong> <br /> Head of IT at METRONOM GmbH</cite>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="header-section title-column header--centered">Get started with Weaviate</h2>
+                    <ul class="cards">
+
+                        {% capture weaviateOssCardList %}
+                            <ul class="list-benefits">
+                                <li>Open source version of Weaviate.</li>
+                                <li>Organize and structure your data into a knowledge graph.</li>
+                                <li>Query your knowledge graph in real time for valuable insights.</li>
+                                <li>Stay in control of your datasets and privacy.</li>
+                            </ul>
+                        {% endcapture %}
+
+                        {% include components/card/card.html
+                            themeClass="card--pilar card--theme-weaviate-oss"
+                            imgUrl="/img/logo-icon-weaviate-oss.svg"
+                            imgAlt="Weaviate OSS logo"
+                            title="Weaviate OSS"
+                            linkUrl="https://github.com/creativesoftwarefdn/weaviate"
+                            linkExternal=true
+                            ctaText="Get started with Weaviate OSS on Github"
+                            content=weaviateOssCardList
+                        %}
+
+                        {% capture weaviateEnterpriseCardList %}
+                            <ul class="list-benefits">
+                                <li>Enterprise version of Weaviate</li>
+                                <li>Organize and structure your data into a knowledge graph.</li>
+                                <li>Query your knowledge graph in real time for valuable insights</li>
+                                <li>Stay in control of your datasets and privacy.</li>
+                                <li>Enrich your insights by connecting to a peer to peer network of other participants.</li>
+                                <li>Use third party metadata to enhance the value of your insights.</li>
+                                <li>Full scale implementations for multiple cloud vendors.</li>
+                                <li>Full scale on premise implementation.</li>
+                                <li>Support from SeMI's knowledge graph consultants.</li>
+                            </ul>
+                        {% endcapture %}
+
+                        {% include components/card/card.html
+                            themeClass="card--pilar card--theme-weaviate-enterprise"
+                            imgUrl="/img/logo-icon-weaviate-enterprise.svg"
+                            imgAlt="Weaviate enterprise logo"
+                            title="Weaviate Enterprise"
+                            linkUrl="/contact/"
+                            linkExternal=true
+                            ctaText="Contact us to get started with Enterprise"
+                            content=weaviateEnterpriseCardList
+                        %}
+
+                    </ul>
+                </section>
+                <section>
                     <h2 class="header-section title-section header--centered">An enterprise ready solution</h2>
                     <section class="layout layout--double">
                         <div class="layout__column">
@@ -52,55 +162,67 @@ open-graph-type: product
                             <p>Weaviate's Playground is a graphical user interface that enables you to gather insights from the knowledge graph directly. Users of Weaviate Open Source can use the Playground on this websites, and Weaviate Enterprise users receive a custom version they can run wherever suited.</p>
                         </div>
                     </section>
-                    
-                    <section class="layout layout--double layout--double-reverse">
-                        <div class="layout__column">
-                            <img class="section--img-playground" src="/img/weaviate-enterprise-playground.png" srcset="/img/weaviate-enterprise-playground@2x.png" alt="Weaviate enterprise playground" />
-                        </div>
-                        <div class="layout__column">
-                            <h3 class="header-column title-column">Predefined datasets</h3>
-                            <p>You will be able to plug in a selection of premium, predefined, knowledge graphs which can enrich your results and enhance your outcomes. These are accessed through the Weaviate Networks toolkit.</p>
-                        </div>
-                     </section>
-                                       
                 </section>
-                <section class="layout layout--single">
-                    <h2 class="title-section header--centered title-column">Features</h2>
 
-                    {% comment %}
-                        Note: To edit this table, look for the file './_data/weaviateFeatures.yml'
-                    {% endcomment %}
+                <!--<section>-->
+                    <!--<h2 class="header-section header-section&#45;&#45;centered header-section&#45;&#45;tertiary">Pay only for what you use</h2>-->
+                    <!--<table class="table-usage table-flex">-->
+                        <!--<thead>-->
+                            <!--<tr>-->
+                                <!--<th>Function</th>-->
+                                <!--<th>1-1,000 units/month</th>-->
+                                <!--<th>1001-5,000,000 units/month</th>-->
+                                <!--<th>5,000,001-20,000,000 units/month</th>-->
+                            <!--</tr>-->
+                        <!--</thead>-->
+                        <!--<tbody>-->
+                            <!--<tr>-->
+                                <!--<td>Function 1</td>-->
+                                <!--<td>Free</td>-->
+                                <!--<td>$ 1.50</td>-->
+                                <!--<td rowspan="3" class="table__cell&#45;&#45;vertically-middle">-->
+                                    <!--<a href="/contact/" title="Contact us for more information">Contact us for more information</a>-->
+                                <!--</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>Function 1</td>-->
+                                <!--<td>Free</td>-->
+                                <!--<td>$ 1.50</td>-->
+                                <!--&lt;!&ndash;<td rowspan="3">Table data cell</td>&ndash;&gt;-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>Function 1</td>-->
+                                <!--<td>Free</td>-->
+                                <!--<td>$ 1.50</td>-->
+                                <!--&lt;!&ndash;<td rowspan="3">Table data cell</td>&ndash;&gt;-->
+                            <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
+                <!--</section>-->
 
-                    {% if site.data.weaviateFeatures %}
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Feature</th>
-                                    <!---<th>Note</th>--->
-                                    <th>Weaviate Open Source</th>
-                                    <th>Weaviate Enterprise</th>
-                                    <th>Weaviate White-Label Platform</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for feature in site.data.weaviateFeatures %}
-                                    <tr>
-                                        <td>{{ feature.title }}</td>
-                                       <!--- <td>{{ feature.note }}</td>--->
-                                        <td>{% include molecule-hasFeature.html hasFeature=feature.opensource %}</td>
-                                        <td>{% include molecule-hasFeature.html hasFeature=feature.enterprise %}</td>
-                                        <td>{% include molecule-hasFeature.html hasFeature=feature.turnkey %}</td>
-                                    </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
-                    {% else %}
-                        <p>No data found.</p>
-                    {% endif %}
-                </section>
-                <section class="layout layout--single" style="margin-bottom: 6rem;">
-                    <h2 class="title-section header--centered title-column">Reach out to us for more information</h2>
-                    <a class="card__button button" href="/contact/" title="Reach out to us for more information">Contact us</a>
+                <section>
+                    <h2 class="header-section header--centered title-column">Get started now!</h2>
+                    <ul class="cards">
+
+                        {% include components/card/card.html
+                            themeClass="card--theme-weaviate-oss"
+                            imgUrl="/img/logo-icon-weaviate-oss.svg"
+                            title="Weaviate OSS"
+                            bodycopy="Want to explore how SeMI can help your business?"
+                            linkUrl="/workshop/"
+                            ctaText="Book a free eplorative workshop"
+                        %}
+
+                        {% include components/card/card.html
+                            themeClass="card--theme-weaviate-enterprise"
+                            imgUrl="/img/logo-icon-weaviate-enterprise.svg"
+                            title="Weaviate Enterprise"
+                            bodycopy="Curious how SeMI works from a technical perspective?"
+                            linkUrl="/knowledge-base/"
+                            ctaText="Go to knowledge base"
+                        %}
+
+                    </ul>
                 </section>
             </div>
         </div>
