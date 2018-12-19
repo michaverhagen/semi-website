@@ -20,8 +20,8 @@ Also install npm dependencies:
 $ npm install
 ```
 
-To build and start the local website:
+To build and start the **development** website:
 
 ```bash
-$ bundle exec jekyll serve
+$ npm run build
 ```
