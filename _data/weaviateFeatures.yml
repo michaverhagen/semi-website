@@ -1,5 +1,5 @@
 
-- title: "Scalable knowledge graph"
+- title: "<a href="/knowledge-base/features.html#KG">Scalable knowledge graph</a>"
   note: "The heart of Weaviate. See <a href='/link'>link</a> for more on knowledge graphs"
   opensource: true
   enterprise: true
