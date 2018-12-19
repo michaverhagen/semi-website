@@ -35,10 +35,11 @@ Whatever your level of writing skill keep these things in mind:
 *	Dynamic: our writing flows and is not dull
 *	Progressive: everything can be improved, there is always a next version that is better
 *	Diverse: inclusive, global, thoughtful, considerate
-These points represent us – we use them  in our writing to show the personality of SeMI
+
+**These points represent us – we use them  in our writing to show the personality of SeMI**
 
 
-# Voices
+## Voices
 We have 2 voices which are named after their audience.
 - Voice 1: _Contributor_ Programmers and other technical people
 - Voice 2: _User_ Business people, probably non-technical
