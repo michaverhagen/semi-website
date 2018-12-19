@@ -13,6 +13,10 @@ $screen-width-extralarge: 72em; // 1440px
   @else if $point == smallToMedium {
     @media (min-width: $screen-width-small) and (max-width: $screen-width-large) { @content ; }
   }
+  // < 960
+  @else if $point == toMedium {
+    @media (max-width: $screen-width-medium) { @content ; }
+  }
   // 960+
   @else if $point == mediumUp {
     @media (min-width: $screen-width-medium) { @content ; }
