@@ -27,6 +27,6 @@ Placeholder Integration with all your other Enterprise systems
 Placeholder Your own version of the Weaviate Playground
 </section>
 <section>
-Placeholder Custom branding to your look and feel
+Placeholder for the text Custom branding to your look and feel
 </section>
 </article>
