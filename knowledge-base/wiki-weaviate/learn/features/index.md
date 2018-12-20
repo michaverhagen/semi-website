@@ -29,5 +29,4 @@ Placeholder Your own version of the Weaviate Playground
 <section>
 Placeholder Custom branding to your look and feel
 </section>
-
 </article>
