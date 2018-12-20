@@ -13,10 +13,14 @@ Placeholder Scalable knowledge graph
 
 </section>
 <section>
+<a id="peertopeer">
 Placeholder Weaviate peer-to-peer network
+</a>
 </section>
 <section>
+<a id="deployment">
 Placeholder Large-scale deployment tools for your own cloud solution or on-premise
+</a>
 </section>
 <section>
 <a id="contextionary">
@@ -29,15 +33,18 @@ Placeholder Create custom Contextionaries
 
 </section>
 <section>
+<a id="integration">
 Placeholder Integration with all your other Enterprise systems
+</a>
 </section>
 <section>
-
 <a id="playground">
 Placeholder Your own version of the Weaviate Playground
 </a>
 </section>
 <section>
+<a id="branding">
 Placeholder for the text Custom branding to your look and feel
+</a>
 </section>
 </article>

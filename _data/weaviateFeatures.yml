@@ -5,25 +5,25 @@
   enterprise: true
   whitelabel: true
 
-- title: "Weaviate peer-to-peer network"
+- title: "<a href='/knowledge-base/wiki-weaviate/learn/features/#peertopeer'>Weaviate peer-to-peer network</a>"
   note: "Network your Weaviate with others in-house and outside via our peer-to-peer networking functionality"
   opensource: false
   enterprise: true
   whitelabel: true
 
-- title: "Large-scale deployment tools for your own cloud solution or on-premise"
+- title: "<a href='/knowledge-base/wiki-weaviate/learn/features/#deployment'>Large-scale deployment tools for your own cloud solution or on-premise</a>"
   note: "Weaviate can run wherever you like - in the commercial cloud, your own hardware or wherever suits your business"
   opensource: false
   enterprise: true
   whitelabel: true
 
-- title: "Create custom Contextionaries"
+- title: "<a href='/knowledge-base/wiki-weaviate/learn/features/#contextionary'>Create custom Contextionaries</a>"
   note: "As well as the native Contextionary you can have a custom Contextionary for your own syntax and terminology"
   opensource: false
   enterprise: true
   whitelabel: true
 
-- title: "Integration with all your other Enterprise systems"
+- title: "<a href='/knowledge-base/wiki-weaviate/learn/features/#integration'>Integration with all your other Enterprise systems</a>"
   note: "???"
   opensource: false
   enterprise: true
@@ -35,7 +35,7 @@
   enterprise: true
   whitelabel: true
 
-- title: "Custom branding to your look and feel"
+- title: "<a href='/knowledge-base/wiki-weaviate/learn/features/#branding'>Custom branding to your look and feel</a>"
   note: "make Weaviate integrated into your own brand language with look, feel, logos, colors etc."
   opensource: false
   enterprise: true
