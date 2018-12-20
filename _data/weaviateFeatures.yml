@@ -1,6 +1,6 @@
 
 - title: "Scalable <a href='/knowledge-base/wiki-weaviate/learn/features/#KG'>knowledge graph</a>"
-  note: "The heart of Weaviate. See <a href='/link'>link</a> for more on knowledge graphs"
+  note: "The heart of Weaviate. See <a href='/link'>link</a> for more information on knowledge graphs"
   opensource: true
   enterprise: true
   whitelabel: true
