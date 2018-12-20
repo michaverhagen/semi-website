@@ -1,5 +1,5 @@
 
-- title: "<a href='/knowledge-base/wiki-weaviate/learn/features/'>Scalable knowledge graph</a>"
+- title: "<a href='/knowledge-base/wiki-weaviate/learn/features/#KG'>Scalable knowledge graph</a>"
   note: "The heart of Weaviate. See <a href='/link'>link</a> for more on knowledge graphs"
   opensource: true
   enterprise: true
@@ -29,7 +29,7 @@
   enterprise: true
   whitelabel: true
 
-- title: "Your own version of the <a href='/products/playground.html' title='Weaviate Playground page'>Weaviate Playground</a>"
+- title: "Your own version of the <a href='/knowledge-base/wiki-weaviate/learn/features/#playground' title='Weaviate Playground page'>Weaviate Playground</a>"
   note: "A drag and drop environment that allows you to gather insights from your knowledge graph directly"
   opensource: false
   enterprise: true

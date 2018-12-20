@@ -5,8 +5,8 @@ description: This article provides a birds-eye view of SeMI technology stack. In
 topic: wiki-weaviate
 category: learn
 tags: ['technology', 'summary']
-video-link: 
-video-caption: 
+video-link:
+video-caption:
 menu-order: 2
 open-graph-type: article
 ---
