@@ -273,3 +273,17 @@ function toggle_visibility(id) {
    else
       e.style.display = 'block';
 }
+
+/*
+ * Homepage Video
+ * @param {string} | id of video element
+ */
+function playVideo(videoId) {
+   var video = document.getElementById(videoId);
+   video.play();
+}
+
+// TODO: refactor all functions above that also use the DOMContent loaded to be functions and initialized in this method
+document.addEventListener('DOMContentLoaded', function() {
+    playVideo('js-video-homepage');
+});
