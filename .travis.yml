@@ -38,6 +38,9 @@ script:
       cd _site
       # Upload data to bucket
       gsutil -m cp -r ./ gs://$BUCKET
+      # upload videos with gzip
+      gsutil -m -h "Cache-Control:public,max-age=900" cp ./assets/header.mp4 gs://$BUCKET/assets/header.mp4
+      gsutil -m -h "Cache-Control:public,max-age=900" cp ./assets/header.webm gs://$BUCKET/assets/header.webm
       # Allow viewing of files (for website purposes)
       # gsutil iam ch allUsers:objectViewer gs://$BUCKET
       # Invalidate the CDN
@@ -55,6 +58,9 @@ script:
       cd _site
       # Upload data to bucket, GZIP (-Z) and set Cache Control for CDN
       gsutil -m -h "Cache-Control:public,max-age=900" cp -Z -r ./ gs://$BUCKETDEV
+      # upload videos with gzip
+      gsutil -m -h "Cache-Control:public,max-age=900" cp ./assets/header.mp4 gs://$BUCKETDEV/assets/header.mp4
+      gsutil -m -h "Cache-Control:public,max-age=900" cp ./assets/header.webm gs://$BUCKETDEV/assets/header.webm
       # Allow viewing of files (for website purposes)
       gsutil iam ch allUsers:objectViewer gs://$BUCKETDEV
     fi
