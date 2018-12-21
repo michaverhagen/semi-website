@@ -1,3 +1,6 @@
+
+@import 'mixins-breakpoints';
+
 label, button, [type='submit'] {
 	cursor: pointer;
 }
@@ -230,7 +233,12 @@ fieldset {
 }
 
 .button:not(.button--small):not(.button-ui) {
-  min-width: 240px;
+  @include breakpoint(smallOnly) {
+    width: 100%;
+  }
+  @include breakpoint(mediumUp) {
+    min-width: 240px;
+  }
 }
 
 .button--cta {

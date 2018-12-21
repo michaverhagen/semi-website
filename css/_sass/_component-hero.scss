@@ -18,13 +18,13 @@
 }
 
 .hero__text {
-  margin-top: 15rem;
-  margin-left: 2em;
+  margin: 11rem 2em 0;
   position: relative;
   vertical-align: middle;
   z-index: 2;
 
   @include breakpoint(mediumUp) {
+    margin-top: 15rem;
     max-width: 60vw;
   }
   @include breakpoint(largeUp) {
