@@ -279,8 +279,10 @@ function toggle_visibility(id) {
  * @param {string} | id of video element
  */
 function playVideo(videoId) {
-   var video = document.getElementById(videoId);
-   video.play();
+  var video = document.getElementById(videoId);
+  if (video) {
+    video.play();
+  }
 }
 
 // TODO: refactor all functions above that also use the DOMContent loaded to be functions and initialized in this method
