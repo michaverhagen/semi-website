@@ -1,5 +1,5 @@
 User-agent: *
-Noindex: /styleguide/*
+Noindex: /service-manual/*
 Noindex: /thank-you/
 Noindex: /search/
 
