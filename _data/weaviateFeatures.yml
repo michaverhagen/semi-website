@@ -5,8 +5,38 @@
   enterprise: true
   whitelabel: true
 
-- title: "Weaviate peer-to-peer <a href='/knowledge-base/wiki-weaviate/learn/features/#peertopeer'>network</a>"
+- title: "Run Weaviate in your own datacenters"
+  note: ""
+  opensource: true
+  enterprise: true
+  whitelabel: true
+
+- title: "Run Weaviate with the public cloud providers"
+  note: ""
+  opensource: true
+  enterprise: true
+  whitelabel: true
+
+- title: "Create custom Weaviate peer-to-peer <a href='/knowledge-base/wiki-weaviate/learn/features/#peertopeer'>networks</a>"
   note: "Network your Weaviate with others in-house and outside via our peer-to-peer networking functionality"
+  opensource: true
+  enterprise: true
+  whitelabel: true
+
+- title: "Access to highly skilled professional data scientists to help you solve your case"
+  note: ""
+  opensource: true
+  enterprise: true
+  whitelabel: true
+
+- title: "Have SeMI run Weaviate for you in a datacenter of choice"
+  note: ""
+  opensource: false
+  enterprise: true
+  whitelabel: true
+
+- title: "Join <a href='/product/networking.html'>powerful other Weaviate networks</a> to enhance your data"
+  note: ""
   opensource: false
   enterprise: true
   whitelabel: true
@@ -23,8 +53,8 @@
   enterprise: true
   whitelabel: true
 
-- title: "<a href='/knowledge-base/wiki-weaviate/learn/features/#integration'>Integration</a> with all your other Enterprise systems"
-  note: "???"
+- title: "Access to highly skilled professional business consultants to help you setup your platform"
+  note: ""
   opensource: false
   enterprise: true
   whitelabel: true
@@ -41,8 +71,8 @@
   enterprise: false
   whitelabel: true
 
-- title: "..."
-  note: "..."
+- title: "Monitize your data by using your Weaviate"
+  note: ""
   opensource: false
   enterprise: false
   whitelabel: true
