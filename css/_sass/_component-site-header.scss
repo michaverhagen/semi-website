@@ -3,9 +3,11 @@
   position: absolute;
   width: 100%;
   z-index: 2;
+}
 
+.site-header--overlay {
   .header-main,
   .nav-main {
-    max-width: none;
+    max-width: $component-wide-max-width;
   }
 }

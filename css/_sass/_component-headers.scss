@@ -13,9 +13,10 @@
     }
 }
 
-.header-main, .nav-main {
-    margin: 0 auto;
-    max-width: $component-primary-max-width;
+.header-main,
+.nav-main {
+  margin: 0 auto;
+  max-width: $component-primary-max-width;
 }
 
 .header-page {
