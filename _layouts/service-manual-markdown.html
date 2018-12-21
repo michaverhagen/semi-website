@@ -1,4 +1,4 @@
-{% include head-sg.html %}
+{% include head-sm.html %}
 <script>
     function escapeTxtInCodeTag($txt) {
  $callback = function($matches) {
@@ -10,12 +10,21 @@
 
 </script>
 
-<body class="body--styleguide">
+<body class="body--service-manual">
 
 {% include organism-header.html %}
 
 <main>
-    {{ content }}
+    <article class="article style-sm container">
+            
+            <div class="wrapper">
+
+                {{ content }}
+
+            </div>
+
+    </article>
+
 </main>
 
 <!-- code highlights -->
