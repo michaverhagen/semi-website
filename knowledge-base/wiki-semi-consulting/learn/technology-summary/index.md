@@ -2,7 +2,7 @@
 layout: article-start
 title: Technology Summary
 description: This article provides a birds-eye view of SeMI technology stack. Including references to relating sources.
-topic: wiki-weaviate
+topic: wiki-semi-consulting
 category: learn
 tags: ['technology', 'summary']
 video-link:

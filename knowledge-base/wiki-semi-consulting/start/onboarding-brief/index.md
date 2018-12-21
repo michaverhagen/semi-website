@@ -2,7 +2,7 @@
 layout: article-start
 title: Onboarding Brief
 description: What it means to onboard to the SeMI Network.
-topic: wiki-weaviate
+topic: wiki-semi-consulting
 category: start
 tags: ['business', 'technology']
 video-link: 

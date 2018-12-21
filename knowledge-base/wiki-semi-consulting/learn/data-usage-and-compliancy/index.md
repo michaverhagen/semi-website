@@ -2,7 +2,7 @@
 layout: article-start
 title: Data Usage & Compliancy
 description: What does it mean for your organization from a practical, safety and compliance point of view when you use SeMI?
-topic: wiki-weaviate
+topic: wiki-semi-consulting
 category: learn
 tags: ['legal', 'technology']
 video-link: 

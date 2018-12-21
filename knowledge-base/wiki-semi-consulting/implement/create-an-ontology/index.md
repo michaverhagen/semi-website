@@ -2,7 +2,7 @@
 layout: article-start
 title: Create an Ontology
 description: Your ontology to describe your data is the most important part of onboarding data. In this article, you will learn all best practices to achieve this.
-topic: wiki-weaviate
+topic: wiki-semi-consulting
 category: implement
 tags: ['technology']
 video-link: 

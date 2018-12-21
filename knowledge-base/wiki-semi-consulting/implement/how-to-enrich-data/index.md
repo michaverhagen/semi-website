@@ -2,7 +2,7 @@
 layout: article-start
 title: Enriching of Data
 description: Sometimes data tells a lot more than the information you have at hand. In this article you will learn how to best enrich your data with meta-data.
-topic: wiki-weaviate
+topic: wiki-semi-consulting
 category: implement
 tags: ['technology']
 video-link: 

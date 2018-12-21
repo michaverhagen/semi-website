@@ -2,7 +2,7 @@
 layout: article-start
 title: Executive Summary
 description: Why is SeMI a great tool to enrich your current business offerings? In this primer you will learn why SeMI is so valuable for your business.
-topic: wiki-weaviate
+topic: wiki-semi-consulting
 category: learn
 tags: ['business', 'summary']
 video-link: 
