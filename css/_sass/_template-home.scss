@@ -1,7 +1,10 @@
 .page--home {
-    background: $color-semi;
-    // background: url('/img/pattern-semi.svg');
-    background: url('/img/pattern-semi.png');
+    background: $color-almostblack;
+
+    .nav-main--home a {
+        background-color: $color-white;
+        color: $color-black;
+    }
     @media screen and (min-width: 56em) {
         background-size: 140%;
         background-position: center -190px;
@@ -25,7 +28,7 @@
     }
     .nav-main {
         
-        li {
+        li:not(.nav-main--home) {
             a {
                 color: $color-white;
             }

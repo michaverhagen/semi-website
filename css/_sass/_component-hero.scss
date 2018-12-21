@@ -8,7 +8,7 @@
   max-height: 150vw;
   position: relative;
   overflow: hidden;
-  background-color: $color-semi;
+  background-color: $color-black;
 }
 
 .hero__content {
@@ -16,22 +16,24 @@
   margin: 0 auto;
   position: relative;
 
-  &:before {
-    content: '';
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -.3125em;
-    display: inline-block;
-  }
+  //&:before {
+  //  content: '';
+  //  display: inline-block;
+  //  //margin-right: -.3125em;
+  //  height: 100%;
+  //  vertical-align: middle;
+  //}
 }
 
 .hero__text {
-  max-width: 83.3333333333vw;
-  vertical-align: middle;
-  padding: 4.1666666667vw;
-  margin-left: 4.1666666667vw;
-  display: inline-block;
+  margin-top: 15rem;
+  margin-left: .5em;
+  //display: inline-block;
+  //padding: 4.1666666667vw;
+  //margin-left: 4.1666666667vw;
+  //max-width: 83.3333333333vw;
   position: relative;
+  vertical-align: middle;
   z-index: 2;
 
   @include breakpoint(mediumUp) {
