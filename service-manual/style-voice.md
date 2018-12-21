@@ -1,5 +1,5 @@
 ---
-layout: styleguide-markdown
+layout: service-manual-markdown
 title: SeMI, our style; voice and tone in website general for contrib and user
 ---
 
@@ -15,7 +15,7 @@ Here are some well-constructed guides
 
 
 *	[Frontify](https://frontify.com/blog/why-voice-and-tone-belong-in-style-guides)
-* [Mailchimp](https://styleguide.mailchimp.com/voice-and-tone/)
+* [Mailchimp](https://service-manual.mailchimp.com/voice-and-tone/)
 *	[A list apart](https://alistapart.com/about/style-guide)
 *	[Gather content](https://gathercontent.com/blog/voice-tone-style-whys-wheres-hows)
 
