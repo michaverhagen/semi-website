@@ -1,5 +1,10 @@
-.page--knowledge-base .header-container {
-    margin-bottom: 1rem;
+.page--knowledge-base  {
+    .layout--double > .layout__column {
+        margin-bottom: 2em;
+    }
+    .header-container {
+        margin-bottom: 1rem;
+    }
 }
 
 .article-container {
@@ -23,7 +28,7 @@
     display: none;
 }
 
-.article-toc {  
+.article-toc {
     position: relative;
     top: .5em;
 }
