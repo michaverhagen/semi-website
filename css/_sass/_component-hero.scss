@@ -15,23 +15,11 @@
   height: 100%;
   margin: 0 auto;
   position: relative;
-
-  //&:before {
-  //  content: '';
-  //  display: inline-block;
-  //  //margin-right: -.3125em;
-  //  height: 100%;
-  //  vertical-align: middle;
-  //}
 }
 
 .hero__text {
   margin-top: 15rem;
-  margin-left: .5em;
-  //display: inline-block;
-  //padding: 4.1666666667vw;
-  //margin-left: 4.1666666667vw;
-  //max-width: 83.3333333333vw;
+  margin-left: 2em;
   position: relative;
   vertical-align: middle;
   z-index: 2;
@@ -41,6 +29,10 @@
   }
   @include breakpoint(largeUp) {
     max-width: 50vw;
+  }
+
+  .button {
+    margin-top: 1rem;
   }
 }
 
@@ -64,7 +56,7 @@
 
   &:before {
     content: '';
-    background-color: rgba(0,0,0,0.1);
+    background-color: #00152bd4;
     display: block;
     position: absolute;
     top: 0;
