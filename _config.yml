@@ -1,5 +1,4 @@
 weaviate_version: 0.8.6
-auto: true
 markdown: kramdown
 kramdown:  
     parse_block_html: false

@@ -1,7 +1,7 @@
 ---
 bodyclass: page--products--weaviate
 layout: layout-default
-title: Weaviate Enterprise
+title: Weaviate White-Label Platform
 description: The Decentralized Knowledge Graph
 open-graph-type: product
 ---
@@ -12,15 +12,15 @@ open-graph-type: product
             <div class="wrapper">
                 <section class="layout layout--single">
                     <div class="section-standout__logo">
-                        <img src="/img/logo-icon-weaviate-enterprise.svg" alt="Weaviate logo" />
+                        <img src="/img/logo-icon-weaviate-whitelabel.svg" alt="Weaviate logo" />
                     </div>
-                    <h1 class="header-section title-page header--centered">Weaviate Enterprise</h1>
+                    <h1 class="header-section title-page header--centered">Weaviate White-Label Platform</h1>
                     <div class="section__payoff">
-                        The Decentralized Knowledge Graph
+                        Build and monetize your own Weaviate Network.
                     </div>
                     <div class="section-standout__text--centered">
                         <p>Weaviate meshes all your data and makes it available as one seamless source of knowledge for contextualized research, reporting, and re-use</p>
-                        <p>The Enterprise version based on the powerful open source Weaviate software and also allows you to configure it however you want. You can create custom <a href="/contextionary.html" title="Contextionaries">Contextionaries</a>, and use your own team to add in whatever customisations you need. With that, we provide an SLA, large scale deployment in your own cloud or on premise and support.</p>
+                        <p>The white-label Platform version is based on the Weaviate software and we will configure it however you want. We can create custom <a href="/knowledge-base/wiki-weaviate/learn/features/#contextionary" title="Contextionaries">Contextionaries</a> for you, and we will work with your own team to add in whatever customisations you need. We also provide you with monetization tools to generate reveniew with your Weaviate. With that, we provide an SLA, large scale deployment in your own cloud or on premise and support.</p>
                     </div>
                 </section>
                 <section>
@@ -76,7 +76,7 @@ open-graph-type: product
                                 <thead>
                                     <tr>
                                         <th>Feature</th>
-                                        <th>Note</th>
+                                        <!---<th>Note</th>--->
                                         <th>Weaviate Open Source</th>
                                         <th>Weaviate Enterprise</th>
                                         <th>Weaviate White-Label</th>
@@ -86,7 +86,7 @@ open-graph-type: product
                                     {% for feature in site.data.weaviateFeatures %}
                                         <tr>
                                             <td>{{ feature.title }}</td>
-                                            <td>{{ feature.note }}</td>
+                                            <!---<td>{{ feature.note }}</td>--->
                                             <td class="table__cell--vertically-middle">{% include molecule-hasFeature.html hasFeature=feature.opensource %}</td>
                                             <td class="table__cell--vertically-middle">{% include molecule-hasFeature.html hasFeature=feature.enterprise %}</td>
                                             <td class="table__cell--vertically-middle">{% include molecule-hasFeature.html hasFeature=feature.whitelabel %}</td>
