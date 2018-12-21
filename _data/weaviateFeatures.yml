@@ -11,7 +11,7 @@
   enterprise: true
   whitelabel: true
 
-- title: "Run Weaviate with the public cloud providers"
+- title: "Run Weaviate with public cloud providers"
   note: ""
   opensource: true
   enterprise: true
@@ -23,7 +23,7 @@
   enterprise: true
   whitelabel: true
 
-- title: "Access to highly skilled professional data scientists to help you solve your case"
+- title: "Access to highly skilled professional data scientists to help you solve your use cases"
   note: ""
   opensource: true
   enterprise: true
@@ -35,7 +35,7 @@
   enterprise: true
   whitelabel: true
 
-- title: "Join <a href='/product/networking.html'>powerful other Weaviate networks</a> to enhance your data"
+- title: "Join <a href='/product/networking.html'>other powerful Weaviate networks</a> to enhance your data"
   note: ""
   opensource: false
   enterprise: true
@@ -53,7 +53,7 @@
   enterprise: true
   whitelabel: true
 
-- title: "Access to highly skilled professional business consultants to help you setup your platform"
+- title: "Access to highly-skilled professional business consultants to help you set up your platform"
   note: ""
   opensource: false
   enterprise: true
@@ -71,7 +71,7 @@
   enterprise: false
   whitelabel: true
 
-- title: "Monitize your data by using your Weaviate"
+- title: "Monetize your data by using your Weaviate"
   note: ""
   opensource: false
   enterprise: false
