@@ -1,5 +1,5 @@
 ---
-layout: styleguide
+layout: service-manual
 title: SeMI, our style; laying out interface elements
 ---
 
@@ -75,13 +75,13 @@ title: SeMI, our style; laying out interface elements
     %}
 {% endcapture %}
 
-<article class="article semi-sg">
+<article class="article style-sm">
     <div class=" container">
         <div class="wrapper">
             <h2>Layout</h2>
 
-            <section class="semi-sg-grid">
-                <h3 id="semi-sg-grid">Flexible grid</h3>
+            <section class="style-sm-grid">
+                <h3 id="style-sm-grid">Flexible grid</h3>
                 <p>SeMI’s overall grid is a 12-column grid with a nested 12-column subgrid for the main content area. The grid’s gutter is set at 1em.</p>
                 <ul class="list-ui">
                     <li></li>
@@ -101,7 +101,7 @@ title: SeMI, our style; laying out interface elements
         </div>
     </div>
 
-    <section class="semi-sg-section">
+    <section class="style-sm-section">
         <div class="container">
             <div class="wrapper">
                 <h3>Content area (container and wrapper)</h3>
@@ -109,23 +109,23 @@ title: SeMI, our style; laying out interface elements
             </div>
         </div>
 
-        <div class="semi-sg-ui-layout">
-            <div class="semi-sg-ui-layout__item"></div><!-- gutter -->
-            <div class="semi-sg-ui-layout__item semi-sg-ui-layout__wrapper"></div><!-- wrapper -->
-            <div class="semi-sg-ui-layout__item"></div><!-- gutter -->
+        <div class="style-sm-ui-layout">
+            <div class="style-sm-ui-layout__item"></div><!-- gutter -->
+            <div class="style-sm-ui-layout__item style-sm-ui-layout__wrapper"></div><!-- wrapper -->
+            <div class="style-sm-ui-layout__item"></div><!-- gutter -->
         </div>
 
     </section>
 
     <div class="container">
         <div class="wrapper">
-            <div class="semi-sg-section-separator-block semi-sg-section-separator-block--spacing"></div>
+            <div class="style-sm-section-separator-block style-sm-section-separator-block--spacing"></div>
         </div>
     </div>
 
     <div class="container">
         <div class="wrapper">
-            <section class="semi-sg-section">
+            <section class="style-sm-section">
                 <h3>Responsive breakpoints</h3>
                 <p>Five breakpoints are defined for the responsive layout shift. These are <em>not defined towards specific current devices</em>, but rather come in effect when the layout threatens to break for a particular breakpoint.</p>
                 <ol>
@@ -137,12 +137,12 @@ title: SeMI, our style; laying out interface elements
                 </ol>
             </section>
 
-            <section class="semi-sg-section">
+            <section class="style-sm-section">
                 <h3>Negative space</h3>
                 <p>Negative, or white, space is used to provide way-finding throughout the SeMI site and its content.</p>
             </section>
 
-            <section id="semi-sg-vert-rhythm" class="semi-sg-section">
+            <section id="style-sm-vert-rhythm" class="style-sm-section">
                 <h3>Modular scaling</h3>
                 <p>Vertical rhythm is established by a <strong>modular scale</strong>. A modular scale defines meaningful ratios of related proportions between page elements in order to create a unified visual rhythm and consistency. The <code>$scale-base</code> variable is the base scale measurement. The modular scale is derived from the variable <code>$scale-interval</code>. This can provide an infinite number of measurements that adhere to a consistent rhythm. Editing the base variable measurement results in a proportional change throughout all variables.</p>
                 <p>The modular scale is used for dimensions (margins, padding, width, height, etc.), typographic scale, etc. The same rhythm is also used for animation speed, opacity levels, and such.</p>
@@ -152,22 +152,22 @@ title: SeMI, our style; laying out interface elements
 
     <div class="container">
         <div class="wrapper">
-            <section class="semi-sg-section">
+            <section class="style-sm-section">
                 <h3>Layout single column</h3>
                 <div class="layout layout--single">
                     <div class="layout__column">
                         <!-- this part is purely for the example -->
-                        <div class="semi-sg-ui-layout__fill-column">
+                        <div class="style-sm-ui-layout__fill-column">
                             <p>This layout column will automatically inherit the width of the inner child.</p>
                         </div>
                     </div>
                 </div>
-                <section class="semi-sg-codesnippet">
+                <section class="style-sm-codesnippet">
                     <p><abbr>HTML</abbr> code snippet</p>
                     <xmp><div class="layout layout--single">
                         <div class="layout__column">
                             <!-- this part is purely for the example -->
-                            <div class="semi-sg-ui-layout__fill-column">
+                            <div class="style-sm-ui-layout__fill-column">
                                 <p>This layout column will automatically inherit the width of the inner child.</p>
                             </div>
                         </div>
@@ -177,32 +177,32 @@ title: SeMI, our style; laying out interface elements
                 <div class="layout layout--double">
                     <div class="layout__column">
                         <!-- this part is purely for the example -->
-                        <div class="semi-sg-ui-layout__fill-column">
+                        <div class="style-sm-ui-layout__fill-column">
                             <p>Column one</p>
                             <p>This layout column will automatically inherit the width of the inner child.</p>
                         </div>
                     </div>
                     <div class="layout__column">
                         <!-- this part is purely for the example -->
-                        <div class="semi-sg-ui-layout__fill-column">
+                        <div class="style-sm-ui-layout__fill-column">
                             <p>Column two</p>
                             <p>This layout column will automatically inherit the width of the inner child.</p>
                         </div>
                     </div>
                 </div>
-                <section class="semi-sg-codesnippet">
+                <section class="style-sm-codesnippet">
                     <p><abbr>HTML</abbr> code snippet</p>
                     <xmp><div class="layout layout--double">
                         <div class="layout__column">
                             <!-- this part is purely for the example -->
-                            <div class="semi-sg-ui-layout__fill-column">
+                            <div class="style-sm-ui-layout__fill-column">
                                 <p>Column one</p>
                                 <p>This layout column will automatically inherit the width of the inner child.</p>
                             </div>
                         </div>
                         <div class="layout__column">
                             <!-- this part is purely for the example -->
-                            <div class="semi-sg-ui-layout__fill-column">
+                            <div class="style-sm-ui-layout__fill-column">
                                 <p>Column two</p>
                                 <p>This layout column will automatically inherit the width of the inner child.</p>
                             </div>
@@ -213,32 +213,32 @@ title: SeMI, our style; laying out interface elements
                 <div class="layout layout--double layout--double-reverse">
                     <div class="layout__column">
                         <!-- this part is purely for the example -->
-                        <div class="semi-sg-ui-layout__fill-column">
+                        <div class="style-sm-ui-layout__fill-column">
                             <p>Column one</p>
                             <p>This layout column will automatically inherit the width of the inner child.</p>
                         </div>
                     </div>
                     <div class="layout__column">
                         <!-- this part is purely for the example -->
-                        <div class="semi-sg-ui-layout__fill-column">
+                        <div class="style-sm-ui-layout__fill-column">
                             <p>Column two</p>
                             <p>This layout column will automatically inherit the width of the inner child.</p>
                         </div>
                     </div>
                 </div>
-                <section class="semi-sg-codesnippet">
+                <section class="style-sm-codesnippet">
                     <p><abbr>HTML</abbr> code snippet</p>
                     <xmp><div class="layout layout--double layout--double-reverse">
                         <div class="layout__column">
                             <!-- this part is purely for the example -->
-                            <div class="semi-sg-ui-layout__fill-column">
+                            <div class="style-sm-ui-layout__fill-column">
                                 <p>Column one</p>
                                 <p>This layout column will automatically inherit the width of the inner child.</p>
                             </div>
                         </div>
                         <div class="layout__column">
                             <!-- this part is purely for the example -->
-                            <div class="semi-sg-ui-layout__fill-column">
+                            <div class="style-sm-ui-layout__fill-column">
                                 <p>Column two</p>
                                 <p>This layout column will automatically inherit the width of the inner child.</p>
                             </div>
@@ -265,7 +265,7 @@ title: SeMI, our style; laying out interface elements
         %}
         <div class="container">
             <div class="wrapper">
-                <div class="semi-sg-section-separator-block semi-sg-section-separator-block--spacing-bottom"></div>
+                <div class="style-sm-section-separator-block style-sm-section-separator-block--spacing-bottom"></div>
                 <h4>Example of secondary standout section with <strong>double columns</strong>:</h4>
             </div>
         </div>
@@ -275,11 +275,11 @@ title: SeMI, our style; laying out interface elements
         %}
         <div class="container">
             <div class="wrapper">
-                <div class="semi-sg-section-separator-block"></div>
+                <div class="style-sm-section-separator-block"></div>
             </div>
         </div>
     </section>
-    <section class="semi-sg-section" id="sg-anchor-tertiary-standout-section">
+    <section class="style-sm-section" id="sg-anchor-tertiary-standout-section">
         <div class="container">
             <div class="wrapper">
                 <h3>Tertiary standout section</h3>
@@ -293,7 +293,7 @@ title: SeMI, our style; laying out interface elements
         %}
         <div class="container">
             <div class="wrapper">
-                <div class="semi-sg-section-separator-block semi-sg-section-separator-block--spacing-top"></div>
+                <div class="style-sm-section-separator-block style-sm-section-separator-block--spacing-top"></div>
             </div>
         </div>
         <!-- TODO refactor inline styling -->
