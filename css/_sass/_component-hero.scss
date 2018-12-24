@@ -27,6 +27,12 @@
 
   &.hero__text--centered {
     text-align: center;
+
+    // honor maximum width of paragraphs
+    p {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   @include breakpoint(mediumUp) {
     max-width: 60vw;
