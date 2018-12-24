@@ -27,12 +27,18 @@
 
   &.hero__text--centered {
     text-align: center;
+
+    // honor maximum width of paragraphs
+    p {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   @include breakpoint(mediumUp) {
     max-width: 60vw;
   }
   @include breakpoint(largeUp) {
-    max-width: 50vw;
+    max-width: 72vw;
   }
 
   .button {

@@ -42,3 +42,21 @@
     font-size: 3rem; // 48px
   }
 }
+
+.title-hero {
+  font-weight: 800;
+}
+
+// specific to current hero text
+@include breakpoint(smallOnly) {
+  .title-hero { font-size: 1.2rem; }
+}
+@include breakpoint(smallToMedium) {
+  .title-hero { font-size: 2rem; }
+}
+@include breakpoint(medium) {
+
+}
+@include breakpoint(largeUp) {
+  .title-hero { font-size: 3.2rem; }
+}

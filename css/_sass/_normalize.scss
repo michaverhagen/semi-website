@@ -50,6 +50,10 @@ canvas, iframe, img, video, svg {
 	max-width: 100%; // Shrink-wrap elements to a maximum width of 100% of parent to make them responsive by default
 }
 
+img {
+	max-height: 100%; // in FF SVG has an overflow if this is not set
+}
+
 hr { // Address differences in horizontal rules between Firefox and other browsers
     border: 0;
     border-top: 1px solid currentcolor;
