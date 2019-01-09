@@ -16,7 +16,7 @@ description: SeMI's Knowledge Base.
 <p>A unique feature of Weaviate is the networking functionality. You can connect two distinct Weaviate instances together from different organisations and take advantage of both datasets at once, as though they were one Weaviate. This networking is completely custom and secure for both parties. You can share as much or as little of your data as you want to get maximum advantage of the share data and not disclose data you don’t want to share</p>
 </section>
 <section>
-<a id="deployment">Placeholder Large-scale deployment tools for your own cloud solution or on-premise</a>
+<a id="deployment">Large-scale deployment tools for your own cloud solution or on-premise</a>
 <p>SeMI has tools to deploy your dataset (however large) wherever you choose. This can be in your own cloud, a commercial cloud or on premise.</p>
 </section>
 <section>
