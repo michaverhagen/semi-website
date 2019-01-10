@@ -5,20 +5,20 @@ description: Your ontology to describe your data is the most important part of o
 topic: wiki-semi-consulting
 category: implement
 tags: ['technology']
-video-link: 
-video-caption: 
+video-link:
+video-caption:
 menu-order: 1
 open-graph-type: article
 ---
 
 ## What is an ontology and why do you need it?
-In computer science, an ontology is an explicit description of concepts in a domain (classes), with properties describing features, attributes, and interrelationships of the entities. As a decentralized ecosystem, SeMI connects graph-based [Weaviate](/knowledge-base/wiki-weaviate/implement/weaviate/) instances, where data is semantically stored. Semantic schemas or ontologies form the backbone of a semantic network and are required to link data in Weaviate. A well-formulated ontology is not only valuable for describing the meaning of data within Weaviate instances, it also enables linking data between them. Because ontologies of multiple Weaviate instances share structural elements and semantic definitions, they are ready for data enrichment.
+In computer science, an ontology is an explicit description of concepts in a domain (classes), with properties describing features, attributes, and interrelationships of the entities. As a decentralized ecosystem, SeMI connects graph-based [Weaviate](/knowledge-base/wiki-semi-consulting/implement/weaviate/) instances, where data is semantically stored. Semantic schemas or ontologies form the backbone of a semantic network and are required to link data in Weaviate. A well-formulated ontology is not only valuable for describing the meaning of data within Weaviate instances, it also enables linking data between them. Because ontologies of multiple Weaviate instances share structural elements and semantic definitions, they are ready for data enrichment.
 
-An ontology together with a set of data instances form a knowledge base. To initialize a Weaviate instance for your knowledge base, all the data should be structured according to the semantic schema you created. A semantic schema supported by Weaviate consists of a list of classes in a domain of discourse, with properties for each concept describing features and attributes of the concept. Properties have datatype restrictions and may be references to other classes. Weaviate ontologies typically do not have a class hierarchy, which enables usage in multiple domains. 
+An ontology together with a set of data instances form a knowledge base. To initialize a Weaviate instance for your knowledge base, all the data should be structured according to the semantic schema you created. A semantic schema supported by Weaviate consists of a list of classes in a domain of discourse, with properties for each concept describing features and attributes of the concept. Properties have datatype restrictions and may be references to other classes. Weaviate ontologies typically do not have a class hierarchy, which enables usage in multiple domains.
 
 
 ## How to build an ontology
-Developing an ontology includes defining classes, properties and describing allowed values and references for the properties. The structure of the ontology is simple and straightforward as described, but building an ontology from scratch can be challenging. Suggested is to take an iterative approach to ontology development. It is important to keep in mind that an ontology is a model of the reality of the world, so the classes should describe concepts and objects that reflect this reality (in your domain). 
+Developing an ontology includes defining classes, properties and describing allowed values and references for the properties. The structure of the ontology is simple and straightforward as described, but building an ontology from scratch can be challenging. We suggested taking an iterative approach to ontology development. It is important to keep in mind that an ontology is a model of a part of the real world, so the classes should describe concepts and objects that reflect this reality (in your domain).
 
 ### Steps to build an ontology (inspired by [Ontology Development 101](https://protege.stanford.edu/publications/ontology_development/ontology101.pdf)):
 
@@ -27,7 +27,7 @@ The domain of the ontology won’t be hard to define assuming you are going to d
 2. **Consider reusing existing ontologies.**
 There are open source libraries of reusable ontologies and knowledge bases available. Be inspired by the structure and definitions of names in these ontologies. Assuming that have your own (non-semantic) dataset as a basis, you might be able to enrich existing ontologies with your classes.
 3. **Define the classes.**
-The important terms, objects and concepts in your domain are classes. Give them a name and a definition. 
+The important terms, objects and concepts in your domain are classes. Give them a name and a definition.
 4. **Define the properties of classes.**
 The properties are the semantics of the instances in a database. Properties have a name, a description and also a description of possible data value formats. Supported data types are integers, numbers, date, boolean and string. Additionally, cross-references to classes are also supported as datatype for a property.
 
@@ -37,7 +37,7 @@ The properties are the semantics of the instances in a database. Properties have
 #### Schema structure
 
 - Keep the distinction between a class and its name in mind. Classes don’t represent the words of the concepts in your domain, but the concepts itself. Therefore, synonyms for the same concept represent the same class.
-- Sometimes it’s hard to decide whether a specific distinction should be modeled as property value or as a new class. Some tips:
+- Sometimes it’s hard to decide whether a specific distinction should be modeled as a property value or as a new class. Some tips:
 	- If a concept with different property values becomes a restriction for properties in other classes, then the concepts should be a new class.
 	- If a distinction is important in the domain, then create a new class.
 	- Classes of individual instances don't change often, so if the concept you have in mind is rather static, then create a new class for it.
@@ -59,7 +59,7 @@ The properties are the semantics of the instances in a database. Properties have
 
 Some classes are useful for multiple domains. To help you get started, you can adopt class names and associated data instances from this list. Associated data instance groups are suggested, so data combination will be ensured. Data combination increases data value and insights, so please consider adopting these standard distributions.
 
-- **AgeGroup.** For the sake of anonymity of individual people, *privacy should be ensured by design*. This may entail assigning people to age groups instead of giving away exact ages. Age groups can be defined in time frames of five years, but suggested age groups are:
+- **AgeGroup.** For the anonymity of individuals, *privacy should be ensured by design*. This may entail assigning people to age groups instead of giving away exact ages. Age groups can be defined in time frames of five years, suggested age groups are:
 	- 0–14 (Children)
 	- 15–24 (Youth)
 	- 25–64 (Adults)
@@ -91,7 +91,7 @@ Some classes are useful for multiple domains. To help you get started, you can a
 	- Months
 	- Years
 
-- **Geolocation.** To get the highest value out of the locations, please specify the location as specific as possible, for example by including the longitude and latitude of the geolocation. Include the following properties to the class Geolocation:
+- **Geolocation.** To get the highest value out of the locations, please specify the location as precisely as possible, for example by including the longitude and latitude of the geolocation. Include the following properties to the class Geolocation:
 	- street
 	- streetNumber
 	- streetNumberExtension
@@ -108,4 +108,4 @@ If you want to map a non-graph database into a graph database, the first step is
 Tips and tricks
 - 	Relational databases consist of a lot of values containing IDs to refer to other tables. Mostly, <abbr>ID</abbr>s are an indicator for creating a class.
 
-The next article describes how you can enrich your dataset. 
+The [previous article](/knowledge-base/wiki-semi-consulting/implement/how-to-enrich-data/) describes how you can enrich your dataset.

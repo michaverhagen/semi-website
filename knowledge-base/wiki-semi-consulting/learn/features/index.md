@@ -5,23 +5,23 @@ description: Below you can find an overview of features on a wide range of produ
 topic: wiki-semi-consulting
 category: learn
 tags: ['business', 'summary']
-video-link: 
-video-caption: 
+video-link:
+video-caption:
 menu-order: 1
 open-graph-type: article
 ---
 
 # Knowledge Graph
 
-TEXT
+A Knowledge Graph is a way to connect data points together using relationships to build a network that is searchable like searching the internet. A KG allows you to make new discoveries by searching the entire set of information for the data you want. Traditional solutions require pre-built queries so the users can only search what the system has been programmed to allow them to search. Conventional solutions not scale cheaply. Weaviate scales naturally and easily up from 100,000 nodes to billions if needed.
 
 # Peer to Peer
 
-TEXT
+A unique feature of Weaviate is the networking functionality. You can connect two distinct Weaviate instances together from different organisations and take advantage of both datasets at once, as though they were one Weaviate. This networking is completely custom and secure for both parties. You can share as much or as little of your data as you want to get maximum advantage of the share data and not disclose data you don’t want to share.
 
 # Deployment
 
-Placeholder Large-scale deployment tools for your own cloud solution or on-premise
+SeMI has tools to deploy your dataset (however large) wherever you choose. This can be in your own cloud, a commercial cloud or on premise.
 
 # Contextionary
 
@@ -35,12 +35,12 @@ The Contextionary is in constant development and will be enhanced over time. New
 
 # Integration
 
-TEXT
+Weaviate is all about connections and your own systems are no exception. It can couple to your own existing datasets and include them in the total Weaviate knowledge graph.
 
 # Playground
 
-TEXT
+The Playground is a drag and drop environment where you can explore your data and see results in a clear graphical way. The standard Playground is delivered to all and a customised version is there for the Enterprise and White Label Platform customers.
 
 # Custom Branding
 
-TEXT
+Your organisation may want to put its own image onto Weaviate. We offer full branding solutions so that your Weaviate looks and feels the same as any custom-branded user interfaces already in your organisation. This makes a natural connection and enhances the user experience by adding familiarity to your Weaviate.
