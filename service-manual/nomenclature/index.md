@@ -1,7 +1,7 @@
 ---
 ---layout: article-start!---
 layout: service-manual
-title: nomenclature
+title: Nomenclature
 description: Glossary and explanation of usage of terms in SeMI.
 topic: wiki-semi-consulting
 category: start
