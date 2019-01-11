@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% if page.open-graph-type == "article" %}
+	<html itemscope itemtype="http://schema.org/Article" lang="en">
+{% elsif page.open-graph-type == "product" %}
+	<html itemscope itemtype="http://schema.org/Product" lang="en">
+{% else %}
+	<html lang="en">
+{% endif %}
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="author" content="SeMI, the decentralized knowledge network" />
+	<meta name="description" content="Get the insights you need and explore what’s possible." />
+	<title>{{ page.title }}</title>
+	<link rel="canonical" href="https://www.semi.network{{ page.url | replace:'index.html','' }}" />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300i,400,400i,500,500i,700,700i|Alegreya:400,400i,500,500i|IBM+Plex+Mono:400,600" rel="stylesheet">
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" href="/favicon.png" />
+	<link href="/css/style-sm.css?build={{ 'now' | date: '%Y%m%d%H%M' }}" rel="stylesheet" />
+</head>

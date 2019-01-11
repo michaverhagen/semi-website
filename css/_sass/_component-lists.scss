@@ -1,10 +1,26 @@
+
+@mixin bullet($color) {
+  content: "\2022";
+  color: $color;
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 9px;
+  width: 1rem;
+  height: 1rem;
+  margin-left: -1rem;
+  vertical-align: middle;
+}
+
 .list-bullet {
 	li {
-		list-style: none;
-		list-style-image: url(/img/bullet.svg);
-		list-style-position: outside;
+      list-style: none;
+		&:before {
+          @include bullet($color-semi);
+        }
 		ul li {
-    		list-style-image: url(/img/bullet.svg);
+          &:before {
+            @include bullet($color-support);
+          }
 		}
 	}
 }
@@ -69,7 +85,7 @@ li.list-bullet--disabled {
     }
 }
 
-.semi-sg-overview {
+.style-sm-overview {
   margin-bottom: 2em;
 }
 

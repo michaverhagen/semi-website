@@ -1,0 +1,263 @@
+---
+layout: service-manual
+title: SeMI, our style; data tables 
+---
+
+<article class="article style-sm container">
+    <div class="wrapper">
+        <h2>Tables</h2>
+
+        <section class="style-sm-section">
+            <h3>Table example one</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Table heading one</th>
+                        <th>Table heading two</th>
+                        <th>Table heading three</th>
+                        <th>Table heading four</th>
+                        <th>Table heading five</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                    </tr>
+                    <tr>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                    </tr>
+                    <tr>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                    </tr>
+                    <tr>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                    </tr>
+                    <tr>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                        <td>Table data cell</td>
+                    </tr>
+                </tbody>
+            </table>
+            <section class="style-sm-codesnippet">
+                <p><abbr>HTML</abbr> code snippet</p>
+                <xmp><table>
+                    <thead>
+                        <tr>
+                            <th>Table heading one</th>
+                            <th>Table heading two</th>
+                            <th>Table heading three</th>
+                            <th>Table heading four</th>
+                            <th>Table heading five</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                        </tr>
+                        <tr>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                        </tr>
+                        <tr>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                        </tr>
+                        <tr>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                        </tr>
+                        <tr>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                            <td>Table data cell</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </xmp>
+            </section>
+        </section>
+
+        <section>
+            <h3>Table example two</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Key</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><code>@context</code></td>
+                        <td>Context url. For example: <code>http://example.org</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>type</code></td>
+                        <td><code>thing</code> or <code>action</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>version</code></td>
+                        <td><a href="https://semver.org/" target="_blank">Semantic Versioning</a> version number. For example: <code>1.0.1</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>name</code></td>
+                        <td>Name of the ontology</td>
+                    </tr>
+
+                    <tr>
+                        <td><code>maintainer</code></td>
+                        <td>Email of the maintainer</td>
+                    </tr>
+
+                    <tr>
+                        <td><code>classes[].class</code></td>
+                        <td>Class (start with a capital). For example: <code>Company</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>classes[].description</code></td>
+                        <td>Description of the class</td>
+                    </tr>
+
+                    <tr>
+                        <td><code>classes[].kinds[].kind</code></td>
+                        <td>Kind of class to better define what “kind” of class it is. For example: <code>Organization</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>classes[].kinds[].weight</code></td>
+                        <td>Importance of the kind. Minimal value = <code>0.0</code>. Maximum value = <code>1.0</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>classes[].properties[].name</code></td>
+                        <td>Name of the property (start with lowercase). For example: <code>name</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>classes[].properties[].description</code></td>
+                        <td>A description of the property. For example: <code>Name of the company</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>classes[].properties[].@dataType[]</code></td>
+                        <td>Datatype of the property. Available types are: <code>string</code>, <code>int</code>, <code>boolean</code>, <code>number</code>, <code>date</code>, <code>[name of class]</code> (for example: <code>Country</code>, always with capital)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <section class="style-sm-codesnippet">
+                    <p><abbr>HTML</abbr> code snippet</p>
+                    <xmp><table>
+                        <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><code>@context</code></td>
+                                <td>Context url. For example: <code>http://example.org</code></td>
+                            </tr>
+
+                            <tr>
+                                <td><code>type</code></td>
+                                <td><code>thing</code> or <code>action</code></td>
+                            </tr>
+
+                            <tr>
+                                <td><code>version</code></td>
+                                <td><a href="https://semver.org/" target="_blank">Semantic Versioning</a> version number. For example: <code>1.0.1</code></td>
+                            </tr>
+
+                            <tr>
+                                <td><code>name</code></td>
+                                <td>Name of the ontology</td>
+                            </tr>
+
+                            <tr>
+                                <td><code>maintainer</code></td>
+                                <td>Email of the maintainer</td>
+                            </tr>
+
+                            <tr>
+                                <td><code>classes[].class</code></td>
+                                <td>Class (start with a capital). For example: <code>Company</code></td>
+                            </tr>
+
+                            <tr>
+                                <td><code>classes[].description</code></td>
+                                <td>Description of the class</td>
+                            </tr>
+
+                            <tr>
+                                <td><code>classes[].kinds[].kind</code></td>
+                                <td>Kind of class to better define what “kind” of class it is. For example: <code>Organization</code></td>
+                            </tr>
+
+                            <tr>
+                                <td><code>classes[].kinds[].weight</code></td>
+                                <td>Importance of the kind. Minimal value = <code>0.0</code>. Maximum value = <code>1.0</code></td>
+                            </tr>
+
+                            <tr>
+                                <td><code>classes[].properties[].name</code></td>
+                                <td>Name of the property (start with lowercase). For example: <code>name</code></td>
+                            </tr>
+
+                            <tr>
+                                <td><code>classes[].properties[].description</code></td>
+                                <td>A description of the property. For example: <code>Name of the company</code></td>
+                            </tr>
+
+                            <tr>
+                                <td><code>classes[].properties[].@dataType[]</code></td>
+                                <td>Datatype of the property. Available types are: <code>string</code>, <code>int</code>, <code>boolean</code>, <code>number</code>, <code>date</code>, <code>[name of class]</code> (for example: <code>Country</code>, always with capital)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </xmp>
+            </section>
+        </section>
+    </div>
+</article>

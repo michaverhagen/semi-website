@@ -1,0 +1,23 @@
+<div class="header-container {% if include.headerOverlay == 'true' %}site-header--overlay{% endif %}">
+    {% include molecule-cookie-notice.html %}
+    <header class="header-main wrapper">
+        <a class="image-link" href="/">
+            {% if include.headerType == "inverted" %}
+                <picture>
+                    <source srcset="/img/styleguide/logo-horizontal-inverted.svg" type="image/svg+xml">
+                    <img src="/img/logo-horizontal-inverted.png" alt="">
+                </picture>
+            {% else %}
+                ​<picture>
+                    <source media="(max-width: 48em)" srcset="/img/logo.svg" type="image/svg+xml">
+                    <source srcset="/img/logo-hor.svg" type="image/svg+xml">
+                    <img src="/img/logo-hor.png" alt="">
+                </picture>
+            {% endif %}
+        </a>
+        <div>
+            <a class="nav-main-contact button--small" href="/console/">Console</a>
+        </div>
+    </header>
+    {% include organism-nav-main.html %}
+</div>

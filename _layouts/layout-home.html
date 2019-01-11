@@ -6,10 +6,10 @@
 	<body class="{{page.bodyclass}}">
 {% endif %}
 
-{% include component-header-home.html %}
+{% include organism-header.html headerType="inverted" headerOverlay="true" %}
 
 <main>
     {{ content }}
 </main>
 
-{% include component-footer.html %}
+{% include organism-footer.html footerOverlay="true" %}

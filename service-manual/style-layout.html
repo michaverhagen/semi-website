@@ -1,0 +1,311 @@
+---
+layout: service-manual
+title: SeMI, our style; laying out interface elements
+---
+
+{% capture centeredColumn %}
+    <h2 class="header-section title-page">Standout section single column</h2>
+    <div class="section-standout__text--centered">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>
+    </div>
+{% endcapture %}
+
+{% capture standoutSectionContentRegular %}
+    {% include components/layout/layout--single.html
+        content=centeredColumn
+    %}
+{% endcapture %}
+
+{% capture centeredColumnLightForeground %}
+    <h2 class="color-light header-section title-page">Standout section single column</h2>
+    <div class="section-standout__text--centered">
+        <p class="color-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>
+    </div>
+{% endcapture %}
+
+{% capture standoutSectionContentLightForeground %}
+    {% include components/layout/layout--single.html
+        content=centeredColumnLightForeground
+    %}
+{% endcapture %}
+
+{% capture textColumn %}
+    <h3>Standout section double column title</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>
+{% endcapture %}
+
+{% capture textColumnLightForeground %}
+    <h3 class="color-light">Standout section double column title</h3>
+    <p class="color-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non sapien malesuada, laoreet quam ac, aliquam turpis. Nam fermentum lacinia dolor a dictum. Suspendisse vel magna tellus. </p>
+{% endcapture %}
+
+{% capture imageColumn %}
+    <img src="/img/styleguide/example-image_16-9.svg" alt="alternative text for image" />
+{% endcapture %}
+
+{% capture standoutSectionContentRegularDouble %}
+    {% include components/layout/layout--double.html
+        contentColumnOne=textColumn
+        contentColumnTwo=textColumn
+    %}
+    {% include components/layout/layout--double.html
+        contentColumnOne=textColumn
+        contentColumnTwo=imageColumn
+    %}
+    {% include components/layout/layout--double.html
+        columnOrder="reverse"
+        contentColumnOne=textColumn
+        contentColumnTwo=imageColumn
+    %}
+{% endcapture %}
+
+{% capture standoutSectionContentRegularDoubleLightForeground %}
+    {% include components/layout/layout--double.html
+        contentColumnOne=textColumnLightForeground
+        contentColumnTwo=textColumnLightForeground
+    %}
+    {% include components/layout/layout--double.html
+        contentColumnOne=textColumnLightForeground
+        contentColumnTwo=imageColumn
+    %}
+    {% include components/layout/layout--double.html
+        columnOrder="reverse"
+        contentColumnOne=textColumnLightForeground
+        contentColumnTwo=imageColumn
+    %}
+{% endcapture %}
+
+<article class="article style-sm">
+    <div class=" container">
+        <div class="wrapper">
+            <h2>Layout</h2>
+
+            <section class="style-sm-grid">
+                <h3 id="style-sm-grid">Flexible grid</h3>
+                <p>SeMI’s overall grid is a 12-column grid with a nested 12-column subgrid for the main content area. The grid’s gutter is set at 1em.</p>
+                <ul class="list-ui">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <section class="style-sm-section">
+        <div class="container">
+            <div class="wrapper">
+                <h3>Content area (container and wrapper)</h3>
+                <p>The content area is defined by a container and a wrapper. A container has two gutters on each side of the section. The center part is the wrapper. This part is centered in the page and has a max width to optimize legibility of the content inside it.</p>
+            </div>
+        </div>
+
+        <div class="style-sm-ui-layout">
+            <div class="style-sm-ui-layout__item"></div><!-- gutter -->
+            <div class="style-sm-ui-layout__item style-sm-ui-layout__wrapper"></div><!-- wrapper -->
+            <div class="style-sm-ui-layout__item"></div><!-- gutter -->
+        </div>
+
+    </section>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="style-sm-section-separator-block style-sm-section-separator-block--spacing"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <section class="style-sm-section">
+                <h3>Responsive breakpoints</h3>
+                <p>Five breakpoints are defined for the responsive layout shift. These are <em>not defined towards specific current devices</em>, but rather come in effect when the layout threatens to break for a particular breakpoint.</p>
+                <ol>
+                    <li>34em &amp; below</li>
+                    <li>42em&#8201;–&#8201;48em</li>
+                    <li>48em&#8201;–&#8201;56em</li>
+                    <li>56em&#8201;–&#8201;80em</li>
+                    <li>80em &amp; above</li>
+                </ol>
+            </section>
+
+            <section class="style-sm-section">
+                <h3>Negative space</h3>
+                <p>Negative, or white, space is used to provide way-finding throughout the SeMI site and its content.</p>
+            </section>
+
+            <section id="style-sm-vert-rhythm" class="style-sm-section">
+                <h3>Modular scaling</h3>
+                <p>Vertical rhythm is established by a <strong>modular scale</strong>. A modular scale defines meaningful ratios of related proportions between page elements in order to create a unified visual rhythm and consistency. The <code>$scale-base</code> variable is the base scale measurement. The modular scale is derived from the variable <code>$scale-interval</code>. This can provide an infinite number of measurements that adhere to a consistent rhythm. Editing the base variable measurement results in a proportional change throughout all variables.</p>
+                <p>The modular scale is used for dimensions (margins, padding, width, height, etc.), typographic scale, etc. The same rhythm is also used for animation speed, opacity levels, and such.</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <section class="style-sm-section">
+                <h3>Layout single column</h3>
+                <div class="layout layout--single">
+                    <div class="layout__column">
+                        <!-- this part is purely for the example -->
+                        <div class="style-sm-ui-layout__fill-column">
+                            <p>This layout column will automatically inherit the width of the inner child.</p>
+                        </div>
+                    </div>
+                </div>
+                <section class="style-sm-codesnippet">
+                    <p><abbr>HTML</abbr> code snippet</p>
+                    <xmp><div class="layout layout--single">
+                        <div class="layout__column">
+                            <!-- this part is purely for the example -->
+                            <div class="style-sm-ui-layout__fill-column">
+                                <p>This layout column will automatically inherit the width of the inner child.</p>
+                            </div>
+                        </div>
+                    </div></xmp>
+                </section>
+                <h3>Layout Double column</h3>
+                <div class="layout layout--double">
+                    <div class="layout__column">
+                        <!-- this part is purely for the example -->
+                        <div class="style-sm-ui-layout__fill-column">
+                            <p>Column one</p>
+                            <p>This layout column will automatically inherit the width of the inner child.</p>
+                        </div>
+                    </div>
+                    <div class="layout__column">
+                        <!-- this part is purely for the example -->
+                        <div class="style-sm-ui-layout__fill-column">
+                            <p>Column two</p>
+                            <p>This layout column will automatically inherit the width of the inner child.</p>
+                        </div>
+                    </div>
+                </div>
+                <section class="style-sm-codesnippet">
+                    <p><abbr>HTML</abbr> code snippet</p>
+                    <xmp><div class="layout layout--double">
+                        <div class="layout__column">
+                            <!-- this part is purely for the example -->
+                            <div class="style-sm-ui-layout__fill-column">
+                                <p>Column one</p>
+                                <p>This layout column will automatically inherit the width of the inner child.</p>
+                            </div>
+                        </div>
+                        <div class="layout__column">
+                            <!-- this part is purely for the example -->
+                            <div class="style-sm-ui-layout__fill-column">
+                                <p>Column two</p>
+                                <p>This layout column will automatically inherit the width of the inner child.</p>
+                            </div>
+                        </div>
+                    </div></xmp>
+                </section>
+                <h3>Layout Double column reversed</h3>
+                <div class="layout layout--double layout--double-reverse">
+                    <div class="layout__column">
+                        <!-- this part is purely for the example -->
+                        <div class="style-sm-ui-layout__fill-column">
+                            <p>Column one</p>
+                            <p>This layout column will automatically inherit the width of the inner child.</p>
+                        </div>
+                    </div>
+                    <div class="layout__column">
+                        <!-- this part is purely for the example -->
+                        <div class="style-sm-ui-layout__fill-column">
+                            <p>Column two</p>
+                            <p>This layout column will automatically inherit the width of the inner child.</p>
+                        </div>
+                    </div>
+                </div>
+                <section class="style-sm-codesnippet">
+                    <p><abbr>HTML</abbr> code snippet</p>
+                    <xmp><div class="layout layout--double layout--double-reverse">
+                        <div class="layout__column">
+                            <!-- this part is purely for the example -->
+                            <div class="style-sm-ui-layout__fill-column">
+                                <p>Column one</p>
+                                <p>This layout column will automatically inherit the width of the inner child.</p>
+                            </div>
+                        </div>
+                        <div class="layout__column">
+                            <!-- this part is purely for the example -->
+                            <div class="style-sm-ui-layout__fill-column">
+                                <p>Column two</p>
+                                <p>This layout column will automatically inherit the width of the inner child.</p>
+                            </div>
+                        </div>
+                    </div></xmp>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <section id="sg-anchor-secondary-standout-section">
+        <div class="container">
+            <div class="wrapper">
+                <h2>Layout examples</h2>
+                <p>The layout can be combined with background patterns in several ways. For these examples the <a href="/styleguide/style-background-patterns.html" title="click here to read more about background patterns">background patterns</a> have been used.</p>
+                <h3>Layout examples with background pattern</h3>
+                <p>A secondary standout section is recognized by the white background and decorative background-image.</p>
+                <h4>Example of secondary standout section with a <strong>single column</strong>:</h4>
+            </div>
+        </div>
+        {% include components/section-standout/section-standout.html
+            type="secondary"
+            content=standoutSectionContentRegular
+        %}
+        <div class="container">
+            <div class="wrapper">
+                <div class="style-sm-section-separator-block style-sm-section-separator-block--spacing-bottom"></div>
+                <h4>Example of secondary standout section with <strong>double columns</strong>:</h4>
+            </div>
+        </div>
+        {% include components/section-standout/section-standout.html
+            type="secondary"
+            content=standoutSectionContentRegularDouble
+        %}
+        <div class="container">
+            <div class="wrapper">
+                <div class="style-sm-section-separator-block"></div>
+            </div>
+        </div>
+    </section>
+    <section class="style-sm-section" id="sg-anchor-tertiary-standout-section">
+        <div class="container">
+            <div class="wrapper">
+                <h3>Tertiary standout section</h3>
+                <p>The tertiary standout section uses a dark background with a lighter text on top.</p>
+                <h4 style="margin-bottom:3rem;">Example of tertiary standout section with a <strong>single column</strong>:</h4>
+            </div>
+        </div>
+        {% include components/section-standout/section-standout.html
+            type="tertiary"
+            content=standoutSectionContentLightForeground
+        %}
+        <div class="container">
+            <div class="wrapper">
+                <div class="style-sm-section-separator-block style-sm-section-separator-block--spacing-top"></div>
+            </div>
+        </div>
+        <!-- TODO refactor inline styling -->
+        <div style="margin-top:3rem;margin-bottom:3rem;" class="container">
+            <div class="wrapper">
+                <h4>Example of tertiary standout section with <strong>double columns</strong>:</h4>
+            </div>
+        </div>
+        {% include components/section-standout/section-standout.html
+            type="tertiary"
+            content=standoutSectionContentRegularDoubleLightForeground
+        %}
+    </section>
+
+</article>

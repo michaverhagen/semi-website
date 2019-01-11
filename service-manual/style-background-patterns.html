@@ -1,0 +1,94 @@
+---
+layout: service-manual
+title: SeMI, background patterns
+---
+
+<article class="article style-sm">
+    <div class="container">
+        <div class="wrapper">
+            <div class="style-sm-section">
+                <h2>Background patterns</h2>
+                <p>Background patterns can be used for decoration.</p>
+                <p>These background patterns are used to break the page visually into digestible chucks.</p>
+                <p>The following sections are possible:</p>
+                <ul class="list-bullet">
+                    <li><!--a href="#"-->Primary standout section (t.b.d.)<!--/a--></li>
+                    <li><a href="#sg-anchor-secondary-standout-section">Secondary standout section</a></li>
+                    <li><a href="#sg-anchor-tertiary-standout-section">Tertiary standout section</a></li>
+                </ul>
+                <p>Developers note: You can use the predefined element for standout sections. It's also possible to use a SASS pre-defined class for a section with a predefined use-case or when you use the SEMI styleguide SCSS you can use a background pattern simply by importing the predefined mixins.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="style-sm-section">
+        <div class="container">
+            <div class="wrapper">
+                <h3>Hexagon background pattern (secondary section)</h3>
+                <!-- TODO: More information regarding the hexagon pattern. How is this used? -->
+                <p>The hexagon background pattern is used decoratively.</p>
+                <p>Example (full width):</p>
+            </div>
+        </div>
+
+        <section class="section-standout--secondary">
+            <div class="container">
+                <div class="wrapper">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla velit ut mi tempor vulputate. Suspendisse laoreet pretium ipsum at dapibus. Phasellus cursus turpis non lacus condimentum elementum. Proin dictum suscipit sem et interdum. Maecenas non pretium nibh, vitae elementum tellus. Integer vel mauris aliquam, finibus nisl vel, volutpat tellus. </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="wrapper">
+                <section class="style-sm-codesnippet">
+                    <p><abbr>HTML</abbr> code snippet</p>
+                    <xmp><section class="section-standout--secondary">
+                        <div class="container">
+                            <div class="wrapper">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla velit ut mi tempor vulputate. Suspendisse laoreet pretium ipsum at dapibus. Phasellus cursus turpis non lacus condimentum elementum. Proin dictum suscipit sem et interdum. Maecenas non pretium nibh, vitae elementum tellus. Integer vel mauris aliquam, finibus nisl vel, volutpat tellus.</p>
+                            </div>
+                        </div>
+                    </section></xmp>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="style-sm-section">
+        <div class="container">
+            <div class="wrapper">
+                <h3>Contrasting background pattern (tertiary section)</h3>
+                <h4 style="margin-bottom:3rem;">Example of the contrasting background pattern.</h4>
+            </div>
+        </div>
+        <section class="section-standout--tertiary">
+            <div class="container">
+                <div class="wrapper">
+                    <!-- often used with a layout component to give consistent spacing -->
+                    <div class="layout layout--single">
+                        <p class="color-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla velit ut mi tempor vulputate. Suspendisse laoreet pretium ipsum at dapibus. Phasellus cursus turpis non lacus condimentum elementum. Proin dictum suscipit sem et interdum. Maecenas non pretium nibh, vitae elementum tellus. Integer vel mauris aliquam, finibus nisl vel, volutpat tellus. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="wrapper">
+                <section class="style-sm-codesnippet">
+                    <p><abbr>HTML</abbr> code snippet</p>
+                    <xmp><section class="section-standout--tertiary">
+                        <div class="container">
+                            <div class="wrapper">
+                                <!-- often used with a layout component to give consistent spacing -->
+                                <div class="layout layout--single">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla velit ut mi tempor vulputate. Suspendisse laoreet pretium ipsum at dapibus. Phasellus cursus turpis non lacus condimentum elementum. Proin dictum suscipit sem et interdum. Maecenas non pretium nibh, vitae elementum tellus. Integer vel mauris aliquam, finibus nisl vel, volutpat tellus.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section></xmp>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</article>

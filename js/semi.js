@@ -105,7 +105,7 @@ function toMailchimp(t){
         setTimeout(function(){
             window.location.href = "/thank-you/?response-type=" + t + "&product=" + getVal("PRODUCT");
         }, 1250);
-        
+
     })
 
 }
@@ -113,11 +113,6 @@ function toMailchimp(t){
 /*
  * SEARCH HANDLING
  */
-// Set global search variables
-var searchBox 			= document.getElementsByClassName("searchBox")[0],
-	articleSectionName 	= "ol",
-	GoogleApiKey 		= "AIzaSyCV4SC6uTz7bzYu1TmM_3iq2smlvbJOVLg",
-	GoogleSearchId 		= "008702682383656025817:4lkjxykfngo";
 
 // get the query param by name
 function getParameterByName(name) {
@@ -125,53 +120,70 @@ function getParameterByName(name) {
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
     var results = regex.exec(window.location.href);
     if (!results){
-		return null;
-	}
+        return null;
+    }
     if (!results[2]){
-		return "";
-	}
+        return "";
+    }
     return decodeURIComponent(results[2].replace("/\+/g", " "));
 }
 
 // Load the results via Google API
 function loadResults(i) {
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-		// if status = 4 or 200 exec.
-		if (this.readyState == 4 && this.status == 200) {
-			// declare newbox and the result
-			var newBox;
-			// load JSON
-			JSON
-				// parse JSON
-				.parse(this.responseText)
-				// find items
-				.items
-				// loop over items
-				.forEach(function(element) {
-					// clone the searchbox;
-					newBox = searchBox.cloneNode(true);
-					// remove display = none
-					newBox.style.display = "block";
-					// Set the title with URL
-					newBox
-						.getElementsByClassName("title")[0]
-						.innerHTML = "<a href=\"" + element.link + "\" target=\"_self\">" + element.htmlTitle + "</a>";
-					// set the inner HTML snippet
-					newBox.getElementsByClassName("resultHTML")[0]
-						.innerHTML = element.htmlSnippet;
-					// append the box to the article
-					document.getElementsByTagName(articleSectionName)[0].appendChild(newBox);
-				});
+    var searchBox                  = document.getElementsByClassName("searchBox")[0],
+        articleSectionName         = "ol",
+        noResultsElementClassName  = "jsNoSearchResults",
+        GoogleApiKey               = "AIzaSyCV4SC6uTz7bzYu1TmM_3iq2smlvbJOVLg",
+        GoogleSearchId             = "008702682383656025817:4lkjxykfngo";
 
-		}
-	};
-	// open the URL
-	xhttp
-		.open("GET", "https://www.googleapis.com/customsearch/v1?key=" + GoogleApiKey + "&cx= " + GoogleSearchId + "&q=" + i, true);
-	// send the request
-	xhttp
-		.send();
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        // if status = 4 or 200 exec.
+        if (this.readyState == 4 && this.status == 200) {
+            // declare newbox and the result
+            var newBox;
+            // load JSON
+            var items = JSON.parse(this.responseText).items;
+            var noResultsElement = document.getElementsByClassName(noResultsElementClassName)[0];
+            var hasResults = typeof(items) !== "undefined";
+
+            // when results are present
+            if (hasResults) {
+                // if the no results  element exists and if it has the display property set to '', hide it
+                if (noResultsElement) {
+                    noResultsElement.style.display = 'none';
+                }
+                // loop over items
+                items.forEach(function (element) {
+                    // clone the searchbox;
+                    newBox = searchBox.cloneNode(true);
+                    // remove display = none
+                    newBox.style.display = "block";
+                    // Set the title with URL
+                    newBox
+                        .getElementsByClassName("title")[0]
+                        .innerHTML = "<a href=\"" + element.link + "\" target=\"_self\">" + element.htmlTitle + "</a>";
+                    // set the inner HTML snippet
+                    newBox.getElementsByClassName("resultHTML")[0]
+                        .innerHTML = element.htmlSnippet;
+                    // append the box to the article
+                    document.getElementsByTagName(articleSectionName)[0].appendChild(newBox);
+                });
+            // when no results are present show the 'no results' div
+            } else {
+                // if element exists and if it has the display property set to none, show it
+                if (noResultsElement && noResultsElement.style.display === 'none') {
+                    noResultsElement.style.display = 'block';
+                }
+            }
+        }
+    };
+    // open the URL
+    xhttp
+        .open("GET", "https://www.googleapis.com/customsearch/v1?key=" + GoogleApiKey + "&cx= " + GoogleSearchId + "&q=" + i, true);
+    // send the request
+    xhttp
+        .send();
 }
 
 /*
@@ -180,16 +192,16 @@ function loadResults(i) {
 
 // search
 document
-	.addEventListener('DOMContentLoaded', function(){ 
+    .addEventListener('DOMContentLoaded', function(){
         // cookie
         if(getCookie("cookieConsent") === false){
             document.getElementById("cookie-notification").style.display = 'flex';
         }
         // search
-		var queryString = getParameterByName("search");
-		if(queryString != null && queryString != ""){
+        var queryString = getParameterByName("search");
+        if(queryString != null && queryString != ""){
             // query is available in querystring so load the results
-            loadResults(queryString);			
+            loadResults(queryString);
             // if there is a searchbox, add the query
             var searchBox = document.getElementById('search-knowledgebase');
             if(searchBox.length !== -1){
@@ -229,7 +241,7 @@ document
               }
             }, 3000);
         }
-	}, false);
+    }, false);
 
 /*
  * GOOGLE TAG MANAGER HANDLING
@@ -261,3 +273,19 @@ function toggle_visibility(id) {
    else
       e.style.display = 'block';
 }
+
+/*
+ * Homepage Video
+ * @param {string} | id of video element
+ */
+function playVideo(videoId) {
+  var video = document.getElementById(videoId);
+  if (video) {
+    video.play();
+  }
+}
+
+// TODO: refactor all functions above that also use the DOMContent loaded to be functions and initialized in this method
+document.addEventListener('DOMContentLoaded', function() {
+    playVideo('js-video-homepage');
+});

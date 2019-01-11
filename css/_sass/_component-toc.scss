@@ -1,7 +1,9 @@
+@import 'mixins-breakpoints';
+
 .article-toc {
     flex-shrink: 0;
     height: max-content;
-    @media screen and (min-width: 48em) {
+    @include breakpoint(mediumUp) {
         margin-right: 2em;
         width: 12em;
     }
@@ -23,7 +25,7 @@
         font-style: italic;
     }
     .list-ordered {
-    	counter-reset: li;
+        counter-reset: li;
         list-style: none;
         li {
         	counter-increment: li;
@@ -61,4 +63,13 @@
             border-color: $color-semi-accent-tint-4;
         }
     }
+}
+.article-toc__category-logo {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .875em;
+  @include breakpoint(mediumUp) {
+    margin-left: -2.4em;
+  }
 }

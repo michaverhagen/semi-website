@@ -10,10 +10,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "JEKYLL_ENV=develop bundle exec jekyll build --config \"_config.yml\"",
+    "local": "JEKYLL_ENV=develop bundle exec jekyll serve --livereload --config \"_config.yml\"",
     "htmlmin": "html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html",
-    "uglify": "uglifyjs --compress --mangle -o _site/js/semi.js -- _site/js/semi.js",
-    "local": "npm run build && npm run htmlmin && npm run uglify && jekyll serve --incremental"
+    "uglify": "uglifyjs --compress --mangle -o _site/js/semi.js -- _site/js/semi.js"
   },
   "repository": {
     "type": "git",

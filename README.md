@@ -20,7 +20,7 @@ Also install npm dependencies:
 $ npm install
 ```
 
-To build and start the local website:
+To build and start the **local development** website:
 
 ```bash
 $ npm run local

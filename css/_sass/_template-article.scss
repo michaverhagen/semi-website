@@ -1,3 +1,12 @@
+.page--knowledge-base  {
+    .layout--double > .layout__column {
+        margin-bottom: 2em;
+    }
+    .header-container {
+        margin-bottom: 1rem;
+    }
+}
+
 .article-container {
     > section {
         margin-top: 2em;
@@ -19,9 +28,18 @@
     display: none;
 }
 
-.article-toc {  
+.article-toc {
     position: relative;
     top: .5em;
+}
+
+.article-toc__category-name {
+    color: $color-almostblack-tint--6;
+    text-transform: uppercase;
+}
+
+.article-toc__list-pages {
+    margin-bottom: 1.25rem;
 }
 
 .show-toc {

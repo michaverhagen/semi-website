@@ -1,0 +1,16 @@
+
+{% if include.type == 'primary' %}
+    {% assign typeClass = 'section-standout--primary' %}
+{% elsif include.type == 'secondary' %}
+    {% assign typeClass = 'section-standout--secondary' %}
+{% elsif include.type == 'tertiary' %}
+    {% assign typeClass = 'section-standout--tertiary' %}
+{% else %}
+    {% assign typeClass = '' %}
+{% endif %}
+
+<section class="{{ typeClass }} container background-hexagon background-hexagon--white">
+    <div class="wrapper">
+        {{ include.content }}
+    </div>
+</section>

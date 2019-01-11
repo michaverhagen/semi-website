@@ -1,0 +1,10 @@
+
+@import 'mixins-background-patterns';
+
+.background-hexagon {
+  @include background-pattern-semi-hexagon(transparent);
+}
+
+.background-hexagon--white {
+  background-color: $color-white;
+}

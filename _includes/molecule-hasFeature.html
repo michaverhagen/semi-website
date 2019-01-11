@@ -1,0 +1,9 @@
+{% comment %}
+@param hasFeature | boolean
+{% endcomment %}
+
+{% if include.hasFeature == true %}
+    <span class="icon--included">✓</span>
+{% else %}
+    <span class="icon--not-included">✗</span>
+{% endif %}

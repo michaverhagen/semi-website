@@ -8,7 +8,6 @@ body {
 
 main {
     flex: 1;
-    margin-bottom: -1.5em; // Accomodate the Kanagana wave footer
 }
 
 .wrapper {
@@ -16,12 +15,19 @@ main {
     max-width: $component-primary-max-width;
 }
 
+.wrapper--wide {
+    margin: 0 auto;
+    max-width: $component-wide-max-width;
+}
+
 .container {
     padding-left: $application-gutter;
     padding-right: $application-gutter;
+}
 
-    // create extra space for the footer
-    // TODO: refactor this into something less generic
+// create extra space for the footer
+// TODO: refactor this into something less generic
+main > .container {
     &:last-child {
         padding-bottom: 3.5em;
     }

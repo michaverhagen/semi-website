@@ -3,9 +3,12 @@ img {
 }
 
 figure {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
-figcaption {   
+figcaption {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 104%; // Optically correct type sizing for Italicised text
 }
 
 .video-container {

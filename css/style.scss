@@ -11,6 +11,10 @@
 
 // Mixins
 @import 'mixins';
+@import 'mixins-breakpoints';
+
+// Accessibility helpers
+@import 'accessibility';
 
 // Cross-browser normalization
 @import 'normalize';
@@ -30,14 +34,19 @@
 
 // Components
 @import 'component-article-overview';
+@import 'component-backgrounds';
 @import 'component-breadcrumb';
+@import 'component-callout';
 @import 'component-card-author';
 @import 'component-cards';
 @import 'component-code';
 //@import 'component-details';
 @import 'component-footer';
-@import 'component-header-main';
+@import 'component-headers';
+@import 'component-hero';
+@import 'component-icons';
 @import 'component-image';
+@import 'component-layout';
 @import 'component-list-logos';
 @import 'component-lists';
 @import 'component-media';
@@ -45,27 +54,26 @@
 @import 'component-notify';
 @import 'component-quotes';
 @import 'component-search-meta';
-@import 'component-section__heading';
 @import 'component-sections';
 @import 'component-select-menu';
+@import 'component-site-header';
 @import 'component-table';
+@import 'component-titles';
 @import 'component-toc';
 
 // Templates
 @import 'content';
 @import 'template-article';
+@import 'template-console';
 @import 'template-home';
 @import 'template-products';
 @import 'template-products__semi-consulting';
 @import 'template-products__weaviate';
 @import 'template-search';
 
-// Styleguide
+// service-manual
 //@import 'debug';
-//@import 'styleguide';
+//@import 'service-manual';
 
 // IE 10+ bug fixes
 @import 'ie-bugfix';
-
-// Temporary bugfixes
-@import 'temp-bugfixes';

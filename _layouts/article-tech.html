@@ -2,63 +2,55 @@
 
 <body class="page--knowledge-base">
 
-{% include component-header.html %}
+{% include organism-header.html %}
 
 <main>
-	<article class="container" itemscope itemtype="http://schema.org/articleBody">
-		<div class="wrapper">
-		
-			{% include article-menu.html %}
+    <article class="container">
+        <div class="wrapper article-container">
+            {% include article-menu.html %}
+            <section itemscope itemtype="http://schema.org/articleBody">
+                <!--<ol class="breadcrumb">-->
+                    <!--<li><a href="/knowledge-base/">Knowledge base</a></li>-->
+                    <!--<li><a href="/knowledge-base/{{ page.topic }}/">-->
+                        <!--{% if page.topic == 'wiki-weaviate' %}-->
+                        <!--Weaviate-->
+                        <!--{% elsif page.topic == 'wiki-semi-consulting' %}-->
+                        <!--Semi Consulting-->
+                        <!--{% endif %}-->
+                    <!--</a></li>-->
+                    <!--<li><a href="/knowledge-base/{{ page.topic }}/{{ page.category }}">{{ page.category | capitalize }}</a></li>-->
+                    <!--<li>{{ page.title }}</li>-->
+                <!--</ol>-->
 
-            <section>
-<!--
-                <ol class="breadcrumb">
-    				<li><a href="/knowledge-base">Knowledge base</a></li>
-    				<li><a href="./">{{ page.topic }}</a></li>
-    				<li>{{ page.title }}</li>
-                </ol>
--->
-        		<h1>{{ page.title }}</h1>
-        		{% if page.description != null %}
-        			<p class="intro">{{ page.description }}</p>
-        		{% endif %}
-                
-                <dl class="tags">
-                    <dt><i>Tags</i></dt>
-                    <dd>
-            			<ul class="tags">
-                			{% for tag in page.tags %}
-								<li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
-            				{% endfor %}
-            			</ul>
-                    </dd>
-                </dl>
+                <h1>{{ page.title }}</h1>
+                {% if page.description != null %}
+                    <p class="intro">{{ page.description }}</p>
+                {% endif %}
         
-        		{% if page.related_to != null %}
-        			{% for rels in page.related_to %}
-        				<a href="#">{{ rels }}</a>
-        			{% endfor %}
-        		{% endif %}
+                {% if page.related_to != null %}
+                    {% for rels in page.related_to %}
+                        <a href="#">{{ rels }}</a>
+                    {% endfor %}
+                {% endif %}
         
                 <section class="article">
-        			{% for video in page.video-link %}
-        				<figure class="video-container">
-        				    <div>{{ video }}</div>
-        				    {% for caption in page.video-caption %}
-        				        <figcaption>
-        				            {{ caption }}
+                    {% for video in page.video-link %}
+                        <figure class="video-container">
+                            <div>{{ video }}</div>
+                            {% for caption in page.video-caption %}
+                                <figcaption>
+                                    {{ caption }}
                                 </figcaption>
                             {% endfor %}
                         </figure>
-        			{% endfor %}
-        		    {{ content }}
+                    {% endfor %}
+                    {{ content }}
                 </section>
                 
                 <section class="article-author">
-        			{% include author.md %}
+                    {% include author.md %}
                 </section>
-                
-        <!--
+                <!--
                 <section class="form-inline">
                     <p>Was this article useful?</p>
                     <ul>
@@ -66,14 +58,24 @@
                         <li><a href="#">No</a></li>
                     </ul>
                 </section>
-        -->
+                -->
+                <dl class="tags tags-in-page">
+                    <dt><i>Tags</i></dt>
+                    <dd>
+                        <ul class="tags__tag-list">
+                            {% for tag in page.tags %}
+                            <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </dd>
+                </dl>
             </section>
-		</div>
-	</article>
+        </div>
+    </article>
 </main>
 
 <!-- code highlights -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-{% include component-footer.html %}
+{% include organism-footer.html %}
