@@ -1,15 +1,6 @@
 ---
----layout: article-start!---
-layout: service-manual
-title: Nomenclature
-description: Glossary and explanation of usage of terms in SeMI.
-topic: wiki-semi-consulting
-category: start
-tags: ['business', 'technology']
-video-link:
-video-caption:
-menu-order: 3
-open-graph-type: article
+layout: service-manual-markdown
+title: SeMI, our style; voice and tone in website general for contrib and user
 ---
 
 # Glossary and usage
