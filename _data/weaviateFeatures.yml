@@ -65,7 +65,7 @@
   enterprise: true
   whitelabel: true
 
-- title: "<a href='/knowledge-base/wiki-semi-consulting/learn/features/#branding'>Custom branding</a> to your look and feel"
+- title: "<a href='/knowledge-base/wiki-semi-consulting/learn/features/#custom-branding'>Custom branding</a> to your look and feel"
   note: "make Weaviate integrated into your own brand language with look, feel, logos, colors etc."
   opensource: false
   enterprise: false

@@ -44,7 +44,7 @@ At SeMI, we believe that if we bring the metadata of a multitude of companies in
 
 ## You are in control of your information
 
-SeMI is a [decentralized](/nomenclature/#dn) [knowledge network](/nomenclature/#kn), which means that each member of the SeMI network deploys SeMI from their own systems: there is no SeMI central data storage. Effectively each member has its own data vault on their own systems, which can only be accessed through an [API](/nomenclature/#api). So you are in complete control of your data.
+SeMI is a [decentralized](/service-manual/nomenclature/#dn) [knowledge network](/service-manual/nomenclature/#kn), which means that each member of the SeMI network deploys SeMI from their own systems: there is no SeMI central data storage. Effectively each member has its own data vault on their own systems, which can only be accessed through an [API](/service-manual/nomenclature/#api). So you are in complete control of your data.
 
 > There is no centralized platform, and every participant runs their own node in the network.
 
