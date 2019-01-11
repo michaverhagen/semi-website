@@ -29,7 +29,7 @@ At SeMI, we have created a solution based on the following five pillars to enabl
 
 ![SeMI hexagon](/img/SeMI-hexagon.jpg)
 
-The software enabling the SeMI-network (i.e., running on a SeMI node) is called Weaviate<sup><a href="/knowledge-base/implement/weaviate/" alt="Weaviate Documentation">(docs)</a></sup>. Weaviate is an open source project <a href="https://github.com/creativesoftwarefdn/weaviate" alt="Weaviate Github">available on Github</a>. When referring to the software, the name Weaviate is used. When referring to the network, the words SeMI-node are used.
+The software enabling the SeMI-network (i.e., running on a SeMI node) is called Weaviate. Weaviate is an open source project <a href="https://github.com/creativesoftwarefdn/weaviate" alt="Weaviate Github">available on Github</a>. When referring to the software, the name Weaviate is used. When referring to the network, the words SeMI-node are used.
 
 - **SeMI-node**, refers to a _knowledge graph node_ on the network.
 - **Weaviate**, refers to the software powering a SeMI-node.
@@ -110,4 +110,4 @@ For example: _Which SeMI-node knows about the centroid of "Seal", "Mammal" and "
 
 Because Weaviate operates as a middleware between the data storage and your applications we believe that interacting with it should be as familiar as possible. Therefore we use as many standards (RESTful API's, GraphQL, etcetera) as possible.
 
-In the [Weaviate documentation](/knowledge-base/wiki-weaviate/implement/weaviate/) you can find more information about these standards.
+In the <a href="https://github.com/creativesoftwarefdn/weaviate" alt="Weaviate Github">Weaviate documentation</a>  you can find more information about these standards.
