@@ -56,7 +56,8 @@
 	padding: .5em 3em;
 	right: 0;
 	position: fixed;
-	top: 0;
+  top: 0;
+  display: none !important; 
 }
 
 .style-sm-codesnippet {
