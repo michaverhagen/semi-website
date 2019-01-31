@@ -1,5 +1,5 @@
 ---
-layout: article-start
+layout: layout-article-detailpage
 title: Features
 description: Below you can find an overview of features on a wide range of products.
 topic: wiki-semi-consulting

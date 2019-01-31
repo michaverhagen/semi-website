@@ -1,5 +1,5 @@
 ---
-layout: article-start
+layout: layout-article-detailpage
 title: Executive Summary
 description: Why is Weaviate a great tool to enrich your current business offerings? In this primer you will learn why Weaviate is so valuable for your business.
 topic: wiki-semi-consulting

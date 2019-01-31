@@ -1,5 +1,5 @@
 ---
-layout: article-start
+layout: layout-article-detailpage
 title: Onboarding Brief
 description: What it means to onboard to the SeMI Network.
 topic: wiki-semi-consulting
