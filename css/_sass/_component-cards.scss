@@ -21,7 +21,7 @@ $c-card-border: 1px solid $color-gray-5;
     flex: 1;
     flex-direction: column;
     padding: 2em;
-    &:not(.card--pilar) {
+    &:not(.card--pilar):not(.card--borderless) {
         border: $c-card-border;
     }
     &.card--pilar {
