@@ -1,0 +1,36 @@
+<section class="layout layout--single">
+    <div class="header-section">
+        <h2 class="title-section header--centered title-column">Features</h2>
+    </div>
+
+    {% comment %}
+    Note: To edit this table, look for the file './_data/weaviateFeatures.yml'
+    {% endcomment %}
+
+    {% if site.data.weaviateFeatures %}
+    <div class="table-container">
+        <table class="table-zebra">
+            <thead>
+            <tr>
+                <th>Feature</th>
+                <th>Weaviate Open Source</th>
+                <th>Weaviate Enterprise</th>
+                <th>Weaviate White-Label</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for feature in site.data.weaviateFeatures %}
+            <tr>
+                <td>{{ feature.title }}</td>
+                <td class="table__cell--vertically-middle">{% include molecule-hasFeature.html hasFeature=feature.opensource %}</td>
+                <td class="table__cell--vertically-middle">{% include molecule-hasFeature.html hasFeature=feature.enterprise %}</td>
+                <td class="table__cell--vertically-middle">{% include molecule-hasFeature.html hasFeature=feature.whitelabel %}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <p>No data found.</p>
+    {% endif %}
+</section>
