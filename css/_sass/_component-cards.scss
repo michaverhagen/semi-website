@@ -80,6 +80,9 @@ $c-card-border: 1px solid $color-gray-5;
             background-color: $color-network-accent;
         }
     }
+    .card__content {
+        flex-grow: 1; // makes item (.card__button) underneath stick to bottom of the card
+    }
 }
 
 .card__icon {
