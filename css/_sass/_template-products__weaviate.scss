@@ -2,7 +2,7 @@
 @import 'mixins-background-patterns';
 
 .page--products--weaviate {
-  .header-section.title-page {
+  .space-space-space-header-section.title-page {
     margin-bottom: 0;
   }
   .page--background__first {
@@ -11,7 +11,7 @@
   .page--background__second {
     @include background-pattern-semi-hexagon($color-white, 130% 2rem);
   }
-  .section--weaviate-industries > .header-section {
+  .section--weaviate-industries > .space-space-space-header-section {
     margin-top: 2rem;
     margin-bottom: 3rem;
   }

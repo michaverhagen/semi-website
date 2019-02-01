@@ -1,3 +1,6 @@
+
+@import 'var-scale';
+
 // Begin: Service Manual
 
 @mixin style-sm-section-separator-block() {
@@ -13,7 +16,7 @@
     	> h3, > h4, > h5 {
         	margin: 2em 0 1em;
     	}
-    	section {
+    	section:not(.space-section-intro):not(.space-section-last) {
         	margin-bottom: 1em;
     	}
 	}
@@ -507,3 +510,44 @@
 }
 
 // End: Service Manual
+
+.style-sm-scale-list {
+  list-style-type: none;
+}
+
+.style-sm-scale-filler {
+  background-color: $color-helper-2;
+  display: block;
+  text-align: center;
+}
+
+.style-sm-scale-0 { width: $scale-0; }
+.style-sm-scale-1 { width: $scale-1; }
+.style-sm-scale-2 { width: $scale-2; }
+.style-sm-scale-3 { width: $scale-3; }
+.style-sm-scale-4 { width: $scale-4; }
+.style-sm-scale-5 { width: $scale-5; }
+.style-sm-scale-6 { width: $scale-6; }
+
+.style-sm-space-heading-indicator,
+.style-sm-space-section-indicator {
+  display: block;
+  float: left;
+  width: 100%;
+
+  h2 {
+    background-color: $color-helper-1;
+  }
+  section {
+    float: left;
+    width: 100%;
+  }
+}
+.style-sm-space-heading-indicator {
+  background-color: $color-helper-2;
+  width: 100%;
+}
+
+.style-sm-space-section-indicator {
+  background-color: $color-helper-3;
+}
