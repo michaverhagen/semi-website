@@ -2,7 +2,7 @@
 @import 'mixins-background-patterns';
 
 .page--products--weaviate {
-  .header-section.title-page {
+  .space-space-space-header-section.title-page {
     margin-bottom: 0;
   }
   .page--background__first {
@@ -11,7 +11,7 @@
   .page--background__second {
     @include background-pattern-semi-hexagon($color-white, 130% 2rem);
   }
-  .section--weaviate-industries > .header-section {
+  .section--weaviate-industries > .space-space-space-header-section {
     margin-top: 2rem;
     margin-bottom: 3rem;
   }
@@ -42,20 +42,23 @@
   .cards {
     margin-top: 3rem;
   }
-  .section--img-weaviate-clouds {
-    max-width: 220px;
-  }
-  .section--img-ppf {
-    max-width: 310px;
-  }
-  .section--img-top-tier-support {
-    max-height: 320px;
-  }
-  .section--img-playground {
-    max-width: 380px;
-  }
   .layout__column {
     align-self: center;
   }
 }
 
+.section--img-keyper {
+  max-width: 220px;
+}
+.section--img-weaviate-clouds {
+  max-width: 220px;
+}
+.section--img-ppf {
+  max-width: 310px;
+}
+.section--img-top-tier-support {
+  max-height: 320px;
+}
+.section--img-playground {
+  max-width: 380px;
+}

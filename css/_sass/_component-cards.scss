@@ -21,7 +21,7 @@ $c-card-border: 1px solid $color-gray-5;
     flex: 1;
     flex-direction: column;
     padding: 2em;
-    &:not(.card--pilar) {
+    &:not(.card--pilar):not(.card--borderless) {
         border: $c-card-border;
     }
     &.card--pilar {
@@ -79,6 +79,9 @@ $c-card-border: 1px solid $color-gray-5;
         .card__title:after {
             background-color: $color-network-accent;
         }
+    }
+    .card__content {
+        flex-grow: 1; // makes item (.card__button) underneath stick to bottom of the card
     }
 }
 

@@ -12,11 +12,8 @@ $ui-font-size: 1rem;
 }
 
 .page--console {
-  .header-container {
-    background-color: $color-almostblack;
-  }
-  .nav-main li a {
-    color: $color-white;
+  .header-main .nav-main-console {
+    background-color: $color-black;
   }
   main {
     padding-bottom: 3.5em;

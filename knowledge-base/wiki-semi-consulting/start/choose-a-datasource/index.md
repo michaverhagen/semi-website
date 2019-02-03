@@ -1,5 +1,5 @@
 ---
-layout: article-start
+layout: layout-article-detailpage
 title: Choose a data source
 description: Strategically choosing the right sources to start working with is difficult, this article advises you on how to select the right datasets.
 topic: wiki-semi-consulting

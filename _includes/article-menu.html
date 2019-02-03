@@ -2,7 +2,7 @@
 <sidebar id="toc" class="article-toc-container" itemscope itemtype="http://schema.org/SiteNavigationElement">
     <dl class="article-toc">
     {% comment %}<!-- setup list of all pages sorted by 'menu-order' -->{% endcomment %}
-    {% assign sorted_pages = site.pages | group_by: 'topic' %}
+    {% assign sorted_pages = site.pages | group_by: 'topic' | sort: 'menu-order' %}
     {% for topic in sorted_pages %}
         {% comment %}<!-- don't show pages which have no topic -->{% endcomment %}
         {% if topic.name != '' %}

@@ -1,5 +1,5 @@
 ---
-layout: article-start
+layout: layout-article-detailpage
 title: Technology Summary
 description: This article provides a birds-eye view of SeMI technology stack. Including references to relating sources.
 topic: wiki-semi-consulting

@@ -1,3 +1,6 @@
+
+@import 'var-scale';
+
 /**
  * Section and column headers
  * Defines spacing and alignment for titles and headings (not font-sizes)
@@ -11,20 +14,6 @@
     source, img {
         height: 4em;
     }
-}
-
-.header-page {
-  margin-top: 3rem; // 48px
-  margin-bottom: 3rem; // 48px
-}
-
-.header-section {
-  margin-bottom: 2rem; // 32px
-}
-
-.header-column {
-  margin-top: 1rem; // 16px
-  margin-bottom: 1rem; // 16px
 }
 
 .header--centered {

@@ -9,28 +9,8 @@
         <div class="wrapper article-container">
             {% include article-menu.html %}
             <section itemscope itemtype="http://schema.org/articleBody">
-                <ol class="breadcrumb">
-                    <li><a href="/knowledge-base/">Knowledge base</a></li>
-                    <li><a href="/knowledge-base/{{ page.topic }}/">
-                        {% if page.topic == 'wiki-weaviate' %}
-                        Weaviate
-                        {% elsif page.topic == 'wiki-semi-consulting' %}
-                        Semi Consulting
-                        {% endif %}
-                    </a></li>
-                    <li><a href="/knowledge-base/{{ page.topic }}/{{ page.category }}">{{ page.category | capitalize }}</a></li>
-                    <li>{{ page.title }}</li>
-                </ol>
-                <h1>{{ page.title }}</h1>
-                {% if page.description != null %}
-                    <p class="intro">{{ page.description }}</p>
-                {% endif %}
-                {% if page.related_to != null %}
-                    {% for rels in page.related_to %}
-                        <a href="#">{{ rels }}</a>
-                    {% endfor %}
-                {% endif %}
-        
+                <!-- include article-breadcrumb.html -->
+                {% include article-intro.html %}
                 <section class="article">
                     {% for video in page.video-link %}
                         <figure class="video-container">

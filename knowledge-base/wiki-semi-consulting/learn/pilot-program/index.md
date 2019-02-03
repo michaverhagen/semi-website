@@ -1,5 +1,5 @@
 ---
-layout: article-start
+layout: layout-article-detailpage
 title: Pilot Program
 description: SeMI wants to enable its customers to give meaning to their big data. We believe that our pilot program is the best way to align our products and services with your needs.
 topic: wiki-semi-consulting

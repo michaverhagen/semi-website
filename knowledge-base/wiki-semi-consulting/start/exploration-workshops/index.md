@@ -1,5 +1,5 @@
 ---
-layout: article-start
+layout: layout-article-detailpage
 title: Exploration Workshop
 description: To make sure our customers get the most value from Weaviate, we have introduced the exploration workshop to tailor a Weaviate network to your needs.
 topic: wiki-semi-consulting
