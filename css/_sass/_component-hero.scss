@@ -20,6 +20,7 @@
 .hero__text {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40vh; // logo in video is a bit off from the center
   position: relative;
   vertical-align: middle;
   z-index: 2;
@@ -42,16 +43,6 @@
 
   .button {
     margin-top: 1rem;
-  }
-}
-@include breakpoint(smallToMedium) {
-  .hero__text {
-    margin-top: 50vh;
-  }
-}
-@include breakpoint(mediumUp) {
-  .hero__text {
-     margin-top: 40vh; // logo in video is a bit off from the center
   }
 }
 
