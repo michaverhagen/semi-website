@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "## Bundler is used",
   "main": "index.js",
-  "dependencies": {},
   "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-plugin-requirejs": "^3.2.0",
     "html-minifier": "^3.5.20",
-    "uglify-js": "^3.4.9"
+    "requirejs": "^2.3.6"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "local": "JEKYLL_ENV=develop bundle exec jekyll serve --livereload --config \"_config.yml\"",
-    "htmlmin": "html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html",
-    "uglify": "uglifyjs --compress --mangle -o _site/js/semi.js -- _site/js/semi.js"
+    "htmlmin": "html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/SeMI-network/semi-website/issues"
   },
-  "homepage": "https://github.com/SeMI-network/semi-website#readme"
+  "homepage": "https://github.com/SeMI-network/semi-website#readme",
+  "dependencies": {}
 }

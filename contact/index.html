@@ -12,7 +12,7 @@ description: Get in touch with the SeMI team.
 			<p>To learn more, schedule an introductory call, or to let us know what you think of SeMI, please use the contact form below to get in touch.</p>
 			<p>We'd love to hear from you!</p>
 		</section>
-		<form>
+		<form id="js-mailchimp" data-title="general-contact">
 			<fieldset>
 				<label for="contact-name">Your name</label>
 				<input id="contact-name" type="text" name="NAME" />
@@ -29,7 +29,7 @@ description: Get in touch with the SeMI team.
 				<label for="message">Your message</label>
 				<textarea id="message" name="MESSAGE"></textarea>
 			</fieldset>
-			<input type="button" value="Send message" onclick="toMailchimp('general-contact')" />
+			<input type="submit" value="Send message" />
 		</form>
 	</div>
 </article>
