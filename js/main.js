@@ -1,5 +1,5 @@
 
-define([
+require([
     'video',
     'cookie',
     'toggle',
