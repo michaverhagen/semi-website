@@ -4,15 +4,22 @@
   "description": "## Bundler is used",
   "main": "index.js",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-loader": "^8.0.5",
     "eslint": "^5.13.0",
+    "eslint-config-webpack": "^1.2.5",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-requirejs": "^3.2.0",
     "html-minifier": "^3.5.20",
-    "requirejs": "^2.3.6"
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "local": "JEKYLL_ENV=develop bundle exec jekyll serve --livereload --config \"_config.yml\"",
-    "htmlmin": "html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html"
+    "htmlmin": "html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html",
+    "build-js": "webpack --mode=production",
+    "build-js-dev": "webpack --mode=development --display-error-details --watch"
   },
   "repository": {
     "type": "git",
@@ -24,5 +31,7 @@
     "url": "https://github.com/SeMI-network/semi-website/issues"
   },
   "homepage": "https://github.com/SeMI-network/semi-website#readme",
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }

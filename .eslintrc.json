@@ -3,8 +3,10 @@
     "amd": true,
     "es6": true
   },
+  "extends": "webpack",
   "parserOptions": {
-    "ecmaVersion": 2017
-  },
-  "plugins": ["requirejs"]
+    "ecmaVersion": 2017,
+    "impliedStrict": true,
+    "sourceType": "module"
+  }
 }
