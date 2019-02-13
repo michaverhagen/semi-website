@@ -2,10 +2,13 @@
 const path = require('path');
 
 module.exports = {
-  entry: './js-src/main.js',
+  entry: {
+    main: './js-src/main.js',
+    formPage: './js-src/page-forms.js',
+  },
   output: {
     path: path.resolve(__dirname, 'js'),
-    filename: 'main.bundle.js',
+    filename: '[name].bundle.js',
   },
   module: {
     rules: [
