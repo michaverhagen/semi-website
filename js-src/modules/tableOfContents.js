@@ -1,13 +1,12 @@
-
 /**
  * loopThroughLinks
  * @param list
  * @param callback
  */
-const loopThroughLinks = function(list, callback) {
-  if(list != null) {
-    const listItems = list.getElementsByTagName("a");
-    for (var i = 0; i < listItems.length; i++) {
+const loopThroughLinks = (list, callback) => {
+  if (list != null) {
+    const listItems = list.getElementsByTagName('a');
+    for (let i = 0; i < listItems.length; i++) {
       callback(listItems[i]);
     }
   }
@@ -18,10 +17,11 @@ const loopThroughLinks = function(list, callback) {
  * @desc sets the link in cursive if it's the current page
  * @param item
  */
-const setLinkCursive = function(item) {
-  const currentPageUrl = window.location.origin + window.location.pathname; // removes '#' and query parameters
+const setLinkCursive = item => {
+  // removes '#' and query parameters
+  const currentPageUrl = window.location.origin + window.location.pathname;
   if (item.href === currentPageUrl) {
-    item.classList.add("current");
+    item.classList.add('current');
   }
 };
 
@@ -30,9 +30,10 @@ const setLinkCursive = function(item) {
  * @desc sets target '_blank' if link is on same domain
  * @param item
  */
-const setNewTabs = function(item) {
+const setNewTabs = item => {
   if (item.hostname !== window.location.hostname) {
-    item.target = "_blank";
+    // eslint-disable-next-line
+    item.target = '_blank';
   }
 };
 

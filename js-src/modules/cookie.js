@@ -1,4 +1,3 @@
-
 /**
  * setCookie
  * @param cname
@@ -6,11 +5,11 @@
  * @param exdays
  * @private
  */
-const setCookie = function(cname, cvalue, exdays) {
+const setCookie = (cname, cvalue, exdays) => {
   const d = new Date();
-  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  const expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+  const expires = `expires=${d.toUTCString()}`;
+  document.cookie = `${cname}=${cvalue};${expires};path=/`;
 };
 
 /**
@@ -19,8 +18,8 @@ const setCookie = function(cname, cvalue, exdays) {
  * @returns {*}
  * @private
  */
-const getCookie = function(cname) {
-  const name = cname + "=";
+const getCookie = cname => {
+  const name = `${cname}=`;
   const decodedCookie = decodeURIComponent(document.cookie);
   const ca = decodedCookie.split(';');
   for (let i = 0; i < ca.length; i++) {
@@ -44,7 +43,7 @@ export default function(id) {
   const cookieCloseButton = cookieBar.querySelector('#js-cookie-button');
 
   /** show cookie notification if no consent has been given */
-  if(getCookie("cookieConsent") === false) {
+  if (getCookie('cookieConsent') === false) {
     cookieBar.style.display = 'flex';
   }
 
@@ -52,8 +51,12 @@ export default function(id) {
    * Set cookies and close bar by clicking 'accept & close'
    * @type {HTMLElement}
    */
-  cookieCloseButton.addEventListener("click", function() {
-    cookieBar.style.display = 'none';
-    setCookie("cookieConsent", true, 100);
-  }, false);
+  cookieCloseButton.addEventListener(
+    'click',
+    () => {
+      cookieBar.style.display = 'none';
+      setCookie('cookieConsent', true, 100);
+    },
+    false,
+  );
 }

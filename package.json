@@ -7,10 +7,12 @@
     "@babel/core": "^7.2.2",
     "babel-loader": "^8.0.5",
     "eslint": "^5.13.0",
+    "eslint-config-prettier": "^4.0.0",
     "eslint-config-webpack": "^1.2.5",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-requirejs": "^3.2.0",
     "html-minifier": "^3.5.20",
+    "prettier": "1.16.4",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3"
   },
@@ -19,7 +21,9 @@
     "local": "JEKYLL_ENV=develop bundle exec jekyll serve --livereload --config \"_config.yml\"",
     "htmlmin": "html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html",
     "build-js": "webpack --mode=production",
-    "build-js-dev": "webpack --mode=development --display-error-details --watch"
+    "build-js-dev": "webpack --mode=development --display-error-details --watch",
+    "prettier": "prettier --check ./js-src/modules/**",
+    "eslint": "eslint ./js-src/modules/**"
   },
   "repository": {
     "type": "git",

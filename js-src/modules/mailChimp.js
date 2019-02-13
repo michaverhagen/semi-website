@@ -1,41 +1,14 @@
-
 import $ from 'jquery';
-
-/**
- * handleForm
- * @param e
- * @param formElements
- * @param formTitle
- */
-const handleForm = function (e, formElements, formTitle) {
-  e.preventDefault();
-  hideButton(formElements);
-
-  const formFields = {
-    "EMAIL"     : getVal("EMAIL"),
-    "NAME"      : getVal("NAME"),
-    "PRODUCT"   : getVal("PRODUCT"),
-    "MESSAGE"   : getVal("MESSAGE"),
-    "TYPE"      : formTitle,
-    "RETURN"    : returnTo
-  };
-
-  sendData(formFields, function(){
-    // sad but true, timeout to guarantee a success
-    setTimeout(function(){
-      window.location.href = "/thank-you/?response-type=" + t + "&product=" + getVal("PRODUCT");
-    }, 1250);
-  })
-};
 
 /**
  * hide the button based on form elements (Nodelist)
  * @param formElements
  */
-const hideButton = function(formElements) {
-  for (var i = 0; i < formElements.length; i++) {
-    if(formElements[i].getAttribute("type")=== "submit"){
-      formElements[i].style.display = "none";
+const hideButton = formElements => {
+  for (let i = 0; i < formElements.length; i++) {
+    if (formElements[i].getAttribute('type') === 'submit') {
+      const element = formElements[i];
+      element.style.display = 'none';
     }
   }
 };
@@ -45,20 +18,30 @@ const hideButton = function(formElements) {
  * @param postData
  * @param callback
  */
-const sendData = function(postData, callback) {
+const sendData = (postData, callback) => {
   $.ajax({
-    type:       "POST",
-    url:        "https://us-central1-semi-186012.cloudfunctions.net/mailchimp",
-    data:       postData,
-    dataType:   "json",
-    cache:      false,
-    success:    function(response) {
-      console.log(response)
-    }
-  })
-    .done(function(){
-      callback();
-    });
+    type: 'POST',
+    url: 'https://us-central1-semi-186012.cloudfunctions.net/mailchimp',
+    data: postData,
+    dataType: 'json',
+    cache: false,
+    success(response) {
+      // eslint-disable-next-line
+      console.log(response);
+    },
+  }).done(() => {
+    callback();
+  });
+};
+
+/**
+ *
+ * @returns {string}
+ */
+const returnTo = () => {
+  const { protocol } = location;
+  const slashes = protocol.concat('//');
+  return slashes.concat(`${window.location.hostname}:${window.location.port}`);
 };
 
 /**
@@ -66,39 +49,56 @@ const sendData = function(postData, callback) {
  * @param name
  * @returns {*}
  */
-const getVal = function(name){
-  var elVal = document.getElementsByName(name);
-  if(elVal.length === 0){
-    return null
-  } else {
-    return elVal[0].value
+const getVal = name => {
+  const elVal = document.getElementsByName(name);
+  if (elVal.length === 0) {
+    return null;
   }
+  return elVal[0].value;
 };
 
 /**
- *
- * @returns {string}
+ * handleForm
+ * @param e
+ * @param formElements
+ * @param formTitle
  */
-const returnTo = function(){
-  const protocol = location.protocol,
-      slashes = protocol.concat("//");
-  return slashes.concat(window.location.hostname + ":" + window.location.port);
+const handleForm = (e, formElements, formTitle) => {
+  e.preventDefault();
+  hideButton(formElements);
+
+  const formFields = {
+    EMAIL: getVal('EMAIL'),
+    NAME: getVal('NAME'),
+    PRODUCT: getVal('PRODUCT'),
+    MESSAGE: getVal('MESSAGE'),
+    TYPE: formTitle,
+    RETURN: returnTo,
+  };
+
+  sendData(formFields, () => {
+    // sad but true, timeout to guarantee a success
+    setTimeout(() => {
+      window.location.href = `/thank-you/?response-type=${formTitle}&product=${getVal('PRODUCT')}`;
+    }, 1250);
+  });
 };
 
 /**
  *
- * @param $
  * @constructor
  */
-export default function () {
-
+export default function() {
   const form = document.getElementById('js-mailchimp');
-  if (typeof(form) !== 'undefined' && form !== null) {
+  if (typeof form !== 'undefined' && form !== null) {
     const formTitle = form.dataset.title;
     const formElements = form.elements;
-    form.addEventListener("submit", function(e) {
-      handleForm(e, formElements, formTitle);
-    }, false);
-
+    form.addEventListener(
+      'submit',
+      e => {
+        handleForm(e, formElements, formTitle);
+      },
+      false,
+    );
   }
 }
