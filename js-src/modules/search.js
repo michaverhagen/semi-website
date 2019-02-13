@@ -29,7 +29,7 @@ const queryString = getParameterByName('search');
  * @param i
  */
 const loadResults = i => {
-  const [ searchBox ] = document.getElementsByClassName('searchBox');
+  const [searchBox] = document.getElementsByClassName('searchBox');
   const articleSectionName = 'ol';
   const noResultsElementClassName = 'jsNoSearchResults';
   const GoogleApiKey = 'AIzaSyCV4SC6uTz7bzYu1TmM_3iq2smlvbJOVLg';
@@ -45,7 +45,7 @@ const loadResults = i => {
       let newBox;
       // load JSON
       const { items } = JSON.parse(this.responseText);
-      const [ noResultsElement ] = document.getElementsByClassName(noResultsElementClassName);
+      const [noResultsElement] = document.getElementsByClassName(noResultsElementClassName);
       const hasResults = typeof items !== 'undefined';
 
       // when results are present
@@ -63,7 +63,7 @@ const loadResults = i => {
           // Set the title with URL
           newBox.getElementsByClassName('title')[0].innerHTML = `<a href="${
             element.link
-            }" target="_self">${element.htmlTitle}</a>`;
+          }" target="_self">${element.htmlTitle}</a>`;
           // set the inner HTML snippet
           newBox.getElementsByClassName('resultHTML')[0].innerHTML = element.htmlSnippet;
           // append the box to the article

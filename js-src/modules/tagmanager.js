@@ -10,7 +10,7 @@ export default function(key) {
       'gtm.start': new Date().getTime(),
       event: 'gtm.js',
     });
-    const [ f ] = d.getElementsByTagName(s);
+    const [f] = d.getElementsByTagName(s);
     const j = d.createElement(s);
     const dl = l !== 'dataLayer' ? `&l=${l}` : '';
     j.async = true;
