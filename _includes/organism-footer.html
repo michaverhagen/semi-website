@@ -1,4 +1,4 @@
-<footer class="{% if include.footerOverlay == 'true' %}site-footer--overlay{% endif %}">
+<footer class="{% if include.footerOverlay == true %}site-footer--overlay{% endif %}{% if page.footer_squared == true %}site-footer--square{% endif %}">
 	<section class="footer-links">
 		<ul class="list-ui-hor">
 			<li><a href="/privacy/">Privacy Policy</a></li>
