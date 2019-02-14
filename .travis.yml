@@ -8,6 +8,7 @@ branches:
   - develop
 before_install:
 - sudo apt-get install -y nodejs npm
+- npm i
 - npm i -g html-minifier
 - npm i -g webpack
 - npm i -g webpack-cli
@@ -16,12 +17,6 @@ before_install:
 - npm i -g eslint
 - npm i -g eslint-config-prettier
 - npm i -g prettier
-install:
-  - npm ci
-# keep the npm cache around to speed up installs
-cache:
-  directories:
-    - "$HOME/.npm"
 
 # Only install GCLOUD when it is not a PR
 - |
