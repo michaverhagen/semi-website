@@ -16,10 +16,8 @@ before_install:
 - npm i -g eslint
 - npm i -g eslint-config-prettier
 - npm i -g prettier
-
 install:
   - npm ci
-
 # keep the npm cache around to speed up installs
 cache:
   directories:
