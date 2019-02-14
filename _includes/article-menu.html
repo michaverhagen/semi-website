@@ -1,5 +1,5 @@
-<a class="show-toc" href="#" onclick="toggle_visibility('toc');">Table of contents</a>
-<sidebar id="toc" class="article-toc-container" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<a class="show-toc" href="#" data-toggle="toc">Table of contents</a>
+<sidebar id="toc" class="article-toc-container" aria-expanded="false" itemscope itemtype="http://schema.org/SiteNavigationElement">
     <dl class="article-toc">
     {% comment %}<!-- setup list of all pages sorted by 'menu-order' -->{% endcomment %}
     {% assign sorted_pages = site.pages | group_by: 'topic' | sort: 'menu-order' %}

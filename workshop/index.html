@@ -11,7 +11,7 @@ description: Sign up for a workshop!
 			<h1>Workshop</h1>
 			<p>Thanks for showing interest in our exploration workshop! Please fill in your details and we will get in touch with you shortly.</p>
 		</section>
-		<form>
+		<form id="js-mailchimp" data-title="workshop">
 			<fieldset>
 				<label for="contact-name">Your name</label>
 				<input id="contact-name" type="text" name="NAME" />
@@ -28,7 +28,7 @@ description: Sign up for a workshop!
 				<label for="message">Your message</label>
 				<textarea id="message" name="MESSAGE"></textarea>
 			</fieldset>
-			<input type="button" value="Send message" onclick="toMailchimp('workshop')" />
+			<input type="submit" value="Send message" />
 		</form>
 	</div>
 </article>

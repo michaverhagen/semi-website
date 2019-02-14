@@ -1,0 +1,4 @@
+/**
+ * Slider
+ */
+// export default function() {}
