@@ -8,12 +8,13 @@ branches:
   - develop
 before_install:
 - sudo apt-get install -y nodejs npm
-- npm install -g html-minifier
-- npm install -g webpack
-- npm install -g webpack-cli
-- npm install -g eslint
-- npm install -g eslint-config-prettier
-- npm install -g prettier
+- npm i -g html-minifier
+- npm i -g webpack
+- npm i -g webpack-cli
+- npm i -g eslint
+- npm i -g eslint-config-prettier
+- npm i -g prettier
+- npm i -g babel-loader
 # Only install GCLOUD when it is not a PR
 - |
   if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
