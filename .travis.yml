@@ -11,10 +11,12 @@ before_install:
 - npm i -g html-minifier
 - npm i -g webpack
 - npm i -g webpack-cli
+- npm i -g @babel/core
+- npm i -g babel-loader
 - npm i -g eslint
 - npm i -g eslint-config-prettier
 - npm i -g prettier
-- npm i -g babel-loader
+
 # Only install GCLOUD when it is not a PR
 - |
   if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
