@@ -4,6 +4,8 @@ Dependencies:
 - [Bundler](https://bundler.io/)
 - [npm](https://www.npmjs.com/)
 
+Make sure both (Bundler and npm) are installed on your system before you proceed. For more information on how to install check above links.
+
 ## Local development
 
 To start a project first install Bundler as described [in the Bundler documentation](https://bundler.io/).
@@ -25,3 +27,4 @@ To build and start the **local development** website:
 ```bash
 $ npm run local
 ```
+
