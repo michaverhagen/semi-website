@@ -8,6 +8,7 @@ branches:
   - develop
 before_install:
 - sudo apt-get install -y nodejs npm
+- npm i
 - npm i -g html-minifier
 - npm i -g webpack
 - npm i -g webpack-cli
