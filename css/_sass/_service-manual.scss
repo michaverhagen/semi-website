@@ -462,6 +462,18 @@
   }
 }
 
+.style-sm-figure-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+.style-sm-list-centered {
+  text-align: center;
+}
+
 .semi-sm-download {
   display: inline-block;
   float: left;
