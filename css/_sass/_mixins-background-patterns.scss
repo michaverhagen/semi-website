@@ -11,7 +11,4 @@
   @include breakpoint(mediumUp) {
     background-size: 600px;
   }
-  @else if $point == extraLargeUp {
-    background-size: 900px;
-  }
 }
