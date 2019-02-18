@@ -13,6 +13,7 @@ exclude:
     - vendor
     - README.md
     - "*.draft"
+    - js-src
 plugins:
     - jekyll-autoprefixer
 autoprefixer:

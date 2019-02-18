@@ -340,13 +340,13 @@
     padding: 3em;
 }
 
-.inverse {
+.style-sm-logo--inverse {
     @include transition-out;
-    background: $color-semi;
-    &:hover {
-        @include transition-in;
-        background: $color-black;
-    }
+    background: $color-black;
+    //&:hover {
+    //    @include transition-in;
+    //    background: $color-semi;
+    //}
 }
 
 .style-sm-tween {
@@ -460,6 +460,18 @@
     width: 100px;
     height: 160px;
   }
+}
+
+.style-sm-figure-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+.style-sm-list-centered {
+  text-align: center;
 }
 
 .semi-sm-download {

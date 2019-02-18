@@ -28,3 +28,15 @@ To build and start the **local development** website:
 $ npm run local
 ```
 
+Run eslint and prettier to see code formatting errors
+
+```bash
+$ npm run eslint
+$ npm run prettier
+```
+
+To rewrite prettier errors automatically run:
+
+```bash
+$ prettier --write ./js-src/modules/**
+```

@@ -11,8 +11,10 @@
     display: flex;
     justify-content: space-between;
     padding: 0 1em 0 0;
+
     source, img {
-        height: 4em;
+        padding: 1rem 0;
+        width: 11rem;
     }
 }
 

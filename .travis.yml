@@ -8,8 +8,16 @@ branches:
   - develop
 before_install:
 - sudo apt-get install -y nodejs npm
-- npm install -g html-minifier
-- npm install -g uglify-js
+- npm i
+- npm i -g html-minifier
+- npm i -g webpack
+- npm i -g webpack-cli
+- npm i -g @babel/core
+- npm i -g babel-loader
+- npm i -g eslint
+- npm i -g eslint-config-prettier
+- npm i -g prettier
+
 # Only install GCLOUD when it is not a PR
 - |
   if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
@@ -26,7 +34,9 @@ script:
 - set -e
 - JEKYLL_ENV=production bundle exec jekyll build --config "_config.prod.yml"
 - html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html
-- uglifyjs --compress --mangle -o _site/js/semi.js -- _site/js/semi.js
+- npm run prettier
+- npm run eslint
+- npm run build-js
 - |
   if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
     if [ $TRAVIS_BRANCH = "master" ]; then
