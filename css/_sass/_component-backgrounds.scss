@@ -8,3 +8,13 @@
 .background-hexagon--white {
   background-color: $color-white;
 }
+
+.page--products--weaviate,
+.page--products--semi-consulting {
+  .page--background__first {
+    @include background-pattern-semi-hexagon($color-white, -3rem 9rem);
+  }
+  .page--background__second {
+    @include background-pattern-semi-hexagon($color-white, 130% 2rem);
+  }
+}

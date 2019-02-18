@@ -6,61 +6,65 @@ description: An overview of the OS version of Weaviate
 open-graph-type: product
 ---
 
-<article class="container">
-    <div class="wrapper">
-        {% include organism-product-top.html
-            productLogoSrc='/img/logo-icon-weaviate-oss.svg'
-            productLogoAlt='SeMI open source logo'
-            title='Weaviate Open Source'
-            payoff='The Decentralized Knowledge Graph'
-            intro='The powerful open-source Weaviate knowledge graph software is available on GitHub. Use your own team implement Weaviate for meaningful insights into all your data. Start deploying use cases right away.'
-        %}
-        {% include molecule-section-heading.html
-            title='The open source solution'
-        %}
-        <section class="layout layout--double">
-            <div class="layout__column">
-                <img src="/img/SeMI-graphic-medium__enterprise-solutions-light-bg.svg" alt="Peer-to-Peer network" />
-            </div>
-            <div class="layout__column">
-                <h3 class="space-header-column title-column">Peer-to-Peer network</h3>
-                <p>You can create a peer-to-peer network of multiple weaviates, in this way you can use both datasets at once, as though they were one Weaviate.</p>
-            </div>
-        </section>
-        <section class="layout layout--double layout--double-reverse">
-            <div class="layout__column">
-                <img class="section--img-playground" src="/img/customization.svg" alt="Contextionary" />
-            </div>
-            <div class="layout__column">
-                <h3 class="space-header-column title-column">Contextionary</h3>
-                <p>You will be able to use the Contextionary to add meaning to your data. We continuously upgrade it so the value you get from the Contextionary goes up.</p>
-            </div>
-        </section>
-        <section class="layout layout--double">
-                <div class="layout__column">
-                    <img class="section--img-weaviate-clouds" src="/img/weaviate-enterprise-clouds.png" srcset="/img/weaviate-enterprise-clouds@2x.png" alt="Weaviate support for different clouds" />
-                </div>
-                <div class="layout__column">
-                    <h3 class="space-header-column title-column">Support for different clouds</h3>
-                    <p>Weaviate Enterprise supports multiple cloud vendors including: Google, AWS, Azure and Oracle Cloud.</p>
-                </div>
-            </section>
-        <section class="layout layout--double layout--double-reverse">
-            <div class="layout__column">
-                <img class="section--img-playground" src="/img/weaviate-enterprise-playground.png" srcset="/img/weaviate-enterprise-playground@2x.png" alt="Weaviate enterprise playground" />
-            </div>
-            <div class="layout__column">
-                <h3 class="space-header-column title-column">Playground</h3>
-                <p>Weaviate's Playground is a graphical user interface that enables you to gather insights from the knowledge graph directly. Users of Weaviate Open Source can use the Playground on their websites, and Weaviate Enterprise users receive a custom version they can run wherever they want.</p>
-            </div>
-        </section>
+<article>
+    <div class="page--background__first">
+        <div class="container">
+            <div class="wrapper">
+                {% include organism-product-top.html
+                    productLogoSrc='/img/logo-icon-weaviate-oss.svg'
+                    productLogoAlt='SeMI open source logo'
+                    title='Weaviate Open Source'
+                    payoff='The Decentralized Knowledge Graph'
+                    intro='The powerful open-source Weaviate knowledge graph software is available on GitHub. Use your own team implement Weaviate for meaningful insights into all your data. Start deploying use cases right away.'
+                %}
+                {% include molecule-section-heading.html
+                    title='The open source solution'
+                %}
+                <section class="layout layout--double">
+                    <div class="layout__column">
+                        <img src="/img/SeMI-graphic-medium__enterprise-solutions-light-bg.svg" alt="Peer-to-Peer network" />
+                    </div>
+                    <div class="layout__column">
+                        <h3 class="space-header-column title-column">Peer-to-Peer network</h3>
+                        <p>You can create a peer-to-peer network of multiple weaviates, in this way you can use both datasets at once, as though they were one Weaviate.</p>
+                    </div>
+                </section>
+                <section class="layout layout--double layout--double-reverse">
+                    <div class="layout__column">
+                        <img class="section--img-playground" src="/img/customization.svg" alt="Contextionary" />
+                    </div>
+                    <div class="layout__column">
+                        <h3 class="space-header-column title-column">Contextionary</h3>
+                        <p>You will be able to use the Contextionary to add meaning to your data. We continuously upgrade it so the value you get from the Contextionary goes up.</p>
+                    </div>
+                </section>
+                <section class="layout layout--double">
+                        <div class="layout__column">
+                            <img class="section--img-weaviate-clouds" src="/img/weaviate-enterprise-clouds.png" srcset="/img/weaviate-enterprise-clouds@2x.png" alt="Weaviate support for different clouds" />
+                        </div>
+                        <div class="layout__column">
+                            <h3 class="space-header-column title-column">Support for different clouds</h3>
+                            <p>Weaviate Enterprise supports multiple cloud vendors including: Google, AWS, Azure and Oracle Cloud.</p>
+                        </div>
+                    </section>
+                <section class="layout layout--double layout--double-reverse">
+                    <div class="layout__column">
+                        <img class="section--img-playground" src="/img/weaviate-enterprise-playground.png" srcset="/img/weaviate-enterprise-playground@2x.png" alt="Weaviate enterprise playground" />
+                    </div>
+                    <div class="layout__column">
+                        <h3 class="space-header-column title-column">Playground</h3>
+                        <p>Weaviate's Playground is a graphical user interface that enables you to gather insights from the knowledge graph directly. Users of Weaviate Open Source can use the Playground on their websites, and Weaviate Enterprise users receive a custom version they can run wherever they want.</p>
+                    </div>
+                </section>
 
-        <section class="space-layout">
-            <div class="layout layout--single">
-                <a class="button" href="https://github.com/creativesoftwarefdn/weaviate" alt="Link to Weaviate on Github">Available now on GitHub</a>
+                <section class="space-layout">
+                    <div class="layout layout--single">
+                        <a class="button" href="https://github.com/creativesoftwarefdn/weaviate" alt="Link to Weaviate on Github">Available now on GitHub</a>
+                    </div>
+                </section>
+                {% include section-feature-table.html %}
+                {% include section-contact-us.html %}
             </div>
-        </section>
-        {% include section-feature-table.html %}
-        {% include section-contact-us.html %}
+        </div>
     </div>
 </article>

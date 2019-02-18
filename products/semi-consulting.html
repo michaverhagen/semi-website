@@ -6,40 +6,44 @@ description: An overview of SeMI's products and services.
 open-graph-type: product
 ---
 
-<article class="container">
-    <div class="wrapper">
-        {% include organism-product-top.html
-            productLogoSrc='/img/logo-icon-semi-consulting.svg'
-            productLogoAlt='SeMI consulting logo'
-            title='SeMI Consulting'
-            payoff='The Decentralized Knowledge Graph'
-            intro='Weaviate, the software at the heart of SeMI, is open source; you are free to explore and use Weaviate whatever way you want. We at SeMI Consulting are here to help you make the most of your use cases for Weaviate. SeMI Consulting works with you to address key questions on your whole journey, from fitting Weaviate into your existing architecture to a business case for your use cases.'
-        %}
-        {% include molecule-section-heading.html
-            title='How our consultants can help you:'
-        %}
-        <section class="section--help">
-            <div class="section__content">
-                <div class="section__column">
-                    <div class="column__image">
-                        <img src="/img/consulting.png" alt="SeMI business consulting" width="60%" />
+<article>
+    <div class="page--background__first">
+        <div class="container">
+            <div class="wrapper">
+                {% include organism-product-top.html
+                    productLogoSrc='/img/logo-icon-semi-consulting.svg'
+                    productLogoAlt='SeMI consulting logo'
+                    title='SeMI Consulting'
+                    payoff='The Decentralized Knowledge Graph'
+                    intro='Weaviate, the software at the heart of SeMI, is open source; you are free to explore and use Weaviate whatever way you want. We at SeMI Consulting are here to help you make the most of your use cases for Weaviate. SeMI Consulting works with you to address key questions on your whole journey, from fitting Weaviate into your existing architecture to a business case for your use cases.'
+                %}
+                {% include molecule-section-heading.html
+                    title='How our consultants can help you:'
+                %}
+                <section class="section--help">
+                    <div class="section__content">
+                        <div class="section__column">
+                            <div class="column__image">
+                                <img src="/img/consulting.png" alt="SeMI business consulting" width="60%" />
+                            </div>
+                            <div class="column__content">
+                                <h3 class="space-header-column header--centered title-column">Business Consultants</h3>
+                                <p>Weaviate will enable a spectrum of new use cases for you. We will help you prioritize these use cases based on their potential impact on your business. We will help you develop a business case for each use case. What is the appropriate level of investment for each of your use cases? What can you expect in return, in terms of additional income, reduced cost, more-effective processes, etc. We help you identify the key measures of success for your use cases and determine how to optimize the outcomes.</p>
+                            </div>
+                        </div>
+                        <div class="section__column">
+                            <div class="column__image">
+                                <img src="/img/datascience.png" alt="SeMI data consulting" width="60%" />
+                            </div>
+                            <div class="column__content">
+                                <h3 class="space-header-column header--centered title-column">Data Consultants</h3>
+                                <p>The power of Weaviate is greatly enhanced by its ability to combine different data sources, even  where no shared common structure of the information exists. We help you to first identify the key data sources that are most likely to contain the information needed for your use cases. We will also help you identify gaps in your data and assist you in making sources available to you that lie outside of your organization.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="column__content">
-                        <h3 class="space-header-column header--centered title-column">Business Consultants</h3>
-                        <p>Weaviate will enable a spectrum of new use cases for you. We will help you prioritize these use cases based on their potential impact on your business. We will help you develop a business case for each use case. What is the appropriate level of investment for each of your use cases? What can you expect in return, in terms of additional income, reduced cost, more-effective processes, etc. We help you identify the key measures of success for your use cases and determine how to optimize the outcomes.</p>
-                    </div>
-                </div>
-                <div class="section__column">
-                    <div class="column__image">
-                        <img src="/img/datascience.png" alt="SeMI data consulting" width="60%" />
-                    </div>
-                    <div class="column__content">
-                        <h3 class="space-header-column header--centered title-column">Data Consultants</h3>
-                        <p>The power of Weaviate is greatly enhanced by its ability to combine different data sources, even  where no shared common structure of the information exists. We help you to first identify the key data sources that are most likely to contain the information needed for your use cases. We will also help you identify gaps in your data and assist you in making sources available to you that lie outside of your organization.</p>
-                    </div>
-                </div>
+                      {% include section-contact-us.html %}
+                </section>
             </div>
-              {% include section-contact-us.html %}
-        </section>
+        </div>
     </div>
 </article>
