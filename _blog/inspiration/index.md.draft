@@ -1,9 +1,7 @@
 ---
-layout: layout-article-detailpage
+layout: layout-blog-article
 title: Inspiration
 description: This article provides inspiration for how you can use SeMI.
-topic: wiki-semi-consulting
-category: learn
 tags: ['summary']
 video-link: 
 video-caption: 

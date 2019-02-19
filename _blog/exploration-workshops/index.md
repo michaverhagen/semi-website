@@ -1,13 +1,11 @@
 ---
-layout: layout-article-detailpage
+layout: layout-blog-article
 title: Exploration Workshop
 description: To make sure our customers get the most value from Weaviate, we have introduced the exploration workshop to tailor a Weaviate network to your needs.
-topic: wiki-semi-consulting
-category: start
 tags: ['business']
 video-link:
 video-caption:
-menu-order: 1
+menu-order: 3
 open-graph-type: article
 ---
 
@@ -18,7 +16,7 @@ The Weaviate Use Case Exploration is a one day workshop, which SeMI offers to it
 > We work with you to discover, define and deploy your first Weaviate use case.
 
 <section class="callout">
-    In case you are looking for a technology summary, <a href="/blog/wiki-semi-consulting/learn/technology-summary/">click here</a>.
+    In case you are looking for a technology summary, <a href="/blog/technology-summary/">click here</a>.
 </section>
 
 ## Methodology

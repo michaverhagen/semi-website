@@ -1,9 +1,7 @@
 ---
-layout: layout-article-detailpage
+layout: layout-blog-article
 title: Data Usage & Compliancy
 description: What does it mean for your organization from a practical, safety and compliance point of view when you use SeMI?
-topic: wiki-semi-consulting
-category: learn
 tags: ['legal', 'technology']
 video-link:
 video-caption:
@@ -37,7 +35,7 @@ In the example below, you can see how we link metadata from a bakery and an airl
 ![some airliner inc and some bakery inc](/img/SeMI-some-airliner-inc_and_some-bakeryinc.jpg)
 
 <section class="callout">
-    Click <a href="/blog/wiki-semi-consulting/learn/technology-summary/">here</a> for a technical summary of how SeMI makes relations in metadata.
+    Click <a href="/blog/technology-summary/">here</a> for a technical summary of how SeMI makes relations in metadata.
 </section>
 
 At SeMI, we believe that if we bring the metadata of a multitude of companies into a large network, we can all benefit from each other's insights without giving away the actual data!
@@ -52,7 +50,7 @@ The raw data itself is never shared or made available.  The API returns only the
 
 We understand that your information sources may contain information about individuals, otherwise known as “personal data”. With recent developments in legislation it is important to manage the information that you share with other participants of the network.
 
-We have several tools to help you. In our on-boarding workshops, for example, we help you define your ontology (see our [on-boarding primer](/blog/wiki-semi-consulting/start/onboarding-brief/)). This ontology is an important mechanism in refining your data into knowledge graphs using our SeMI tool and our blog. This refining process makes it highly impractical to connect personal data to an identifiable person.
+We have several tools to help you. In our on-boarding workshops, for example, we help you define your ontology (see our [on-boarding primer](/blog/onboarding-brief/)). This ontology is an important mechanism in refining your data into knowledge graphs using our SeMI tool and our blog. This refining process makes it highly impractical to connect personal data to an identifiable person.
 
 ## More information?
 If you have any additional questions please do not hesitate to [get in touch](/contact/).

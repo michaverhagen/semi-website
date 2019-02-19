@@ -1,9 +1,7 @@
 ---
-layout: layout-article-detailpage
+layout: layout-blog-article
 title: Technology Summary
 description: This article provides a birds-eye view of SeMI technology stack. Including references to relating sources.
-topic: wiki-semi-consulting
-category: learn
 tags: ['technology', 'summary']
 video-link:
 video-caption:
@@ -15,7 +13,7 @@ open-graph-type: article
 
 Almost all of the data stored around us can be traced back to a certain thing or an action attached to this thing. For example; how many suitcases that are present at an airport, how many friends one has on a social network, or a bank statement that represents that one ate sushi with their best friend a few nights ago. They represent something that happened in the physical world and which is stored in a ledger of some kind. Most of the services we use and love are based on some sort of ledger.
 
-The problem with these kinds of ledgers, is that almost all context is lost. To translate the data into something meaningful, you - a human - is needed to add meaningful context to the information provided. So much data<sup><a href="https://www.forbes.com/sites/andrewcave/2017/04/13/what-will-we-do-when-the-worlds-data-hits-163-zettabytes-in-2025/#1c39cdc0349a" alt="What Will We Do When The World's Data Hits 163 Zettabytes In 2025?">(link)</a></sup>, but so little context. As described in our [Executive Summary](/blog/wiki-weaviate/learn/executive-summary/), we are just scratching the surface of what is possible with all the data we have.
+The problem with these kinds of ledgers, is that almost all context is lost. To translate the data into something meaningful, you - a human - is needed to add meaningful context to the information provided. So much data<sup><a href="https://www.forbes.com/sites/andrewcave/2017/04/13/what-will-we-do-when-the-worlds-data-hits-163-zettabytes-in-2025/#1c39cdc0349a" alt="What Will We Do When The World's Data Hits 163 Zettabytes In 2025?">(link)</a></sup>, but so little context. As described in our [Executive Summary](/blog/executive-summary/), we are just scratching the surface of what is possible with all the data we have.
 
 ## Solution
 
