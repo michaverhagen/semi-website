@@ -29,7 +29,7 @@ Weaviate is a [decentralized](/service-manual/nomenclature/#dn) [semantic](/serv
 Weaviate focuses on hyper-organized information, also known as "Knowledge graphs." Weaviate enables companies to refine their data into knowledge graphs stored in Weaviate: a decentralized Semantic Knowledge Graph that is at the heart of Weaviate.
 
 <section class="callout">
-    <a href="/blog/wiki-semi-consulting/learn/technology-summary/">Click here for a technical summary.</a>
+    <a href="/blog/technology-summary/">Click here for a technical summary.</a>
 </section>
 
 ## Enable knowledge sharing on closed datasets
@@ -40,7 +40,7 @@ Existing data analysis and search solutions can generate insights from publicly 
 
 ## Start with the business questions
 
-Weaviate starts from the business perspective: which business decisions need data-driven insights? What are the key questions you want answers to? We help you discover and develop your key business questions in our [exploration workshop](/_blog/wiki-semi-consulting/start/exploration-workshops/). In this workshop, we introduce you to Weaviate and develop your custom use cases.
+Weaviate starts from the business perspective: which business decisions need data-driven insights? What are the key questions you want answers to? We help you discover and develop your key business questions in our [exploration workshop](/blog/exploration-workshops/). In this workshop, we introduce you to Weaviate and develop your custom use cases.
 
 ## Weaviate products
 
@@ -57,7 +57,7 @@ For more information about the Weaviate products, please refer to our  [product 
 
 ![Weaviate network](/img/SeMI-network.jpg)
 
-Because Weaviate is a decentralized solution, you stay in complete control of your information; the system of record data is never shared! Weaviate focuses on the things that the system of record data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network. This also means there is no central platform. Weaviate runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](/_blog/wiki-semi-consulting/learn/data-usage-and-compliancy/).
+Because Weaviate is a decentralized solution, you stay in complete control of your information; the system of record data is never shared! Weaviate focuses on the things that the system of record data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network. This also means there is no central platform. Weaviate runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](/blog/data-usage-and-compliancy/).
 
 > There is no central platform.
 
