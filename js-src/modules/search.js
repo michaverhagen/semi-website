@@ -36,7 +36,9 @@ const loadResults = i => {
 
   const noResultsElementClassName = 'jsNoSearchResults';
   const searchReturnsForbiddenClassName = 'js-search-google-403';
-  const [searchReturnsForbiddenElement] = document.getElementsByClassName(searchReturnsForbiddenClassName);
+  const [searchReturnsForbiddenElement] = document.getElementsByClassName(
+    searchReturnsForbiddenClassName,
+  );
   const [noResultsElement] = document.getElementsByClassName(noResultsElementClassName);
 
   const xhttp = new XMLHttpRequest();
@@ -66,7 +68,7 @@ const loadResults = i => {
           // Set the title with URL
           newBox.getElementsByClassName('title')[0].innerHTML = `<a href="${
             element.link
-            }" target="_self">${element.htmlTitle}</a>`;
+          }" target="_self">${element.htmlTitle}</a>`;
           // set the inner HTML snippet
           newBox.getElementsByClassName('resultHTML')[0].innerHTML = element.htmlSnippet;
           // append the box to the article
@@ -76,7 +78,7 @@ const loadResults = i => {
       } else if (noResultsElement && noResultsElement.style.display === 'none') {
         noResultsElement.style.display = 'block';
       }
-    // when the request sends a forbidden response, for example on non-authorized URLS
+      // when the request sends a forbidden response, for example on non-authorized URLS
     } else if (this.status === 403) {
       if (searchReturnsForbiddenElement) {
         // if the no results  element exists and if it has the display property set to '', hide it
