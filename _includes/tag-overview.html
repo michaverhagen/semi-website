@@ -11,7 +11,7 @@
                 <ul class="article-overview">
                     <section>
                         <li>
-                            {% assign sorted_pages = site.pages | sort:"menu-order" %}
+                            {% assign sorted_pages = site.blog | sort:"menu-order" %}
                             {% for subpage in sorted_pages %}
                                 {% if subpage.tags contains page.tagsToShow %}
                                     <ol>

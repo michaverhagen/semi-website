@@ -31,9 +31,15 @@ const queryString = getParameterByName('search');
 const loadResults = i => {
   const [searchBox] = document.getElementsByClassName('searchBox');
   const articleSectionName = 'ol';
-  const noResultsElementClassName = 'jsNoSearchResults';
   const GoogleApiKey = 'AIzaSyCV4SC6uTz7bzYu1TmM_3iq2smlvbJOVLg';
   const GoogleSearchId = '008702682383656025817:4lkjxykfngo';
+
+  const noResultsElementClassName = 'jsNoSearchResults';
+  const searchReturnsForbiddenClassName = 'js-search-google-403';
+  const [searchReturnsForbiddenElement] = document.getElementsByClassName(
+    searchReturnsForbiddenClassName,
+  );
+  const [noResultsElement] = document.getElementsByClassName(noResultsElementClassName);
 
   const xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = onreadystatechange;
@@ -45,7 +51,6 @@ const loadResults = i => {
       let newBox;
       // load JSON
       const { items } = JSON.parse(this.responseText);
-      const [noResultsElement] = document.getElementsByClassName(noResultsElementClassName);
       const hasResults = typeof items !== 'undefined';
 
       // when results are present
@@ -72,6 +77,15 @@ const loadResults = i => {
         // when no results are present show the 'no results' div
       } else if (noResultsElement && noResultsElement.style.display === 'none') {
         noResultsElement.style.display = 'block';
+      }
+      // when the request sends a forbidden response, for example on non-authorized URLS
+    } else if (this.status === 403) {
+      if (searchReturnsForbiddenElement) {
+        // if the no results  element exists and if it has the display property set to '', hide it
+        if (noResultsElement) {
+          noResultsElement.style.display = 'none';
+        }
+        searchReturnsForbiddenElement.style.display = 'block';
       }
     }
   }

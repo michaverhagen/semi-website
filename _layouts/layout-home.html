@@ -1,7 +1,7 @@
 {% include head.html %}
 
 {% if bodyclass == blank %}
-	<body class="page--knowledge-base knowledge-base--{{ page.topic | downcase }}">
+	<body class="page--blog blog--{{ page.topic | downcase }}">
 {% else %}
 	<body class="{{page.bodyclass}}">
 {% endif %}
