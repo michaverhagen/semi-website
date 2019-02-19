@@ -1,9 +1,7 @@
 ---
-layout: layout-article-detailpage
+layout: layout-blog-article
 title: Data Usage & Compliancy
 description: What does it mean for your organization from a practical, safety and compliance point of view when you use SeMI?
-topic: wiki-semi-consulting
-category: learn
 tags: ['legal', 'technology']
 video-link:
 video-caption:
@@ -52,7 +50,7 @@ The raw data itself is never shared or made available.  The API returns only the
 
 We understand that your information sources may contain information about individuals, otherwise known as “personal data”. With recent developments in legislation it is important to manage the information that you share with other participants of the network.
 
-We have several tools to help you. In our on-boarding workshops, for example, we help you define your ontology (see our [on-boarding primer](/blog/wiki-semi-consulting/start/onboarding-brief/)). This ontology is an important mechanism in refining your data into knowledge graphs using our SeMI tool and our blog. This refining process makes it highly impractical to connect personal data to an identifiable person.
+We have several tools to help you. In our on-boarding workshops, for example, we help you define your ontology (see our [on-boarding primer](/_blog/wiki-semi-consulting/start/onboarding-brief/)). This ontology is an important mechanism in refining your data into knowledge graphs using our SeMI tool and our blog. This refining process makes it highly impractical to connect personal data to an identifiable person.
 
 ## More information?
 If you have any additional questions please do not hesitate to [get in touch](/contact/).

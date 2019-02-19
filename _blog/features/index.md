@@ -1,13 +1,11 @@
 ---
-layout: layout-article-detailpage
+layout: layout-blog-article
 title: Features
 description: Below you can find an overview of features on a wide range of products.
-topic: wiki-semi-consulting
-category: learn
 tags: ['business', 'summary']
 video-link:
 video-caption:
-menu-order: 1
+menu-order: 2
 open-graph-type: article
 ---
 
@@ -31,7 +29,7 @@ Contextualized data has multiple use cases from a single data set. Weaviate has 
 
 The Contextionary is in constant development and will be enhanced over time. New features will always become available to all customers without extra cost.
 
-[More background information](/blog/wiki-semi-consulting/learn/technology-summary/#contextionary)
+[More background information](/_blog/wiki-semi-consulting/learn/technology-summary/#contextionary)
 
 # Integration
 

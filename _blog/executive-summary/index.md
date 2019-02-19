@@ -1,10 +1,9 @@
 ---
-layout: layout-article-detailpage
+layout: layout-blog-article
 title: Executive Summary
 description: Why is Weaviate a great tool to enrich your current business offerings? In this primer you will learn why Weaviate is so valuable for your business.
-topic: wiki-semi-consulting
-category: learn
 tags: ['business', 'summary']
+redirect_from: /blog/
 video-link:
 video-caption:
 menu-order: 1
@@ -39,7 +38,7 @@ Existing data analysis and search solutions can generate insights from publicly 
 
 ## Start with the business questions
 
-Weaviate starts from the business perspective: which business decisions need data-driven insights? What are the key questions you want answers to? We help you discover and develop your key business questions in our [exploration workshop](/blog/wiki-semi-consulting/start/exploration-workshops/). In this workshop, we introduce you to Weaviate and develop your custom use cases.
+Weaviate starts from the business perspective: which business decisions need data-driven insights? What are the key questions you want answers to? We help you discover and develop your key business questions in our [exploration workshop](/_blog/wiki-semi-consulting/start/exploration-workshops/). In this workshop, we introduce you to Weaviate and develop your custom use cases.
 
 ## Weaviate products
 
@@ -56,7 +55,7 @@ For more information about the Weaviate products, please refer to our  [product 
 
 ![Weaviate network](/img/SeMI-network.jpg)
 
-Because Weaviate is a decentralized solution, you stay in complete control of your information; the system of record data is never shared! Weaviate focuses on the things that the system of record data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network. This also means there is no central platform. Weaviate runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](/blog/wiki-semi-consulting/learn/data-usage-and-compliancy/).
+Because Weaviate is a decentralized solution, you stay in complete control of your information; the system of record data is never shared! Weaviate focuses on the things that the system of record data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network. This also means there is no central platform. Weaviate runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](/_blog/wiki-semi-consulting/learn/data-usage-and-compliancy/).
 
 > There is no central platform.
 
