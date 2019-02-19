@@ -1,3 +1,5 @@
+@import 'mixins-breakpoints';
+
 .page--article-overview .list-bullet {
     margin-bottom: 3em;
 }
@@ -134,40 +136,7 @@
             padding: 1em 1em 1em 0;
         }
     }
-}
-[data-group='learn'] {
-    background: $color-almostblack-tint--5;
-    ~ dd {
-        border: 1px solid $color-almostblack-tint--5;
-        a {
-            &:hover {
-                background: $color-almostblack-tint--5;
-                outline-color: $color-almostblack-tint--5;;
-            }
-        }
-    }
-}
-[data-group='start'] {
-    background: $color-almostblack-analogous-tint--5;
-    ~ dd {
-        border: 1px solid $color-almostblack-analogous-tint--5;
-        a {
-            &:hover {
-                background: $color-almostblack-analogous-tint--5;
-                outline-color: $color-almostblack-analogous-tint--5;;
-            }
-        }
-    }
-}
-[data-group='implement'] {
-    background: $color-almostblack-triadic-tint--5;
-    ~ dd {
-        border: 1px solid $color-almostblack-triadic-tint--5;
-        a {
-            &:hover {
-                background: $color-almostblack-triadic-tint--5;
-                outline-color: $color-almostblack-triadic-tint--5;;
-            }
-        }
+    @include breakpoint(mediumUp) {
+      margin-top: 1rem;
     }
 }
