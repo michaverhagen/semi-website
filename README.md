@@ -26,6 +26,12 @@ To build and start the **local development** website:
 $ npm run local
 ```
 
+To edit JS run webpack and let it watch for changes:
+
+```bash
+$ npm run build-js-dev
+```
+
 Run eslint and prettier to see code formatting errors
 
 ```bash
