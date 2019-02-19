@@ -1,5 +1,5 @@
 
-- title: "Scalable <a href='/knowledge-base/wiki-semi-consulting/learn/features/#knowledge-graph'>knowledge graph</a>"
+- title: "Scalable <a href='/blog/wiki-semi-consulting/learn/features/#knowledge-graph'>knowledge graph</a>"
   note: "The heart of Weaviate. See <a href='/link'>link</a> for more information on knowledge graphs"
   opensource: true
   enterprise: true
@@ -17,7 +17,7 @@
   enterprise: true
   whitelabel: true
 
-- title: "Create custom Weaviate peer-to-peer <a href='/knowledge-base/wiki-semi-consulting/learn/features/#peer-to-peer'>networks</a>"
+- title: "Create custom Weaviate peer-to-peer <a href='/blog/wiki-semi-consulting/learn/features/#peer-to-peer'>networks</a>"
   note: "Network your Weaviate with others in-house and outside via our peer-to-peer networking functionality"
   opensource: true
   enterprise: true
@@ -41,13 +41,13 @@
   enterprise: true
   whitelabel: true
 
-- title: "<a href='/knowledge-base/wiki-semi-consulting/learn/features/#deployment'>Large-scale deployment tools for your own cloud solution or on-premise</a>"
+- title: "<a href='/blog/wiki-semi-consulting/learn/features/#deployment'>Large-scale deployment tools for your own cloud solution or on-premise</a>"
   note: "Weaviate can run wherever you like - in the commercial cloud, your own hardware or wherever suits your business"
   opensource: false
   enterprise: true
   whitelabel: true
 
-- title: "Create custom <a href='/knowledge-base/wiki-semi-consulting/learn/features/#contextionary'>Contextionaries</a>"
+- title: "Create custom <a href='/blog/wiki-semi-consulting/learn/features/#contextionary'>Contextionaries</a>"
   note: "As well as the native Contextionary you can have a custom Contextionary for your own syntax and terminology"
   opensource: false
   enterprise: true
@@ -59,13 +59,13 @@
   enterprise: true
   whitelabel: true
 
-- title: "Your own version of the <a href='/knowledge-base/wiki-semi-consulting/learn/features/#playground' title='Weaviate Playground page'>Weaviate Playground</a>"
+- title: "Your own version of the <a href='/blog/wiki-semi-consulting/learn/features/#playground' title='Weaviate Playground page'>Weaviate Playground</a>"
   note: "A drag and drop environment that allows you to gather insights from your knowledge graph directly"
   opensource: false
   enterprise: true
   whitelabel: true
 
-- title: "<a href='/knowledge-base/wiki-semi-consulting/learn/features/#custom-branding'>Custom branding</a> to your look and feel"
+- title: "<a href='/blog/wiki-semi-consulting/learn/features/#custom-branding'>Custom branding</a> to your look and feel"
   note: "make Weaviate integrated into your own brand language with look, feel, logos, colors etc."
   opensource: false
   enterprise: false

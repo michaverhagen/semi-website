@@ -25,10 +25,10 @@ Discover and develop your key business questions in our SeMI Use Case Exploratio
 Sign up for a free workshop [here](/workshop/).
 
 ### Identify and collect data sources
-We help you to identify the key data and information sources that are needed for your use cases. We will also support you in getting (internal) approval to use these data sources. Generally, this is a challenging step in the process, as the use of data is bound by legal restrictions. For more information on this topic, please see our [legal brief](/knowledge-base/wiki-semi-consulting/learn/data-usage-and-compliancy/) on why your data is safe.
+We help you to identify the key data and information sources that are needed for your use cases. We will also support you in getting (internal) approval to use these data sources. Generally, this is a challenging step in the process, as the use of data is bound by legal restrictions. For more information on this topic, please see our [legal brief](/blog/wiki-semi-consulting/learn/data-usage-and-compliancy/) on why your data is safe.
 
 ### Refine your data
-Refine your data into knowledge graphs using our SeMI tool and our knowledge base. The outcome of this step is an *ontology* that describes your data. An ontology is an explicit description of concepts in a domain (classes), with properties describing features, attributes, and interrelationships of the entities. This is is the most important part of on-boarding data.
+Refine your data into knowledge graphs using our SeMI tool and our blog. The outcome of this step is an *ontology* that describes your data. An ontology is an explicit description of concepts in a domain (classes), with properties describing features, attributes, and interrelationships of the entities. This is is the most important part of on-boarding data.
 
 The refined data is stored in *Weaviate*. Weaviate is the decentralised semantic knowledge graph that is at the heart of SeMI. Weaviate allows for different nodes in a network to share knowledge from each node's individual graph. A well-formulated ontology is not only valuable for describing the meaning of data within Weaviate instances, it also enables linking data between them.
 
