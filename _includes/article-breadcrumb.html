@@ -1,8 +1,8 @@
 <ol class="breadcrumb">
-    <li><a href="/knowledge-base/">Knowledge base</a></li>
+    <li><a href="/blog/">blog</a></li>
     {% if page.topic %}
         <li>
-            <!--a href="/knowledge-base/{{ page.topic }}/"-->
+            <!--a href="/blog/{{ page.topic }}/"-->
             {% if page.topic == 'wiki-weaviate' %}
                 Weaviate
             {% elsif page.topic == 'wiki-semi-consulting' %}
@@ -12,7 +12,7 @@
         </li>
         {% if page.category %}
         <li>
-            <!--a href="/knowledge-base/{{ page.topic }}/{{ page.category }}"-->
+            <!--a href="/blog/{{ page.topic }}/{{ page.category }}"-->
                 {{ page.category | capitalize }}
             <!--/a-->
         </li>

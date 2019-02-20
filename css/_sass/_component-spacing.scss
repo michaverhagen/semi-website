@@ -1,5 +1,5 @@
 .space-header-page {
-  margin-top: $scale-1;
+  margin-top: $scale-3;
   margin-bottom: $scale-1;
 }
 
@@ -20,4 +20,17 @@
 .space-section-last {
   margin-top: $scale-5;
   margin-bottom: $scale-5;
+}
+
+.space-layout {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.space-layout--top {
+  padding-top: 1.5rem;
+}
+
+.space-layout--bottom {
+  padding-bottom: 1.5rem;
 }

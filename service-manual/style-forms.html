@@ -1,6 +1,7 @@
 ---
 layout: service-manual
 title: SeMI, our style; getting input from our users through form elements
+alternatePageScript: formPage.bundle.js
 ---
 
 <article class="article style-sm container">
@@ -288,7 +289,7 @@ title: SeMI, our style; getting input from our users through form elements
             <h3>Search form</h3>
             <form action="/search.html?query=" class="search">
                 <section class="search-meta">
-                    <label for="search-knowledgebase">Search our knowledge base</label>
+                    <label for="search-knowledgebase">Search our blog</label>
                     <input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
                     <input class="button" type="submit" value="Search" />
                 </section>
@@ -311,7 +312,7 @@ title: SeMI, our style; getting input from our users through form elements
             <section class="form-inline">
                 <form action="/search.html?query=" class="search">
                     <section class="search-meta">
-                        <label for="search-knowledgebase-inline">Search our knowledge base</label>
+                        <label for="search-knowledgebase-inline">Search our blog</label>
                         <input autosave="save-search-knowledgebase-inline" id="search-knowledgebase-inline" name="search" results="15" type="search" />
                         <input class="button" type="submit" value="Search" />
                     </section>
@@ -359,5 +360,3 @@ title: SeMI, our style; getting input from our users through form elements
         </section>
     </div>
 </article>
-
-<script type="text/javascript" src="/js/multirange.js"></script>

@@ -1,0 +1,12 @@
+@import '_var-color';
+@import '_var-borders';
+@import '_var-scale';
+
+.tag {
+  background-color: $color-almostblack-tint--3;
+  border-radius: $border-radius-roud-square;
+  color: $color-white;
+  display: inline-block;
+  float: left;
+  padding: $space-inner-small $scale-0;
+}

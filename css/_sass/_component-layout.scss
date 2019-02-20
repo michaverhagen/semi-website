@@ -15,8 +15,7 @@
 }
 
 @media screen and (min-width: 48em) {
-  .layout--double {
-    padding-top: 3rem;
+  .layout--double:last-child {
     padding-bottom: 3rem;
   }
   .layout--double:not(.layout--double-reverse) {

@@ -9,7 +9,7 @@ footer {
 	}
 }
 
-footer:not(.site-footer--overlay) {
+footer:not(.site-footer--overlay):not(.site-footer--square) {
 	background: $color-black;
 	border-top-left-radius: $scale-1;
 	-webkit-font-smoothing: antialiased;
@@ -23,6 +23,12 @@ footer:not(.site-footer--overlay) {
 		position:absolute;
 		bottom: 0;
 	}
+}
+
+.site-footer--square {
+	background: $color-black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .footer-links {

@@ -6,6 +6,9 @@ rdiscount extensions: [smart]
 sass:
     style: compressed # opposed to "expanded"
     sass_dir: css/_sass
+collections:
+    blog:
+        output: true
 exclude:
     - "*.json"
     - "Gemfile*"
@@ -13,8 +16,10 @@ exclude:
     - vendor
     - README.md
     - "*.draft"
+    - js-src
 plugins:
     - jekyll-autoprefixer
 autoprefixer:
     browsers:
         - last 5 versions
+url: "dev.semi.network/"
