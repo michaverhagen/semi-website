@@ -27,7 +27,7 @@ At SeMI, we have created a solution based on the following five pillars to enabl
 
 ![SeMI hexagon](/img/SeMI-hexagon.jpg)
 
-The software enabling the SeMI-network (i.e., running on a SeMI node) is called Weaviate. Weaviate is an open source project <a href="https://github.com/creativesoftwarefdn/weaviate" alt="Weaviate Github">available on Github</a>. When referring to the software, the name Weaviate is used. When referring to the network, the words SeMI-node are used.
+The software enabling the SeMI-network (i.e., running on a SeMI node) is called Weaviate. Weaviate is an open source project <a href="https://github.com/creativesoftwarefdn/weaviate" alt="Weaviate GitHub">available on GitHub</a>. When referring to the software, the name Weaviate is used. When referring to the network, the words SeMI-node are used.
 
 - **SeMI-node**, refers to a _knowledge graph node_ on the network.
 - **Weaviate**, refers to the software powering a SeMI-node.
@@ -87,7 +87,7 @@ An example in two dimensions:
 This brings the feature of context. In future machine to machine communication over the P2P network, a SeMI node can express what the data's meaning is when it transfers information. This also means that answers to queries are Fuzzy<sup><a href="https://en.wikipedia.org/wiki/Fuzzy_logic" alt="Fuzzy">(ref)</a></sup> in nature, a SeMI node tries to interpret the question based on the context it has.
 
 <section class="callout">
-    Learn more about SeMI-node architecture on <a href="https://github.com/creativesoftwarefdn/weaviate/blob/develop/README.md">Weaviate's Github page</a>.
+    Learn more about SeMI-node architecture on <a href="https://github.com/creativesoftwarefdn/weaviate/blob/develop/README.md">Weaviate's GitHub page</a>.
 </section>
 
 ## Networked Knowledge Graph (P2P)
@@ -108,4 +108,4 @@ For example: _Which SeMI-node knows about the centroid of "Seal", "Mammal" and "
 
 Because Weaviate operates as a middleware between the data storage and your applications we believe that interacting with it should be as familiar as possible. Therefore we use as many standards (RESTful API's, GraphQL, etcetera) as possible.
 
-In the <a href="https://github.com/creativesoftwarefdn/weaviate" alt="Weaviate Github">Weaviate documentation</a>  you can find more information about these standards.
+In the <a href="https://github.com/creativesoftwarefdn/weaviate" alt="Weaviate GitHub">Weaviate documentation</a>  you can find more information about these standards.

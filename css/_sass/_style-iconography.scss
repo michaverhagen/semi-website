@@ -27,7 +27,8 @@
 .close {
     white-space: nowrap;
     &:before {
-        content: '×';
+        content: '\00d7';
+        font-family: Arial, sans-serif;
         line-height: 0;
         margin-right: .25em;
     }

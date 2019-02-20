@@ -1,15 +1,7 @@
 
-@import 'mixins-background-patterns';
-
 .page--products--weaviate {
   .space-space-space-header-section.title-page {
     margin-bottom: 0;
-  }
-  .page--background__first {
-    @include background-pattern-semi-hexagon($color-white, -3rem 9rem);
-  }
-  .page--background__second {
-    @include background-pattern-semi-hexagon($color-white, 130% 2rem);
   }
   .section--weaviate-industries > .space-space-space-header-section {
     margin-top: 2rem;

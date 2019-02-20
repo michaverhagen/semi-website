@@ -10,60 +10,56 @@ open-graph-type: product
     <div class="page--background__first">
         <div class="container">
             <div class="wrapper">
-                <section class="layout layout--single section-page-intro">
-                    <div class="section-standout__logo">
-                        <img src="/img/logo-icon-weaviate-enterprise.svg" alt="Weaviate logo" />
+                {% include organism-product-top.html
+                    productLogoSrc='/img/logo-icon-weaviate-enterprise.svg'
+                    productLogoAlt='Weaviate logo'
+                    title='Weaviate Enterprise'
+                    payoff='The Decentralized Knowledge Graph'
+                    intro='The Enterprise version is based on the powerful open source Weaviate software and also allows you to configure it however you want. You can create custom <a href="/knowledge-base/wiki-semi-consulting/learn/features/#contextionary" title="Contextionaries">Contextionaries</a>, and use your own team to add in whatever customisations you need. With that, we provide an SLA, large scale deployment in your own cloud or on-premise, and support.'
+                %}
+                <!--p>Weaviate meshes all your data and makes it available as one seamless source of knowledge for contextualized research, reporting, and re-use</p-->
+                {% include molecule-section-heading.html
+                    title='The enterprise ready solution'
+                %}
+
+                <section class="layout layout--double">
+                    <div class="layout__column">
+                        <img class="section--img-weaviate-clouds" src="/img/weaviate-enterprise-clouds.png" srcset="/img/weaviate-enterprise-clouds@2x.png" alt="Weaviate support for different clouds" />
                     </div>
-                    <h1 class="space-header-section title-page header--centered">Weaviate Enterprise</h1>
-                    <div class="section__payoff">
-                        The Decentralized Knowledge Graph
-                    </div>
-                    <div class="section-standout__text--centered">
-                        <!--p>Weaviate meshes all your data and makes it available as one seamless source of knowledge for contextualized research, reporting, and re-use</p-->
-                        <p>The Enterprise version is based on the powerful open source Weaviate software and also allows you to configure it however you want. You can create custom <a href="/blog/#contextionary" title="Contextionaries">Contextionaries</a>, and use your own team to add in whatever customisations you need. With that, we provide an SLA, large scale deployment in your own cloud or on-premise, and support.</p>
+                    <div class="layout__column">
+                        <h3 class="space-header-column title-column">Support for different clouds</h3>
+                        <p>Weaviate Enterprise supports multiple cloud vendors including: Google, AWS, Azure and Oracle Cloud.</p>
                     </div>
                 </section>
-                <section>
-                    <h2 class="space-header-page title-section header--centered">An enterprise ready solution</h2>
-                    <section class="layout layout--double">
-                        <div class="layout__column">
-                            <img class="section--img-weaviate-clouds" src="/img/weaviate-enterprise-clouds.png" srcset="/img/weaviate-enterprise-clouds@2x.png" alt="Weaviate support for different clouds" />
-                        </div>
-                        <div class="layout__column">
-                            <h3 class="space-header-column title-column">Support for different clouds</h3>
-                            <p>Weaviate Enterprise supports multiple cloud vendors including: Google, AWS, Azure and Oracle Cloud.</p>
-                        </div>
-                    </section>
 
-                    <section class="layout layout--double layout--double-reverse">
-                        <div class="layout__column">
-                            <img class="section--img-playground" src="/img/datasets.png" srcset="/img/datasets@3x.png" alt="Weaviate enterprise playground" />
-                        </div>
-                        <div class="layout__column">
-                            <h3 class="space-header-column title-column">Predefined Data Networks</h3>
-                            <p>You will be able to plug in a selection of premium, predefined knowledge graphs which can enrich your results and enhance your outcomes. These are accessed through the Weaviate Networks toolkit. <a href="/products/networking.html" target="_self">Click here to learn more.</a></p>
-                        </div>
-                    </section>
+                <section class="layout layout--double layout--double-reverse">
+                    <div class="layout__column">
+                        <img class="section--img-playground" src="/img/datasets.png" srcset="/img/datasets@3x.png" alt="Weaviate enterprise playground" />
+                    </div>
+                    <div class="layout__column">
+                        <h3 class="space-header-column title-column">Predefined Data Networks</h3>
+                        <p>You will be able to plug in a selection of premium, predefined knowledge graphs which can enrich your results and enhance your outcomes. These are accessed through the Weaviate Networks toolkit. <a href="/products/networking.html" target="_self">Click here to learn more.</a></p>
+                    </div>
+                </section>
 
-                    <section class="layout layout--double layout">
-                        <div class="layout__column">
-                            <img class="section--img-playground" src="/img/weaviate-enterprise-playground.png" srcset="/img/weaviate-enterprise-playground@2x.png" alt="Weaviate enterprise playground" />
-                        </div>
-                        <div class="layout__column">
-                            <h3 class="space-header-column title-column">Playground</h3>
-                            <p>Weaviate's Playground is a graphical user interface that enables you to gather insights from the knowledge graph directly. Users of Weaviate Open Source can use the Playground on their websites, and Weaviate Enterprise users receive a custom version they can run wherever they want.</p>
-                        </div>
-                    </section>
+                <section class="layout layout--double layout">
+                    <div class="layout__column">
+                        <img class="section--img-playground" src="/img/weaviate-enterprise-playground.png" srcset="/img/weaviate-enterprise-playground@2x.png" alt="Weaviate enterprise playground" />
+                    </div>
+                    <div class="layout__column">
+                        <h3 class="space-header-column title-column">Playground</h3>
+                        <p>Weaviate's Playground is a graphical user interface that enables you to gather insights from the knowledge graph directly. Users of Weaviate Open Source can use the Playground on their websites, and Weaviate Enterprise users receive a custom version they can run wherever they want.</p>
+                    </div>
+                </section>
 
-                    <section class="layout layout--double layout--double-reverse">
-                        <div class="layout__column">
-                            <img class="section--img-ppf" src="/img/weaviate-enterprise-pricing-per-function.png" srcset="/img/weaviate-enterprise-pricing-per-function@2x.png" alt="Weaviate enterprise pricing per function" />
-                        </div>
-                        <div class="layout__column">
-                            <h3 class="space-header-column title-column">Pricing per function</h3>
-                            <p>With Weaviate Enterprise you are charged per function via the Weaviate API. This way you only pay for what you need.</p>
-                        </div>
-                    </section>
+                <section class="layout layout--double layout--double-reverse">
+                    <div class="layout__column">
+                        <img class="section--img-ppf" src="/img/weaviate-enterprise-pricing-per-function.png" srcset="/img/weaviate-enterprise-pricing-per-function@2x.png" alt="Weaviate enterprise pricing per function" />
+                    </div>
+                    <div class="layout__column">
+                        <h3 class="space-header-column title-column">Pricing per function</h3>
+                        <p>With Weaviate Enterprise you are charged per function via the Weaviate API. This way you only pay for what you need.</p>
+                    </div>
                 </section>
                 {% include section-feature-table.html %}
                 {% include section-contact-us.html %}

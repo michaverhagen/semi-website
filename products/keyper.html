@@ -1,0 +1,45 @@
+---
+bodyclass: page--products--weaviate
+layout: layout-default
+title: Keyper
+description: The Decentralized Knowledge Graph
+open-graph-type: product
+---
+
+<article>
+    <div class="page--background__first">
+        <div class="container">
+            <div class="wrapper">
+                {% include organism-product-top.html
+                    productLogoSrc='/img/logo-keyper.svg'
+                    productLogoAlt='keyper logo'
+                    title='Keyper'
+                    payoff='Manage your networks'
+                    intro='One of the most powerful features of Weaviate is the ability to connect multiple weaviates together in a <a href="/products/networking.html">network.</a> Keyper makes the connecitions so that the Weaviates can then act as a single unit; spanning different organisations and increasing breadth and depth.'
+                %}
+                {% include molecule-section-heading.html
+                    title='Connecting your Weaviates'
+                %}
+                <section class="layout layout--double">
+                    <div class="layout__column">
+                        <img src="/img/SeMI-graphic-medium__enterprise-solutions-light-bg.svg" alt="Keyper connecting weaviates" />
+                    </div>
+                    <div class="layout__column">
+                        <h3 class="space-header-column title-column">Peer-to-Peer network</h3>
+                        <p>Keyper is used to set up and maintain the network of weaviate peers. It makes it possible for the peers to communicate with each other and to ensure that each peer has a known state e.g. "peer is available", "new peer added" or "peer removed".</p>
+                    </div>
+                </section>
+                <section class="layout layout--double layout--double-reverse">
+                    <div class="layout__column">
+                        <img src="/img/SeMI-graphic-medium__creative-collaboration-light-bg.svg" alt="Keyper Communicating changes" />
+                    </div>
+                    <div class="layout__column">
+                        <h3 class="space-header-column title-column">Communicating changes</h3>
+                        <p>Keyper will automatically communicate changes like "peer data updated" which triggers a refresh at the other peers ensuring they all use the most current data. Note: Weaviate networks can't be made without Keyper.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        {% include section-contact-us.html %}
+    </div>
+</article>
