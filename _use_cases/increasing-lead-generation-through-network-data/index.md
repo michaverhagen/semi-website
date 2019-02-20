@@ -1,6 +1,6 @@
 ---
 bodyclass: page--use-cases
-layout: layout-default
+layout: layout-use-case
 title: Increasing lead generation through network data
 description: Generating leads is crucial to your company’s success. Weaviate significantly improved lead generation rates.
 tags: ['ecommerce','ai']

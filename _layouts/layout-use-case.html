@@ -1,0 +1,32 @@
+{% include head.html %}
+
+<body class="page--blog">
+
+{% include organism-header.html %}
+
+<main>
+    <article class="container">
+        <div class="wrapper article-container">
+            {% include article-menu.html %}
+            <section itemscope itemtype="http://schema.org/articleBody">
+                <!-- include article-breadcrumb.html -->
+                <!-- include article-intro.html -->
+                <section class="article">
+                    {{ content }}
+                </section>
+                <dl class="tags tags-in-page">
+                    <dt><i>Tags</i></dt>
+                    <dd>
+                        <ul class="tags__tag-list">
+                            {% for tag in page.tags %}
+                            <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </dd>
+                </dl>
+            </section>
+        </div>
+    </article>
+</main>
+
+{% include organism-footer.html %}

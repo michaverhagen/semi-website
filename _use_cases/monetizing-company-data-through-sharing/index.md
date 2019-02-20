@@ -1,6 +1,6 @@
 ---
 bodyclass: page--use-cases
-layout: layout-default
+layout: layout-use-case
 title: Monetizing company data through sharing
 description: Getting data monetization right requires significant effort, but it’s becoming critical for staying ahead of traditional competitors and new disruptors.
 tags: ['finance','monetization']

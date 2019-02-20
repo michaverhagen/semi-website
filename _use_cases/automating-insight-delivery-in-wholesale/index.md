@@ -1,6 +1,6 @@
 ---
 bodyclass: page--use-cases
-layout: layout-default
+layout: layout-use-case
 title: Automating insight delivery in wholesale
 description: As business relies more heavily on real-time big data analytics in the digital age, the ability to manage models is essential.
 tags: ['wholesale','automation']

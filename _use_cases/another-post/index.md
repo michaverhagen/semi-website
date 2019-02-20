@@ -1,6 +1,6 @@
 ---
 bodyclass: page--use-cases
-layout: layout-default
+layout: layout-use-case
 title: Test post
 description: Just a little description
 tags: ['wholesale','automation']
