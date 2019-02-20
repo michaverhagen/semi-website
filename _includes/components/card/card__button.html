@@ -1,4 +1,4 @@
-{%- if include.linkUrl %}
+{%- if include.linkUrl != '' %}
     <a class="card__button button" href="{{ include.linkUrl }}"
        {% if include.linkExternal == true %} target="_blank" {% endif %}>{{ include.ctaText | default: "Learn more" }}</a>
 {%- endif %}
