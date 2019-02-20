@@ -1,4 +1,5 @@
-<li class="card {{ include.themeClass }} card--white">
+{% capture is_dark %}{% if include.inverted %}card-inverted{% else %}{% endif %}{% endcapture%}
+<li class="card {{ include.themeClass }} {{is_dark}}">
     {% if include.inDevelopment %}
         {% include components/card/card__icon-with-label.html %}
     {% else if %}

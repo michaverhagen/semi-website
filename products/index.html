@@ -25,10 +25,10 @@ open-graph-type: product
                 {% endcapture %}
 
                 {% include components/card/card.html
+                    title="Weaviate Open Source"
                     themeClass="card--pilar card--theme-weaviate-oss"
                     imgUrl="/img/logo-icon-weaviate-oss.svg"
                     imgAlt="Weaviate Open Source logo"
-                    title="Weaviate Open Source"
                     linkUrl='/products/open-source.html'
                     linkExternal=false
                     ctaText="Explore Weaviate Open Source"
@@ -36,15 +36,16 @@ open-graph-type: product
                 %}
                 {% capture carTwoContent %}
                     <div class="card__intro">
-                        <p class="color-light"><b>The power of Weaviate Open Source plus valuable enterprise tools and services.</b></p>
+                        <p><b>The power of Weaviate Open Source plus valuable enterprise tools and services.</b></p>
                     </div>
                 {% endcapture %}
 
                 {% include components/card/card.html
+                    title="Weaviate Enterprise"
                     themeClass="card--pilar card--theme-weaviate-enterprise"
+                    inverted=true
                     imgUrl="/img/logo-icon-weaviate-enterprise.svg"
                     imgAlt="Weaviate Enterprise logo"
-                    title="Weaviate Enterprise"
                     linkUrl="/products/weaviate-enterprise.html"
                     linkExternal=false
                     ctaText="Explore Weaviate Enterprise"
@@ -53,15 +54,16 @@ open-graph-type: product
 
                 {% capture carThreeContent %}
                     <div class="card__intro">
-                        <p class="color-light"><b>Weaviate Enterprise as a customized platform with your branding and advanced monetization tools.</b></p>
+                        <p><b>Weaviate Enterprise as a customized platform with your branding and advanced monetization tools.</b></p>
                     </div>
                 {% endcapture %}
 
                 {% include components/card/card.html
+                    title="Weaviate White-Label Platform"
                     themeClass="card--pilar card--theme-weaviate-enterprise"
+                    inverted=true
                     imgUrl="/img/logo-icon-weaviate-whitelabel.svg"
                     imgAlt="Weaviate White-Label Platform"
-                    title="Weaviate White-Label Platform"
                     linkUrl="/products/weaviate-whitelabel-platform.html"
                     linkExternal=false
                     ctaText="Explore Weaviate White-Label Platform"

@@ -6,6 +6,8 @@ description: Discover the innovative ways in which different organizations have 
 exclude: true
 ---
 
+{% assign sorted_use_cases = site.use_cases | sort:"order" %}
+
 <article>
     <div class="container background-hexagon">
         <section class="layout layout--single section-page-intro">
@@ -18,24 +20,52 @@ exclude: true
         </section>
         <section class="wrapper--wide">
             <ul class="cards">
-                {% assign sorted_use_cases = site.use_cases | sort:"order" %}
                 {% for item in sorted_use_cases limit:4 %}
                     {% unless item.exclude %}
                         {% include components/card/card.html
-                            themeClass="card--pilar"
+                            title=item.title
+                            themeClass="card--pilar theme--use-cases"
+                            inverted=true
                             imgUrl=""
                             imgAlt=""
-                            title=item.title
                             linkUrl=''
                             linkExternal=false
                             ctaText=""
-                            content=item.description
+                            bodycopy=item.description
                             inDevelopment=true
                             tags=item.tags
                         %}
                     {% endunless %}
                 {% endfor %}
             </ul>
+        </section>
+
+        <section class="section-standout--secondary section-standout-padding container">
+            <div class="wrapper">
+                <div class="layout layout--single">
+                    <div class="space-header-section header--centered">
+                        <h2 class="title-section">Explore more cases</h2>
+                    </div>
+                </div>
+                <ul class="cards">
+                    {% for item in sorted_use_cases offset:4 %}
+                        {% unless item.exclude %}
+                            {% include components/card/card.html
+                                themeClass=""
+                                imgUrl=""
+                                imgAlt=""
+                                title=item.title
+                                linkUrl=''
+                                linkExternal=false
+                                ctaText=""
+                                bodycopy=item.description
+                                inDevelopment=true
+                                tags=item.tags
+                            %}
+                        {% endunless %}
+                    {% endfor %}
+                </ul>
+            </div>
         </section>
     </div>
 </article>

@@ -88,6 +88,14 @@ $c-card-border: 1px solid $color-gray-5;
     }
 }
 
+.card-inverted {
+    .card__title,
+    p,
+    strong {
+        color: $color-white;
+    }
+}
+
 .card__top {
     display: flex;
     align-items: center;
