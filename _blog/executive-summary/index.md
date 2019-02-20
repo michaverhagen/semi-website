@@ -3,6 +3,14 @@ layout: layout-blog-article
 title: Executive Summary
 description: Why is Weaviate a great tool to enrich your current business offerings? In this primer you will learn why Weaviate is so valuable for your business.
 tags: ['business', 'summary']
+redirect_from:
+ - /_blog/
+ - /blog/
+ - /knowledge-base/
+ - /knowledge-base/wiki-semi-consulting/
+ - /knowledge-base/wiki-semi-consulting/learn/
+ - /knowledge-base/wiki-semi-consulting/start/
+ - /knowledge-base/wiki-weaviate/learn/features
 video-link:
 video-caption:
 menu-order: 1

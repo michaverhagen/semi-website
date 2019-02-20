@@ -3,6 +3,7 @@ layout: layout-blog-article
 title: Choose a data source
 description: Strategically choosing the right sources to start working with is difficult, this article advises you on how to select the right datasets.
 tags: ['technology']
+redirect_from: '/knowledge-base/wiki-semi-consulting/start/choose-a-datasource'
 video-link:
 video-caption:
 menu-order: 2
