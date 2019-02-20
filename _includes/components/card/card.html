@@ -5,6 +5,9 @@
         {% include components/card/card__icon.html %}
     {% endif %}
     {% include components/card/card__title.html %}
+    {% if include.tags %}
+        {% include components/card/card__tags.html %}
+    {% endif %}
     {% include components/card/card__content.html %}
     {% include components/card/card__button.html %}
 </li>
