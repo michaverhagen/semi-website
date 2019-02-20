@@ -7,10 +7,11 @@
 <main>
     <article class="container">
         <div class="wrapper article-container">
-            {% include article-menu.html %}
+            <!--
+                add the sidebar from the design here
+            -->
             <section itemscope itemtype="http://schema.org/articleBody">
-                <!-- include article-breadcrumb.html -->
-                <!-- include article-intro.html -->
+                {% include article-intro.html %}
                 <section class="article">
                     {{ content }}
                 </section>
