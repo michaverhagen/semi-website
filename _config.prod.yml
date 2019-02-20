@@ -9,6 +9,10 @@ sass:
 collections:
     blog:
         output: true
+        permalink: '/blog/:path'
+    use_cases:
+        output: true
+        permalink: '/use-cases/:path'
 exclude:
     - "*.json"
     - "Gemfile*"

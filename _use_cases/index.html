@@ -1,0 +1,39 @@
+---
+bodyclass: page--use-cases
+layout: layout-default
+title: use cases
+description: test
+exclude: true
+---
+
+<article>
+    <div class="container background-hexagon">
+        <section class="layout layout--single section-page-intro">
+            <div class="section-standout__text--centered space-header-page">
+                <h1 class="title-page header--centered">{{page.title}}</h1>
+                <div class="section-standout__text--centered">
+                    <p>{{page.description}}</p>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper--wide">
+            <ul class="cards">
+                {% assign sorted_use_cases = site.use_cases %}
+                {% for item in sorted_use_cases %}
+                    {% unless item.exclude %}
+                        {% include components/card/card.html
+                            themeClass="card--pilar"
+                            imgUrl="/img/logo-icon-weaviate-oss.svg"
+                            imgAlt=""
+                            title=item.title
+                            linkUrl=''
+                            linkExternal=false
+                            ctaText=""
+                            content=item.description
+                        %}
+                    {% endunless %}
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</article>

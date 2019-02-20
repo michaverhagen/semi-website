@@ -9,6 +9,10 @@ sass:
 collections:
     blog:
         output: true
+        permalink: '/blog/:path'
+    use_cases:
+        output: true
+        permalink: '/use-cases/:path'
 exclude:
     - "*.json"
     - "Gemfile*"
@@ -22,4 +26,4 @@ plugins:
 autoprefixer:
     browsers:
         - last 5 versions
-url: "dev.semi.network/"
+url: "dev.semi.network"
