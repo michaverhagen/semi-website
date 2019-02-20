@@ -2,7 +2,7 @@
 bodyclass: page--use-cases
 layout: layout-default
 title: use cases
-description: test
+description: Discover the innovative ways in which different organizations have applied our products and the benefits they have created for their business.
 exclude: true
 ---
 
@@ -18,18 +18,19 @@ exclude: true
         </section>
         <section class="wrapper--wide">
             <ul class="cards">
-                {% assign sorted_use_cases = site.use_cases %}
-                {% for item in sorted_use_cases %}
+                {% assign sorted_use_cases = site.use_cases | sort:"order" %}
+                {% for item in sorted_use_cases limit:4 %}
                     {% unless item.exclude %}
                         {% include components/card/card.html
                             themeClass="card--pilar"
-                            imgUrl="/img/logo-icon-weaviate-oss.svg"
+                            imgUrl=""
                             imgAlt=""
                             title=item.title
                             linkUrl=''
                             linkExternal=false
                             ctaText=""
                             content=item.description
+                            inDevelopment=true
                         %}
                     {% endunless %}
                 {% endfor %}
