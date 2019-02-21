@@ -20,6 +20,8 @@ exclude:
 plugins:
     - jekyll-autoprefixer
     - jekyll-redirect-from
+whitelist:
+    - jekyll-redirect-from
 autoprefixer:
     browsers:
         - last 5 versions
