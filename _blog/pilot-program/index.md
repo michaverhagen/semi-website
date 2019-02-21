@@ -3,7 +3,8 @@ layout: layout-blog-article
 title: Pilot Program
 description: SeMI wants to enable its customers to give meaning to their big data. We believe that our pilot program is the best way to align our products and services with your needs.
 tags: ['business']
-redirect_from: '/knowledge-base/wiki-semi-consulting/learn/pilot-program/'
+redirect_from:
+  - /knowledge-base/wiki-semi-consulting/learn/pilot-program/
 menu-order: 3
 open-graph-type: article
 ---
