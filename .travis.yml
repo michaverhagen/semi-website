@@ -38,7 +38,7 @@ script:
     - JEKYLL_ENV=production bundle exec jekyll build --config "_config.yml" --baseurl "https://www.semi.network"
   fi
 - |
-  if [ "${TRAVIS_BRANCH}" = "develop" ]; then
+  if [ "${TRAVIS_BRANCH}" != "master" ]; then
     # use develop configuration for all other branches
     - JEKYLL_ENV=develop bundle exec jekyll build --config "_config.yml" --baseurl  "http://dev.semi.network"
   fi
