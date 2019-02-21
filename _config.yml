@@ -23,4 +23,4 @@ plugins:
 autoprefixer:
     browsers:
         - last 5 versions
-url: "dev.semi.network"
+url: "http://dev.semi.network"
