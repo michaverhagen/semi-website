@@ -1,7 +1,7 @@
 ---
 layout: layout-default
 name: Micha Verhagen
-jobTitle:
+jobTitle: Finance & Operations Lead
 mail: micha@semi.network
 key: micha
 ---
