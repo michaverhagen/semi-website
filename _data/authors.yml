@@ -1,9 +1,25 @@
 bob:
   displayname: Bob v. Luijt
   title: Founder of SeMI
+  img: /img/authors/bob.jpg
+  email: bob@semi.network
 james:
   displayname: James Carne
   title: Content expert
+  img:
+  email:
 micha:
   displayname: Micha Verhagen
-  title: 
+  title:
+  img: /img/authors/micha.jpg
+  email: micha@semi.network
+laura:
+  displayname: Laura Ham
+  title:
+  img: /img/authors/laura.jpg
+  email: laura@semi.network
+marta:
+  displayname: Marta Marszal
+  title:
+  img: /img/authors/marta.jpg
+  email: marta@semi.network
