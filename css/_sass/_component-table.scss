@@ -94,3 +94,7 @@ td {
         color: $color-white;
     }
 }
+
+.table-zebra :not(thead) tr:nth-child(even) .table__cell--highlight {
+    background-color: $color-almostblack-tint--1;
+}
