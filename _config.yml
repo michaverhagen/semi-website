@@ -9,6 +9,8 @@ sass:
 collections:
     blog:
         output: true
+    authors:
+        output: true
 exclude:
     - "*.json"
     - "Gemfile*"

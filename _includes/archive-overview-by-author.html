@@ -4,29 +4,28 @@
         <div class="article-container">
             <section>
                 <header class="space-header-page">
-                    {% if page.authorToShow %}
-                    {% assign author = site.data.authors[page.authorToShow] %}
-                    <h1 class="title-section">Stories by {{ author.displayname }}</h1>
+                    {% if page.name %}
+                        <h1 class="title-section">Stories by {{ page.name }}</h1>
                     {% endif  %}
-                    {% if page.section-intro-text %}
-                    <p>{{ page.section-intro-text }}</p>
-                    {% endif %}
+                    <!--{% if page.section-intro-text %}-->
+                        <!--<p>{{ page.section-intro-text }}</p>-->
+                    <!--{% endif %}-->
                 </header>
                 <ul class="article-overview">
                     <li>
                         {% assign sorted_blogs = site.blog | sort:"menu-order" %}
-                        {% for subpage in sorted_blogs %}
-                        {% if subpage.author contains page.authorToShow %}
+                        {% for blog in sorted_blogs %}
+                        {% if blog.authorKey contains page.key %}
                         <ol>
-                            <li><h3><a href="{{ subpage.url }}">{{ subpage.date | date: '%B %d, %Y' }} {{ subpage.title }}</a></h3>
+                            <li><h3><a href="{{ author.url }}">{{ blog.date | date: '%B %d, %Y' }} {{ blog.title }}</a></h3>
                                 <p>
-                                    {{ subpage.description }}
+                                    {{ blog.description }}
                                 </p>
                                 <dl class="tags">
                                     <dt><i>Tags</i></dt>
                                     <dd>
                                         <ul class="tags">
-                                            {% for tag in subpage.tags %}
+                                            {% for tag in blog.tags %}
                                             <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
                                             {% endfor %}
                                         </ul>

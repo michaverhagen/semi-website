@@ -1,8 +1,9 @@
 ---
 layout: layout-default
-title: Author - Laura Ham
-authorToShow: laura
-topic: author
+name: Marta Marszal
+jobTitle:
+mail: marta@semi.network
+key: marta
 ---
 
 {% include archive-overview-by-author.html %}

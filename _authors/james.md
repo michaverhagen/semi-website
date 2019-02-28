@@ -1,8 +1,9 @@
 ---
 layout: layout-default
-title: Author - Bob van Luijt
-authorToShow: bob
-topic: author
+name: James Carne
+title:
+mail: james@semi.network
+key: james
 ---
 
 {% include archive-overview-by-author.html %}

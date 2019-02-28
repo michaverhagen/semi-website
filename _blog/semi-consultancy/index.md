@@ -5,7 +5,7 @@ description: We want to get you off to a flying start in giving meaning to your 
 tags: ['business']
 menu-order: 3
 open-graph-type: article
-author: micha
+authorKey: micha
 pubdate: February 22, 2019
 ---
 

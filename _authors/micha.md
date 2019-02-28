@@ -1,8 +1,9 @@
 ---
 layout: layout-default
-title: Author - Marta Marszal
-authorToShow: marta
-topic: author
+name: Micha Verhagen
+jobTitle:
+mail: micha@semi.network
+key: micha
 ---
 
 {% include archive-overview-by-author.html %}

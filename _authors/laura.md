@@ -1,8 +1,9 @@
 ---
 layout: layout-default
-title: Author - James Carne
-authorToShow: james
-topic: author
+name: Laura Ham
+jobTitle:
+mail: laura@semi.network
+key: laura
 ---
 
 {% include archive-overview-by-author.html %}
