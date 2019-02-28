@@ -1,8 +1,15 @@
 
 .section-standout__logo {
-  width: 100px;
-
   img {
     width: 100%;
   }
+}
+
+.section-standout__logo:not(.section-standout__logo--wide) {
+  width: 100px;
+}
+
+.section-standout__logo--wide {
+  width: 280px;
+  margin-bottom: 1rem;
 }
