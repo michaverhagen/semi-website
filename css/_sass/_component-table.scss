@@ -1,7 +1,9 @@
 
+@import 'var-color';
+
 @mixin table-cell-styling {
     font-size: 1rem;
-    padding: $space-inner-small;
+    padding: $space-inner-medium;
 }
 
 .table-container {
@@ -38,10 +40,6 @@ td {
     @include table-cell-styling;
 }
 
-.table-zebra :not(thead) tr:nth-child(odd) {
-    background-color: $color-gray-7;
-}
-
 // not recommended, changing the display property will
 // remove the accessiblity features which the native table element already has
 .table-flex {
@@ -75,4 +73,24 @@ td {
 .table__cell--vertically-middle {
     vertical-align: middle;
     text-align: center;
+}
+
+.table-features th:not(:first-child) {
+    text-align: center;
+    min-width: 130px;
+}
+
+.table-zebra {
+  border-spacing: 0;
+}
+
+.table-zebra :not(thead) tr:nth-child(odd) {
+    background-color: $color-gray-7;
+}
+
+.table__cell--highlight {
+    background-color: $color-black;
+    @at-root th#{&} {
+        color: $color-white;
+    }
 }
