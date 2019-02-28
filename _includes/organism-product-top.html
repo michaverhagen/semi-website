@@ -1,5 +1,5 @@
 <section class="layout layout--single space-header-page">
-    <div class="section-standout__logo">
+    <div class="section-standout__logo {% if include.logoWide == true %}section-standout__logo--wide{% endif %}">
         <img src="{{include.productLogoSrc}}" alt="{{include.productLogoAlt}}" />
     </div>
     <div class="space-header-section header--centered">

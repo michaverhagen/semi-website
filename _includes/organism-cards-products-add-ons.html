@@ -1,13 +1,5 @@
 <ul class="cards">
 
-    <!--include components/card/card.html-->
-        <!--title="SeMI Network Nodes"-->
-        <!--bodycopy="Add knowledge to your Weaviate and tap into supplementary commonly used data for enrichment and context."-->
-        <!--themeClass="card&#45;&#45;theme-network"-->
-        <!--imgUrl="/img/logo-icon-weaviate-network.svg"-->
-        <!--linkUrl="/products/networking.html"-->
-    <!---->
-
     {% include components/card/card.html
         title="Weaviate Keyper"
         bodycopy="Couple Weaviates together within and between organisations for enhanced productivity."
@@ -19,8 +11,18 @@
     {% include components/card/card.html
         title="SeMI Consulting"
         bodycopy="Our consultants are ready to help you to get started and grow your Weaviate."
+        themeClass="card--theme-weaviate"
         imgUrl="/img/logo-icon-semi-consulting.svg"
         linkUrl="/products/semi-consulting.html"
+    %}
+
+    {% include components/card/card.html
+        title="Tableau"
+        bodycopy="Use Tableau to visualise your Weaviate data."
+        themeClass="card--theme-weaviate"
+        imgUrl="/img/logo-external-tableau.svg"
+        linkUrl="/products/tableau.html"
+        logoWide=true
     %}
 
 </ul>

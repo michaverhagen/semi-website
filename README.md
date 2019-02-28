@@ -6,7 +6,11 @@ Dependencies:
 
 Make sure both (Bundler and npm) are installed on your system before you proceed. For more information on how to install check above links.
 
-## Local development
+## :rocket: Deployment 
+
+Google cloud sdk with nginx is used for production.
+
+## :construction: Local development
 
 To start a project first install Bundler as described [in the Bundler documentation](https://bundler.io/).
 

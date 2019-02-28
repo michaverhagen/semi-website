@@ -1,6 +1,6 @@
 weaviate_version: 0.8.6
 markdown: kramdown
-kramdown:  
+kramdown:
     parse_block_html: false
 rdiscount extensions: [smart]
 sass:
@@ -23,7 +23,9 @@ exclude:
     - js-src
 plugins:
     - jekyll-autoprefixer
+    - jekyll-redirect-from
+whitelist:
+    - jekyll-redirect-from
 autoprefixer:
     browsers:
         - last 5 versions
-url: "dev.semi.network"

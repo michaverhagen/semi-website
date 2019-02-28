@@ -32,7 +32,16 @@ before_install:
   fi
 script:
 - set -e
-- JEKYLL_ENV=production bundle exec jekyll build --config "_config.prod.yml"
+- |
+  if [ "${TRAVIS_BRANCH}" = "master" ]; then
+    # use production configuration
+    JEKYLL_ENV=production bundle exec jekyll build --config "_config.yml" --baseurl "https://www.semi.network"
+  fi
+- |
+  if [ "${TRAVIS_BRANCH}" != "master" ]; then
+    # use develop configuration for all other branches
+    JEKYLL_ENV=develop bundle exec jekyll build --config "_config.yml" --baseurl  "http://dev.semi.network"
+  fi
 - html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html
 - npm run prettier
 - npm run eslint

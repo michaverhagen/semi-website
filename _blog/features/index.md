@@ -3,7 +3,8 @@ layout: layout-blog-article
 title: Features
 description: Below you can find an overview of features on a wide range of products.
 tags: ['business', 'summary']
-redirect_from: '/knowledge-base/wiki-semi-consulting/learn/features'
+redirect_from:
+  - /knowledge-base/wiki-semi-consulting/learn/features/
 video-link:
 video-caption:
 menu-order: 2

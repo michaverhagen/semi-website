@@ -3,7 +3,8 @@ layout: layout-blog-article
 title: Inspiration
 description: This article provides inspiration for how you can use SeMI.
 tags: ['summary']
-redirect_from: '/knowledge-base/wiki-semi-consulting/learn/inspiration'
+redirect_from:
+  - /knowledge-base/wiki-semi-consulting/learn/inspiration/
 video-link: 
 video-caption: 
 menu-order: 4
