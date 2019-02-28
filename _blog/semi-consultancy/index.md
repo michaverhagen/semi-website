@@ -17,9 +17,9 @@ We usually kick off by offering you an exploration workshop to understand where 
 
 The outcome of the workshop will enable further steps like:
 
-Alignment of your internal stakeholders. Who are the people that need to be involved in the program? What are their respective roles? Achieve agreement on the highest priority use case.
-Definition of a Proof of Concept. What exactly do we aim to achieve? When are we successful?
-Input into business cases. Which data sources are needed to achieve the desired outcome? Who has access to these sources?
+- Alignment of your internal stakeholders. Who are the people that need to be involved in the program? What are their respective roles? Achieve agreement on the highest priority use case.
+- Definition of a Proof of Concept. What exactly do we aim to achieve? When are we successful?
+- Input into business cases. Which data sources are needed to achieve the desired outcome? Who has access to these sources?
 
 ## Ontology
 Next we help you define your ontology. This is a key step in the process, because a good ontology will not just help you tackle this particular use case, but also other use case that you may want to explore.
