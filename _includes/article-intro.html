@@ -1,10 +1,14 @@
 <h1>{{ page.title }}</h1>
+
+
+
+
 {% if page.author or page.pubdate %}
 <div class="page-meta">
     {% if page.author %}
     {% assign author = site.data.authors[page.author] %}
     {% if author.archive != '' %}
-    <p>By <a href="/authors/{{page.author}}/" title="See archive page of {{author.displayname}}">{{ author.displayname }}</a>, {{ author.title }}</p>
+    <p>By <a href="/authors/{{page.author}}/" title="See archive page of {{author.displayname}}">{{ author.displayname }}</a>{% if author.title != empty and author.title != nil %}, {{ author.title }}{% endif %}</p>
     {% else %}
     <p>By {{ author.displayname }}, {{ author.title }}</p>
     {% endif %}
