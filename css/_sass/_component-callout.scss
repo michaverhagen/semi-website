@@ -9,4 +9,7 @@
   a {
     color: $color-black;
   }
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
