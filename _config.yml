@@ -13,6 +13,8 @@ collections:
     use_cases:
         output: true
         permalink: '/use-cases/:path'
+    authors:
+        output: true
 exclude:
     - "*.json"
     - "Gemfile*"
