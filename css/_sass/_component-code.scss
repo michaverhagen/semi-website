@@ -5,7 +5,17 @@ code, xmp {
 }
 
 pre code, xmp {
-    font-size: .85rem;
+	font-size: .75rem;
+	line-height: 1.5rem;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+pre > code {
+	white-space: pre;
+	margin-bottom: 0;
 }
 
 table code {
@@ -15,7 +25,6 @@ table code {
 .hljs {
 	display: block;
 	overflow-x: auto;
-	margin-bottom: 2em;
 	padding: 1em;
 	background: $color-gray-7;
 }
