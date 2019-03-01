@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./js-src/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./js-src/pages-sm.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -95,18 +95,6 @@
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/cookie */ \"./js-src/modules/cookie.js\");\n/* harmony import */ var _modules_mailChimp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/mailChimp */ \"./js-src/modules/mailChimp.js\");\n/* harmony import */ var _modules_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/video */ \"./js-src/modules/video.js\");\n/* harmony import */ var _modules_search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/search */ \"./js-src/modules/search.js\");\n/* harmony import */ var _modules_toggle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/toggle */ \"./js-src/modules/toggle.js\");\n/* harmony import */ var _modules_tagmanager__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/tagmanager */ \"./js-src/modules/tagmanager.js\");\n/* harmony import */ var _modules_tableOfContents__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/tableOfContents */ \"./js-src/modules/tableOfContents.js\");\nconst $script = __webpack_require__(/*! scriptjs */ \"./node_modules/scriptjs/dist/script.js\"); // modules\n\n\n\n\n\n\n\n\n\n/**\n * Cookie handler (based on cookie bar ID)\n */\n\nObject(_modules_cookie__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('cookie-notification');\n/**\n * Send form submission data to mailchimp\n */\n// TODO: only load this init on contact/index and workshop/index\n\nObject(_modules_mailChimp__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n/**\n * Play the video on the homepage\n */\n// TODO: limit the loading of video script to only the homepage\n\nObject(_modules_video__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('js-video-homepage');\n/**\n * Search\n */\n\nObject(_modules_search__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n/**\n * Make elements on the page collapse\n */\n\nObject(_modules_toggle__WEBPACK_IMPORTED_MODULE_4__[\"default\"])('data-toggle');\n/**\n * Initialize the tagmanager\n */\n\nObject(_modules_tagmanager__WEBPACK_IMPORTED_MODULE_5__[\"default\"])('GTM-K6DMN8N');\n/**\n * Initialize  the table of contents\n */\n\nObject(_modules_tableOfContents__WEBPACK_IMPORTED_MODULE_6__[\"default\"])('toc');\n/**\n * asynchronous load pingdom in the page\n */\n\n$script('//rum-static.pingdom.net/pa-5b22f622a42dbb00070002a5.js');\n\n//# sourceURL=webpack:///./js-src/common.js?");
-
-/***/ }),
-
-/***/ "./js-src/main.js":
-/*!************************!*\
-  !*** ./js-src/main.js ***!
-  \************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common */ \"./js-src/common.js\");\n\n\n//# sourceURL=webpack:///./js-src/main.js?");
 
 /***/ }),
 
@@ -191,6 +179,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/**\n * toggle the visibility
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/**\n * start playing the selected <video> element\n * @param videoElementId {string} | the id of the <video> element\n */\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (videoElementId) {\n  const el = document.getElementById(videoElementId);\n\n  if (typeof el !== 'undefined' && el != null) {\n    el.play();\n  }\n});\n\n//# sourceURL=webpack:///./js-src/modules/video.js?");
+
+/***/ }),
+
+/***/ "./js-src/pages-sm.js":
+/*!****************************!*\
+  !*** ./js-src/pages-sm.js ***!
+  \****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common */ \"./js-src/common.js\");\n\n\nconst $script = __webpack_require__(/*! scriptjs */ \"./node_modules/scriptjs/dist/script.js\");\n\n$script('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js', function () {\n  hljs.initHighlightingOnLoad();\n});\n\n//# sourceURL=webpack:///./js-src/pages-sm.js?");
 
 /***/ }),
 

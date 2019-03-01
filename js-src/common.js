@@ -1,4 +1,6 @@
 
+const $script = require('scriptjs');
+
 // modules
 import cookie from './modules/cookie';
 import mailChimp from './modules/mailChimp';
@@ -46,6 +48,6 @@ tagmanager('GTM-K6DMN8N');
 tableOfContents('toc');
 
 /**
- * External scripts
+ * asynchronous load pingdom in the page
  */
-require('./lib/pingdom/pa-5b22f622a42dbb00070002a5.js');
+$script('//rum-static.pingdom.net/pa-5b22f622a42dbb00070002a5.js');
