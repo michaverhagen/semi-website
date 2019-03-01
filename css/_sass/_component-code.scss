@@ -1,18 +1,15 @@
 code {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 1.1rem;
+	font-size: .75em;
+	line-height: 1.5em;
     max-width: $component-primary-max-width;
+	white-space: pre-wrap; // makes overflowed text wrap
 }
 
 pre {
 	width: 100%;
 	white-space: pre-wrap;
-	code {
-		font-size: .75em;
-		line-height: 1.5em;
-	}
 	> code {
-		white-space: pre;
 		margin-bottom: 0;
 	}
 }
