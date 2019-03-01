@@ -12,6 +12,9 @@
 	> .style-sm-section {
     	margin-bottom: 3em;
     	padding-bottom: 3em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
 		@include style-sm-section-separator-block;
     	> h3, > h4, > h5 {
         	margin: 2em 0 1em;
