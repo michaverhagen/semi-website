@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./js-src/pages-sm.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./js-src/mainSm.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -94,7 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/cookie */ \"./js-src/modules/cookie.js\");\n/* harmony import */ var _modules_mailChimp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/mailChimp */ \"./js-src/modules/mailChimp.js\");\n/* harmony import */ var _modules_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/video */ \"./js-src/modules/video.js\");\n/* harmony import */ var _modules_search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/search */ \"./js-src/modules/search.js\");\n/* harmony import */ var _modules_toggle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/toggle */ \"./js-src/modules/toggle.js\");\n/* harmony import */ var _modules_tagmanager__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/tagmanager */ \"./js-src/modules/tagmanager.js\");\n/* harmony import */ var _modules_tableOfContents__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/tableOfContents */ \"./js-src/modules/tableOfContents.js\");\nconst $script = __webpack_require__(/*! scriptjs */ \"./node_modules/scriptjs/dist/script.js\"); // modules\n\n\n\n\n\n\n\n\n\n/**\n * Cookie handler (based on cookie bar ID)\n */\n\nObject(_modules_cookie__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('cookie-notification');\n/**\n * Send form submission data to mailchimp\n */\n// TODO: only load this init on contact/index and workshop/index\n\nObject(_modules_mailChimp__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n/**\n * Play the video on the homepage\n */\n// TODO: limit the loading of video script to only the homepage\n\nObject(_modules_video__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('js-video-homepage');\n/**\n * Search\n */\n\nObject(_modules_search__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n/**\n * Make elements on the page collapse\n */\n\nObject(_modules_toggle__WEBPACK_IMPORTED_MODULE_4__[\"default\"])('data-toggle');\n/**\n * Initialize the tagmanager\n */\n\nObject(_modules_tagmanager__WEBPACK_IMPORTED_MODULE_5__[\"default\"])('GTM-K6DMN8N');\n/**\n * Initialize  the table of contents\n */\n\nObject(_modules_tableOfContents__WEBPACK_IMPORTED_MODULE_6__[\"default\"])('toc');\n/**\n * asynchronous load pingdom in the page\n */\n\n$script('//rum-static.pingdom.net/pa-5b22f622a42dbb00070002a5.js');\n\n//# sourceURL=webpack:///./js-src/common.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_cookie__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/cookie */ \"./js-src/modules/cookie.js\");\n/* harmony import */ var _modules_mailChimp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/mailChimp */ \"./js-src/modules/mailChimp.js\");\n/* harmony import */ var _modules_video__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/video */ \"./js-src/modules/video.js\");\n/* harmony import */ var _modules_search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/search */ \"./js-src/modules/search.js\");\n/* harmony import */ var _modules_toggle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/toggle */ \"./js-src/modules/toggle.js\");\n/* harmony import */ var _modules_tagmanager__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/tagmanager */ \"./js-src/modules/tagmanager.js\");\n/* harmony import */ var _modules_tableOfContents__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/tableOfContents */ \"./js-src/modules/tableOfContents.js\");\n/* harmony import */ var _utilities_inputTypeRangeExists__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./utilities/inputTypeRangeExists */ \"./js-src/utilities/inputTypeRangeExists.js\");\nconst $script = __webpack_require__(/*! scriptjs */ \"./node_modules/scriptjs/dist/script.js\"); // modules\n\n\n\n\n\n\n\n\n // utilities\n\n\n/**\n * Cookie handler (based on cookie bar ID)\n */\n\nObject(_modules_cookie__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('cookie-notification');\n/**\n * Send form submission data to mailchimp\n */\n// TODO: only load this init on contact/index and workshop/index\n\nObject(_modules_mailChimp__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n/**\n * Play the video on the homepage\n */\n// TODO: limit the loading of video script to only the homepage\n\nObject(_modules_video__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('js-video-homepage');\n/**\n * Search\n */\n\nObject(_modules_search__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n/**\n * Make elements on the page collapse\n */\n\nObject(_modules_toggle__WEBPACK_IMPORTED_MODULE_4__[\"default\"])('data-toggle');\n/**\n * Initialize the tagmanager\n */\n\nObject(_modules_tagmanager__WEBPACK_IMPORTED_MODULE_5__[\"default\"])('GTM-K6DMN8N');\n/**\n * Initialize  the table of contents\n */\n\nObject(_modules_tableOfContents__WEBPACK_IMPORTED_MODULE_6__[\"default\"])('toc');\n/**\n * asynchronous load of multirange script when a input type of type range exists on the page\n */\n\nconst inputFields = document.getElementsByTagName('INPUT');\n\nif (inputFields.length >= 0) {\n  if (Object(_utilities_inputTypeRangeExists__WEBPACK_IMPORTED_MODULE_7__[\"default\"])(inputFields, 'range')) {\n    $script('/js/lib/multirange/multirange.js');\n  }\n}\n/**\n * asynchronous load pingdom in the page\n */\n\n\n$script('//rum-static.pingdom.net/pa-5b22f622a42dbb00070002a5.js');\n\n//# sourceURL=webpack:///./js-src/common.js?");
+
+/***/ }),
+
+/***/ "./js-src/mainSm.js":
+/*!**************************!*\
+  !*** ./js-src/mainSm.js ***!
+  \**************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common */ \"./js-src/common.js\");\n\n\nconst $script = __webpack_require__(/*! scriptjs */ \"./node_modules/scriptjs/dist/script.js\");\n\n$script('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js', function () {\n  hljs.initHighlightingOnLoad();\n});\n\n//# sourceURL=webpack:///./js-src/mainSm.js?");
 
 /***/ }),
 
@@ -182,15 +194,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n/**\n * start playing the sel
 
 /***/ }),
 
-/***/ "./js-src/pages-sm.js":
-/*!****************************!*\
-  !*** ./js-src/pages-sm.js ***!
-  \****************************/
-/*! no exports provided */
+/***/ "./js-src/utilities/inputTypeRangeExists.js":
+/*!**************************************************!*\
+  !*** ./js-src/utilities/inputTypeRangeExists.js ***!
+  \**************************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./common */ \"./js-src/common.js\");\n\n\nconst $script = __webpack_require__(/*! scriptjs */ \"./node_modules/scriptjs/dist/script.js\");\n\n$script('//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js', function () {\n  hljs.initHighlightingOnLoad();\n});\n\n//# sourceURL=webpack:///./js-src/pages-sm.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/**\n * @desc check of at least one type of element exists\n * @param type {object} A list of html input fields\n * @param fields {string} The type of element that should exist\n * @returns {boolean} if an element of a certain type exists\n */\nconst inputTypeRangeExists = function (fields, type) {\n  let rangeFields = 0;\n  Object.entries(fields).forEach(([key, field]) => {\n    if (field.type === type) {\n      rangeFields++;\n    }\n  });\n  return rangeFields >= 1;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (inputTypeRangeExists);\n\n//# sourceURL=webpack:///./js-src/utilities/inputTypeRangeExists.js?");
 
 /***/ }),
 

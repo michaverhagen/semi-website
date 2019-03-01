@@ -1,3 +1,7 @@
+---
+serviceManual: true
+---
+
 {% include head-sm.html %}
 
 <body class="body--service-manual">
@@ -6,19 +10,10 @@
 
 <main>
     <article class="article style-sm container">
-            
-            <div class="wrapper">
-
-                {{ content }}
-
-            </div>
-
+        <div class="wrapper">
+            {{ content }}
+        </div>
     </article>
-
 </main>
-
-<!-- code highlights -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 
 {% include organism-footer.html %}
