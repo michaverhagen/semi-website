@@ -15,7 +15,7 @@ video-link:
 video-caption:
 menu-order: 1
 open-graph-type: article
-author: bob
+authorKey: bob
 pubdate: january 14, 2019
 ---
 
