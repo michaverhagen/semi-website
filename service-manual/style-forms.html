@@ -285,13 +285,13 @@ title: SeMI, our style; getting input from our users through form elements
             <!-- TODO: create solution for multirange container div -->
             <div style="display:flex;">
                 <div>
-                    <label for="style-sm-input-multirange1">Label for multi-range slider</label>
-                    <input id="style-sm-input-multirange1" type="range" multiple value="25,75" />
+                    <label for="style-sm-input-multirange">Label for multi-range slider</label>
+                    <input id="style-sm-input-multirange" type="range" multiple value="25,75" />
                 </div>
             </div>
             {% capture block20 %}
-<label for="style-sm-input-multirange2">Label for multi-range slider</label>
-<input id="style-sm-input-multirange2" type="range" multiple value="25,75" />
+<label for="input-multirange">Label for multi-range slider</label>
+<input id="input-multirange" type="range" multiple value="25,75" />
             {% endcapture %}
             {% include molecule-codeblock.html content=block20 %}
 
