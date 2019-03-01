@@ -7,44 +7,49 @@ title: SeMI, our typographic specifications and rules
 	<div class="wrapper">
 		<h2>Typography</h2>
 		<p>The open source typeface <a href="https://www.huertatipografica.com/en/fonts/alegreya-sans-ht">Alegrya Sans</a>, together with its serifed <a href="https://www.huertatipografica.com/en/fonts/alegreya-ht-pro">Alegrya</a> sibling is used throughout all SeMI textual communications. Together they create a ‘humanist’ typeface superfamily. Combined with a consistent modular scale they provide an extensive palette to express any type of communication related to SeMI.</p>
-		<p>Alegrya provides an optimal reading rhythm, allowing for comfortable long-form reading without distraction. Excellent OpenType features (tabular lining of numbers, fractions, <sub>sub</sub> &amp; <sup>super</sup>script, <span class="sm-caps">small caps</span>) and language support (Latin, Greek, Cyrillic, accented characters) mean that SeMI can take on any typographic challenge.
-	</p>
+		<p>Alegrya provides an optimal reading rhythm, allowing for comfortable long-form reading without distraction. Excellent OpenType features (tabular lining of numbers, fractions, <sub>sub</sub> &amp; <sup>super</sup>script, <span class="sm-caps">small caps</span>) and language support (Latin, Greek, Cyrillic, accented characters) mean that SeMI can take on any typographic challenge.</p>
 
 		<h3>Typographic application</h3>
 		<p>The minimal type size for body copy is set to 1,35em (translated to 21,6px in desktop browsers). Heading level sizes are in content-first fashion extrapolated from the body copy, providing rhythm and hierarchy in textual content.</p>
 
 		<section class="style-sm-section">
 			<h3>Headings</h3>
+
 			<h1 contenteditable="true">Heading level one</h1>
-			<section class="style-sm-codesnippet">
-				<p><abbr>HTML</abbr> code snippet</p>
-<xmp><h1>Heading level one</h1></xmp>
-		</section>
-		<h2 contenteditable="true">Heading level two</h2>
-		<section class="style-sm-codesnippet">
-			<p><abbr>HTML</abbr> code snippet</p>
-<xmp><h2>Heading level two</h2></xmp>
-		</section>
-		<h3 contenteditable="true">Heading level three</h3>
-		<section class="style-sm-codesnippet">
-			<p><abbr>HTML</abbr> code snippet</p>
-<xmp><h3>Heading level three</h3></xmp>
-		</section>
-		<h4 contenteditable="true">Heading level four</h4>
-		<section class="style-sm-codesnippet">
-			<p><abbr>HTML</abbr> code snippet</p>
-<xmp><h4>Heading level four</h4></xmp>
-		</section>
-		<h5 contenteditable="true">Heading level five</h5>
-		<section class="style-sm-codesnippet">
-			<p><abbr>HTML</abbr> code snippet</p>
-<xmp><h5>Heading level five</h5></xmp>
-		</section>
-		<h6 contenteditable="true">Heading level six</h6>
-		<section class="style-sm-codesnippet">
-			<p><abbr>HTML</abbr> code snippet</p>
-<xmp><h6>Heading level six</h6></xmp>
-			</section>
+			{% capture block1 %}
+<h1>Heading level one</h1>
+			{% endcapture %}
+			{% include molecule-codeblock.html content=block1 %}
+
+			<h2 contenteditable="true">Heading level two</h2>
+			{% capture block2 %}
+<h2>Heading level two</h2>
+			{% endcapture %}
+			{% include molecule-codeblock.html content=block2 %}
+
+			<h3 contenteditable="true">Heading level three</h3>
+			{% capture block3 %}
+<h3>Heading level three</h3>
+			{% endcapture %}
+			{% include molecule-codeblock.html content=block3 %}
+
+			<h4 contenteditable="true">Heading level four</h4>
+			{% capture block4 %}
+<h4>Heading level four</h4>
+			{% endcapture %}
+			{% include molecule-codeblock.html content=block4 %}
+
+			<h5 contenteditable="true">Heading level five</h5>
+			{% capture block5 %}
+<h5>Heading level five</h5>
+			{% endcapture %}
+			{% include molecule-codeblock.html content=block5 %}
+
+			<h6 contenteditable="true">Heading level five</h6>
+			{% capture block6 %}
+<h6>Heading level six</h6>
+			{% endcapture %}
+			{% include molecule-codeblock.html content=block6 %}
 		</section>
 
 		<section class="style-sm-section">
@@ -54,21 +59,21 @@ title: SeMI, our typographic specifications and rules
 			<p contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Dolorum soluta esse quaerat</a> ullam blanditiis <em>illo veniam distinctio</em> aut odit, ea corporis molestias accusamus. Quibusdam officia, molestias, accusamus suscipit eveniet dolores!</p>
 			<p contenteditable="true">Ipsum similique quidem temporibus repudiandae ullam ut doloribus eligendi rerum modi! <strong>Est impedit</strong> rem fugiat, numquam voluptatibus iste maiores quas. <sup>Footnote 1</sup> Nemo, eum!</p>
 			<p contenteditable="true">Ex iusto eaque quis magni, earum, quas, <abbr title="This is an abbreviation">ABBR</abbr> recusandae at quasi, veritatis molestias H<sub>2</sub>O hic unde ducimus totam labore odio ipsum nostrum sequi excepturi. Recusandae, sequi asperiores. Quod magni, ducimus quidem! Recusandae aperiam ullam amet odio, eos, nisi dignissimos voluptas consectetur voluptatibus excepturi eum reiciendis a.</p>
-			<section class="style-sm-codesnippet">
-				<p><abbr>HTML</abbr> code snippet</p>
-<xmp><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Dolorum soluta esse quaerat</a> ullam blanditiis <em>illo veniam distinctio</em> aut odit, ea corporis molestias accusamus. Quibusdam officia, molestias, accusamus suscipit eveniet dolores!</p>
+			{% capture block7 %}
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">Dolorum soluta esse quaerat</a> ullam blanditiis <em>illo veniam distinctio</em> aut odit, ea corporis molestias accusamus. Quibusdam officia, molestias, accusamus suscipit eveniet dolores!</p>
 <p>Ipsum similique quidem temporibus repudiandae ullam ut doloribus eligendi rerum modi! <strong>Est impedit</strong> rem fugiat, numquam voluptatibus iste maiores quas. <sup>Footnote 1</sup> Nemo, eum!</p>
-<p>Ex iusto eaque quis magni, earum, quas, <abbr title="This is an abbreviation">ABBR</abbr> recusandae at quasi, veritatis molestias H<sub>2</sub>O hic unde ducimus totam labore odio ipsum nostrum sequi excepturi. Recusandae, sequi asperiores. Quod magni, ducimus quidem! Recusandae aperiam ullam amet odio, eos, nisi dignissimos voluptas consectetur voluptatibus excepturi eum reiciendis a.</p></xmp>
-		</section>
+<p>Ex iusto eaque quis magni, earum, quas, <abbr title="This is an abbreviation">ABBR</abbr> recusandae at quasi, veritatis molestias H<sub>2</sub>O hic unde ducimus totam labore odio ipsum nostrum sequi excepturi. Recusandae, sequi asperiores. Quod magni, ducimus quidem! Recusandae aperiam ullam amet odio, eos, nisi dignissimos voluptas consectetur voluptatibus excepturi eum reiciendis a.</p>
+			{% endcapture %}
+			{% include molecule-codeblock.html content=block7 %}
 		</section>
 
 		<section class="style-sm-section">
 			<h3>Secondary text</h3>
 			<p>This is primary text, <span class="text--secondary">this is secondary text</span>.</p>
-			<section class="style-sm-codesnippet">
-				<p><abbr>HTML</abbr> code snippet</p>
-<xmp><p>This is primary text, <span class="text--secondary">this is secondary text</span>.</p></xmp>
-		</section>
+			{% capture block8 %}
+<p>This is primary text, <span class="text--secondary">this is secondary text</span>.</p>
+			{% endcapture %}
+			{% include molecule-codeblock.html content=block8 %}
 		</section>
 
 		<section class="style-sm-section">
@@ -78,24 +83,20 @@ title: SeMI, our typographic specifications and rules
 			<p>For the section and column headings style has been decoupled from semantics. Meaning that you are able to apply the primary, secondary or tertiary style of a heading to a HTML heading of your choosing based on the semantic use and location on the page.</p>
 
 			<h1 contenteditable="true" class="title-page">Title page</h1>
-			<section class="style-sm-codesnippet">
-				<p><abbr>HTML</abbr> code snippet</p>
-<xmp><h1 class="title-page">Title page</h1></xmp>
+			{% capture block9 %}<h1 class="title-page">Title page</h1>{% endcapture %}
+			{% include molecule-codeblock.html content=block9 %}
 		</section>
 
+		<section class="style-sm-section">
 			<h2 contenteditable="true" class="title-section">Title section</h2>
-
-			<section class="style-sm-codesnippet">
-				<p><abbr>HTML</abbr> code snippet</p>
-<xmp><h2 class="title-section">Title section</h2></xmp>
+			{% capture block10 %}<h2 class="title-section">Title section</h2>{% endcapture %}
+			{% include molecule-codeblock.html content=block10 %}
 		</section>
 
+		<section class="style-sm-section">
 			<h3 contenteditable="true" class="title-column">Title column</h3>
-
-			<section class="style-sm-codesnippet">
-				<p><abbr>HTML</abbr> code snippet</p>
-<xmp><h3 class="title-column">Title column</h3></xmp>
-			</section>
+			{% capture block11 %}<h3 class="title-column">Title section</h3>{% endcapture %}
+			{% include molecule-codeblock.html content=block11 %}
 		</section>
 	</div>
 </article>
