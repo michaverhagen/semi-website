@@ -1,21 +1,20 @@
-code, xmp {
+code {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1.1rem;
     max-width: $component-primary-max-width;
 }
 
-pre code, xmp {
-	font-size: .75rem;
-	line-height: 1.5rem;
-}
-
 pre {
+	width: 100%;
 	white-space: pre-wrap;
-}
-
-pre > code {
-	white-space: pre;
-	margin-bottom: 0;
+	code {
+		font-size: .75em;
+		line-height: 1.5em;
+	}
+	> code {
+		white-space: pre;
+		margin-bottom: 0;
+	}
 }
 
 table code {
