@@ -12,6 +12,10 @@
 	> .style-sm-section {
     	margin-bottom: 3em;
     	padding-bottom: 3em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: self-start;
 		@include style-sm-section-separator-block;
     	> h3, > h4, > h5 {
         	margin: 2em 0 1em;
@@ -19,9 +23,6 @@
     	section:not(.space-section-intro):not(.space-section-last) {
         	margin-bottom: 1em;
     	}
-	}
-	code {
-    	max-width: 100%;
 	}
 }
 
@@ -64,26 +65,21 @@
 }
 
 .style-sm-codesnippet {
-    @include transition-out;
-    border: 1px solid $color-semi-tint--2;
-    border-radius: $border-radius-3;
-    margin: 1em 0 2em;
-    opacity: .5;
-    p {
-        padding: .25em 1em 0;
-    }
-    xmp {
-        background: $color-gray-7;
-        border-radius: $border-radius-1;
-        color: $color-almostblack-analogous-tint--5;
-        max-width: 100%;
-        padding: 1em;
-        white-space: pre-line;
-    }
-    &:hover {
-        @include transition-in;
-        opacity: 1;
-    }
+  @include transition-out;
+  border: 1px solid $color-semi-tint--2;
+  border-top-left-radius: $scale-1;
+  margin: 1em 0 2em;
+  opacity: .5;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  p {
+    padding: .25em 1em 0;
+  }
+  &:hover {
+    @include transition-in;
+    opacity: 1;
+  }
 }
 
 @include breakpoint(smallToMedium) {

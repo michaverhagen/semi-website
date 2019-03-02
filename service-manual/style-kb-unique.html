@@ -10,69 +10,39 @@ title: SeMI, our style; unique blog elements
 
             <h3>blog categories</h3>
 
-            <ul class="article-index">
-                <li class="semi-knowledge-flow-learn">
-                    <a href="#">
-                        <div>
-                            <p class="semi-knowledge-flow-select">Heading</p>
-                            <img src="/img/rtp-city-icon--1.svg" alt="">
-                        </div>
-                    </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis commodi aut officia odio ipsam possimus.</p>
-                </li>
-                <li class="semi-knowledge-flow-start">
-                    <a href="#">
-                        <div>
-                            <p class="semi-knowledge-flow-select">Heading</p>
-                            <img src="/img/rtp-city-icon--2.svg" alt="">
-                        </div>
-                    </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum placeat quam quia sint, incidunt assumenda.</p>
-                </li>
-                <li class="semi-knowledge-flow-implement">
-                    <a href="#">
-                        <div>
-                            <p class="semi-knowledge-flow-select">Heading</p>
-                            <img src="/img/rtp-city-icon--3.svg" alt="">
-                        </div>
-                    </a>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sint dignissimos, facere asperiores!</p>
-                </li>
-            </ul>
-
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><ul class="article-index">
-                    <li class="semi-knowledge-flow-learn">
-                        <a href="#">
-                            <div>
-                                <p class="semi-knowledge-flow-select">Heading</p>
-                                <img src="/img/rtp-city-icon--1.svg" alt="">
-                            </div>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis commodi aut officia odio ipsam possimus.</p>
-                    </li>
-                    <li class="semi-knowledge-flow-start">
-                        <a href="#">
-                            <div>
-                                <p class="semi-knowledge-flow-select">Heading</p>
-                                <img src="/img/rtp-city-icon--2.svg" alt="">
-                            </div>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum placeat quam quia sint, incidunt assumenda.</p>
-                    </li>
-                    <li class="semi-knowledge-flow-implement">
-                        <a href="#">
-                            <div>
-                                <p class="semi-knowledge-flow-select">Heading</p>
-                                <img src="/img/rtp-city-icon--3.svg" alt="">
-                            </div>
-                        </a>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sint dignissimos, facere asperiores!</p>
-                    </li>
-                </ul>
-                </xmp>
-            </section>
+            {% capture block1 %}
+<ul class="article-index">
+    <li class="semi-knowledge-flow-learn">
+        <a href="#">
+            <div>
+                <p class="semi-knowledge-flow-select">Heading</p>
+                <img src="/img/rtp-city-icon--1.svg" alt="">
+            </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis commodi aut officia odio ipsam possimus.</p>
+    </li>
+    <li class="semi-knowledge-flow-start">
+        <a href="#">
+            <div>
+                <p class="semi-knowledge-flow-select">Heading</p>
+                <img src="/img/rtp-city-icon--2.svg" alt="">
+            </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum placeat quam quia sint, incidunt assumenda.</p>
+    </li>
+    <li class="semi-knowledge-flow-implement">
+        <a href="#">
+            <div>
+                <p class="semi-knowledge-flow-select">Heading</p>
+                <img src="/img/rtp-city-icon--3.svg" alt="">
+            </div>
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sint dignissimos, facere asperiores!</p>
+    </li>
+</ul>
+            {% endcapture %}
+            {{block1}}
+            {% include molecule-codeblock.html content=block1 %}
 
         </section>
     </div>

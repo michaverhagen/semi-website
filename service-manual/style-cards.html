@@ -3,199 +3,129 @@ layout: service-manual
 title: SeMI, our style; our Card component
 ---
 <article class="style-sm container">
-	<div class="wrapper">
+    <div class="wrapper">
         <h2>Cards</h2>
 
         <section class="style-sm-section">
             <h3>Card collection</h3>
             <p>A card collection is a list of cards contextually related to one another.</p>
             <p>Card collections are always used in pairs and never alone.For a single instance of a card, refer to an <a href="#styleguide-single-card" title="example of a single card">single card component</a> instead.</p>
-            <ul class="cards">
 
-                {% include components/card/card.html
-                    bodycopy="Cards in a card collection are always an even height. It will take the height of the heighest card as a baseline."
-                %}
+            {% capture block1 %}
+<ul class="cards">
+    {% include components/card/card.html bodycopy="Cards in a card collection are always an even height. It will take the height of the heighest card as a baseline." %}
+    {% include components/card/card.html bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil doloremque consectetur illum." %}
+    {% include components/card/card.html bodycopy="Lorem ipsum dolor sit amet." %}
+</ul>
+            {% endcapture %}
+            {{block1}}
+            {% include molecule-codeblock.html content=block1 %}
 
-                {% include components/card/card.html
-                    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil doloremque consectetur illum. "
-                %}
-
-                {% include components/card/card.html
-                    bodycopy="Lorem ipsum dolor sit amet."
-                %}
-
-            </ul>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><ul class="cards">
-    {% include components/card/card.html
-        bodycopy="Cards in a card collection are always an even height. It will take the height of the heighest card as a baseline."
-    %}
-    {% include components/card/card.html
-        bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil doloremque consectetur illum."
-    %}
-    {% include components/card/card.html
-        bodycopy="Lorem ipsum dolor sit amet."
-    %}
-</ul></xmp>
-            </section>
         </section>
 
         <section class="style-sm-section">
             <h3>Card collection <em>options</em></h3>
             <p>Cards have a few options such as the title, bodycopy and a button.</p>
-            <ul class="cards">
-                {% include components/card/card.html
-                    title="A title"
-                    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                    linkUrl="/"
-                %}
-                {% include components/card/card.html
-                    title="Another title"
-                    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                    linkUrl="/"
-                %}
-            </ul>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><ul class="cards">
-                    {% include components/card/card.html
-                        title="A title"
-                        bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                        linkUrl="/"
-                    %}
-                    {% include components/card/card.html
-                        title="Another title"
-                        bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                        linkUrl="/"
-                    %}
-                </ul></xmp>
-            </section>
+            {% capture block2 %}
+<ul class="cards">
+    {% include components/card/card.html
+    title="A title"
+    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    linkUrl="/"
+    %}
+    {% include components/card/card.html
+    title="Another title"
+    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    linkUrl="/"
+    %}
+</ul>
+            {% endcapture %}
+            {{block2}}
+            {% include molecule-codeblock.html content=block2 %}
         </section>
 
         <section class="style-sm-section">
             <h3>Card collection <em>theme variations</em></h3>
             <p>The cards also are available in different themes to communicatie the product section they belong to.</p>
-            <ul class="cards">
-                {% include components/card/card.html
-                    imgUrl="/img/logo-icon-semi-consulting.svg"
-                    title="Default theme"
-                    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                    linkUrl="/"
-                %}
 
-                {% include components/card/card.html
-                    themeClass="card--theme-weaviate"
-                    imgUrl="/img/logo-icon-weaviate.svg"
-                    title="Weaviate theme"
-                    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                    linkUrl="/"
-                %}
-            </ul>
-            <ul class="cards">
-                {% include components/card/card.html
-                    themeClass="card--theme-weaviate-oss"
-                    imgUrl="/img/logo-icon-weaviate-oss.svg"
-                    title="Weaviate OSS theme"
-                    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                    linkUrl="/"
-                %}
-                {% include components/card/card.html
-                    themeClass="card--theme-weaviate-enterprise"
-                    imgUrl="/img/logo-icon-weaviate-enterprise.svg"
-                    title="Weaviate Enterprise theme"
-                    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                    linkUrl="/"
-                %}
-            </ul>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><ul class="cards">
-                        {% include components/card/card.html
-                        imgUrl="/img/logo-icon-semi-consulting.svg"
-                        title="Default theme"
-                        bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                        linkUrl="/"
-                        %}
+            {% capture block3 %}
+<ul class="cards">
+    {% include components/card/card.html
+    imgUrl="/img/logo-icon-semi-consulting.svg"
+    title="Default theme"
+    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    linkUrl="/"
+    %}
 
-                        {% include components/card/card.html
-                        themeClass="card--theme-weaviate"
-                        imgUrl="/img/logo-icon-weaviate.svg"
-                        title="Weaviate theme"
-                        bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                        linkUrl="/"
-                        %}
-                    </ul>
-                    <ul class="cards">
-                        {% include components/card/card.html
-                        themeClass="card--theme-weaviate-oss"
-                        imgUrl="/img/logo-icon-weaviate-oss.svg"
-                        title="Weaviate OSS theme"
-                        bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                        linkUrl="/"
-                        %}
-                        {% include components/card/card.html
-                        themeClass="card--theme-weaviate-enterprise"
-                        imgUrl="/img/logo-icon-weaviate-enterprise.svg"
-                        title="Weaviate Enterprise theme"
-                        bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
-                        linkUrl="/"
-                        %}
-                </ul></xmp>
-            </section>
+    {% include components/card/card.html
+    themeClass="card--theme-weaviate"
+    imgUrl="/img/logo-icon-weaviate.svg"
+    title="Weaviate theme"
+    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    linkUrl="/"
+    %}
+</ul>
+<ul class="cards">
+    {% include components/card/card.html
+    themeClass="card--theme-weaviate-oss"
+    imgUrl="/img/logo-icon-weaviate-oss.svg"
+    title="Weaviate OSS theme"
+    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    linkUrl="/"
+    %}
+    {% include components/card/card.html
+    themeClass="card--theme-weaviate-enterprise"
+    imgUrl="/img/logo-icon-weaviate-enterprise.svg"
+    title="Weaviate Enterprise theme"
+    bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+    linkUrl="/"
+    %}
+</ul>
+            {% endcapture %}
+            {{block3}}
+            {% include molecule-codeblock.html content=block3 %}
         </section>
 
         <section id="styleguide-single-card">
             <h3>Single card</h3>
             <p>A single card is a section of which there are no contextually related other items on this same level in content hierarchy.</p>
 
+            {% capture block4 %}
             {% include components/card/card--single.html
                 bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque omnis aliquam velit cupiditate aspernatur accusamus in, facere dolorem blanditiis pariatur. Velit labore fugit libero quidem cumque atque quam consectetur fuga."
             %}
-
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp>
-                    {% include components/card/card--single.html
-                        bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque omnis aliquam velit cupiditate aspernatur accusamus in, facere dolorem blanditiis pariatur. Velit labore fugit libero quidem cumque atque quam consectetur fuga."
-                    %}
-                </xmp>
-            </section>
+            {% endcapture %}
+            {{block4}}
+            {% include molecule-codeblock.html content=block4 %}
         </section>
 
         <section>
             <h3>Single card with nested media molecule</h3>
             <p>Cards can be combined with several other molecules. For example a nested media molecule.</p>
-            {% capture thisCardContent %}
+            {% capture block5 %}
+                {% capture thisCardContent %}
                 <figure>
-                    <img src="/img/SeMI-centroid-network-combined.jpg" alt="Graph outlining SeMI’s combined centroid network" />
+                    <img src="/img/SeMI-centroid-network-combined.jpg"
+                         alt="Graph outlining SeMI’s combined centroid network" />
                     <figcaption>
                         <p>SeMI centroid network combined.</p>
                     </figcaption>
                 </figure>
-            {% endcapture %}
-
-            {% include components/card/card--single.html
+                {% endcapture %}
+                {% include components/card/card--single.html
                 bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque omnis aliquam velit cupiditate aspernatur accusamus in, facere dolorem blanditiis pariatur. Velit labore fugit libero quidem cumque atque quam consectetur fuga."
                 content=thisCardContent
-            %}
-
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp>
-                    {% include components/card/card--single.html
-                        bodycopy="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque omnis aliquam velit cupiditate aspernatur accusamus in, facere dolorem blanditiis pariatur. Velit labore fugit libero quidem cumque atque quam consectetur fuga."
-                        content=thisCardContent
-                    %}
-                </xmp>
-            </section>
+                %}
+            {% endcapture %}
+            {{block5}}
+            {% include molecule-codeblock.html content=block5 %}
         </section>
 
         <section>
             <h3>Card pilars</h3>
             <p>Card pilars are a larger version of cards. Typically used for displaying and comparing different products.</p>
+            {% capture block6 %}
             <ul class="cards">
-
                 {% capture weaviateOssCardList %}
                 <ul class="list-benefits">
                     <li>Open source version of Weaviate.</li>
@@ -204,7 +134,6 @@ title: SeMI, our style; our Card component
                     <li>Stay in control of your datasets and privacy.</li>
                 </ul>
                 {% endcapture %}
-
                 {% include components/card/card.html
                 themeClass="card--pilar card--theme-weaviate-oss"
                 imgUrl="/img/logo-icon-weaviate-oss.svg"
@@ -215,7 +144,6 @@ title: SeMI, our style; our Card component
                 ctaText="Get started with Weaviate OSS on GitHub"
                 content=weaviateOssCardList
                 %}
-
                 {% capture weaviateEnterpriseCardList %}
                 <ul class="list-benefits">
                     <li>Enterprise version of Weaviate</li>
@@ -229,7 +157,6 @@ title: SeMI, our style; our Card component
                     <li>Support from SeMI's knowledge graph consultants.</li>
                 </ul>
                 {% endcapture %}
-
                 {% include components/card/card.html
                 themeClass="card--pilar card--theme-weaviate-enterprise"
                 imgUrl="/img/logo-icon-weaviate-enterprise.svg"
@@ -241,33 +168,9 @@ title: SeMI, our style; our Card component
                 content=weaviateEnterpriseCardList
                 %}
             </ul>
-
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><ul class="cards">
-                    {% include components/card/card.html
-                        themeClass="card--pilar card--theme-weaviate-oss"
-                        imgUrl="/img/logo-icon-weaviate-oss.svg"
-                        imgAlt="Weaviate OSS logo"
-                        title="Weaviate OSS"
-                        linkUrl="https://github.com/creativesoftwarefdn/weaviate"
-                        linkExternal=true
-                        ctaText="Get started with Weaviate OSS on GitHub"
-                        content=weaviateOssCardList
-                    %}
-
-                    {% include components/card/card.html
-                        themeClass="card--pilar card--theme-weaviate-enterprise"
-                        imgUrl="/img/logo-icon-weaviate-enterprise.svg"
-                        imgAlt="Weaviate enterprise logo"
-                        title="Weaviate Enterprise"
-                        linkUrl="/contact/"
-                        linkExternal=true
-                        ctaText="Contact us to get started with Enterprise"
-                        content=weaviateEnterpriseCardList
-                    %}
-                </ul></xmp>
-            </section>
+            {% endcapture %}
+            {{block6}}
+            {% include molecule-codeblock.html content=block6 %}
         </section>
     </div>
 </article>
