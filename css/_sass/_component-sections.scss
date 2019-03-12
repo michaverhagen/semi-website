@@ -19,6 +19,14 @@
   }
 }
 
+.section-standout--quaternary {
+  background-color: $color-gray-7;
+
+  .layout--single {
+    @extend .section-standout-padding;
+  }
+}
+
 .section-standout__text--centered {
   text-align: center;
 }
