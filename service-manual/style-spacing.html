@@ -33,70 +33,68 @@ title: SeMI, our style; spacing
                 <h3>Sections and headers</h3>
                 <p>Every element has spacing in the form of padding's and margins. However, for the vertical rhythm of a page the most prominent vertical margins (space between elements) are:</p>
                 <ul>
-                    <li>section space: space around a section (space-header-*)</li>
-                    <li>headers: space around the header (space-section-*)</li>
+                    <li><strong>A.</strong> section space: space around a section (space-header-*)</li>
+                    <li><strong>B.</strong> headers: space around the header (space-section-*)</li>
                 </ul>
                 <p>These are used intertwined to reach the desired result.</p>
             </section>
 
             <!-- headers -->
             <section class="style-sm-section">
-                <h3>space-header-*</h3>
-                <h4>Example <strong>space-header-page</strong>:</h4>
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp>
-                        <h2 class="space-header-page title-section">A title used to separate sections</h2>
-                    </xmp>
-                </section>
+                <h3><strong>A. space-header-*</strong></h3>
+                <h4>1. Example <strong>space-header-page</strong>:</h4>
+                {% capture block1 %}
+<h2 class="space-header-page title-section">A title used to separate sections</h2>
+                {% endcapture %}
+                {% include molecule-codeblock.html content=block1 %}
                 <h4>Results in:</h4>
                 <div class="style-sm-space-heading-indicator">
-                    <h2 class="space-header-page title-section">A title used to separate sections</h2>
+                    {{block1}}
                 </div>
+            </section>
 
+            <section class="style-sm-section">
                 <!-- space-header-section -->
                 <h4>Example <strong>space-header-section</strong>:</h4>
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp>
-                        <h2 class="space-header-section title-section">A title used above sections</h2>
-                    </xmp>
-                </section>
+                {% capture block2 %}
+<h2 class="space-header-section title-section">A title used above sections</h2>
+                {% endcapture %}
+                {% include molecule-codeblock.html content=block2 %}
                 <h4>Results in:</h4>
                 <div class="style-sm-space-heading-indicator">
-                    <h2 class="space-header-section title-column">A title used above columns</h2>
+                    {{block2}}
                 </div>
+            </section>
 
+            <section class="style-sm-section">
                 <!-- space-header-column -->
                 <h4>Example space-header-column:</h4>
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp>
-                        <h2 class="space-header-column title-column">A title used above columns</h2>
-                    </xmp>
-                </section>
+                {% capture block3 %}
+<h2 class="space-header-column title-column">A title used above columns</h2>
+                {% endcapture %}
+                {% include molecule-codeblock.html content=block3 %}
+
                 <h4>Results in:</h4>
                 <div class="style-sm-space-heading-indicator">
-                    <h2 class="space-header-column title-column">A title used above columns</h2>
+                    {{block3}}
                 </div>
-                <!-- antipattern: hacky div -->
+                <!-- TODO: fix antipattern: hacky div -->
                 <div style="height:3rem;width:20px;display:block;"></div>
             </section>
 
             <!-- Sections -->
             <section class="style-sm-section">
-                <h3>space-section-:</h3>
+                <h3><strong>B. space-section-:</strong></h3>
                 <h4>Example <strong>space-section-intro:</strong></h4>
                 <p>Usually the first section on a page.</p>
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp>
-                        <section class="space-section-intro">
-                            <!-- then the header has a space depending on which location it's used -->
-                            <h2 class="space-header-page title-section">A title used to separate sections</h2>
-                        </section>
-                    </xmp>
-                </section>
+                {% capture block4 %}
+<section class="space-section-intro">
+    <!-- then the header has a space depending on which location it's used -->
+    <h2 class="space-header-page title-section">A title used to separate sections</h2>
+</section>
+                {% endcapture %}
+                {% include molecule-codeblock.html content=block4 %}
+
                 <h4>Results in:</h4>
                 <div class="style-sm-space-section-indicator">
                     <section class="space-section-intro">
@@ -110,15 +108,14 @@ title: SeMI, our style; spacing
                 <!-- space-section-last -->
                 <h4>Example <strong>space-section-last</strong>:</h4>
                 <p>Usually the last section on a page.</p>
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp>
-                        <section class="space-section-last">
-                            <!-- then the header has a space depending on which location it's used -->
-                            <h2 class="space-header-page title-section">A title used to separate sections</h2>
-                        </section>
-                    </xmp>
-                </section>
+                {% capture block5 %}
+<section class="space-section-last">
+    <!-- then the header has a space depending on which location it's used -->
+    <h2 class="space-header-page title-section">A title used to separate sections</h2>
+</section>
+                {% endcapture %}
+                {% include molecule-codeblock.html content=block5 %}
+
                 <h4>Results in:</h4>
                 <div class="style-sm-space-section-indicator">
                     <section class="space-section-last">
