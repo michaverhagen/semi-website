@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   entry: {
     main: './js-src/main.js',
-    formPage: './js-src/page-forms.js',
+    mainSm: './js-src/mainSm.js',
   },
   output: {
     path: path.resolve(__dirname, 'js'),

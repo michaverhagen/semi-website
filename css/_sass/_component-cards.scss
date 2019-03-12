@@ -99,10 +99,19 @@ $c-card-border: 1px solid $color-gray-5;
 }
 
 .card__icon {
-    width: 3rem;
     height: 3rem;
+    &:not(.card__icon--wide) {
+        width: 3rem;
+    }
     img {
         width: 100%; // img width is based on surrounding element
+    }
+}
+
+.card__icon--wide {
+    width: 11rem;
+    img {
+        margin-top: .4rem;
     }
 }
 

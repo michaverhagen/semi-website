@@ -1,0 +1,46 @@
+---
+bodyclass: page--products--weaviate
+layout: layout-default
+title: Tableau
+description: The Decentralized Knowledge Graph
+open-graph-type: product
+---
+
+<article>
+    <div class="page--background__first">
+        <div class="container">
+            <div class="wrapper">
+                {% include organism-product-top.html
+                    productLogoSrc='/img/logo-external-tableau.svg'
+                    productLogoAlt='Logo of tableau'
+                    logoWide=true
+                    title='Visualization'
+                    payoff='Integrate Tableau with Weaviate'
+                    intro='We have native <a href="https://www.tableau.com/" target="_blank">Tableau</a> support in Weaviate available to you. You can use either the built-in Weaviate <a href="/blog/features/#playground">Playground</a> for visualization or you can use Tableau if your business prefers.'
+                %}
+                {% include molecule-section-heading.html
+                    title='Visualise your data with Tableau'
+                %}
+                <section class="layout layout--double">
+                    <div class="layout__column">
+                        <img src="/img/SeMI-graphic-medium__enterprise-solutions-light-bg.svg" alt="Tableau" />
+                    </div>
+                    <div class="layout__column">
+                        <h3 class="space-header-column title-column">Familiar technology</h3>
+                        <p>The familiar Tableau functionality you love integrated with Weaviate to get your data visualizations up to speed without the learning curve of a new tool.</p>
+                    </div>
+                </section>
+                <section class="layout layout--double layout--double-reverse">
+                    <div class="layout__column">
+                        <img src="/img/SeMI-graphic-medium__consulting.svg" alt="Tableau" />
+                    </div>
+                    <div class="layout__column">
+                        <h3 class="space-header-column title-column">Rich functionality</h3>
+                        <p>The rich functionality of Tableau with fast analytics, automatic updates, smart dashboards and drag and drop tools to allow easy analysis of the data without programming or testing.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        {% include section-contact-us.html %}
+    </div>
+</article>

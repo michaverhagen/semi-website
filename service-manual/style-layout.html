@@ -154,97 +154,63 @@ title: SeMI, our style; laying out interface elements
         <div class="wrapper">
             <section class="style-sm-section">
                 <h3>Layout single column</h3>
-                <div class="layout layout--single">
-                    <div class="layout__column">
-                        <!-- this part is purely for the example -->
-                        <div class="style-sm-ui-layout__fill-column">
-                            <p>This layout column will automatically inherit the width of the inner child.</p>
-                        </div>
-                    </div>
-                </div>
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp><div class="layout layout--single">
-                        <div class="layout__column">
-                            <!-- this part is purely for the example -->
-                            <div class="style-sm-ui-layout__fill-column">
-                                <p>This layout column will automatically inherit the width of the inner child.</p>
-                            </div>
-                        </div>
-                    </div></xmp>
-                </section>
+                {% capture block1 %}
+<div class="layout layout--single">
+    <div class="layout__column">
+        <!-- this part is purely for the example -->
+        <div class="style-sm-ui-layout__fill-column">
+            <p>This layout column will automatically inherit the width of the inner child.</p>
+        </div>
+    </div>
+</div>
+                {% endcapture %}
+                {{block1}}
+                {% include molecule-codeblock.html content=block1 %}
+
                 <h3>Layout Double column</h3>
-                <div class="layout layout--double">
-                    <div class="layout__column">
-                        <!-- this part is purely for the example -->
-                        <div class="style-sm-ui-layout__fill-column">
-                            <p>Column one</p>
-                            <p>This layout column will automatically inherit the width of the inner child.</p>
-                        </div>
-                    </div>
-                    <div class="layout__column">
-                        <!-- this part is purely for the example -->
-                        <div class="style-sm-ui-layout__fill-column">
-                            <p>Column two</p>
-                            <p>This layout column will automatically inherit the width of the inner child.</p>
-                        </div>
-                    </div>
-                </div>
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp><div class="layout layout--double">
-                        <div class="layout__column">
-                            <!-- this part is purely for the example -->
-                            <div class="style-sm-ui-layout__fill-column">
-                                <p>Column one</p>
-                                <p>This layout column will automatically inherit the width of the inner child.</p>
-                            </div>
-                        </div>
-                        <div class="layout__column">
-                            <!-- this part is purely for the example -->
-                            <div class="style-sm-ui-layout__fill-column">
-                                <p>Column two</p>
-                                <p>This layout column will automatically inherit the width of the inner child.</p>
-                            </div>
-                        </div>
-                    </div></xmp>
-                </section>
+                {% capture block2 %}
+<div class="layout layout--double">
+    <div class="layout__column">
+        <!-- this part is purely for the example -->
+        <div class="style-sm-ui-layout__fill-column">
+            <p>Column one</p>
+            <p>This layout column will automatically inherit the width of the inner child.</p>
+        </div>
+    </div>
+    <div class="layout__column">
+        <!-- this part is purely for the example -->
+        <div class="style-sm-ui-layout__fill-column">
+            <p>Column two</p>
+            <p>This layout column will automatically inherit the width of the inner child.</p>
+        </div>
+    </div>
+</div>
+                {% endcapture %}
+                {{block2}}
+                {% include molecule-codeblock.html content=block2 %}
+
                 <h3>Layout Double column reversed</h3>
-                <div class="layout layout--double layout--double-reverse">
-                    <div class="layout__column">
-                        <!-- this part is purely for the example -->
-                        <div class="style-sm-ui-layout__fill-column">
-                            <p>Column one</p>
-                            <p>This layout column will automatically inherit the width of the inner child.</p>
-                        </div>
-                    </div>
-                    <div class="layout__column">
-                        <!-- this part is purely for the example -->
-                        <div class="style-sm-ui-layout__fill-column">
-                            <p>Column two</p>
-                            <p>This layout column will automatically inherit the width of the inner child.</p>
-                        </div>
-                    </div>
-                </div>
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp><div class="layout layout--double layout--double-reverse">
-                        <div class="layout__column">
-                            <!-- this part is purely for the example -->
-                            <div class="style-sm-ui-layout__fill-column">
-                                <p>Column one</p>
-                                <p>This layout column will automatically inherit the width of the inner child.</p>
-                            </div>
-                        </div>
-                        <div class="layout__column">
-                            <!-- this part is purely for the example -->
-                            <div class="style-sm-ui-layout__fill-column">
-                                <p>Column two</p>
-                                <p>This layout column will automatically inherit the width of the inner child.</p>
-                            </div>
-                        </div>
-                    </div></xmp>
-                </section>
+                {% capture block3 %}
+<div class="layout layout--double layout--double-reverse">
+    <div class="layout__column">
+        <!-- this part is purely for the example -->
+        <div class="style-sm-ui-layout__fill-column">
+            <p>Column one</p>
+            <p>This layout column will automatically inherit the width of the inner child.</p>
+        </div>
+    </div>
+    <div class="layout__column">
+        <!-- this part is purely for the example -->
+        <div class="style-sm-ui-layout__fill-column">
+            <p>Column two</p>
+            <p>This layout column will automatically inherit the width of the inner child.</p>
+        </div>
+    </div>
+</div>
+                {% endcapture %}
+                {{block3}}
+                {% include molecule-codeblock.html content=block3 %}
+
             </section>
         </div>
     </div>

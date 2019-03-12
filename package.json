@@ -12,6 +12,7 @@
     "eslint-plugin-import": "^2.16.0",
     "html-minifier": "^3.5.20",
     "prettier": "1.16.4",
+    "scriptjs": "2.5.9",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3"
   },

@@ -10,12 +10,12 @@ redirect_from:
  - /knowledge-base/wiki-semi-consulting/
  - /knowledge-base/wiki-semi-consulting/learn/
  - /knowledge-base/wiki-semi-consulting/start/
- - /knowledge-base/wiki-weaviate/learn/features
+ - /knowledge-base/wiki-weaviate/learn/features/
 video-link:
 video-caption:
 menu-order: 1
 open-graph-type: article
-author: bob
+authorKey: bob
 pubdate: january 14, 2019
 ---
 
