@@ -18,7 +18,6 @@ exclude:
     - js-src
     - node_modules
     - webpack.config.js
-    - _blog
 plugins:
     - jekyll-redirect-from
 whitelist:
