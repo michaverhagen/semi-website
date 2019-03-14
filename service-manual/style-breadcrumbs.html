@@ -3,15 +3,21 @@ layout: service-manual
 title: SeMI, our style; our Breadcrumb component
 ---
 <article class="style-sm container">
-	<div class="wrapper">
+   <div class="wrapper">
         <section class="style-sm-section">
             <h2>Breadcrumbs</h2>
             <p>‘Breadcrumbs’ let the reader know its location in the website's hierarchical structure and browse back to a higher level in the hierarchy.</p>
-            <div class="breadcrumb"><ol><li><a href="#">Level one</a></li><li><a href="#">Level two</a></li><li>Level three (current level)</li></ol></div>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><div class="breadcrumb"><ol><li><a href="#">Level one</a></li><li><a href="#">Level two</a></li><li>Level three (current level)</li></ol></div></xmp>
-            </section>
+            {% capture block1 %}
+<div class="breadcrumb">
+    <ol>
+        <li><a href="#">Level one</a></li>
+        <li><a href="#">Level two</a></li>
+        <li>Level three (current level)</li>
+    </ol>
+</div>
+            {% endcapture %}
+            {{block1}}
+            {% include molecule-codeblock.html content=block1 %}
         </section>
     </div>
 </article>

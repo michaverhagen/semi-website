@@ -1,0 +1,38 @@
+
+@import '../variables/var-scale';
+
+.section-standout-padding {
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+}
+
+.section-standout--secondary {
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+}
+
+.section-standout--tertiary {
+  background-color: $color-almostblack;
+
+  .layout--single {
+    @extend .section-standout-padding;
+  }
+}
+
+.section-standout__text--centered {
+  text-align: center;
+}
+
+.section__content {
+  display: flex;
+}
+
+.column__image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.column__content {
+  padding: 1rem;
+}

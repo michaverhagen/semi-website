@@ -1,0 +1,131 @@
+---
+layout: service-manual
+title: SeMI, our style; spacing
+---
+
+<article class="style-sm container">
+    <div class="container">
+        <div class="wrapper">
+            <h1>Spacing</h1>
+            <p>Using correct spacing creates rhythm that allows for people to find and process information better.</p>
+            <p>For the spacing between elements on a page a vertical rhythm is used in the form of a scale.</p>
+            <!--p>This rhythm is dependant on the screen width as well so that on a smaller device you don't see large gaps.</p-->
+
+            <section class="style-sm-section">
+                <h2>Scale</h2>
+                <p>The following spacings can be used both vertically and horizontally.</p>
+                <ul class="style-sm-scale-list">
+                {% for num in (0..6) %}
+                    <li>
+                        <span class="style-sm-scale-filler style-sm-scale-{{num}}">{{num}}</span>
+                    </li>
+                {% endfor %}
+                </ul>
+            </section>
+            <section class="style-sm-section">
+                <h3>Responsiveness of the scale</h3>
+                <p>The scaling base starts with 0, and this base is the default body font-size. In this case scale-0 is <strong>16px</strong>. This has the advantage that if the body font size is enlarged by a user, the spacings will grow with to accommodate for the new larger sizes.</p>
+            </section>
+            <section class="style-sm-section">
+                <h2>Examples</h2>
+                <p>The spacing is applied using a variety of different classes. Resulting in the spacing applied is dependent on the type of element and where it's located on a page. Or if it's in combination with another element. Or even a background that is used can have influence on the amount of spacing applied.</p>
+
+                <h3>Sections and headers</h3>
+                <p>Every element has spacing in the form of padding's and margins. However, for the vertical rhythm of a page the most prominent vertical margins (space between elements) are:</p>
+                <ul>
+                    <li><strong>A.</strong> section space: space around a section (space-header-*)</li>
+                    <li><strong>B.</strong> headers: space around the header (space-section-*)</li>
+                </ul>
+                <p>These are used intertwined to reach the desired result.</p>
+            </section>
+
+            <!-- headers -->
+            <section class="style-sm-section">
+                <h3><strong>A. space-header-*</strong></h3>
+                <h4>1. Example <strong>space-header-page</strong>:</h4>
+                {% capture block1 %}
+<h2 class="space-header-page title-section">A title used to separate sections</h2>
+                {% endcapture %}
+                {% include molecule-codeblock.html content=block1 %}
+                <h4>Results in:</h4>
+                <div class="style-sm-space-heading-indicator">
+                    {{block1}}
+                </div>
+            </section>
+
+            <section class="style-sm-section">
+                <!-- space-header-section -->
+                <h4>Example <strong>space-header-section</strong>:</h4>
+                {% capture block2 %}
+<h2 class="space-header-section title-section">A title used above sections</h2>
+                {% endcapture %}
+                {% include molecule-codeblock.html content=block2 %}
+                <h4>Results in:</h4>
+                <div class="style-sm-space-heading-indicator">
+                    {{block2}}
+                </div>
+            </section>
+
+            <section class="style-sm-section">
+                <!-- space-header-column -->
+                <h4>Example space-header-column:</h4>
+                {% capture block3 %}
+<h2 class="space-header-column title-column">A title used above columns</h2>
+                {% endcapture %}
+                {% include molecule-codeblock.html content=block3 %}
+
+                <h4>Results in:</h4>
+                <div class="style-sm-space-heading-indicator">
+                    {{block3}}
+                </div>
+                <!-- TODO: fix antipattern: hacky div -->
+                <div style="height:3rem;width:20px;display:block;"></div>
+            </section>
+
+            <!-- Sections -->
+            <section class="style-sm-section">
+                <h3><strong>B. space-section-:</strong></h3>
+                <h4>Example <strong>space-section-intro:</strong></h4>
+                <p>Usually the first section on a page.</p>
+                {% capture block4 %}
+<section class="space-section-intro">
+    <!-- then the header has a space depending on which location it's used -->
+    <h2 class="space-header-page title-section">A title used to separate sections</h2>
+</section>
+                {% endcapture %}
+                {% include molecule-codeblock.html content=block4 %}
+
+                <h4>Results in:</h4>
+                <div class="style-sm-space-section-indicator">
+                    <section class="space-section-intro">
+                        <div class="style-sm-space-heading-indicator">
+                            <!-- then the header has a space depending on which location it's used -->
+                            <h2 class="space-header-page title-section">A title used to separate sections</h2>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- space-section-last -->
+                <h4>Example <strong>space-section-last</strong>:</h4>
+                <p>Usually the last section on a page.</p>
+                {% capture block5 %}
+<section class="space-section-last">
+    <!-- then the header has a space depending on which location it's used -->
+    <h2 class="space-header-page title-section">A title used to separate sections</h2>
+</section>
+                {% endcapture %}
+                {% include molecule-codeblock.html content=block5 %}
+
+                <h4>Results in:</h4>
+                <div class="style-sm-space-section-indicator">
+                    <section class="space-section-last">
+                        <div class="style-sm-space-heading-indicator">
+                            <!-- then the header has a space depending on which location it's used -->
+                            <h2 class="space-header-page title-section">A title used to separate sections</h2>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</article>

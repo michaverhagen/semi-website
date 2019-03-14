@@ -1,0 +1,22 @@
+<ol class="breadcrumb">
+    <li><a href="/blog/">blog</a></li>
+    {% if page.topic %}
+        <li>
+            <!--a href="/blog/{{ page.topic }}/"-->
+            {% if page.topic == 'wiki-weaviate' %}
+                Weaviate
+            {% elsif page.topic == 'wiki-semi-consulting' %}
+                Semi Consulting
+            {% endif %}
+            <!--/a-->
+        </li>
+        {% if page.category %}
+        <li>
+            <!--a href="/blog/{{ page.topic }}/{{ page.category }}"-->
+                {{ page.category | capitalize }}
+            <!--/a-->
+        </li>
+        {% endif %}
+    {% endif %}
+    <li>{{ page.title }}</li>
+</ol>

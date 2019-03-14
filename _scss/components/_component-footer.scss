@@ -1,0 +1,43 @@
+@import '../mixins/mixins-breakpoints';
+
+footer {
+    padding: 2em;
+    color: $color-white;
+    width: 100%;
+    @media screen and (min-width: 48em) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+footer:not(.site-footer--overlay):not(.site-footer--square) {
+    background: $color-black;
+    border-top-left-radius: $scale-1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.site-footer--overlay {
+    width: 100%;
+
+    @media (min-height: 45rem) {
+        position:absolute;
+        bottom: 0;
+    }
+}
+
+.site-footer--square {
+    background: $color-black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.footer-links {
+    li {
+        font-size: 1em;
+    }
+}
+
+.footer-copyright {
+    text-align: left;
+}

@@ -16,34 +16,22 @@ title: SeMI, our style; unique homepage elements
         <section class="style-sm-section">
             <h3>Homepage card</h3>
             <p>Cards on the homepage differ from the standard <a href="style-cards.html">Cards component</a>. Homepage cards are set in a rectangular frame rather than the familiar rounded SeMI cards. Furthermore; the buttons in the cards are set in <a href="style-color.html">Almost Black</a> on white.</p>
-            <section class="page--home">
-                <ul class="cards">
-                    <li class="card">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a class="button" href="#">Button text</a>
-                    </li>
-                    <li class="card">
-                        <p>Veritatis quas earum natus, soluta expedita doloribus.</p>
-                        <a class="button" href="#">Button text</a>
-                    </li>
-                </ul>
-            </section>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><section class="page--home">
-                    <ul class="cards">
-                        <li class="card">
-                            <p>Not convinced how SeMI can help your business?</p>
-                            <a class="button" href="/contact/">Book a free exploratory workshop</a>
-                        </li>
-                        <li class="card">
-                            <p>Curious how SeMI works from a technical perspective?</p>
-                             <a class="button" href="/knowledge-base/">Go to knowledge base</a>
-                        </li>
-                    </ul>
-                </section>
-                </xmp>
-            </section>
+            {% capture block1 %}
+<section class="page--home">
+    <ul class="cards">
+        <li class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a class="button" href="#">Button text</a>
+        </li>
+        <li class="card">
+            <p>Veritatis quas earum natus, soluta expedita doloribus.</p>
+            <a class="button" href="#">Button text</a>
+        </li>
+    </ul>
+</section>
+            {% endcapture %}
+            {{block1}}
+            {% include molecule-codeblock.html content=block1 %}
         </section>
 
         <section class="style-sm-section">
@@ -57,20 +45,15 @@ title: SeMI, our style; unique homepage elements
         <section class="style-sm-section">
             <h3>Homepage Call-to-action button</h3>
             <p>The Call-to-action button on the homepage differs from the standard <a href="style-forms.html">Call-to-action button</a>. The text on the inactive state of the button is <a href="style-color.html">Almost Black</a>, rather than white on the standard Call-to-action button. Rather than being aligned to the page grid, the button is right-aligned to the preceding paragraph.</p>
-            <section class="page--home">
-                <p class="paragraph--right-aligned">
-                    <a class="button button--cta" href="#">Homepage Call-to-action button</a>
-                </p>
-            </section>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><section class="page--home">
-                    <p class="paragraph--right-aligned">
-                        <a class="button button--cta" href="#">Homepage Call-to-action button</a>
-                    </p>
-                </section>
-                </xmp>
-            </section>
+            {% capture block2 %}
+<section class="page--home">
+    <p class="paragraph--right-aligned">
+        <a class="button button--cta" href="#">Homepage Call-to-action button</a>
+    </p>
+</section>
+            {% endcapture %}
+            {{block2}}
+            {% include molecule-codeblock.html content=block2 %}
         </section>
     </div>
 

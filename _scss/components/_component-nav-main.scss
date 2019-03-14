@@ -1,0 +1,48 @@
+.nav-main {
+    margin-bottom: 1em;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-left: .5em;
+    }
+	li {
+		a {
+			@include transition-out;
+			border-bottom: 0;
+			border-radius: $border-radius-3;
+			color: $color-black;
+			font-family: $typeface-body;
+        	font-size: 1rem;
+        	font-variant-caps: small-caps;
+			padding: .5em .75em;
+			text-transform: lowercase;
+			white-space: nowrap;
+			&:hover, &:focus, &:active {
+				@include transition-in;
+				background: $color-semi;
+				border-radius: 0;
+				color: $color-white;
+				outline: none;
+			}
+			&:focus {
+				background: $color-semi-accent;
+				outline: none;
+			}
+		}
+	}
+}
+
+.nav-main .main-nav--selected, .page--home .nav-main--home, .page--products .nav-main--products, .page--blog .nav-main--blog, .page--team .nav-main--team, .page--contact .nav-main--contact {
+    a {
+        background: $color-black;
+        color: $color-white;
+    }
+}
+
+@media (min-width: 34em) {
+
+	.main-nav__item-right {
+		margin-left: auto;
+	}
+}

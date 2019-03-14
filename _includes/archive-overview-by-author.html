@@ -1,0 +1,43 @@
+
+<div class="container">
+    <div class="wrapper">
+        <div class="article-container">
+            <section>
+                <header class="space-header-page">
+                    {% if page.name %}
+                        <h1 class="title-section">Stories by {{ page.name }}</h1>
+                    {% endif  %}
+                    <!--{% if page.section-intro-text %}-->
+                        <!--<p>{{ page.section-intro-text }}</p>-->
+                    <!--{% endif %}-->
+                </header>
+                <ul class="article-overview">
+                    <li>
+                        {% assign sorted_blogs = site.blog | sort:"menu-order" %}
+                        {% for blog in sorted_blogs %}
+                        {% if blog.authorKey contains page.key %}
+                        <ol>
+                            <li><h3><a href="{{ author.url }}">{{ blog.date | date: '%B %d, %Y' }} {{ blog.title }}</a></h3>
+                                <p>
+                                    {{ blog.description }}
+                                </p>
+                                <dl class="tags">
+                                    <dt><i>Tags</i></dt>
+                                    <dd>
+                                        <ul class="tags">
+                                            {% for tag in blog.tags %}
+                                            <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ol>
+                        {% endif %}
+                        {% endfor %}
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</div>

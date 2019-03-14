@@ -9,21 +9,21 @@ title: SeMI, our style; holding our components together, our page structure
         <section class="style-sm-section">
             <p>A page is build up of three main elements; the header (containing the logo and main navigation), the main content are, and the footer.</p>
             <p>A basic page structure looks like this:</p>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><html>
-                    <body>
-                        <div class="header-container">
-                            <header></header>
-                            <nav></nav>
-                        </div>
-                        <main>
-                            <article></article>
-                        </main>
-                        <footer></footer>
-                    </body>
-                </xmp>
-            </section>
+            {% capture block1 %}
+<html>
+    <body>
+        <div class="header-container">
+            <header></header>
+            <nav></nav>
+        </div>
+        <main>
+            <article></article>
+        </main>
+        <footer></footer>
+    </body>
+</html>
+            {% endcapture %}
+            {% include molecule-codeblock.html content=block1 %}
             <p>The <code>.header-container</code> top, and <code>&lt;footer&gt;</code> bottom section are static. The <code>&lt;article&gt;</code> section provides the placeholder for the main content.</p>
         </section>
     </div>

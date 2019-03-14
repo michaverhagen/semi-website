@@ -1,0 +1,9 @@
+<div class="layout__column">
+    <figure class="style-sm-figure-logo"><!-- style-sm-figure-graphic -->
+        <img src="{{ include.logoSVGUrl }}" alt="">
+    </figure>
+    <ul class="list-bullet style-sm-list-centered">
+        <li><a href="{{ include.logoSVGUrl }}" class="{% if include.lightOnDark %}color-light{% endif %}">Download as <abbr>SVG</abbr></a></li>
+        <li><a href="{{ include.logoPNGzip }}" class="{% if include.lightOnDark %}color-light{% endif %}">Download as <abbr>png</abbr></a></li>
+    </ul>
+</div>

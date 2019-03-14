@@ -1,0 +1,142 @@
+@import '../mixins/mixins-breakpoints';
+
+.page--article-overview .list-bullet {
+    margin-bottom: 3em;
+}
+
+.article-overview {
+	list-style: none;
+	section {
+    	margin: 2em 0 3em;
+    	&:last-of-type {
+        	margin-bottom: 0;
+    	}
+	}
+	h3 {
+    	a {
+        	//border-bottom: none;
+        	color: $color-black;
+        	&:hover, &:focus, &:active {
+            	color: $color-white;
+        	}
+    	}
+	}
+	h4 {
+    	font-family: $typeface-body;
+	}
+	ol {
+    	list-style: none;
+    	margin-top: 1em;
+    	li {
+        	margin-bottom: 1em;
+    	}
+    	p {
+            font-size: 1.35rem;
+        	font-style: italic;
+    	}
+	}
+}
+
+.article-index {
+    @media screen and (min-width: 48em) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        li {            
+            &:not(:last-child) {
+                margin-right: 1em;
+            }
+        }
+    }
+    div {
+        padding: 2em;
+    }
+    li {
+        border-radius: $border-radius-1;
+        flex: 1;
+        list-style: none;
+        max-width: 100%;
+        &:hover, &:focus, &:active {
+            border-radius: $border-radius-2;
+        }
+    }
+}
+
+.semi-knowledge-flow-learn, .semi-knowledge-flow-start, .semi-knowledge-flow-implement { // RtP specs
+    a {
+        outline: none !important;
+    }
+    div {
+        align-items: center;
+        background: $color-almostblack-tint--5;
+        border-radius: $border-radius-3;
+        color: $color-white;
+        display: flex;
+        flex-direction: column;
+        height: 264px;
+        justify-content: space-between;
+        padding: .5em;
+        text-align: center;
+    }
+    h2 {
+        color: $color-white;
+    }
+    > p {
+        margin: 1em;
+    }
+    img {
+        width: 10rem;
+    }
+}
+
+.semi-knowledge-flow-select {
+    font-size: $scale-2
+}
+
+.semi-knowledge-flow-learn {
+    div {
+        background: $color-almostblack-analogous-tint--5;
+    }
+}
+
+.semi-knowledge-flow-implement { // RtP specs
+    div {
+        background: $color-almostblack-triadic-tint--5;
+    }
+}
+
+.knowledge-flow-start {
+    blockquote:before {
+        color: $color-almostblack-tint--5;
+    }
+}
+
+.knowledge-flow-build {
+    blockquote:before {
+        color: $color-almostblack-analogous-tint--5;
+    }
+}
+
+.knowledge-flow-optimize {
+    blockquote:before {
+        color: $color-almostblack-triadic-tint--5;
+    }
+}
+
+.article-toc {
+    [data-group] {
+        border-top-left-radius: 1em;
+        display: flex;
+        margin-bottom: 1em;
+        padding: .5em 1em;
+        ~ dd {
+            border-bottom-right-radius: 1em;
+            margin-top: -1.5em;
+            margin-bottom: 1em;
+            padding: 1em 1em 1em 0;
+        }
+    }
+    @include breakpoint(mediumUp) {
+      margin-top: 1rem;
+    }
+}

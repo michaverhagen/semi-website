@@ -1,6 +1,7 @@
 <li class="card {{ include.themeClass }} card--white">
-    {%- include components/card/card__icon.html %}
+    {%- if include.inDevelopment %}{%- include components/card/card__icon-with-label.html -%}
+    {% else if %}{% include components/card/card__icon.html -%}{% endif %}
     {%- include components/card/card__title.html %}
     {%- include components/card/card__content.html %}
-    {%- include components/card/card__button.html %}
+    {%- include components/card/card__button.html -%}
 </li>

@@ -1,0 +1,15 @@
+{
+  "env": {
+    "amd": true,
+    "es6": true,
+    "browser": true
+  },
+  "extends": [
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "impliedStrict": true,
+    "sourceType": "module"
+  }
+}
