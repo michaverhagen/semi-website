@@ -1,0 +1,75 @@
+@import '../mixins/mixins-breakpoints';
+
+.article-toc {
+    flex-shrink: 0;
+    height: max-content;
+    @include breakpoint(mediumUp) {
+        margin-right: 2em;
+        width: 12em;
+    }
+    dt {
+        font-weight: 400;
+        margin: 0 0 .5rem;
+    }
+    dd:not(:last-child) {
+        margin-bottom: 1em;
+    }
+    li {
+        font-size: 1rem;
+        margin-left: 1em;
+    }
+    a {
+        border-bottom: 0;
+    }
+    a.current {
+        font-style: italic;
+    }
+    .list-ordered {
+        counter-reset: li;
+        list-style: none;
+        li {
+        	counter-increment: li;
+        	display: flex;
+            list-style-image: none !important;
+            &:before {
+                @include transition-out;
+                border: 1px solid $color-semi;
+                border-radius: 100%;
+                color: $color-semi;
+                content: counter(li);
+                display: inline-block;
+                flex-shrink: 0;
+                font-feature-settings: 'tnum'; // Not available in Alegrya
+                font-size: .85rem;
+                font-weight: 700;
+                height: 1.5em;
+                margin: 0 .5em 0 -1.5em;
+                text-align: center;
+                width: 1.5em;
+            }
+        }
+        li:hover:before {
+            @include transition-in;
+            background: $color-semi;
+            color: $color-white;
+        }
+        .list-step--done:before {
+            background: $color-semi-accent;
+            border: 1px solid $color-semi-accent;
+            color: $color-white;
+        }
+        .list-step--done:hover:before {
+            background: $color-semi-accent-tint-4;
+            border-color: $color-semi-accent-tint-4;
+        }
+    }
+}
+.article-toc__category-logo {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .875em;
+  @include breakpoint(mediumUp) {
+    margin-left: -2.4em;
+  }
+}

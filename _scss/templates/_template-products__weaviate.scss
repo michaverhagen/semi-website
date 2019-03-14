@@ -1,0 +1,56 @@
+
+.page--products--weaviate {
+  .space-space-space-header-section.title-page {
+    margin-bottom: 0;
+  }
+  .section--weaviate-industries > .space-space-space-header-section {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .section--video {
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .column__image {
+    background: transparent url('/img/pattern-semi-hexagons.svg') center 0 no-repeat;
+    background-size: contain;
+    height: 15rem;
+    img {
+      width: 100px;
+    }
+  }
+  .quote--jumbo {
+    margin-bottom: 5rem;
+  }
+  @media screen and (min-width: 48em) {
+    .quote--jumbo {
+      margin-top: 5rem;
+      margin-bottom: 8rem;
+    }
+  }
+  .cards {
+    margin-top: 3rem;
+  }
+  .layout__column {
+    align-self: center;
+  }
+}
+
+.section--img-keyper {
+  max-width: 220px;
+}
+.section--img-weaviate-clouds {
+  max-width: 220px;
+}
+.section--img-ppf {
+  max-width: 310px;
+}
+.section--img-top-tier-support {
+  max-height: 320px;
+}
+.section--img-playground {
+  max-width: 380px;
+}

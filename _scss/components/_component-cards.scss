@@ -1,0 +1,143 @@
+@import '../variables/var-scale';
+@import '../variables/var-color';
+
+$c-card-border: 1px solid $color-gray-5;
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 -1em;
+    @media screen and (min-width: 48em) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    > li {
+        margin: 0 1em 2em;
+    }
+}
+
+.card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 2em;
+    &:not(.card--pilar):not(.card--borderless) {
+        border: $c-card-border;
+    }
+    &.card--pilar {
+        background-color: $color-white;
+        border: $c-card-border;
+    }
+    &.card--white {
+        background-color: $color-white;
+    }
+    .card__intro {
+        min-height: 6rem;
+    }
+    figure {
+        margin-bottom: 0;
+    }
+    &.card--theme-weaviate {
+        .button {
+            background-color: $color-semi-accent;
+        }
+        .card__title:after {
+            background-color: $color-semi-accent;
+        }
+    }
+    &.card--theme-weaviate-oss {
+        .button {
+            background-color: $color-interactive;
+        }
+        .card__title:after {
+            background-color: $color-interactive;
+        }
+        li:before {
+            color: $color-interactive;
+        }
+        .card__icon img {
+            margin-top: 7px;
+        }
+    }
+    &.card--theme-weaviate-enterprise {
+        background-color: $color-black;
+
+        .button {
+            background-color: $color-semi-accent;
+        }
+        .card__title:after {
+            background-color: $color-semi-accent;
+        }
+        li:before {
+            color: $color-semi-accent;
+        }
+    }
+    &.card--theme-network {
+        .button {
+            background-color: $color-network-accent;
+        }
+        .card__title:after {
+            background-color: $color-network-accent;
+        }
+    }
+    .card__content {
+        flex-grow: 1; // makes item (.card__button) underneath stick to bottom of the card
+    }
+}
+
+.card__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: $scale-1;
+}
+
+.card__tag {
+    margin-left: $scale-1;
+}
+
+.card__icon {
+    height: 3rem;
+    &:not(.card__icon--wide) {
+        width: 3rem;
+    }
+    img {
+        width: 100%; // img width is based on surrounding element
+    }
+}
+
+.card__icon--wide {
+    width: 11rem;
+    img {
+        margin-top: .4rem;
+    }
+}
+
+.card__title {
+    font-family: $typeface-sans;
+    margin-bottom: 1em;
+    font-weight: 500;
+    &:after {
+        background: none repeat scroll 0 0 $color-semi;
+        bottom: -4px;
+        content: "";
+        display: block;
+        height: 4px;
+        position: relative;
+        width: 30px;
+    }
+}
+
+.card__content {
+    min-height: 5rem;
+
+    .cons {
+        color: $color-gray-5;
+    }
+}
+
+.card__button {
+    margin-top: 2rem;
+}

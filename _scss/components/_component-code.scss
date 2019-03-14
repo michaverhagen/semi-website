@@ -1,0 +1,77 @@
+// <code> tag can also be used as an inline element inside a paragraph
+code {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: .75em;
+    line-height: 1.5em;
+}
+
+pre {
+    width: 100%;
+    white-space: pre-wrap;
+    > code {
+        margin-bottom: 0;
+        max-width: 100%;
+        width: 100%;
+        white-space: pre-wrap; // makes overflowed text wrap
+    }
+}
+
+table code {
+    font-size: 1rem;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+    background: $color-gray-7;
+}
+
+.hljs,.hljs-subst {
+    color: $color-black;
+}
+
+.hljs-comment {
+    color: $color-gray-3;
+}
+
+.hljs-keyword,.hljs-attribute,.hljs-selector-tag,.hljs-meta-keyword,.hljs-doctag,.hljs-name {
+    font-weight: 600;
+}
+
+.hljs-type,.hljs-string,.hljs-number,.hljs-selector-id,.hljs-selector-class,.hljs-quote,.hljs-template-tag,.hljs-deletion {
+    color: $color-semi-tint-3;
+}
+
+.hljs-title,.hljs-section {
+    color: $color-semi-tint-3;
+    font-weight: 600;
+}
+
+.hljs-regexp,.hljs-symbol,.hljs-variable,.hljs-template-variable,.hljs-link,.hljs-selector-attr,.hljs-selector-pseudo {
+    color: $color-semi-tint-1;
+}
+
+.hljs-literal {
+    color: $color-semi-accent-tint-1;
+}
+
+.hljs-built_in,.hljs-bullet,.hljs-code,.hljs-addition {
+    color: $color-semi-accent-tint-4;
+}
+
+.hljs-meta {
+    color: $color-interactive-tint-4;
+}
+
+.hljs-meta-string {
+    color: $color-interactive-tint-1;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: 600;
+}

@@ -1,33 +1,15 @@
-<a class="show-toc" href="#" onclick="toggle_visibility('toc');">Table of contents</a>
-<sidebar id="toc" class="article-toc-container" itemscope itemtype="http://schema.org/SiteNavigationElement">
+<a class="show-toc" href="#" data-toggle="toc">Table of contents</a>
+<sidebar id="toc" class="article-toc-container" aria-expanded="false" itemscope itemtype="http://schema.org/SiteNavigationElement">
     <dl class="article-toc">
-    {% comment %}<!-- setup list of all pages sorted by 'menu-order' -->{% endcomment %}
-    {% assign sorted_pages = site.pages | group_by: 'topic' %}
-    {% for topic in sorted_pages %}
-        {% comment %}<!-- don't show pages which have no topic -->{% endcomment %}
-        {% if topic.name != '' %}
-        <dt data-group="{{ topic.name }}">
-            {% if topic.name == 'wiki-weaviate' %}
-            <span class="article-toc__category-logo">
-                <img src="/img/logo-weaviate-secondary-color.svg" alt="Weaviate logo">
-            </span>
-            <span class="article-toc__topic-name">Weaviate</span>
-            {% elsif topic.name == 'wiki-semi-consulting' %}
-            <span class="article-toc__category-logo">
-                <img src="/img/logo-semi-consulting-secondary-color.svg" alt="Semi Consulting logo">
-            </span>
-            <span class="article-toc__topic-name">Semi Consulting</span>
-            {% endif %}
-        </dt>
         <dd>
-            <ul class="list-ui">
-                {% for category in site.data.categories %}
-                <li class="article-toc__category-name">{{ category.name | capitalize }}</li>
-                {% include pages-per-category--list.html category=category.name content=topic %}
-                {% endfor %}
+            <ul class="list-ui article-toc__list-pages">
+            {% assign sorted_blogs = site.blog | sort: 'menu-order' %}
+            {% for item in sorted_blogs %}
+                <li>
+                    <a href="{{item.url}}">{{item.title}}</a>
+                </li>
+            {% endfor %}
             </ul>
         </dd>
-        {% endif %}
-    {% endfor %}
     </dl>
 </sidebar>

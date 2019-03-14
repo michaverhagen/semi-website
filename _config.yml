@@ -1,11 +1,13 @@
 weaviate_version: 0.8.6
 markdown: kramdown
-kramdown:  
+kramdown:
     parse_block_html: false
 rdiscount extensions: [smart]
-sass:
-    style: compressed # opposed to "expanded"
-    sass_dir: css/_sass
+collections:
+    blog:
+        output: true
+    authors:
+        output: true
 exclude:
     - "*.json"
     - "Gemfile*"
@@ -13,8 +15,10 @@ exclude:
     - vendor
     - README.md
     - "*.draft"
+    - js-src
+    - node_modules
+    - webpack.config.js
 plugins:
-    - jekyll-autoprefixer
-autoprefixer:
-    browsers:
-        - last 5 versions
+    - jekyll-redirect-from
+whitelist:
+    - jekyll-redirect-from

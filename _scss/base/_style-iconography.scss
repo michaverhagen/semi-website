@@ -1,0 +1,40 @@
+@import '../mixins/mixins';
+
+.icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: none;
+    display: block;
+    i {
+        @include visually-hidden;
+    }
+    &:hover, &:focus, &:active {
+        background-color: unset;
+        background-repeat: no-repeat;
+        background-size: contain;
+        outline: none;
+    }
+  &:not(.icon-medium) {
+    height: 16px;
+    width: 16px;
+  }
+  &.icon-medium {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.close {
+    white-space: nowrap;
+    &:before {
+        content: '\00d7';
+        font-family: Arial, sans-serif;
+        line-height: 0;
+        margin-right: .25em;
+    }
+}
+
+.icon-arrow {
+    font-size: .75em;
+    margin-left: .1em;
+}

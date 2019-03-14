@@ -7,28 +7,19 @@ title: SeMI, our style; search interface
     <div class="wrapper">
         <section class="style-sm-section">
             <h2>Search interface</h2>
-            <section class="form-inline">
-                <form action="/search/index.html?query=" class="search">
-                    <section class="search-meta">
-                        <label for="search-knowledgebase">Search our knowledge base</label>
-                        <input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
-                        <input class="button" type="submit" value="Search" />
-                    </section>
-                </form>
-            </section>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><section class="form-inline">
-                    <form action="/search/index.html?query=" class="search">
-                        <section class="search-meta">
-                            <label for="search-knowledgebase">Search our knowledge base</label>
-                            <input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
-                            <input class="button" type="submit" value="Search" />
-                        </section>
-                    </form>
-                </section>
-                </xmp>
-            </section>
+            {% capture block1 %}
+<section class="form-inline">
+    <form action="/search/index.html?query=" class="search">
+        <section class="search-meta">
+            <label for="search-knowledgebase">Search our blog</label>
+            <input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
+            <input class="button" type="submit" value="Search" />
+        </section>
+    </form>
+</section>
+            {% endcapture %}
+            {{block1}}
+            {% include molecule-codeblock.html content=block1 %}
         </section>
     </div>
 </article>

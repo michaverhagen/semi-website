@@ -11,353 +11,290 @@ title: SeMI, our style; getting input from our users through form elements
 
         <section class="style-sm-section">
             <h4>Search field</h4>
+
+            {% capture block1 %}
+<label for="input-search">Label for input type="search"</label>
+<input id="input-search" placeholder="Search the SeMI site" type="search" />
+            {% endcapture %}
+
             <form>
                 <fieldset>
-                    <label for="style-sm-input-search">Label for input type="search"</label>
-                    <input id="style-sm-input-search" placeholder="Search the SeMI site" type="search" />
+                    {{block1}}
                 </fieldset>
             </form>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="input-search">Label text</label>
-                <input id="input-search" placeholder="Placeholder text" type="search" /></xmp>
-            </section>
+            {% include molecule-codeblock.html content=block1 %}
         </section>
 
         <section class="style-sm-section">
             <h4>Regular text input</h4>
+            {% capture block2 %}
+<label for="input-text">Label text</label>
+<input id="input-text" placeholder="Placeholder text" type="text" />
+            {% endcapture %}
             <form>
                 <fieldset>
-                    <label for="style-sm-input-text">Label for input type="text"</label>
-                    <input id="style-sm-input-text" placeholder="Lorem ipsum dolor sit amet" type="text" />
+                    {{block2}}
                 </fieldset>
             </form>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="input-text">Label text</label>
-                <input id="input-text" placeholder="Placeholder text" type="text" /></xmp>
-            </section>
+            {% include molecule-codeblock.html content=block2 %}
         </section>
 
         <section class="style-sm-section">
             <h4>Email address input</h4>
+            {% capture block3 %}
+<label for="input-email">Label for input type="email"</label>
+<input id="input-email" placeholder="hello@semi.network" type="email" />
+<input class="button--small" type="submit" value="Check address" />
+            {% endcapture %}
             <form>
                 <fieldset>
-                    <label for="style-sm-input-email">Label for input type="email"</label>
-                    <input id="style-sm-input-email" placeholder="hello@semi.network" type="email" />
-                    <input class="button--small" type="submit" value="Check address" />
+                    {{block3}}
                 </fieldset>
             </form>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="input-email">Label text</label>
-                <input id="input-email" placeholder="hello@domainname.tld" type="email" /></xmp>
-            </section>
+            {% include molecule-codeblock.html content=block3 %}
         </section>
 
         <section class="style-sm-section">
             <h4>Number input</h4>
+            {% capture block4 %}
+<label for="input-number">Label text</label>
+<input id="input-number" type="number" />
+            {% endcapture %}
             <form>
                 <fieldset>
-                    <label for="style-sm-input-number">Label for input type="number"</label>
-                    <input id="style-sm-input-number" type="number" />
+                    {{block4}}
                 </fieldset>
             </form>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="input-number">Label text</label>
-                <input id="input-number" type="number" /></xmp>
-            </section>
+            {% include molecule-codeblock.html content=block4 %}
         </section>
 
         <section class="style-sm-section">
             <h4>Password field</h4>
+            {% capture block5 %}
+<label for="input-password">Label text</label>
+<input id="input-password" placeholder="••••••••••••" type="password" />
+            {% endcapture %}
             <form>
                 <fieldset>
-                    <label for="style-sm-input-password">Label for input type="password"</label>
-                    <input id="style-sm-input-password" placeholder="••••••••••••" type="password" />
+                    {{block5}}
                 </fieldset>
             </form>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="input-password">Label text</label>
-                <input id="input-password" placeholder="••••••••••••" type="password" /></xmp>
-            </section>
+            {% include molecule-codeblock.html content=block5 %}
         </section>
 
         <section class="style-sm-section">
             <h4>Telephone number input</h4>
+            {% capture block6 %}
+<label for="input-tel">Label text</label>
+<input id="input-tel" pattern="[0-9\-\(\) +]{0,20}" placeholder="×××–××× ×× ××" title="Only use numbers (0–9), a plus (+), and/or dashes (-)" type="tel" />
+            {% endcapture %}
             <form>
                 <fieldset>
-                    <label for="style-sm-input-tel">Label for input type="tel"</label>
-                    <input id="style-sm-input-tel" pattern="[0-9\-\(\) +]{0,20}" placeholder="×××–××× ×× ××" title="Only use numbers (0–9), a plus (+), and/or dashes (-)" type="tel" />
-                    <input class="button--small" type="submit" value="Check phone number" />
+                    {{block6}}
                 </fieldset>
             </form>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="input-tel">Label text</label>
-                <input id="input-tel" pattern="[0-9\-\(\) +]{0,20}" placeholder="×××–××× ×× ××" title="Only use numbers (0–9), a plus (+), and/or dashes (-)" type="tel" /></xmp>
-            </section>
+            {% include molecule-codeblock.html content=block6 %}
         </section>
 
         <section class="style-sm-section">
             <h4>Web address input</h4>
+            {% capture block7 %}
+<label for="input-url">Label text</label>
+<input id="input-url" placeholder="https://domain.com/" type="url" />
+<input class="button--small" type="submit" value="Check URL" />
+            {% endcapture %}
             <form>
                 <fieldset>
-                    <label for="style-sm-input-url">Label for input type="url"</label>
-                    <input id="style-sm-input-url" placeholder="https://domain.com/" type="url" />
-                    <input class="button--small" type="submit" value="Check URL" />
+                    {{block7}}
                 </fieldset>
             </form>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="input-url">Label text</label>
-                <input id="input-url" placeholder="https://domain.com/" type="url" /></xmp>
-            </section>
+            {% include molecule-codeblock.html content=block7 %}
         </section>
 
         <section class="style-sm-section">
             <h4>Required input</h4>
+            {% capture block8 %}
+<label for="input-req">Label text</label>
+<input id="input-req" placeholder="Placeholder text" required="required" type="text" />
+<input class="button--small" type="submit" value="Check input" />
+            {% endcapture %}
             <form>
                 <fieldset>
-                    <label for="style-sm-input-req">Label for required input</label>
-                    <input id="style-sm-input-req" placeholder="Check input to see if I validate" required="required" type="text" />
-                    <input class="button--small" type="submit" value="Check input" />
+                    {{block8}}
                 </fieldset>
             </form>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="input-req">Label text</label>
-                <input id="input-req" placeholder="Placeholder text" required="required" type="text" /></xmp>
-            </section>
+            {% include molecule-codeblock.html content=block8 %}
         </section>
 
         <section class="style-sm-section">
             <h3>Text area</h3>
+            {% capture block9 %}
+<label for="textarea">Label text</label>
+<textarea id="textarea">
+    Placeholder text
+</textarea>
+            {% endcapture %}
             <fieldset>
-                <label for="style-sm-textarea">Label for text area</label>
-                <textarea id="style-sm-textarea">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur suscipit numquam earum vel debitis, quas mollitia obcaecati doloribus fugit veritatis sit culpa cumque similique. Cumque illum dolorem quo eos.
-                </textarea>
+                {{block9}}
             </fieldset>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="textarea">Label text</label>
-                <textarea id="textarea">
-                    Placeholder text
-                </textarea></xmp>
-            </section>
+            {% include molecule-codeblock.html content=block9 %}
         </section>
 
         <section class="style-sm-section">
             <h3>Buttons</h3>
-            <section>
-                <button>Button</button>
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp><button>Button text</button></xmp>
-                </section>
-            </section>
-            <section>
-                <button class="button--small">Small button</button>
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp><button class="button--small">Button text</button></xmp>
-                </section>
-            </section>
-            <section>
-                <input class="button--cta" type="submit" value="Call-to-action button" />
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp><input class="button--cta" type="submit" value="Button text" /></xmp>
-                </section>
-            </section>
-            <section>
-                <a class="button" href="#">Link as button</a>
-                <section class="style-sm-codesnippet">
-                    <p><abbr>HTML</abbr> code snippet</p>
-                    <xmp><a class="button" href="#">Link text</a></xmp>
-                </section>
-            </section>
+
+            {% capture block10 %}
+<button>Button</button>
+            {% endcapture %}
+            {{block10}}
+            {% include molecule-codeblock.html content=block10 %}
+
+            {% capture block11 %}
+<button class="button--small">Small button</button>
+            {% endcapture %}
+            {{block11}}
+            {% include molecule-codeblock.html content=block11 %}
+
+            {% capture block12 %}
+<input class="button--cta" type="submit" value="Call-to-action button" />
+            {% endcapture %}
+            {{block12}}
+            {% include molecule-codeblock.html content=block12 %}
+
+            {% capture block13 %}
+<a class="button" href="#">Link as button</a>
+            {% endcapture %}
+            {{block13}}
+            {% include molecule-codeblock.html content=block13 %}
+
         </section>
 
         <section class="style-sm-section">
             <h3>Select menu</h3>
-            <label for="style-sm-select">Label for select menu</label>
-            <section>
-                <select id="style-sm-select">
-                    <option>Option one</option>
-                    <option>Option two</option>
-                    <option>Option three</option>
-                    <option>Option four</option>
-                    <option>Option five</option>
-                </select>
-            </section>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="select">Label for select menu</label>
-                    <section>
-                        <select id="select">
-                            <option>Option one</option>
-                            <option>Option two</option>
-                            <option>Option three</option>
-                            <option>Option four</option>
-                            <option>Option five</option>
-                        </select>
-                    </section>
-                    </xmp>
-                </section>
+            {% capture block14 %}
+<label for="select">Label for select menu</label>
+<section>
+    <select id="select">
+        <option>Option one</option>
+        <option>Option two</option>
+        <option>Option three</option>
+        <option>Option four</option>
+        <option>Option five</option>
+    </select>
+</section>
+            {% endcapture %}
+            {{block14}}
+            {% include molecule-codeblock.html content=block14 %}
+
         </section>
 
         <section class="style-sm-section">
             <h3>Select menu with grouping</h3>
-            <label for="style-sm-select-group">Label for select menu</label>
-            <section>
-                <select id="style-sm-select-group">
-                    <optgroup label="Option group one">
-                        <option>Option group one, option one</option>
-                        <option>Option group one, option  two</option>
-                        <option>Option group one, option  three</option>
-                        <option>Option group one, option  four</option>
-                        <option>Option group one, option  five</option>
-                    </optgroup>
-                    <optgroup label="Option group two">
-                        <option>Option group two, option one</option>
-                        <option>Option group two, option  two</option>
-                        <option>Option group two, option  three</option>
-                        <option>Option group two, option  four</option>
-                        <option>Option group two, option  five</option>
-                    </optgroup>
-                </select>
-            </section>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="select-group">Label for select menu</label>
-                    <section>
-                        <select id="select-group">
-                            <optgroup label="Option group one">
-                                <option>Option group one, option one</option>
-                                <option>Option group one, option  two</option>
-                                <option>Option group one, option  three</option>
-                                <option>Option group one, option  four</option>
-                                <option>Option group one, option  five</option>
-                            </optgroup>
-                            <optgroup label="Option group two">
-                                <option>Option group two, option one</option>
-                                <option>Option group two, option  two</option>
-                                <option>Option group two, option  three</option>
-                                <option>Option group two, option  four</option>
-                                <option>Option group two, option  five</option>
-                            </optgroup>
-                        </select>
-                    </section>
-                    </xmp>
-                </section>
+
+            {% capture block15 %}
+<label for="select-group">Label for select menu</label>
+<section>
+    <select id="select-group">
+        <optgroup label="Option group one">
+            <option>Option group one, option one</option>
+            <option>Option group one, option  two</option>
+            <option>Option group one, option  three</option>
+            <option>Option group one, option  four</option>
+            <option>Option group one, option  five</option>
+        </optgroup>
+        <optgroup label="Option group two">
+            <option>Option group two, option one</option>
+            <option>Option group two, option  two</option>
+            <option>Option group two, option  three</option>
+            <option>Option group two, option  four</option>
+            <option>Option group two, option  five</option>
+        </optgroup>
+    </select>
+</section>
+            {% endcapture %}
+            {{block15}}
+            {% include molecule-codeblock.html content=block15 %}
+
         </section>
 
         <section class="style-sm-section">
             <h3>Select menu with multiple selections</h3>
-            <label for="style-sm-select-multiple">Label for select menu</label>
-            <section>
-                <select id="style-sm-select-multiple" multiple="multiple">
-                    <option>Option one</option>
-                    <option>Option two</option>
-                    <option>Option three</option>
-                    <option>Option four</option>
-                    <option>Option five</option>
-                </select>
-            </section>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="select-multiple">Label for select menu</label>
-                    <section>
-                        <select id="select-multiple" multiple="multiple">
-                            <option>Option one</option>
-                            <option>Option two</option>
-                            <option>Option three</option>
-                            <option>Option four</option>
-                            <option>Option five</option>
-                        </select>
-                    </section>
-                </xmp>
-            </section>
+            {% capture block16 %}
+<label for="select-multiple">Label for select menu</label>
+<section>
+    <select id="select-multiple" multiple="multiple">
+        <option>Option one</option>
+        <option>Option two</option>
+        <option>Option three</option>
+        <option>Option four</option>
+        <option>Option five</option>
+    </select>
+</section>
+            {% endcapture %}
+            {{block16}}
+            {% include molecule-codeblock.html content=block16 %}
         </section>
 
         <section class="style-sm-section">
             <h3>Search form</h3>
-            <form action="/search.html?query=" class="search">
-                <section class="search-meta">
-                    <label for="search-knowledgebase">Search our knowledge base</label>
-                    <input autosave="save-search-knowledgebase" id="search-knowledgebase" name="search" results="15" type="search" />
-                    <input class="button" type="submit" value="Search" />
-                </section>
-            </form>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><form action="/search.html?query=" class="search">
-                    <section class="search-meta">
-                        <label for="search-form">Label text</label>
-                        <input autosave="save-search-form" id="search-form" name="search" results="15" type="search" />
-                        <input class="button" type="submit" value="Search" />
-                    </section>
-                </form>
-                </xmp>
-            </section>
+            {% capture block17 %}
+<form action="/search.html?query=" class="search">
+    <section class="search-meta">
+        <label for="search-form">Label text</label>
+        <input autosave="save-search-form" id="search-form" name="search" results="15" type="search" />
+        <input class="button" type="submit" value="Search" />
+    </section>
+</form>
+            {% endcapture %}
+            {{block17}}
+            {% include molecule-codeblock.html content=block17 %}
+
         </section>
 
         <section class="style-sm-section">
             <h3>Inline form</h3>
-            <section class="form-inline">
-                <form action="/search.html?query=" class="search">
-                    <section class="search-meta">
-                        <label for="search-knowledgebase-inline">Search our knowledge base</label>
-                        <input autosave="save-search-knowledgebase-inline" id="search-knowledgebase-inline" name="search" results="15" type="search" />
-                        <input class="button" type="submit" value="Search" />
-                    </section>
-                </form>
-            </section>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><section class="form-inline">
-                    <form action="/search.html?query=" class="search">
-                        <section class="search-meta">
-                            <label for="search-form-inline">Label text</label>
-                            <input autosave="save-search-form-inline" id="search-form-inline" name="search" results="15" type="search" />
-                            <input class="button" type="submit" value="Search" />
-                        </section>
-                    </form>
-                </section>
-                </xmp>
-            </section>
+
+            {% capture block18 %}
+<section class="form-inline">
+    <form action="/search.html?query=" class="search">
+        <section class="search-meta">
+            <label for="search-form-inline">Label text</label>
+            <input autosave="save-search-form-inline" id="search-form-inline" name="search" results="15" type="search" />
+            <input class="button" type="submit" value="Search" />
+        </section>
+    </form>
+</section>
+            {% endcapture %}
+            {{block18}}
+            {% include molecule-codeblock.html content=block18 %}
+
         </section>
 
         <section class="style-sm-section">
             <h3>Range slider</h3>
-            <label for="style-sm-input-range">Label for range slider</label>
-            <div>
-                <input id="style-sm-input-range" type="range" />
-            </div>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="input-range">Label text</label>
-                <input id="input-range" type="range" /></xmp>
-            </section>
+            {% capture block19 %}
+<label for="input-range">Label text</label>
+<input id="input-range" type="range" />
+            {% endcapture %}
+            {{block19}}
+            {% include molecule-codeblock.html content=block19 %}
         </section>
 
         <section class="style-sm-section">
             <h3>Multi-handle slider</h3>
-            <label for="style-sm-input-multirange">Label for multi-range slider</label>
-            <div>
-                <input id="style-sm-input-multirange" type="range" multiple value="25,75" />
+            <!-- TODO: create solution for multirange container div -->
+            <div style="display:flex;">
+                <div>
+                    <label for="style-sm-input-multirange">Label for multi-range slider</label>
+                    <input id="style-sm-input-multirange" type="range" multiple value="25,75" />
+                </div>
             </div>
-            <section class="style-sm-codesnippet">
-                <p><abbr>HTML</abbr> code snippet</p>
-                <xmp><label for="style-sm-input-multirange">Label for multi-range slider</label>
-                <input id="style-sm-input-multirange" type="range" multiple value="25,75" /></xmp>
-            </section>
+            {% capture block20 %}
+<label for="input-multirange">Label for multi-range slider</label>
+<input id="input-multirange" type="range" multiple value="25,75" />
+            {% endcapture %}
+            {% include molecule-codeblock.html content=block20 %}
+
         </section>
     </div>
 </article>
-
-<script type="text/javascript" src="/js/multirange.js"></script>
