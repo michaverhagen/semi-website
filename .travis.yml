@@ -34,6 +34,9 @@ before_install:
   fi
 script:
 - set -e
+- npm run prettier
+- npm run eslint
+- npm run build
 - |
   if [ "${TRAVIS_BRANCH}" = "master" ]; then
     # use production configuration
@@ -45,9 +48,6 @@ script:
     JEKYLL_ENV=develop bundle exec jekyll build --config "_config.yml" --baseurl  "http://dev.semi.network"
   fi
 - html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html
-- npm run prettier
-- npm run eslint
-- npm run build
 - |
   if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
     if [ $TRAVIS_BRANCH = "master" ]; then
