@@ -1,5 +1,5 @@
 
-@import 'var-scale';
+@import '../variables/var-scale';
 
 /**
  * Section and column headers
@@ -18,7 +18,7 @@
 
     source, img {
         padding: 1rem 0;
-        width: 11rem;
+        width: 8rem;
     }
 }
 
