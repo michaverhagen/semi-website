@@ -34,8 +34,8 @@
     "build": "webpack --mode=production",
     "build:dev": "webpack --mode=development --display-error-details",
     "build:watch": "webpack --mode=development --display-error-details --watch",
-    "prettier": "prettier --check ./js-src/modules/**",
-    "eslint": "eslint ./js-src/modules/**"
+    "prettier": "prettier --check ./_js-src/modules/**",
+    "eslint": "eslint ./_js-src/modules/**"
   },
   "repository": {
     "type": "git",
