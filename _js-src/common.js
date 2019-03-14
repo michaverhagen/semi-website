@@ -31,11 +31,6 @@ mailChimp();
 video('js-video-homepage');
 
 /**
- * Search
- */
-search();
-
-/**
  * Make elements on the page collapse
  */
 toggle('data-toggle');
