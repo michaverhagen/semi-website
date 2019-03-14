@@ -1,5 +1,5 @@
 
-@import 'mixins-breakpoints';
+@import '../mixins/mixins-breakpoints';
 
 label, button, [type='submit'] {
 	cursor: pointer;
