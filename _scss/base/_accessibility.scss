@@ -1,4 +1,4 @@
-@import 'mixins';
+@import '../mixins/mixins';
 
 .is-visually-hidden {
   @include visually-hidden();
