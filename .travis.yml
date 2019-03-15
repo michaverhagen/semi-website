@@ -30,7 +30,6 @@ before_install:
     source /home/travis/google-cloud-sdk/path.bash.inc
     gcloud version
     gcloud auth activate-service-account --key-file key.json
-    gcloud config set project $PROJECT
   fi
 script:
 - set -e
@@ -51,6 +50,8 @@ script:
 - |
   if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
     if [ $TRAVIS_BRANCH = "master" ]; then
+      # set project
+      gcloud config set project $PROJECTPROD
       # set website details for the correct bucket
       # gsutil web set -m index.html -e 404.html gs://$BUCKET
       # empty bucket (website stays alive on the CDN)
@@ -72,6 +73,8 @@ script:
 - |
   if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
     if [ $TRAVIS_BRANCH = "develop" ]; then
+      # set project
+      gcloud config set project $PROJECTDEV
       # set website details for the correct bucket
       gsutil web set -m index.html -e 404.html gs://$BUCKETDEV
       # empty bucket (website stays alive on the CDN)
