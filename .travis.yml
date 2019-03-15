@@ -23,7 +23,7 @@ before_install:
 # Only install GCLOUD when it is not a PR
 - |
   if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then
-    openssl aes-256-cbc -K $encrypted_79b548fb7a17_key -iv $encrypted_79b548fb7a17_iv -in key.json.enc -out key.json -d
+    openssl aes-256-cbc -K $encrypted_79b548fb7a17_key -iv $encrypted_79b548fb7a17_iv -in key.$TRAVIS_BRANCH.json.enc -out key.json -d
     gcloud version || true
     if [ ! -d "$HOME/google-cloud-sdk/bin" ]; then rm -rf $HOME/google-cloud-sdk; export CLOUDSDK_CORE_DISABLE_PROMPTS=1; curl https://sdk.cloud.google.com | bash; fi
     echo "LOAD SOURCE"
@@ -40,12 +40,12 @@ script:
 - |
   if [ "${TRAVIS_BRANCH}" = "master" ]; then
     # use production configuration
-    JEKYLL_ENV=production bundle exec jekyll build --config "_config.yml" --baseurl "https://www.semi.network"
+    JEKYLL_ENV=production bundle exec jekyll build --config "_config.yml" --baseurl "https://www.semi.technology"
   fi
 - |
   if [ "${TRAVIS_BRANCH}" != "master" ]; then
     # use develop configuration for all other branches
-    JEKYLL_ENV=develop bundle exec jekyll build --config "_config.yml" --baseurl  "http://dev.semi.network"
+    JEKYLL_ENV=develop bundle exec jekyll build --config "_config.yml" --baseurl  "http://dev.semi.technology"
   fi
 - html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html
 - |
@@ -65,7 +65,8 @@ script:
       # Allow viewing of files (for website purposes)
       # gsutil iam ch allUsers:objectViewer gs://$BUCKET
       # Invalidate the CDN
-      gcloud compute url-maps invalidate-cdn-cache prod-www-semi-network --host www.semi.network --path "/*"
+      gcloud compute url-maps invalidate-cdn-cache semi-technology --host www.semi.technology --path "/*"
+      gcloud compute url-maps invalidate-cdn-cache semi-network --host www.semi.technology --path "/*"
     fi
   fi
 - |

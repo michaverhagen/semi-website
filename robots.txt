@@ -3,4 +3,4 @@ Noindex: /service-manual/*
 Noindex: /thank-you/
 Noindex: /search/
 
-SITEMAP: https://www.semi.network/sitemap.xml
+SITEMAP: https://www.semi.technology/sitemap.xml

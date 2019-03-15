@@ -2,7 +2,7 @@
 layout: layout-default
 name: Marta Marszal
 jobTitle:
-mail: marta@semi.network
+mail: marta@semi.technology
 key: marta
 ---
 

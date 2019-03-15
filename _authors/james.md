@@ -2,7 +2,7 @@
 layout: layout-default
 name: James Carne
 title: Content expert
-mail: james@semi.network
+mail: james@semi.technology
 key: james
 ---
 
