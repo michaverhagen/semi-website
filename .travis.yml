@@ -9,10 +9,8 @@ branches:
   - master
   - develop
 before_install:
-- openssl aes-256-cbc -K $encrypted_79b548fb7a17_key -iv $encrypted_79b548fb7a17_iv
-  -in key.develop.json.enc -out key.develop.json -d
-- openssl aes-256-cbc -K $encrypted_79b548fb7a17_key -iv $encrypted_79b548fb7a17_iv
-  -in key.master.json.enc -out key.master.json -d
+- openssl aes-256-cbc -K $encrypted_79b548fb7a17_key -iv $encrypted_79b548fb7a17_iv -in cloud.tar.enc -out cloud.tar -d
+- tar xvf cloud.tar
 - sudo apt-get install -y nodejs npm
 - npm i
 - npm i -g html-minifier
