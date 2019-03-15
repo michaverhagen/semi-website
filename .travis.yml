@@ -66,8 +66,8 @@ script:
       # Allow viewing of files (for website purposes)
       # gsutil iam ch allUsers:objectViewer gs://$BUCKET
       # Invalidate the CDN
-      gcloud compute url-maps invalidate-cdn-cache semi-technology --host www.semi.technology --path "/*"
-      gcloud compute url-maps invalidate-cdn-cache semi-network --host www.semi.technology --path "/*"
+      gcloud compute url-maps invalidate-cdn-cache semi-technology --host www.semi.technology --path "/*" --async
+      gcloud compute url-maps invalidate-cdn-cache semi-network --host www.semi.network --path "/*" --async
     fi
   fi
 - |
