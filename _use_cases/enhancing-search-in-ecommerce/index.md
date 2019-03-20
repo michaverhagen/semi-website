@@ -6,6 +6,7 @@ description: Customers search web shops for products using the terms they know. 
 tags: ['retail','search']
 order: 1
 ---
+![Seaching for a product in a warehouse](/img/sample-usecase.png)
 
 ## The challenge
 You want to provide a seamless experience to your customers. Never lose a sale because a customer used the wrong search terms to find a product you have.
