@@ -1,7 +1,26 @@
 @import '../mixins/mixins-breakpoints';
+@import '../variables/var-typography';
 
 .page--article-overview .list-bullet {
     margin-bottom: 3em;
+}
+
+.article-center {
+  margin: 0 auto;
+  max-width: $body-max-paragraph-width;
+}
+
+.article__top {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-intro {
+  margin-top: 1rem;
+}
+
+.article-badge {
+  margin-bottom: 1rem;
 }
 
 .article-overview {

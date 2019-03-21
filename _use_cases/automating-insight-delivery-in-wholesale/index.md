@@ -8,6 +8,7 @@ productsUsed: ['consulting', 'enterprise', 'whitelabel', 'keyper']
 order: 1
 image: /img/content/image-example.png
 imageAlt: alternative text
+inDevelopment: true
 ---
 
 <p>test in post one</p>

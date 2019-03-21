@@ -8,14 +8,17 @@
 
 <main>
     <article class="container">
-        <div class="wrapper article-container">
-            <!--
-                add the sidebar from the design here
-            -->
+        <div class="wrapper--wide article-container">
             <section itemscope itemtype="http://schema.org/articleBody">
-                {% include article-intro.html %}
+                <div class="article-center">
+                    <section class="layout layout--single section-page-intro">
+                        <div class="article__top space-header-page">
+                            {% include article-intro.html %}
+                        </div>
+                    </section>
+                </div>
                 {% include article-image.html %}
-                <section class="article">
+                <section class="article article-center">
                     {{ content }}
                 </section>
                 <dl class="tags tags-in-page">
@@ -54,7 +57,7 @@
                     linkExternal=false
                     ctaText=""
                     bodycopy=item.description
-                    inDevelopment=true
+                    inDevelopment=item.inDevelopment
                     tags=item.tags
                 %}
                 {% endunless %}
