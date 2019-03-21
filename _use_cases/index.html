@@ -20,7 +20,7 @@ exclude: true
         </section>
         <section class="wrapper--wide">
             <ul class="cards">
-                {% for item in sorted_use_cases limit:4 %}
+                {% for item in sorted_use_cases %}
                     {% unless item.exclude %}
                         {% include components/card/card.html
                             title=item.title
@@ -39,33 +39,5 @@ exclude: true
                 {% endfor %}
             </ul>
         </section>
-
-        <div class="wrapper--wide">
-            <section class="section-standout--secondary section-standout-padding">
-                <div class="layout layout--single">
-                    <div class="space-header-section header--centered">
-                        <h2 class="title-section">Explore more cases</h2>
-                    </div>
-                </div>
-                <ul class="cards">
-                    {% for item in sorted_use_cases offset:4 %}
-                        {% unless item.exclude %}
-                            {% include components/card/card.html
-                                themeClass=""
-                                imgUrl=""
-                                imgAlt=""
-                                title=item.title
-                                linkUrl=item.url
-                                linkExternal=false
-                                ctaText=""
-                                bodycopy=item.description
-                                inDevelopment=item.inDevelopment
-                                tags=item.tags
-                            %}
-                        {% endunless %}
-                    {% endfor %}
-                </ul>
-            </section>
-        </div>
     </div>
 </article>
