@@ -7,31 +7,35 @@
 {% include organism-header.html %}
 
 <main>
-    <article class="container">
-        <div class="wrapper--wide article-container">
-            <section itemscope itemtype="http://schema.org/articleBody">
-                <div class="article-center">
-                    <section class="layout layout--single section-page-intro">
-                        <div class="article__top space-header-page">
-                            {% include article-intro.html %}
-                        </div>
-                    </section>
+    <article>
+        <div class="container">
+            <div class="wrapper--wide article__top">
+                <div class="article__top-image">
+                    {% include article-image.html %}
                 </div>
-                {% include article-image.html %}
-                <section class="article article-center">
-                    {{ content }}
+                <div class="article__top-content">
+                    <div class="article-intro"><!-- space-header-page -->
+                        {% include article-intro.html %}
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <section itemscope itemtype="http://schema.org/articleBody">
+                    <div class="article">
+                        {{ content }}
+                    </div>
+                    <dl class="tags tags-in-page">
+                        <dt><i>Tags</i></dt>
+                        <dd>
+                            <ul class="tags__tag-list">
+                                {% for tag in page.tags %}
+                                <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </dd>
+                    </dl>
                 </section>
-                <dl class="tags tags-in-page">
-                    <dt><i>Tags</i></dt>
-                    <dd>
-                        <ul class="tags__tag-list">
-                            {% for tag in page.tags %}
-                            <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </dd>
-                </dl>
-            </section>
+            </div>
         </div>
     </article>
     <div class="section-standout--quaternary">
