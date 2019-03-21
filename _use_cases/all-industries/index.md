@@ -1,22 +1,18 @@
 ---
 bodyclass: page--use-cases
 layout: layout-use-case
-title: TITLE
-description: DESCRIPTION
+title: Generate income from existing data
+description: Companies have huge amounts of valuable data - using Weaviate to monetize the data as supplementary income stream alongside core business.
 tags: ['use case']
 order: 1
 image: /img/content/image-example.png
 imageCard: /img/decoration/use-case-1.jpg
 imageMobile: /img/decoration/use-case-1.jpg 
-imageAlt: DESCRIPTION
+imageAlt: Generate income from existing data
 ---
-![DESCRIPTION](/img/sample-usecase.png)
+![Generate income from existing data](/img/sample-usecase.png)
 
 ## The challenge
-
-...
-
-## Detail
 
 ...
 
@@ -24,6 +20,10 @@ imageAlt: DESCRIPTION
 
 ...
 
-## How did we help
+## Product & Solutions
+
+...
+
+## Request a demo
 
 ...

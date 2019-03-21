@@ -16,14 +16,14 @@ imageAlt: DESCRIPTION
 
 ...
 
-## Detail
-
-...
-
 ## The solution
 
 ...
 
-## How did we help
+## Product & Solutions
+
+...
+
+## Request a demo
 
 ...
