@@ -1,5 +1,5 @@
-{% capture is_dark %}{% if include.inverted %}card-inverted{% else %}{% endif %}{% endcapture%}
-{% capture background %}{% if include.backgroundImgUrl %}background-image: url('{{include.backgroundImgUrl}}');{% else %}{% endif %}{% endcapture %}
+{% capture is_dark %}{% if include.inverted != '' %}card-inverted{% else %}{% endif %}{% endcapture%}
+{% capture background %}{% if include.backgroundImgUrl %}background-image: url('{{include.backgroundImgUrl}}');"{% else %}{% endif %}{% endcapture %}
 <li class="card {{ include.themeClass }} {{is_dark}}" style="{{background}}">
     {% include components/card/card__top.html %}
     {% include components/card/card__title.html %}
