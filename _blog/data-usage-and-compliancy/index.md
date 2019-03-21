@@ -2,7 +2,7 @@
 layout: layout-blog-article
 title: Data Usage & Compliancy
 description: What does it mean for your organization from a practical, safety and compliance point of view when you use SeMI?
-tags: ['legal', 'technology']
+tags: ['Legal', 'Blog']
 redirect_from:
   - /knowledge-base/wiki-semi-consulting/learn/data-usage-and-compliancy/
 video-link:

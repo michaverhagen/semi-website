@@ -2,7 +2,7 @@
 layout: layout-blog-article
 title: Onboarding Brief
 description: What it means to onboard to the SeMI Network.
-tags: ['business', 'technology']
+tags: ['Business', 'Technology', 'Blog']
 redirect_from:
   - /knowledge-base/wiki-semi-consulting/start/onboarding-brief/
 video-link:
