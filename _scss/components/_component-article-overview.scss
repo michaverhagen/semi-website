@@ -12,15 +12,55 @@
 
 .article__top {
   display: flex;
-  flex-direction: column;
+
+  @include breakpoint(toLarge) {
+    flex-direction: column;
+  }
+
+  @include breakpoint(mediumToLarge) {
+    .article__top-image {
+      max-width: 60vw;
+      margin: 0 auto;
+    }
+  }
+
+  @include breakpoint(largeUp) {
+    flex-direction: row;
+    .article__top-content {
+      order: 1;
+      justify-content: center;
+      width: 50%;
+    }
+    .article__top-image {
+      order: 2;
+      width: 50%;
+    }
+  }
+
+  .article__top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .article__top-image {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .article-intro {
+  display: flex;
+  flex-direction: column;
   margin-top: 1rem;
 }
 
 .article-badge {
   margin-bottom: 1rem;
+}
+
+.article-image-small {
+  @include breakpoint(smallOnly) {
+    height: 500px;
+  }
 }
 
 .article-overview {

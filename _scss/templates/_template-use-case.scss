@@ -6,13 +6,4 @@
   .card__top {
     min-height: 2rem;
   }
-  &:first-child {
-    background-image: url('/img/decoration/use-case-1.jpg');
-  }
-  &:nth-child(2) {
-    background-image: url('/img/decoration/use-case-2.jpg');
-  }
-  &:nth-child(3) {
-    background-image: url('/img/decoration/use-case-3.jpg');
-  }
 }
