@@ -1,10 +1,6 @@
 {% capture is_dark %}{% if include.inverted %}card-inverted{% else %}{% endif %}{% endcapture%}
 <li class="card {{ include.themeClass }} {{is_dark}}">
-    {% if include.inDevelopment %}
-        {% include components/card/card__icon-with-label.html %}
-    {% else if %}
-        {% include components/card/card__icon.html %}
-    {% endif %}
+    {% include components/card/card__top.html %}
     {% include components/card/card__title.html %}
     {% if include.tags %}
         {% include components/card/card__tags.html %}

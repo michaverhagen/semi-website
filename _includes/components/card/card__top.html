@@ -1,0 +1,11 @@
+
+<div class="card__top">
+    {%- if include.imgUrl != '' %}
+    <div class="card__icon {% if include.logoWide == true %}card__icon--wide{% endif %}">
+        <img src="{{ include.imgUrl }}" alt="{{ include.imgAlt }}" />
+    </div>
+    {%- endif %}
+    {%- if include.inDevelopment == true %}
+    {%- include components/card/card__badge.html %}
+    {%- endif %}
+</div>

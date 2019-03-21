@@ -3,6 +3,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  .card__top {
+    min-height: 2rem;
+  }
   &:first-child {
     background-image: url('/img/decoration/use-case-1.jpg');
   }
