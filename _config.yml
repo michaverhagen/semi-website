@@ -3,9 +3,6 @@ markdown: kramdown
 kramdown:
     parse_block_html: false
 rdiscount extensions: [smart]
-sass:
-    style: compressed # opposed to "expanded"
-    sass_dir: css/_sass
 collections:
     blog:
         output: true
@@ -23,11 +20,9 @@ exclude:
     - README.md
     - "*.draft"
     - js-src
+    - node_modules
+    - webpack.config.js
 plugins:
-    - jekyll-autoprefixer
     - jekyll-redirect-from
 whitelist:
     - jekyll-redirect-from
-autoprefixer:
-    browsers:
-        - last 5 versions

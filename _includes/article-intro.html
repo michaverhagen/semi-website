@@ -5,7 +5,7 @@
     {% if page.authorKey %}
         {% for author in site.authors %}
             {% if author.key == page.authorKey %}
-                <p>By <a href="/authors/{{page.authorKey}}/" title="See archive page of {{author.name}}">{{author.name}}</a>{% if author.jobTitle %}, {{ author.jobTitle }}{% endif %}</p>
+                <p>By <a href="/authors/{{page.authorKey}}.html" title="See archive page of {{author.name}}">{{author.name}}</a>{% if author.jobTitle %}, {{ author.jobTitle }}{% endif %}</p>
             {% endif %}
         {% endfor %}
     {% endif  %}

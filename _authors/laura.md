@@ -2,7 +2,7 @@
 layout: layout-default
 name: Laura Ham
 jobTitle:
-mail: laura@semi.network
+mail: laura@semi.technology
 key: laura
 ---
 

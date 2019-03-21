@@ -8,3 +8,5 @@ vendor/
 test.html
 .idea/
 Gemfile.lock
+# exclude build files (CSS files are built by webpack)
+css/*
