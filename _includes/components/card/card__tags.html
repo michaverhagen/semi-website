@@ -1,0 +1,15 @@
+{% if include.tags != '' %}
+    <dl class="tags">
+        <dt class="is-visually-hidden">Tags</dt>
+        <dd>
+            <ul class="tags__tag-list">
+            {% for tag in include.tags %}
+                <li>
+                    <!-- anchor link will be added later once the tag landing page is finished -->
+                    <a href="/tags/{{ tag }}/">{{tag}}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </dd>
+    </dl>
+{% endif %}

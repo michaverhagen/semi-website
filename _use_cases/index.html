@@ -1,0 +1,71 @@
+---
+bodyclass: page--use-cases
+layout: layout-default
+title: Use cases
+description: Discover the innovative ways in which different organizations have applied our products and the benefits they have created for their business.
+exclude: true
+---
+
+{% assign sorted_use_cases = site.use_cases | sort:"order" %}
+
+<article>
+    <div class="container background-hexagon">
+        <section class="layout layout--single section-page-intro">
+            <div class="section-standout__text--centered space-header-page">
+                <h1 class="title-page header--centered">{{page.title}}</h1>
+                <div class="section-standout__text--centered">
+                    <p>{{page.description}}</p>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper--wide">
+            <ul class="cards">
+                {% for item in sorted_use_cases limit:4 %}
+                    {% unless item.exclude %}
+                        {% include components/card/card.html
+                            title=item.title
+                            themeClass="card--pilar theme--use-cases"
+                            inverted=true
+                            imgUrl=""
+                            imgAlt=""
+                            linkUrl=item.url
+                            linkExternal=false
+                            ctaText=""
+                            bodycopy=item.description
+                            inDevelopment=true
+                            tags=item.tags
+                        %}
+                    {% endunless %}
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section class="section-standout--secondary section-standout-padding container">
+            <section class="wrapper--wide">
+                <div class="layout layout--single">
+                    <div class="space-header-section header--centered">
+                        <h2 class="title-section">Explore more cases</h2>
+                    </div>
+                </div>
+                <ul class="cards">
+                    {% for item in sorted_use_cases offset:4 %}
+                        {% unless item.exclude %}
+                            {% include components/card/card.html
+                                themeClass=""
+                                imgUrl=""
+                                imgAlt=""
+                                title=item.title
+                                linkUrl=item.url
+                                linkExternal=false
+                                ctaText=""
+                                bodycopy=item.description
+                                inDevelopment=true
+                                tags=item.tags
+                            %}
+                        {% endunless %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </div>
+</article>

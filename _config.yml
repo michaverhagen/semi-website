@@ -6,6 +6,10 @@ rdiscount extensions: [smart]
 collections:
     blog:
         output: true
+        permalink: '/blog/:path'
+    use_cases:
+        output: true
+        permalink: '/use-cases/:path'
     authors:
         output: true
 exclude:

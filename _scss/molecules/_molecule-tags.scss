@@ -19,14 +19,17 @@
 	}
 	li {
     	display: inline;
-    	a {
-    		background: $color-gray-7;
-    		border-bottom: 0;
-    		border-radius: $border-radius-1;
-    		color: $color-interactive;
-            font-size: .85em;
-    		margin-right: .5em;
-    		padding: .25em .75em;
+    	a,
+		span {
+			background: $color-gray-7;
+			border-bottom: 0;
+			border-radius: $border-radius-1;
+			color: $color-interactive;
+			font-size: .85em;
+			margin-right: .5em;
+			padding: .25em .75em;
+		}
+		a {
     		&:hover, &:focus, &:active {
         		background: $color-semi;
     		    border-radius: $border-radius-1;
@@ -39,4 +42,9 @@
 
 .tags-in-page {
     margin-top: 3em;
+}
+
+.tags-list {
+	display: block;
+	list-style-type: none;
 }

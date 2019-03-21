@@ -9,6 +9,7 @@ $c-card-border: 1px solid $color-gray-5;
     flex-wrap: wrap;
     list-style: none;
     margin: 0 -1em;
+    justify-content: center;
     @media screen and (min-width: 48em) {
         display: flex;
         flex-direction: row;
@@ -88,18 +89,23 @@ $c-card-border: 1px solid $color-gray-5;
     }
 }
 
+.card-inverted {
+    .card__title,
+    p,
+    strong {
+        color: $color-white;
+    }
+}
+
 .card__top {
     display: flex;
     align-items: center;
     margin-bottom: $scale-1;
 }
 
-.card__tag {
-    margin-left: $scale-1;
-}
-
 .card__icon {
     height: 3rem;
+    margin-right: $scale-1;
     &:not(.card__icon--wide) {
         width: 3rem;
     }
