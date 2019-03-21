@@ -16,39 +16,45 @@ open-graph-type: product
                 </div>
             </div>
         </section>
-        <section class="wrapper--wide">
-            <p>[image with different industries]</p>
-            <p>Goal of this section: Show that there are different industries.</p>
-            <p>End solutions are industry specific. Weaviate is making this possible.</p>
-            <p>Key: Instead of x amount of time, using weaviate enables you to only focus on using it...</p>
-            <p>Always use Weaviate, then: <strong>Out of the box</strong>: Point solutions. <a href="#">See all point solutions</a></p>
+
+        <section class="wrapper layout--vertical-center">
+            {% capture imageColumn %}
+            <img class="section--img-playground" src="/img/datasets.png" srcset="/img/datasets@3x.png" alt="Weaviate enterprise playground" />
+            {% endcapture %}
+            {% capture textColumn %}
+            <h3 class="space-header-column title-column">A certain title</h3>
+            <p>Some information...</p>
+            {% endcapture %}
+            {% include components/layout/layout--double.html
+                contentColumnOne=imageColumn
+                contentColumnTwo=textColumn
+            %}
+
+            {% capture imageColumn1 %}
+            <img class="section--img-playground" src="/img/datasets.png" srcset="/img/datasets@3x.png" alt="Weaviate enterprise playground" />
+            {% endcapture %}
+            {% capture textColumn1 %}
+            <h3 class="space-header-column title-column">Yet another title</h3>
+            <p>Some information...</p>
+            {% endcapture %}
+            {% include components/layout/layout--double.html
+            columnOrder="reverse"
+            contentColumnOne=imageColumn1
+            contentColumnTwo=textColumn1
+            %}
+
+            {% capture imageColumn2 %}
+            <img class="section--img-playground" src="/img/datasets.png" srcset="/img/datasets@3x.png" alt="Weaviate enterprise playground" />
+            {% endcapture %}
+            {% capture textColumn2 %}
+            <h3 class="space-header-column title-column">Another?!</h3>
+            <p>Some information...</p>
+            {% endcapture %}
+            {% include components/layout/layout--double.html
+            contentColumnOne=imageColumn2
+            contentColumnTwo=textColumn2
+            %}
         </section>
-        <section class="wrapper--wide">
-            <p>--------------------------------------------------------------------------------------------------------</p>
-        </section>
-        <section class="wrapper--wide">
-            <p>[image with layers]</p>
-            <p>Goal of this section: Answers the question what point solutions are available, and what point solutions are.</p>
-            <p>&nbsp;</p>
-            <p>In Forbes 500, 95% of CTO's mention that with the data they have they can't solve a business problem. Put the data in Weaviate and build on top of that. (restructure data)</p>
-            <p>&nbsp;</p>
-            <p>New way of looking at data: Capturing all the data from the research, that works. Next step: "We have all these fields which is organised in tables. This is where Weaviate comes in. When you want to organize the data differently, and make other connections, this enables Weaviate.</p>
-            <p>&nbsp;</p>
-            <p>Point solutions are created to solve one specific problem. Point solutions are focused and therefore are best in class examples in their field. You can make use of pre-existing point solutions which have proven value.</p>
-            <p>&nbsp;</p>
-            <p><strong>"This is done at the API level. Not in the UI. The UI level, is client specific."</strong></p>
-            <p>&nbsp;</p>
-            <ul>
-                <li>Layer five: User Interface (the client can build whatever in this layer)</li>
-                <li>Layer four: Point solution(s)</li>
-                <li>Layer three: Productize</li>
-                <li>Layer two: Consultancy (help  client build their own point solution or ui)</li>
-                <li>Layer one: Weaviate</li>
-            </ul>
-            <p>&nbsp;</p>
-            <p>Some additional feature information:</p>
-            <p><strong>It's decentralized:</strong> meaning that clients have the option to "...don't have to send the data away..."</p>
-            <p>You need to be able to answer any question using natural language.</p>
-        </section>
+
     </div>
 </article>
