@@ -9,7 +9,7 @@ exclude: true
 {% assign sorted_use_cases = site.use_cases | sort:"order" %}
 
 <article>
-    <div class="container background-hexagon">
+    <section class="container background-hexagon">
         <section class="layout layout--single section-page-intro">
             <div class="section-standout__text--centered space-header-page">
                 <h1 class="title-page header--centered">{{page.title}}</h1>
@@ -40,8 +40,8 @@ exclude: true
             </ul>
         </section>
 
-        <section class="section-standout--secondary section-standout-padding container">
-            <section class="wrapper--wide">
+        <div class="wrapper--wide">
+            <section class="section-standout--secondary section-standout-padding">
                 <div class="layout layout--single">
                     <div class="space-header-section header--centered">
                         <h2 class="title-section">Explore more cases</h2>
@@ -65,7 +65,7 @@ exclude: true
                         {% endunless %}
                     {% endfor %}
                 </ul>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
 </article>

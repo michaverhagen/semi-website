@@ -1,16 +1,14 @@
 @import '../variables/var-scale';
 @import '../variables/var-color';
+@import '../mixins/mixins-breakpoints';
 
 $c-card-border: 1px solid $color-gray-5;
 
 .cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     list-style: none;
     margin: 0 -1em;
     justify-content: center;
-    @media screen and (min-width: 48em) {
+    @include breakpoint(mediumUp) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
