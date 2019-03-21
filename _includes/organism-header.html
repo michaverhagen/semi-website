@@ -1,24 +1,26 @@
 <div class="header-container {% if include.headerOverlay == 'true' %}site-header--overlay{% endif %}">
     {% include molecule-cookie-notice.html %}
-    <header class="header-main wrapper--wide">
-        <a class="image-link" href="/">
-            {% if include.headerType == "inverted" %}
+    <div class="container">
+        <header class="header-main wrapper--wide">
+            <a class="image-link" href="/">
+                {%- if include.headerType == "inverted" -%}
                 <picture>
                     <source media="(max-width: 48em)" srcset="/img/logo-horizontal-payoff-inverted.svg" type="image/svg+xml">
                     <source srcset="/img/logo-horizontal-payoff-inverted.svg" type="image/svg+xml">
                     <img src="/img/logo-horizontal-payoff-inverted.svg" alt="">
                 </picture>
-            {% else %}
+                {%- else -%}
                 ​<picture>
                     <source media="(max-width: 48em)" srcset="/img/logo-horizontal-payoff.svg" type="image/svg+xml">
                     <source srcset="/img/logo-horizontal-payoff.svg" type="image/svg+xml">
                     <img src="/img/logo-horizontal-payoff.svg" alt="">
                 </picture>
-            {% endif %}
-        </a>
-        <div>
-            <a class="nav-main-console button--small" href="/console/">Console</a>
-        </div>
-    </header>
+                {%- endif -%}
+            </a>
+            <div>
+                <a class="nav-main-console button--small" href="/console/">Console</a>
+            </div>
+        </header>
+    </div>
     {% include organism-nav-main.html %}
 </div>

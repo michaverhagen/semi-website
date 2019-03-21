@@ -1,3 +1,8 @@
+@import '../variables/var-typography';
+@import '../variables/var-color';
+@import '../variables/var-borders';
+@import '../mixins/mixins';
+
 .nav-main {
     margin-bottom: 1em;
     ul {
@@ -13,7 +18,7 @@
 			border-radius: $border-radius-3;
 			color: $color-black;
 			font-family: $typeface-body;
-        	font-size: 1rem;
+        	font-size: $font-size-ui;
         	font-variant-caps: small-caps;
 			padding: .5em .75em;
 			text-transform: lowercase;
@@ -39,7 +44,8 @@
 .page--blog .nav-main--blog,
 .page--use-cases .nav-main--use-cases,
 .page--team .nav-main--team,
-.page--contact .nav-main--contact {
+.page--contact .nav-main--contact,
+.page--services .nav-main--services {
     a {
         background: $color-black;
         color: $color-white;
