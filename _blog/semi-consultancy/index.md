@@ -2,7 +2,7 @@
 layout: layout-blog-article
 title: SeMI Consultancy
 description: We want to get you off to a flying start in giving meaning to your big data. With our consulting services we show you how to achieve the maximum business impact with the help from our products.
-tags: ['business']
+tags: ['Business', 'Blog']
 menu-order: 3
 open-graph-type: article
 authorKey: micha

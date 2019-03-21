@@ -2,7 +2,7 @@
 layout: layout-blog-article
 title: Technology Summary
 description: This article provides a birds-eye view of SeMI technology stack. Including references to relating sources.
-tags: ['technology', 'summary']
+tags: ['Technology', 'Summary', 'Blog']
 redirect_from:
   - /knowledge-base/wiki-semi-consulting/learn/technology-summary/
 video-link:

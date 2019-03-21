@@ -2,7 +2,7 @@
 layout: layout-blog-article
 title: Exploration Workshop
 description: To make sure our customers get the most value from Weaviate, we have introduced the exploration workshop to tailor a Weaviate network to your needs.
-tags: ['business']
+tags: ['Business', 'Blog']
 redirect_from:
   - /knowledge-base/wiki-semi-consulting/start/exploration-workshops/
 video-link:
