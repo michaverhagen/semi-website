@@ -23,15 +23,13 @@ $c-card-border: 1px solid $color-gray-5;
     flex: 1;
     flex-direction: column;
     padding: 2em;
-    &:not(.card--pilar):not(.card--borderless) {
-        border: $c-card-border;
-    }
     &.card--pilar {
         background-color: $color-white;
         border: $c-card-border;
     }
     &.card--white {
         background-color: $color-white;
+        border: $c-card-border;
     }
     .card__intro {
         min-height: 6rem;
