@@ -47,24 +47,26 @@ exclude: true
                         <h2 class="title-section">Explore more cases</h2>
                     </div>
                 </div>
-                <ul class="cards">
-                    {% for item in sorted_use_cases offset:4 %}
-                        {% unless item.exclude %}
-                            {% include components/card/card.html
-                                themeClass=""
-                                imgUrl=""
-                                imgAlt=""
-                                title=item.title
-                                linkUrl=item.url
-                                linkExternal=false
-                                ctaText=""
-                                bodycopy=item.description
-                                inDevelopment=true
-                                tags=item.tags
-                            %}
-                        {% endunless %}
-                    {% endfor %}
-                </ul>
+                <section class="wrapper--wide">
+                    <ul class="cards">
+                        {% for item in sorted_use_cases offset:4 %}
+                            {% unless item.exclude %}
+                                {% include components/card/card.html
+                                    themeClass=""
+                                    imgUrl=""
+                                    imgAlt=""
+                                    title=item.title
+                                    linkUrl=item.url
+                                    linkExternal=false
+                                    ctaText=""
+                                    bodycopy=item.description
+                                    inDevelopment=true
+                                    tags=item.tags
+                                %}
+                            {% endunless %}
+                        {% endfor %}
+                    </ul>
+                </section>
             </div>
         </section>
     </div>
