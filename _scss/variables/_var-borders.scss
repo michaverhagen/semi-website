@@ -1,3 +1,6 @@
+@import 'var-scale';
+@import 'var-color';
+
 $border-1: 1px solid $color-semi;
 
 $border-radius-1: $scale-1 $scale-1 $scale-1 0;

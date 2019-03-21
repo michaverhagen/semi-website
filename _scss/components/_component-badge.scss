@@ -1,6 +1,6 @@
-@import '_var-color';
-@import '_var-borders';
-@import '_var-scale';
+@import '../variables/var-color';
+@import '../variables/var-borders';
+@import '../variables/var-scale';
 
 .badge {
   background-color: $color-network-accent;

@@ -32,6 +32,7 @@
 // Components
 @import 'components/component-article-overview';
 @import 'components/component-backgrounds';
+@import 'components/component-badge';
 @import 'components/component-breadcrumb';
 @import 'components/component-callout';
 @import 'components/component-card-author';
@@ -70,6 +71,7 @@
 @import 'templates/template-products__semi-consulting';
 @import 'templates/template-products__weaviate';
 @import 'templates/template-search';
+@import 'templates/template-use-case';
 
 // IE 10+ bug fixes
 @import 'base/ie-bugfix';
