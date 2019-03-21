@@ -13,7 +13,7 @@
             <thead>
             <tr>
                 <th>Feature</th>
-                <th>Weaviate <br />Open Source</th>
+                <th class="{% if include.highlightOpenSource == true %}table__cell--highlight{% endif %}">Weaviate <br />Open Source</th>
                 <th class="{% if include.highlightEnterprise == true %}table__cell--highlight{% endif %}">Weaviate <br />Enterprise</th>
                 <th class="{% if include.highlightWhitelabel == true %}table__cell--highlight{% endif %}">Weaviate <br />White-Label</th>
             </tr>
@@ -22,7 +22,7 @@
             {% for feature in site.data.weaviateFeatures %}
             <tr>
                 <td>{{ feature.title }}</td>
-                <td class="table__cell--vertically-middle">{% include molecule-hasFeature.html hasFeature=feature.opensource %}</td>
+                <td class="table__cell--vertically-middle {% if include.highlightOpenSource == true %}table__cell--highlight{% endif %}">{% include molecule-hasFeature.html hasFeature=feature.opensource %}</td>
                 <td class="table__cell--vertically-middle {% if include.highlightEnterprise == true %}table__cell--highlight{% endif %}">{% include molecule-hasFeature.html hasFeature=feature.enterprise %}</td>
                 <td class="table__cell--vertically-middle {% if include.highlightWhitelabel == true %}table__cell--highlight{% endif %}">{% include molecule-hasFeature.html hasFeature=feature.whitelabel %}</td>
             </tr>
