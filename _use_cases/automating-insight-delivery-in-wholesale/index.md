@@ -7,7 +7,7 @@ tags: ['wholesale','automation']
 productsUsed: ['consulting', 'enterprise', 'whitelabel', 'keyper']
 order: 1
 image: /img/content/example-illustration.png
-imageCard: /img/decoration/use-case-2.jpg 
+imageCard: /img/decoration/use-case-telecom@2x.jpg
 imageAlt: alternative text
 inDevelopment: true
 ---

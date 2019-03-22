@@ -6,8 +6,8 @@ description: Companies have huge amounts of valuable data - using Weaviate to mo
 tags: ['use case']
 order: 1
 image: /img/content/image-example.png
-imageCard: /img/decoration/use-case-1.jpg
-imageMobile: /img/decoration/use-case-1.jpg 
+imageCard: /img/decoration/use-case-data@2x.jpg
+imageMobile: /img/decoration/use-case-1.jpg
 imageAlt: Generate income from existing data
 ---
 ![Generate income from existing data](/img/sample-usecase.png)

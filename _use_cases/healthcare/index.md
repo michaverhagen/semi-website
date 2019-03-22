@@ -3,10 +3,10 @@ bodyclass: page--use-cases
 layout: layout-use-case
 title: TITLE
 description: DESCRIPTION
-tags: ['Retail & Consumer Goods', 'Use Case']
+tags: ['Transportation', 'Use Case']
 order: 1
 image: /img/content/image-example.png
-imageCard: /img/decoration/use-case-retail@2x.jpg
+imageCard: /img/decoration/use-case-healthcare@2x.jpg
 imageMobile: /img/decoration/use-case-1.jpg
 imageAlt: DESCRIPTION
 ---
