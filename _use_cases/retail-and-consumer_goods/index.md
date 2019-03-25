@@ -1,16 +1,17 @@
 ---
 bodyclass: page--use-cases
 layout: layout-use-case
-title: TITLE
-description: DESCRIPTION
-tags: ['Retail & Consumer Goods', 'Use Case']
+title: Customer white spot analysis and delivery optimization
+description: SeMI's Weaviate enables wholesalers and retailers to get a better understanding of potential customers in a particular location based on current customers and delivery routes.
+tags: ['retail & consumer goods']
 order: 1
 image: /img/content/image-example.png
 imageCard: /img/decoration/use-case-retail@2x.jpg
 imageMobile: /img/decoration/use-case-1.jpg
-imageAlt: DESCRIPTION
+imageAlt: Customer white spot analysis and delivery optimization
+inRnD: false
 ---
-![DESCRIPTION](/img/sample-usecase.png)
+![Customer white spot analysis and delivery optimization](/img/sample-usecase.png)
 
 ## The challenge
 
