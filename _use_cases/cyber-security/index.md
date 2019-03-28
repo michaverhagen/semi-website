@@ -21,10 +21,7 @@ inRnD: true
 
 ...
 
-## Product & Solutions
 
-...
-
-## Request a demo
+## Request a demo BUTTON
 
 ...

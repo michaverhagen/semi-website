@@ -23,6 +23,6 @@ You can search for "social media" in documents of any age and Weaviate will find
 It is particularly powerful in legal documents where modern concepts are not referred to by name (in documents written before the name existed) but are still relevant. Examples could be concepts like _doxxing_ or _phishing_. You could also search through the vast historical literature on linguistics to discover documents relevant to semantic machine learning.
 Weaviate's knowledge graph applied to a document store will use its semantic tools to create a searchable knowledge store where words are conceptually linked to search terms.
 
-## Request a demo
+## Request a demo BUTTON
 
 ...
