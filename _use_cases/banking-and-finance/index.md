@@ -4,7 +4,7 @@ layout: layout-use-case
 title: Enrich transactional information to discover insights for customers
 description: Enable financial insitutions to create new and enhanced products for their business customers by enriching transactional datasets with supplementary data and by discovering new relations in those sets.
 tags: ['banking & finance']
-order: 1
+order: 3
 image: /img/content/image-example.png
 imageCard: /img/decoration/use-case-finance-1@2x.jpg
 imageMobile: /img/decoration/use-case-1.jpg

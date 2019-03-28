@@ -4,7 +4,7 @@ layout: layout-use-case
 title: Enhance insights from simple transaction data
 description: Enable financial insitutions to improve their compliance process by enriching transaction data with supplementary metadata and insights.
 tags: ['banking & finance']
-order: 2
+order: 3
 image: /img/content/image-example.png
 imageCard: /img/decoration/use-case-finance-2@2x.jpg
 imageMobile: /img/decoration/use-case-1.jpg
