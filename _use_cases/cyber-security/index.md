@@ -6,7 +6,7 @@ description: Cybersecurity infrastructures are complex graphs of relations of so
 tags: ['cyber security']
 order: 3
 image: /img/content/image-example.png
-imageCard: /img/decoration/use-case-realestate@2x.jpg
+imageCard: /img/decoration/use-case-cybersecurity@2x.jpg
 imageMobile: /img/decoration/use-case-1.jpg
 imageAlt: Mapping out complex cybersecurity infrastructures
 inRnD: true
