@@ -4,7 +4,7 @@ layout: layout-use-case
 title: Discover relevant insights in unstructured sets of documents
 description: Knowledge mining existing document libraries for topics and concepts without needing specific search terms in documents
 tags: ['academia & research']
-order: 1
+order: 3
 image: /img/content/image-example.png
 imageCard: /img/decoration/use-case-academia@2x.jpg
 imageMobile: /img/decoration/use-case-1.jpg
