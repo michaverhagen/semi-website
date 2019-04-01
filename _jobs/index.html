@@ -1,0 +1,44 @@
+---
+bodyclass: page--use-cases
+layout: layout-default
+title: Use Cases
+description: Solving knowledge management challenges with  SeMI's products and services
+exclude: true
+---
+
+{% assign sorted_use_cases = site.use_cases | sort:"order" %}
+
+<article>
+    <section class="container background-hexagon">
+        <section class="layout layout--single section-page-intro">
+            <div class="section-standout__text--centered space-header-page">
+                <h1 class="title-page header--centered">{{page.title}}</h1>
+                <div class="section-standout__text--centered">
+                    <p>{{page.description}}</p>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper--wide">
+            <ul class="cards">
+                {% for item in sorted_use_cases %}
+                    {% unless item.exclude %}
+                        {% include components/card/card.html
+                            title=item.title
+                            themeClass="theme--use-cases"
+                            inverted=true
+                            imgUrl=""
+                            imgAlt=""
+                            backgroundImgUrl=item.imageCard
+                            linkUrl=item.url
+                            linkExternal=false
+                            ctaText=""
+                            bodycopy=item.description
+                            inRnD=item.inRnD
+                            tags=item.tags
+                        %}
+                    {% endunless %}
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</article>

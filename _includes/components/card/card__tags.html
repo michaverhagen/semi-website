@@ -6,7 +6,7 @@
             {% for tag in include.tags %}
                 <li>
                     <!-- anchor link will be added later once the tag landing page is finished -->
-                    <a href="/tags/{{ tag }}/">{{tag}}</a>
+                    <a href="{{ include.linkUrl | replace: '/index', '/' }}">{{tag}}</a>
                 </li>
             {% endfor %}
             </ul>
