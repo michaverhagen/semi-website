@@ -47,7 +47,7 @@ script:
     JEKYLL_ENV=develop bundle exec jekyll build --config "_config.yml" --baseurl  "http://dev.semi.technology"
   fi
 # validate if all urls work
-- htmlproofer _site/ --empty_alt_ignore true
+- htmlproofer --url-ignore "/www.semi.technology/" --empty_alt_ignore _site/
 # minify all html
 - html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext
   html
