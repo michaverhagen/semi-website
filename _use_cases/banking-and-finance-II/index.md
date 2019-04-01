@@ -5,13 +5,12 @@ title: Enhance insights from simple transaction data
 description: Enable financial institutions to improve their compliance process by enriching transaction data with supplementary metadata and insights
 tags: ['banking & finance']
 order: 3
-image: /img/content/image-example.png
+image: /img/illustrations/BankingFinanceII.svg
 imageCard: /img/decoration/use-case-finance-2@2x.jpg
 imageMobile: /img/decoration/use-case-1.jpg
 imageAlt: Enhance insights from simple transaction data
 inRnD: true
 ---
-![Enhance insights from simple transaction data](/img/sample-usecase.png)
 
 ## The challenge
 

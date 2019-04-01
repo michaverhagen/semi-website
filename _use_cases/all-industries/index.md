@@ -10,7 +10,6 @@ imageCard: /img/decoration/use-case-data@2x.jpg
 imageMobile: /img/decoration/use-case-1.jpg
 imageAlt: Generate income from existing data
 ---
-![Generate income from existing data](/img/sample-usecase.png)
 
 ## The challenge
 

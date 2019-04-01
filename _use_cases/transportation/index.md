@@ -5,13 +5,12 @@ title: Increase the efficiency of car returns with computer vision
 description: By analyzing photos of cars, SeMI's Weaviate can help determine if cars are returned properly and undamaged.
 tags: ['transportation']
 order: 14
-image: /img/content/image-example.png
+image: /img/illustrations/TransportationI.svg
 imageCard: /img/decoration/use-case-transportation1@2x.jpg
 imageMobile: /img/decoration/use-case-1.jpg
 imageAlt: Increase the efficiency of car returns with computer vision
 inRnD: true
 ---
-![Increase the efficiency of car returns with computer vision](/img/sample-usecase.png)
 
 ## The challenge
 
