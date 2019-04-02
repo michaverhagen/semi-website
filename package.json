@@ -28,7 +28,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:html": "htmlproofer --internal-domains \"www.semi.technology\" --allow-hash-href --empty-alt-ignore --assume-extension ./_site",
+    "test:html": "htmlproofer --internal-domains \"www.semi.technology\" --url-ignore \"#\" --empty_alt_ignore --assume-extension ./_site",
     "prelocal": "npm run build",
     "local": "JEKYLL_ENV=develop bundle exec jekyll serve --livereload --config \"_config.yml\"",
     "htmlmin": "html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html",
