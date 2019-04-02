@@ -63,7 +63,7 @@ For more information about the Weaviate products, please refer to our  [product 
 
 ![Weaviate network](/img/SeMI-network.jpg)
 
-Because Weaviate is a decentralized solution, you stay in complete control of your information; the system of record data is never shared! Weaviate focuses on the things that the system of record data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network. This also means there is no central platform. Weaviate runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](/blog/data-usage-and-compliancy/).
+Because Weaviate is a decentralized solution, you stay in complete control of your information; the system of record data is never shared! Weaviate focuses on the things that the system of record data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network. This also means there is no central platform. Weaviate runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](/blog/data-usage-and-compliancy.html).
 
 > There is no central platform.
 
