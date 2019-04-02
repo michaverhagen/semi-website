@@ -15,7 +15,7 @@ Here are some well-constructed guides
 
 
 *	[Frontify](https://frontify.com/blog/why-voice-and-tone-belong-in-style-guides)
-* [Mailchimp](https://service-manual.mailchimp.com/voice-and-tone/)
+* [Mailchimp](https://styleguide.mailchimp.com/voice-and-tone/)
 *	[A list apart](https://alistapart.com/about/style-guide)
 *	[Gather content](https://gathercontent.com/blog/voice-tone-style-whys-wheres-hows)
 
