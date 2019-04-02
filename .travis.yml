@@ -40,13 +40,13 @@ script:
   if [ "${TRAVIS_BRANCH}" = "master" ]; then
     # use production configuration
     url="https://www.semi.technology"
-    JEKYLL_ENV=production bundle exec jekyll build --config "_config.yml" --baseurl $productionUrl
+    JEKYLL_ENV=production bundle exec jekyll build --config "_config.yml" --baseurl $url
   fi
 - |
   if [ "${TRAVIS_BRANCH}" != "master" ]; then
     # use develop configuration for all other branches
     url="http://dev.semi.technology"
-    JEKYLL_ENV=develop bundle exec jekyll build --config "_config.yml" --baseurl $developmentUrl
+    JEKYLL_ENV=develop bundle exec jekyll build --config "_config.yml" --baseurl $url
     # store url for htmlproofer
   fi
 # validate if all urls work
