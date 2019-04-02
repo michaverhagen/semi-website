@@ -6,7 +6,7 @@
             {% assign sorted_blogs = site.blog | sort: 'menu-order' %}
             {% for item in sorted_blogs %}
                 <li>
-                    <a href="{{item.url}}">{{item.title}}</a>
+                    <a href="{{item.url}}" class="{% if item.title == page.title %}current{% endif %}">{{item.title}}</a>
                 </li>
             {% endfor %}
             </ul>
