@@ -28,6 +28,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "test:html": "htmlproofer --url-ignore \"/www.semi.technology/\" --empty_alt_ignore ./_site",
     "prelocal": "npm run build",
     "local": "JEKYLL_ENV=develop bundle exec jekyll serve --livereload --config \"_config.yml\"",
     "htmlmin": "html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html",
