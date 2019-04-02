@@ -24,16 +24,11 @@
                     <div class="article">
                         {{ content }}
                     </div>
-                    <dl class="tags tags-in-page">
-                        <dt><i>Tags</i></dt>
-                        <dd>
-                            <ul class="tags__tag-list">
-                                {% for tag in page.tags %}
-                                <li><a>{{ tag }}</a></li>
-                                {% endfor %}
-                            </ul>
-                        </dd>
-                    </dl>
+                    <div class="tags-in-page">
+                        {% include molecule-list-tags.html
+                            tags=page.tags
+                        %}
+                    </div>
                 </section>
             </div>
         </div>

@@ -1,0 +1,10 @@
+<dl class="tags">
+    <dt><i>Tags</i></dt>
+    <dd>
+        <ul class="tags">
+            {% for tag in include.tags %}
+            <li><span>{{ tag }}</span></li>
+            {% endfor %}
+        </ul>
+    </dd>
+</dl>

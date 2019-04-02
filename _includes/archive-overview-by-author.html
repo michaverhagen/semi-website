@@ -21,16 +21,11 @@
                                 <p>
                                     {{ blog.description }}
                                 </p>
-                                <dl class="tags">
-                                    <dt><i>Tags</i></dt>
-                                    <dd>
-                                        <ul class="tags">
-                                            {% for tag in blog.tags %}
-                                            <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
-                                            {% endfor %}
-                                        </ul>
-                                    </dd>
-                                </dl>
+                                <div class="tags-in-page">
+                                    {% include molecule-list-tags.html
+                                       tags=blog.tags
+                                    %}
+                                </div>
                             </li>
                         </ol>
                         {% endif %}
