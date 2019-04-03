@@ -57,13 +57,13 @@ Weaviate starts from the business perspective: which business decisions need dat
 
 - **Weaviate White-Label Platform**: Exponentially enrich your insights on the Weaviate network. *Weaviate White-Label Platform* enables you to exponentially enrich your market and customer insights by connecting you to other members of the network. We connect you to (potentially multiple) Weaviate network(s) most suitable for your needs.
 
-For more information about the Weaviate products, please refer to our  [product page]({{site.baseurl}}/products/).
+For more information about the Weaviate products, please refer to our  [product page](/products/).
 
 ## Your data is safe
 
 ![Weaviate network]({{site.baseurl}}/img/SeMI-network.jpg)
 
-Because Weaviate is a decentralized solution, you stay in complete control of your information; the system of record data is never shared! Weaviate focuses on the things that the system of record data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network. This also means there is no central platform. Weaviate runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief]({{site.baseurl}}/blog/data-usage-and-compliancy/).
+Because Weaviate is a decentralized solution, you stay in complete control of your information; the system of record data is never shared! Weaviate focuses on the things that the system of record data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network. This also means there is no central platform. Weaviate runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](/blog/data-usage-and-compliancy/).
 
 > There is no central platform.
 
