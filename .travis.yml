@@ -42,17 +42,17 @@ script:
 # Run the html-proofer on permalinks only for test purposes
 - |
   if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then
-    BASE_URL=''
+    env.BASE_URL=''
     ./script/cibuild
   fi
 - |
   if [ "${TRAVIS_BRANCH}" = "master" ]; then
-    BASE_URL='https://www.semi.technology'
+    env.BASE_URL='https://www.semi.technology'
     ./script/cibuild
   fi
 - |
   if [ "${TRAVIS_BRANCH}" = "develop" ]; then
-    BASE_URL='http://dev.semi.technology'
+    env.BASE_URL='http://dev.semi.technology'
     ./script/cibuild
   fi
 # minify all html
