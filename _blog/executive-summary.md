@@ -46,7 +46,7 @@ Existing data analysis and search solutions can generate insights from publicly 
 
 ## Start with the business questions
 
-Weaviate starts from the business perspective: which business decisions need data-driven insights? What are the key questions you want answers to? We help you discover and develop your key business questions in our [exploration workshop]({{site.baseurl}}/blog/exploration-workshops/). In this workshop, we introduce you to Weaviate and develop your custom use cases.
+Weaviate starts from the business perspective: which business decisions need data-driven insights? What are the key questions you want answers to? We help you discover and develop your key business questions in our [exploration workshop](/blog/exploration-workshops/). In this workshop, we introduce you to Weaviate and develop your custom use cases.
 
 ## Weaviate products
 
@@ -61,7 +61,7 @@ For more information about the Weaviate products, please refer to our  [product 
 
 ## Your data is safe
 
-![Weaviate network]({{site.baseurl}}/img/SeMI-network.jpg)
+![Weaviate network](/img/SeMI-network.jpg)
 
 Because Weaviate is a decentralized solution, you stay in complete control of your information; the system of record data is never shared! Weaviate focuses on the things that the system of record data portrays and links that information together to create a graph of knowledge that can be consulted by consumers of the network. This also means there is no central platform. Weaviate runs on your own servers or in your own cloud. For more information on this topic, please refer to our [legal brief](/blog/data-usage-and-compliancy/).
 
