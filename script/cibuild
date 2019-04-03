@@ -7,26 +7,10 @@ echo "...building assets 'css' and 'js':"
 # note: needs to happen before jekyll build so these assets are copied over
 if [ "${TRAVIS_BRANCH}" = "master" ]; then
     npm run build
+    JEKYLL_ENV=development bundle exec jekyll build --config _config.yml, _config_development.yml
 else
     npm run build:dev
-fi
-
-# set URL for environments
-if [ "${TRAVIS_BRANCH}" = "develop" ]; then
-    BASE_URL="https://www.semi.technology"
-elif [ "${TRAVIS_BRANCH}" = "master" ]; then
-    BASE_URL="http://dev.semi.technology"
-else
-    BASE_URL=""
-fi
-
-echo "Setting base URL to: ${BASE_URL} and build site into './_site'..."
-
-# Build html based on base url
-if [ -z "$BASE_URL" ]; then
-    JEKYLL_ENV=develop bundle exec jekyll build
-else
-    JEKYLL_ENV=develop bundle exec jekyll build --baseurl "$BASE_URL"
+    JEKYLL_ENV=production bundle exec jekyll build --config _config.yml, _config_production.yml
 fi
 
 echo "...test the HTML:"
