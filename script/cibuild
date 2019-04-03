@@ -1,12 +1,21 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
-# build html
+# set URL for environments
+if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then
+    BASE_URL="www.test.html"
+elif [ "${TRAVIS_PULL_REQUEST}" = "false" && "${TRAVIS_BRANCH}" = "develop" ]; then
+    BASE_URL="https://www.semi.technology"
+elif [ "${TRAVIS_BRANCH}" = "develop" ]; then
+    BASE_URL="http://dev.semi.technology"
+fi
+
+# Build html based on base url
 if [ -z "$BASE_URL" ]; then
     JEKYLL_ENV=develop bundle exec jekyll build
 else
     JEKYLL_ENV=develop bundle exec jekyll build --baseurl "$BASE_URL"
 fi
 
-# test html
+# test the html
 bundle exec htmlproofer ./_site --internal-domains www.semi.technology --allow-hash-href --url-ignore "https://codepen.io" --empty-alt-ignore --assume-extension

@@ -4,12 +4,9 @@ rvm:
 - 2.3.7
 node_js:
 - '7'
-cache:
-  - bundler # caching bundler gem packages will speed up build
-  - npm
 env:
   global:
-    - if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then BASE_URL="www.test.html" elif [ "${TRAVIS_PULL_REQUEST}" = "false" && "${TRAVIS_BRANCH}" = "develop" ]; then BASE_URL='https://www.semi.technology' elif [ "${TRAVIS_BRANCH}" = "develop" ]; then BASE_URL='http://dev.semi.technology' fi
+    - TRAVIS_BRANCH=${TRAVIS_BRANCH} # define for usage in projects bash scripts
 branches:
   only:
   - master
@@ -44,20 +41,8 @@ script:
 - set -e
 - npm run prettier
 - npm run eslint
-- npm run build
-# Run the html-proofer on permalinks only for test purposes
-- |
-  if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then
-    ./script/cibuild
-  fi
-- |
-  if [ "${TRAVIS_BRANCH}" = "develop" ]; then
-    ./script/cibuild
-  fi
-- |
-  if [ "${TRAVIS_BRANCH}" = "master" ]; then
-    ./script/cibuild
-  fi
+# Run the build and html-proofer
+- ./script/cibuild
 # minify all html
 - html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext
   html
