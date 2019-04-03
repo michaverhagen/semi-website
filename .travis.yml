@@ -9,15 +9,7 @@ cache:
   - npm
 env:
   global:
-- |
-  if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then
-    BASE_URL="www.test.html"
-  elif [ "${TRAVIS_PULL_REQUEST}" = "false" && "${TRAVIS_BRANCH}" = "develop" ]; then
-    BASE_URL='https://www.semi.technology'
-  elif [ "${TRAVIS_BRANCH}" = "develop" ]; then
-    BASE_URL='http://dev.semi.technology'
-  fi
-
+    - if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then BASE_URL="www.test.html" elif [ "${TRAVIS_PULL_REQUEST}" = "false" && "${TRAVIS_BRANCH}" = "develop" ]; then BASE_URL='https://www.semi.technology' elif [ "${TRAVIS_BRANCH}" = "develop" ]; then BASE_URL='http://dev.semi.technology' fi
 branches:
   only:
   - master
