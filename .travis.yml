@@ -41,18 +41,19 @@ script:
 - npm run build
 # Run the html-proofer on permalinks only for test purposes
 - |
-    if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then
-      ./script/cibuild
-    fi
-- |
-  if [ "${TRAVIS_BRANCH}" = "master" ]; then
-    # use production configuration
-    JEKYLL_ENV=production bundle exec jekyll build --config "_config.yml" --baseurl https://www.semi.technology
+  if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then
+    BASE_URL=''
+    script: ./script/cibuild
   fi
 - |
-  if [ "${TRAVIS_BRANCH}" != "master" ]; then
-    # use develop configuration for all other branches
-    JEKYLL_ENV=develop bundle exec jekyll build --config "_config.yml" --baseurl http://dev.semi.technology
+  if [ "${TRAVIS_BRANCH}" = "master" ]; then
+    BASE_URL='https://www.semi.technology'
+    script: ./script/cibuild
+  fi
+- |
+  if [ "${TRAVIS_BRANCH}" = "develop" ]; then
+    BASE_URL='http://dev.semi.technology'
+    script: ./script/cibuild
   fi
 # minify all html
 - html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext
