@@ -3,10 +3,10 @@ set -e # halt script on error
 
 # set URL for environments
 if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then
-    BASE_URL="www.test.html"
-elif [ "${TRAVIS_PULL_REQUEST}" = "false" && "${TRAVIS_BRANCH}" = "develop" ]; then
-    BASE_URL="https://www.semi.technology"
+    BASE_URL=""
 elif [ "${TRAVIS_BRANCH}" = "develop" ]; then
+    BASE_URL="https://www.semi.technology"
+elif [ "${TRAVIS_BRANCH}" = "master" ]; then
     BASE_URL="http://dev.semi.technology"
 fi
 
