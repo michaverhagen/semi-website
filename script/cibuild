@@ -5,7 +5,7 @@ echo "...building assets 'css' and 'js':"
 
 # Build assets 'css' and 'js'
 # note: needs to happen before jekyll build so these assets are copied over
-elif [ "${TRAVIS_BRANCH}" = "master" ]; then
+if [ "${TRAVIS_BRANCH}" = "master" ]; then
     npm run build
 else
     npm run build:dev
