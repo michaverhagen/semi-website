@@ -4,6 +4,9 @@ rvm:
 - 2.3.7
 node_js:
 - '7'
+cache:
+  - bundler # caching bundler gem packages will speed up build
+  - npm
 env:
   global:
     - if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then BASE_URL="www.test.html" fi
