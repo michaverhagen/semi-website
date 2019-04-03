@@ -6,8 +6,8 @@ node_js:
 - '7'
 env:
   - if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then BASE_URL='' fi
-  - if [ "${TRAVIS_PULL_REQUEST}" = "false" && "${TRAVIS_BRANCH}" = "develop" ]; then BASE_URL='https://www.semi.technology' fi
-  - if [ "${TRAVIS_BRANCH}" = "develop" ]; then BASE_URL='http://dev.semi.technology' fi
+  # - if [ "${TRAVIS_PULL_REQUEST}" = "false" && "${TRAVIS_BRANCH}" = "develop" ]; then BASE_URL='https://www.semi.technology' fi
+  # - if [ "${TRAVIS_BRANCH}" = "develop" ]; then BASE_URL='http://dev.semi.technology' fi
 branches:
   only:
   - master
