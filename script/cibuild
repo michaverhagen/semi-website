@@ -1,13 +1,23 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
+echo "...building assets 'css' and 'js':"
+
+# Build assets 'css' and 'js'
+# note: needs to happen before jekyll build so these assets are copied over
+elif [ "${TRAVIS_BRANCH}" = "master" ]; then
+    npm run build
+else
+    npm run build:dev
+fi
+
 # set URL for environments
-if [ "${TRAVIS_BRANCH}" == "permalinks" ]; then
-    BASE_URL=""
-elif [ "${TRAVIS_BRANCH}" = "develop" ]; then
+if [ "${TRAVIS_BRANCH}" = "develop" ]; then
     BASE_URL="https://www.semi.technology"
 elif [ "${TRAVIS_BRANCH}" = "master" ]; then
     BASE_URL="http://dev.semi.technology"
+else
+    BASE_URL=""
 fi
 
 echo "Setting base URL to: ${BASE_URL} and build site into './_site'..."
@@ -18,9 +28,6 @@ if [ -z "$BASE_URL" ]; then
 else
     JEKYLL_ENV=develop bundle exec jekyll build --baseurl "$BASE_URL"
 fi
-
-# Build assets 'css' and 'js'
-npm run build:dev
 
 echo "...test the HTML:"
 
