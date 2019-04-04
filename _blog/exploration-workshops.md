@@ -18,7 +18,7 @@ The Weaviate Use Case Exploration is a one day workshop, which SeMI offers to it
 > We work with you to discover, define and deploy your first Weaviate use case.
 
 <section class="callout">
-    In case you are looking for a technology summary, <a href="/blog/technology-summary/">click here</a>.
+    In case you are looking for a technology summary, <a href="/blog/technology-summary">click here</a>.
 </section>
 
 ## Methodology

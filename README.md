@@ -29,13 +29,15 @@ $ npm install
 To build and start the **local development** website:
 
 ```bash
-$ npm run local
+$ npm run jekyll:watch
 ```
 
-To edit JS run webpack and let it watch for changes:
+This builds the latest version of the JS and CSS.
+
+To edit CSS and/or JS, run webpack separately and let it watch for changes:
 
 ```bash
-$ npm run build-js-dev
+$ npm run build:watch
 ```
 
 Run eslint and prettier to see code formatting errors

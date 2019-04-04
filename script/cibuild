@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -e # halt script on error
+
+echo "...building assets 'css' and 'js':"
+
+# Build assets 'css' and 'js'
+# note: needs to happen before jekyll build so these assets are copied over
+if [ "${TRAVIS_BRANCH}" = "master" ]; then
+    npm run build
+    JEKYLL_ENV=development bundle exec jekyll build --config _config.yml, _config_development.yml
+else
+    npm run build:dev
+    JEKYLL_ENV=production bundle exec jekyll build --config _config.yml, _config_production.yml
+fi
+
+echo "...test the HTML:"
+
+# test the html
+npm run test:html

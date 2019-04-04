@@ -31,7 +31,7 @@ Contextualized data has multiple use cases from a single data set. Weaviate has 
 
 The Contextionary is in constant development and will be enhanced over time. New features will always become available to all customers without extra cost.
 
-[More background information](/blog/technology-summary/#contextionary)
+[More background information](/blog/technology-summary#contextionary)
 
 # Integration
 
