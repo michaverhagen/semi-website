@@ -2,7 +2,7 @@
 bodyclass: page--use-cases
 layout: layout-use-case
 title: Customer white spot analysis and delivery optimization
-description: Enable wholesalers and retailers to find new customers based on current customers locations and delivery routes
+description: Enables wholesalers and retailers to find new customers based on current customers locations and delivery routes
 tags: ['retail & consumer goods']
 order: 1
 image: /img/illustrations/RetailConsumerGoods.svg
@@ -18,7 +18,7 @@ Optimizing the logistics of wholesale goods delivery to retail outlets means ens
 
 ## The solution
 
-Weaviate can combine geographic data of routes and existing customers with enrichment data based on mapping, traffic and routing to optimize delivery. This can be further enhanced using public retail space directories to show potential customers (e.g. a food wholesaler would like to find new shops and restaurants to deliver to along its existing (optimized) delivery routes.
+Weaviate combines geographic data of routes and existing customers with enrichment data based on mapping, traffic and routing to optimize delivery. This is further enhanced using public retail space directories to show potential customers (e.g. a food wholesaler would like to find new shops and restaurants to deliver to along its existing (optimized) delivery routestes.
 
 ## Request a demo BUTTON
 
