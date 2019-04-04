@@ -2,7 +2,7 @@
 bodyclass: page--use-cases
 layout: layout-use-case
 title: Cost saving through predictive maintenance
-description: Enhance customer satisfaction and lowering cost by replacing parts, maintaining assets pre-emptively and optimizing maintenance schedules
+description: Enhance customer satisfaction and lowering cost by replacing parts, maintaining assets preemptively and optimizing maintenance schedules
 tags: ['energy & utility']
 order: 1
 image: /img/illustrations/EnergyUtility.svg
@@ -18,6 +18,6 @@ Large infrastructures require constant maintenance, this needs to be timely and 
 
 ## The solution
 
-Weaviate can analyze all your new and historical maintenance data to combine: failure rates, life expectancy, knock-on failures, maintenance schedules and routes, and help you get the most out of your parts, equipment and staff. Items discovered to regularly fail at similar time intervals can be replaced preemptively. Fully functioning items that are routinely replaced to reduce repeat visits can be retained for future use. Maintenance routes of technicians can be maximized so that customers in adjacent areas can be served pre-emptively on the same day, avoiding extra journeys per customer.  Failure rates of particular parts can also be tracked to see if alternative suppliers can provide better parts.
+Weaviate analyzes all your new and historical maintenance data to combine: failure rates, life expectancy, knock-on failures, maintenance schedules and routes, and help you get the most out of your parts, equipment and staff. Items discovered to regularly fail at similar time intervals can be replaced preemptively. Fully functioning items that are routinely replaced to reduce repeat visits are retained for future use. Maintenance routes of technicians are maximized so that customers in adjacent areas are served preemptively on the same day, avoiding extra journeys per customer.  Failure rates of particular parts can also be tracked to see if alternative suppliers can provide better parts
 
 ## Request a demo BUTTON
