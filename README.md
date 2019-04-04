@@ -29,7 +29,7 @@ $ npm install
 To build and start the **local development** website:
 
 ```bash
-$ npm run jekyll:watch
+$ npm run local
 ```
 
 This builds the latest version of the JS and CSS.
