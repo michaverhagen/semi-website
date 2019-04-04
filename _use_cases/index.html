@@ -21,7 +21,7 @@ exclude: true
         <section class="wrapper--wide">
             <ul class="cards">
                 {% for item in sorted_use_cases %}
-                    {% unless item.exclude %}
+                    {% unless item.published != true %}
                         {% include components/card/card.html
                             title=item.title
                             themeClass="theme--use-cases"

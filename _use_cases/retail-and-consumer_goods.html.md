@@ -1,4 +1,5 @@
 ---
+published: true
 bodyclass: page--use-cases
 layout: layout-use-case
 title: Customer white spot analysis and delivery optimization

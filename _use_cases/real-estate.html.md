@@ -1,4 +1,5 @@
 ---
+published: true
 bodyclass: page--use-cases
 layout: layout-use-case
 title: Give smart-building inhabitants the best possible experience while reducing costs.

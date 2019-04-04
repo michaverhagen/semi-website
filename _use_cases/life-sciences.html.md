@@ -1,4 +1,5 @@
 ---
+published: false
 bodyclass: page--use-cases
 layout: layout-use-case
 title: Knowledge graph to find new biologically active materials

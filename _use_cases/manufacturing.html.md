@@ -1,4 +1,5 @@
 ---
+published: true
 bodyclass: page--use-cases
 layout: layout-use-case
 title: Get accurate quotes for complex production of parts, tools and machines
