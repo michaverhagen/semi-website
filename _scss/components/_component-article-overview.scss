@@ -13,6 +13,11 @@
 .article__top {
   display: flex;
 
+  .article__image {
+      display: flex;
+      align-self: start;
+  }
+
   @include breakpoint(toLarge) {
     flex-direction: column;
   }
