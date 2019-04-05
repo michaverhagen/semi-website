@@ -18,12 +18,21 @@
       align-self: start;
   }
 
+  .article__top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .article__top-image-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   @include breakpoint(toLarge) {
     flex-direction: column;
   }
 
   @include breakpoint(mediumToLarge) {
-    .article__top-image {
+    .article__image {
       max-width: 60vw;
       margin: 0 auto;
     }
@@ -36,19 +45,10 @@
       justify-content: center;
       width: 50%;
     }
-    .article__top-image {
+    .article__top-image-container {
       order: 2;
       width: 50%;
     }
-  }
-
-  .article__top-content {
-    display: flex;
-    flex-direction: column;
-  }
-  .article__top-image {
-    display: flex;
-    flex-direction: column;
   }
 }
 
