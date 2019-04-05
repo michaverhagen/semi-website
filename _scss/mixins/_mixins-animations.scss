@@ -1,6 +1,12 @@
 
-@mixin animateFadeInFromBottom() {
-  animation: .35s ease-out 0s 1 slideInFromBottom;
+$default-animation-time: .35s;
+
+@mixin animateFadeInFromBottom($time: $default-animation-time) {
+  animation: $time ease-out 0s 1 slideInFromBottom;
+}
+
+@mixin animateFadeIn($time: $default-animation-time) {
+  animation: $time ease-in 0s 1 fadeIn;
 }
 
 @keyframes slideInFromBottom {
@@ -9,8 +15,17 @@
     margin-top: 100px;
     opacity: 0;
   }
-  to   {
+  to {
     margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }

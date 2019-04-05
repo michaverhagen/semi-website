@@ -2,6 +2,7 @@
 @import '../variables/var-color';
 @import '../variables/var-borders';
 @import '../mixins/mixins';
+@import '../mixins/mixins-animations';
 
 .nav-main {
     margin-bottom: 1em;
@@ -36,6 +37,7 @@
 			}
 		}
 	}
+	@include animateFadeIn();
 }
 
 .nav-main .main-nav--selected,

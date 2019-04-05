@@ -1,4 +1,5 @@
 
+@import '../mixins/mixins-animations';
 @import '../mixins/mixins-breakpoints';
 
 .hero {
@@ -24,6 +25,7 @@
   position: relative;
   vertical-align: middle;
   z-index: 2;
+  @include animateFadeIn();
 
   &.hero__text--centered {
     text-align: center;

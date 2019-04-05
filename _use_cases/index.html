@@ -19,7 +19,7 @@ exclude: true
             </div>
         </section>
         <section class="wrapper--wide">
-            <ul class="cards">
+            <ul class="cards cards--load-fade-in">
                 {% for item in sorted_use_cases %}
                     {% unless item.published != true %}
                         {% include components/card/card.html

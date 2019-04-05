@@ -1,6 +1,7 @@
 @import '../variables/var-scale';
 @import '../variables/var-color';
 @import '../mixins/mixins-breakpoints';
+@import '../mixins/mixins-animations';
 
 $c-card-border: 1px solid $color-gray-5;
 
@@ -142,4 +143,29 @@ $c-card-border: 1px solid $color-gray-5;
 
 .card__button {
     margin-top: 2rem;
+}
+
+.cards--load-fade-in {
+    .card {
+        height: auto;
+        display: flex;
+    }
+    .card:first-child {
+        @include animateFadeInFromBottom(.35s);
+    }
+    .card:nth-child(2) {
+        @include animateFadeInFromBottom(.35s);
+    }
+    .card:nth-child(3) {
+        @include animateFadeInFromBottom(.35s);
+    }
+    .card:nth-child(4) {
+        @include animateFadeInFromBottom(.65s);
+    }
+    .card:nth-child(5) {
+        @include animateFadeInFromBottom(.65s);
+    }
+    .card:nth-child(6) {
+        @include animateFadeInFromBottom(.65s);
+    }
 }
