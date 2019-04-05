@@ -1,3 +1,4 @@
+@import '../mixins/mixins-animations';
 @import '../mixins/mixins-breakpoints';
 @import '../variables/var-typography';
 
@@ -16,6 +17,7 @@
   .article__image {
       display: flex;
       align-self: start;
+      @include animateFadeInFromBottom;
   }
 
   .article__top-content {

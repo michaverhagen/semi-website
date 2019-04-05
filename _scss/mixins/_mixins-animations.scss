@@ -1,0 +1,16 @@
+
+@mixin animateFadeInFromBottom() {
+  animation: .35s ease-out 0s 1 slideInFromBottom;
+}
+
+@keyframes slideInFromBottom {
+
+  from {
+    margin-top: 100px;
+    opacity: 0;
+  }
+  to   {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
