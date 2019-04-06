@@ -1,5 +1,5 @@
 ---
-bodyclass: page--products--weaviate
+bodyclass: ["page--products", " ", "page--products--weaviate"]
 layout: layout-default
 title: Weaviate White-Label Platform
 description: The Decentralized Knowledge Graph
@@ -10,8 +10,6 @@ open-graph-type: product
     <div class="page--background__first">
         <div class="container">
             <div class="wrapper">
-
-
                 {% include organism-product-top.html
                     productLogoSrc='/img/logo-icon-weaviate-whitelabel.svg'
                     productLogoAlt='Weaviate whitelabel logo'
@@ -19,13 +17,13 @@ open-graph-type: product
                     payoff='The Decentralized Knowledge Graph'
                     intro='The white-label Platform version is based on the <a href="/products/weaviate-enterprise.html">Weaviate Enterprise</a> software completely customized to your needs and contains everything you need to run a full-blown, scalable-platform business.'
                 %}
-                <!--p>Weaviate meshes all your data and makes it available as one seamless source of knowledge for contextualized research, reporting, and re-use</p-->
-                <!--<p>The white-label Platform version is based on the <a href="/products/weaviate-enterprise.html">Weaviate Enterprise</a> software and contains everything you need to run a full-blown, scalable-platform business with the push of a button. Additionally, we can create custom <a href="/knowledge-base/wiki-semi-consulting/learn/features/#contextionary" title="Contextionaries">Contextionaries</a> for you, and we will work with your own team to add in whatever customizations you need. We also provide you with monetization tools to generate revenue with your Weaviate. With that, we provide an SLA, large scale deployment in your own cloud or on-premise and support.</p>-->
-                {% include molecule-section-heading.html
-                    title='The customised solution'
-                %}
+                <div class="page-fadein-from-bottom--first">
+                    <!--p>Weaviate meshes all your data and makes it available as one seamless source of knowledge for contextualized research, reporting, and re-use</p-->
+                    <!--<p>The white-label Platform version is based on the <a href="/products/weaviate-enterprise.html">Weaviate Enterprise</a> software and contains everything you need to run a full-blown, scalable-platform business with the push of a button. Additionally, we can create custom <a href="/knowledge-base/wiki-semi-consulting/learn/features/#contextionary" title="Contextionaries">Contextionaries</a> for you, and we will work with your own team to add in whatever customizations you need. We also provide you with monetization tools to generate revenue with your Weaviate. With that, we provide an SLA, large scale deployment in your own cloud or on-premise and support.</p>-->
+                    {% include molecule-section-heading.html
+                        title='The customised solution'
+                    %}
 
-                <section>
                     <section class="layout layout--double">
                         <div class="layout__column">
                             <img class="section--img-weaviate-clouds" src="/img/weaviate_E_color.png" alt="Weaviate Enterprise logo" />
@@ -81,7 +79,7 @@ open-graph-type: product
                             <p>You will be able to plug in a selection of premium, predefined, knowledge graphs which can enrich your results and enhance your outcomes. These are accessed through the Weaviate Networks toolkit.</p>
                         </div>
                      </section>
-                </section>
+                </div>
                 {% include section-feature-table.html
                         highlightWhitelabel = true %}
                 {% include section-contact-us.html %}

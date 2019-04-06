@@ -8,6 +8,7 @@
 
 // Mixins
 @import 'mixins/mixins';
+@import 'mixins/mixins-animations';
 @import 'mixins/mixins-breakpoints';
 
 // Accessibility helpers
@@ -54,6 +55,7 @@
 @import 'components/component-quotes';
 @import 'components/component-search-meta';
 @import 'components/component-sections';
+@import 'components/component-section-page-intro';
 @import 'components/component-select-menu';
 @import 'components/component-spacing';
 @import 'components/component-site-header';

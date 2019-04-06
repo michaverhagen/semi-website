@@ -1,28 +1,30 @@
-{% if page.inRnD %}
-<div class="article-badge">
-{% include components/card/card__badge.html %}
-</div>
-{% endif %}
-<h1 class="title-page">{{ page.title }}</h1>
-{% if page.authorKey or page.pubdate %}
-<div class="page-meta">
-    {% if page.authorKey %}
-        {% for author in site.authors %}
-            {% if author.key == page.authorKey %}
-                <p>By <a href="/authors/{{page.authorKey}}.html" title="See archive page of {{author.name}}">{{author.name}}</a>{% if author.jobTitle %}, {{ author.jobTitle }}{% endif %}</p>
-            {% endif %}
+<div class="page-fadein--first">
+    {% if page.inRnD %}
+    <div class="article-badge">
+    {% include components/card/card__badge.html %}
+    </div>
+    {% endif %}
+    <h1 class="title-page">{{ page.title }}</h1>
+    {% if page.authorKey or page.pubdate %}
+    <div class="page-meta">
+        {% if page.authorKey %}
+            {% for author in site.authors %}
+                {% if author.key == page.authorKey %}
+                    <p>By <a href="/authors/{{page.authorKey}}.html" title="See archive page of {{author.name}}">{{author.name}}</a>{% if author.jobTitle %}, {{ author.jobTitle }}{% endif %}</p>
+                {% endif %}
+            {% endfor %}
+        {% endif  %}
+        {% if page.pubdate %}
+            <p>{{ page.pubdate }}</p>
+        {% endif %}
+    </div>
+    {% endif %}
+    {% if page.description != null %}
+        <p class="intro">{{ page.description }}</p>
+    {% endif %}
+    {% if page.related_to != null %}
+        {% for rels in page.related_to %}
+            <a href="#">{{ rels }}</a>
         {% endfor %}
-    {% endif  %}
-    {% if page.pubdate %}
-        <p>{{ page.pubdate }}</p>
     {% endif %}
 </div>
-{% endif %}
-{% if page.description != null %}
-    <p class="intro">{{ page.description }}</p>
-{% endif %}
-{% if page.related_to != null %}
-    {% for rels in page.related_to %}
-        <a href="#">{{ rels }}</a>
-    {% endfor %}
-{% endif %}

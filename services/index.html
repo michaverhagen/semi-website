@@ -26,10 +26,12 @@ footer_squared: true
             <h3 class="space-header-column title-column">Weaviate at the core</h3>
             <p>The core of all our solutions is the knowledge graph <a href="/products/weaviate-enterprise.html" target="_self">Weaviate</a>. All data is exposed through the API. Weaviate can run on any cloud, or on-prem. Just bring your use cases.</p>
             {% endcapture %}
-            {% include components/layout/layout--double.html
-                contentColumnOne=imageColumn
-                contentColumnTwo=textColumn
-            %}
+            <div class="page-fadein-from-bottom--second">
+                {% include components/layout/layout--double.html
+                    contentColumnOne=imageColumn
+                    contentColumnTwo=textColumn
+                %}
+            </div>
 
             {% capture imageColumn1 %}
             <img class="section--img-playground" src="/img/Weaviate-what-we-do-2@3x.png" srcset="/img/Weaviate-what-we-do-2@3x.png" alt="Weaviate enterprise playground" />
@@ -38,11 +40,13 @@ footer_squared: true
             <h3 class="space-header-column title-column">Custom solutions per domain</h3>
             <p>You can create custom solutions, and use the out-of-the-box SeMI tools per domain. If you'd like to discuss a specific use case our <i><a href="/products/semi-consulting.html" target="_self">solution engineers</a></i> are ready to help.</p>
             {% endcapture %}
-            {% include components/layout/layout--double.html
-            columnOrder="reverse"
-            contentColumnOne=imageColumn1
-            contentColumnTwo=textColumn1
-            %}
+            <div class="page-fadein-from-bottom--third">
+                {% include components/layout/layout--double.html
+                columnOrder="reverse"
+                contentColumnOne=imageColumn1
+                contentColumnTwo=textColumn1
+                %}
+            </div>
 
             {% capture imageColumn2 %}
             <img class="section--img-playground" src="/img/Weaviate-what-we-do-3@3x.png" srcset="/img/Weaviate-what-we-do-3@3x.png" alt="Weaviate enterprise playground" />
