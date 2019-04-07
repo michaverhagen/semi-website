@@ -1,7 +1,73 @@
+@import '../mixins/mixins-animations';
 @import '../mixins/mixins-breakpoints';
+@import '../variables/var-typography';
 
 .page--article-overview .list-bullet {
     margin-bottom: 3em;
+}
+
+.article-center {
+  margin: 0 auto;
+  max-width: $body-max-paragraph-width;
+}
+
+.article__top {
+  display: flex;
+
+  .article__image {
+      display: flex;
+      align-self: start;
+      @include animateFadeInFromBottom;
+  }
+
+  .article__top-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .article__top-image-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include breakpoint(toLarge) {
+    flex-direction: column;
+  }
+
+  @include breakpoint(mediumToLarge) {
+    .article__image {
+      max-width: 60vw;
+      margin: 0 auto;
+    }
+  }
+
+  @include breakpoint(largeUp) {
+    flex-direction: row;
+    .article__top-content {
+      order: 1;
+      justify-content: center;
+      width: 50%;
+    }
+    .article__top-image-container {
+      order: 2;
+      width: 50%;
+    }
+  }
+}
+
+.article-intro {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.article-badge {
+  margin-bottom: 1rem;
+}
+
+.article-image-small {
+  @include breakpoint(smallOnly) {
+    height: 500px;
+  }
 }
 
 .article-overview {

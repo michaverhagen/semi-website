@@ -1,2 +1,4 @@
 {% comment %}Keep spacing for correct whitespace formatting in HTML output.{% endcomment %}
-{%- if include.linkUrl != '' %}       <a class="card__button button" href="{{ include.linkUrl }}" {% if include.linkExternal == true %} target="_blank"{% endif %}>{{ include.ctaText | default: "Learn more" }}</a>{% endif %}
+{%- if include.linkUrl != '' %}
+<a class="card__button button" href="{{ include.linkUrl }}" {% if include.linkExternal == true %} target="_blank"{% endif %}>{{ include.ctaText | default: "Learn more" }}</a>
+{% endif %}

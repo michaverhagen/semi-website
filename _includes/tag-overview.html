@@ -1,7 +1,6 @@
 
 <div class="container">
     <div class="wrapper">
-        {% include components/searchform/search.html %}
         <div class="article-container">
             <section>
                 <header class="space-header-page">
@@ -32,6 +31,32 @@
                                         </li>
                                     </ol>
                                 {% endif %}
+                            {% endfor %}
+                        </li>
+                    </section>
+                    <section>
+                        <li>
+                            {% assign sorted_use_cases = site.use_cases | sort:"order" %}
+                            {% for tagpage in sorted_use_cases %}
+                            {% if tagpage.tags contains page.tagsToShow %}
+                            <ol>
+                                <li><h3><a href="{{ tagpage.url }}">{{ tagpage.date | date: '%B %d, %Y' }} {{ tagpage.title }}</a></h3>
+                                    <p>
+                                        {{ tagpage.description }}
+                                    </p>
+                                    <dl class="tags">
+                                        <dt><i>Tags</i></dt>
+                                        <dd>
+                                            <ul class="tags">
+                                                {% for tag in tagpage.tags %}
+                                                <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
+                                                {% endfor %}
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ol>
+                            {% endif %}
                             {% endfor %}
                         </li>
                     </section>

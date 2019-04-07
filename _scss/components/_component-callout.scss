@@ -1,3 +1,6 @@
+@import '../variables/var-typography';
+@import '../variables/var-color';
+
 .callout {
   background-color: $color-semi-accent-tint--3;
   border: 1px solid $color-semi-accent;
@@ -5,6 +8,7 @@
   font-style: italic;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  max-width: $body-max-paragraph-width;
 
   a {
     color: $color-black;

@@ -1,15 +1,15 @@
 @import '../variables/var-scale';
 @import '../variables/var-color';
+@import '../mixins/mixins-breakpoints';
+@import '../mixins/mixins-animations';
 
 $c-card-border: 1px solid $color-gray-5;
 
 .cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     list-style: none;
     margin: 0 -1em;
-    @media screen and (min-width: 48em) {
+    justify-content: center;
+    @include breakpoint(mediumUp) {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -24,15 +24,13 @@ $c-card-border: 1px solid $color-gray-5;
     flex: 1;
     flex-direction: column;
     padding: 2em;
-    &:not(.card--pilar):not(.card--borderless) {
-        border: $c-card-border;
-    }
     &.card--pilar {
         background-color: $color-white;
         border: $c-card-border;
     }
     &.card--white {
         background-color: $color-white;
+        border: $c-card-border;
     }
     .card__intro {
         min-height: 6rem;
@@ -88,18 +86,23 @@ $c-card-border: 1px solid $color-gray-5;
     }
 }
 
+.card-inverted {
+    .card__title,
+    p,
+    strong {
+        color: $color-white;
+    }
+}
+
 .card__top {
     display: flex;
     align-items: center;
     margin-bottom: $scale-1;
 }
 
-.card__tag {
-    margin-left: $scale-1;
-}
-
 .card__icon {
     height: 3rem;
+    margin-right: $scale-1;
     &:not(.card__icon--wide) {
         width: 3rem;
     }
@@ -140,4 +143,29 @@ $c-card-border: 1px solid $color-gray-5;
 
 .card__button {
     margin-top: 2rem;
+}
+
+.cards--load-fade-in {
+    .card {
+        height: auto;
+        display: flex;
+    }
+    .card:first-child {
+        @include animateFadeInFromBottom(.35s);
+    }
+    .card:nth-child(2) {
+        @include animateFadeInFromBottom(.35s);
+    }
+    .card:nth-child(3) {
+        @include animateFadeInFromBottom(.35s);
+    }
+    .card:nth-child(4) {
+        @include animateFadeInFromBottom(.65s);
+    }
+    .card:nth-child(5) {
+        @include animateFadeInFromBottom(.65s);
+    }
+    .card:nth-child(6) {
+        @include animateFadeInFromBottom(.65s);
+    }
 }

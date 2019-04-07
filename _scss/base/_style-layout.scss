@@ -1,3 +1,6 @@
+
+@import '../mixins/mixins-animations';
+
 body {
     background: $color-white;
     display: flex;
@@ -43,4 +46,25 @@ main > .container {
     @media screen and (min-width: 80em) {
         margin: 0 -10em;
     }
+}
+
+
+.page-fadein--first {
+    @include animateFadeIn(.35s);
+}
+.page-fadein--second {
+    @include animateFadeIn(.65s);
+}
+.page-fadein--third {
+    @include animateFadeIn(.75s);
+}
+
+.page-fadein-from-bottom--first {
+    @include animateFadeInFromBottom(.35s);
+}
+.page-fadein-from-bottom--second {
+    @include animateFadeInFromBottom(.65s);
+}
+.page-fadein-from-bottom--third {
+    @include animateFadeInFromBottom(.75s);
 }

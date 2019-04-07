@@ -1,4 +1,5 @@
 
+@import '../mixins/mixins-animations';
 @import '../variables/var-scale';
 
 /**
@@ -15,10 +16,11 @@
     display: flex;
     justify-content: space-between;
     padding: 0 1em 0 0;
+    @include animateFadeIn();
 
     source, img {
         padding: 1rem 0;
-        width: 8rem;
+        width: 18rem;
     }
 }
 

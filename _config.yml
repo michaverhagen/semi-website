@@ -1,3 +1,4 @@
+url: https://www.semi.technology
 weaviate_version: 0.8.6
 markdown: kramdown
 kramdown:
@@ -6,6 +7,10 @@ rdiscount extensions: [smart]
 collections:
     blog:
         output: true
+        permalink: /blog/:path
+    use_cases:
+        output: true
+        permalink: /use-cases/:path
     authors:
         output: true
 exclude:
@@ -20,5 +25,6 @@ exclude:
     - webpack.config.js
 plugins:
     - jekyll-redirect-from
+    - jekyll-sitemap
 whitelist:
     - jekyll-redirect-from

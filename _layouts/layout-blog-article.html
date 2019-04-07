@@ -6,12 +6,12 @@
 
 <main>
     <article class="container">
-        <div class="wrapper article-container">
+        <div class="wrapper--wide article-container">
             {% include article-menu.html %}
             <section itemscope itemtype="http://schema.org/articleBody">
                 <!-- include article-breadcrumb.html -->
                 {% include article-intro.html %}
-                <section class="article">
+                <section class="article page-fadein--first">
                     {% for video in page.video-link %}
                         <figure class="video-container">
                             <div>{{ video }}</div>
@@ -25,14 +25,9 @@
                     {{ content }}
                 </section>
                 <dl class="tags tags-in-page">
-                    <dt><i>Tags</i></dt>
-                    <dd>
-                        <ul class="tags__tag-list">
-                            {% for tag in page.tags %}
-                            <li><a href="/tags/{{ tag }}/">{{ tag }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </dd>
+                    {% include molecule-list-tags.html
+                        tags=page.tags
+                    %}
                 </dl>
             </section>
         </div>

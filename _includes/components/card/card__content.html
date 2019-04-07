@@ -1,7 +1,10 @@
-{% comment %}Keep spacing for correct whitespace formatting in HTML output.{% endcomment %}
-{%- if include.bodycopy or include.content %}
-        <div class="card__content">
-            {% if include.bodycopy %}<p>{{include.bodycopy}}</p>{% endif -%}
-            {% if include.content %}{{ include.content }}{% endif %}
-        </div>
-{% endif %}
+{%- if include.bodycopy or include.content  %}
+    <div class="card__content">
+        {%- if include.bodycopy %}
+        <p><strong>{{ include.bodycopy }}</strong></p>
+        {%- endif %}
+        {%- if include.content %}
+            {{ include.content }}
+        {%- endif %}
+    </div>
+{%- endif %}

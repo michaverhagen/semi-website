@@ -1,5 +1,6 @@
 
 @import '../variables/var-color';
+@import '../mixins/mixins-breakpoints';
 
 @mixin table-cell-styling {
     font-size: 1rem;
