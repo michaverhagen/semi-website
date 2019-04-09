@@ -13,8 +13,6 @@ Blaise Pascale probably said it first (in 1657):
 There are a lot of style guides in the world and if you have ever done some writing you have probably used them. If you are an experienced writer you don’t need the majority of the advice, if you are new it is pretty handy.
 Here are some well-constructed guides
 
-
-*	[Frontify](https://frontify.com/blog/why-voice-and-tone-belong-in-style-guides)
 * [Mailchimp](https://styleguide.mailchimp.com/voice-and-tone/)
 *	[A list apart](https://alistapart.com/about/style-guide)
 *	[Gather content](https://gathercontent.com/blog/voice-tone-style-whys-wheres-hows)
