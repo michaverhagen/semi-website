@@ -19,6 +19,6 @@ Large infrastructures require constant maintenance, this needs to be timely and 
 
 ## The solution
 
-Weaviate analyzes all your new and historical maintenance data to combine: failure rates, life expectancy, knock-on failures, maintenance schedules and routes, and help you get the most out of your parts, equipment and staff. Items discovered to regularly fail at similar time intervals can be replaced preemptively. Fully functioning items that are routinely replaced to reduce repeat visits are retained for future use. Maintenance routes of technicians are maximized so that customers in adjacent areas are served preemptively on the same day, avoiding extra journeys per customer.  Failure rates of particular parts can also be tracked to see if alternative suppliers can provide better parts
+Weaviate analyzes all your new and historical maintenance data to combine: failure rates, life expectancy, knock-on failures, maintenance schedules and routes, and help you get the most out of your parts, equipment and staff. Items discovered to regularly fail at similar time intervals can be replaced preemptively. Fully functioning items that are routinely replaced to reduce repeat visits are retained for future use. Maintenance routes of technicians are maximized so that customers in adjacent areas are served preemptively on the same day, avoiding extra journeys per customer.  Failure rates of particular parts can also be tracked to see if alternative suppliers can provide better parts.
 
 ## Request a demo BUTTON
