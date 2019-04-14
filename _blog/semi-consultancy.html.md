@@ -31,4 +31,4 @@ We help you deploy our software in your favorite cloud flavor: Google, Azure, AW
 Our solution engineers can help you develop your use case applications.
 
 ## More information?
-If you have any additional questions please do not hesitate to [contact](/contact/) us.
+If you have any additional questions please do not hesitate to [contact](mailto:contact@semi.technology) us.
