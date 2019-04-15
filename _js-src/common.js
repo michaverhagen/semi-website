@@ -8,6 +8,7 @@ import video from './modules/video';
 import search from './modules/search';
 import toggle from './modules/toggle';
 import tagmanager from './modules/tagmanager';
+import tawk from './modules/tawk';
 import tableOfContents from './modules/tableOfContents';
 
 // utilities
@@ -23,6 +24,11 @@ cookie('cookie-notification');
  */
 // TODO: only load this init on contact/index and workshop/index
 mailChimp();
+
+/**
+ * Initialize tawk chat
+ */
+tawk();
 
 /**
  * Play the video on the homepage
