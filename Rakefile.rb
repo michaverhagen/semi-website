@@ -1,7 +1,7 @@
 
 require 'html-proofer'
 
-def html_proofer
+task :test do
     options = {
         :allow_hash_href => true,
         :assume_extension => true,
@@ -19,9 +19,3 @@ def html_proofer
     }
     HTMLProofer.check_directory("./_site", options).run
 end
-
-task :test_local do
-    ruby html_proofer
-end
-
-task :default => :test

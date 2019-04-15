@@ -16,4 +16,4 @@ fi
 echo "...test the HTML:"
 
 # test the html
-rake test_local
+bundle exec rake test
