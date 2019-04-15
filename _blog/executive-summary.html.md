@@ -68,4 +68,4 @@ Because Weaviate is a decentralized solution, you stay in complete control of yo
 > There is no central platform.
 
 ## More information?
-If you have any additional questions please do not hesitate to [get in touch](/contact/).
+If you have any additional questions please do not hesitate to [get in touch](mailto:contact@semi.technology).

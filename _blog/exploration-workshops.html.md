@@ -47,4 +47,4 @@ This workshop can take place at your own location or in a location we’ll provi
 If you decide to participate in the workshop we’ll ask you to sign a standard <abbr title="Non-disclosure agreement">NDA</abbr>.
 
 ## More information?
-If you have any additional questions please do not hesitate to [get in touch](/contact/).
+If you have any additional questions please do not hesitate to [get in touch](mailto:contact@semi.technology).
