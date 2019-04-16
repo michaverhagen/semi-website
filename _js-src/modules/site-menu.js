@@ -1,18 +1,18 @@
-
 const nav = document.getElementById('js-site-nav');
 const trigger = document.getElementById('header-main-menu-trigger');
-const toMediumQuerySize = '767px'; /** same as $screen-width-medium in ./_scss/mixins/_mixin-breakpoints */
+/** same as $screen-width-medium in ./_scss/mixins/_mixin-breakpoints */
+const toMediumQuerySize = '767px';
 
 /**
  * @desc Debounce method for window resize (source: https://davidwalsh.name/javascript-debounce-function)
  * @param func
  * @returns {Function}
  */
-function debounce(func){
+function debounce(func) {
   var timer;
-  return function(event){
-    if(timer) clearTimeout(timer);
-    timer = setTimeout(func,250,event);
+  return function(event) {
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(func, 250, event);
   };
 }
 
@@ -31,23 +31,25 @@ function createHorizontal() {
 }
 
 export default function() {
-
   /** initial navigation setting for small to medium screensizes */
   if (window.matchMedia(`(max-width: ${toMediumQuerySize})`).matches) {
     createVerticalNav();
   }
 
   /** when browser window is resized */
-  window.addEventListener("resize", debounce(function(){
-    /** reset to vertical if window size is lower than medium screensize */
-    if (window.matchMedia(`(max-width: ${toMediumQuerySize})`).matches) {
-      createVerticalNav();
-    }
-    /** reset to horizontal if window size exceeds medium screensize */
-    if (window.matchMedia(`(min-width: ${toMediumQuerySize})`).matches) {
-      createHorizontal();
-    }
-  }));
+  window.addEventListener(
+    'resize',
+    debounce(function() {
+      /** reset to vertical if window size is lower than medium screensize */
+      if (window.matchMedia(`(max-width: ${toMediumQuerySize})`).matches) {
+        createVerticalNav();
+      }
+      /** reset to horizontal if window size exceeds medium screensize */
+      if (window.matchMedia(`(min-width: ${toMediumQuerySize})`).matches) {
+        createHorizontal();
+      }
+    }),
+  );
 
   /** the show hide for the navigation */
   trigger.addEventListener('click', function() {
