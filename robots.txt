@@ -1,6 +1,6 @@
 User-agent: *
-Noindex: /service-manual/*
+Noindex: /playbook/*
+Noindex: /playbook/
 Noindex: /thank-you/
 Noindex: /search/
-
 SITEMAP: https://www.semi.technology/sitemap.xml

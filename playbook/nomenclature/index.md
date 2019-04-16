@@ -1,6 +1,6 @@
 ---
 layout: service-manual-markdown
-title: SeMI, our style; voice and tone in website general for contrib and user
+title:  our style; voice and tone in website general for contrib and user
 ---
 
 # Glossary and usage

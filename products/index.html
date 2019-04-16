@@ -1,9 +1,10 @@
 ---
 bodyclass: ["page--products", " ", "page--products-index"]
 layout: layout-default
-title: SeMI, our products
+title:  our products
 description: An overview of SeMI's products.
 open-graph-type: product
+og-img: products.jpg
 ---
 
 <article>
@@ -11,32 +12,32 @@ open-graph-type: product
         <section class="layout layout--single section-page-intro">
             <div class="section-standout__text--centered space-header-page">
                 <h1 class="title-page header--centered">Core products</h1>
-                <div class="section-standout__text--centered">
+                <!--div class="section-standout__text--centered">
                     <p>Weaviate comes in three versions, each has powerful open-source Weaviate knowledge graph software at its heart. Review them to see which one suits your use case best. <a href="mailto:contact@semi.technology">Contact us</a> if you need help with your decision</p>
-                </div>
+                </div-->
             </div>
         </section>
         <section class="wrapper--wide">
             <ul class="cards cards--load-fade-in">
                 {% capture carOneContent %}
                     <div class="card__intro">
-                        <p><b>Powerful knowledge graph software. Get meaningful insights from all your data .</b></p>
+                        <p><b>Explore the open source knowledge graph on Github.</b></p>
                     </div>
                 {% endcapture %}
 
                 {% include components/card/card.html
-                    title="Weaviate Open Source on Github"
+                    title="Weaviate Open Source"
                     themeClass="card-white card--pilar card--theme-weaviate-oss"
                     imgUrl="/img/logo-icon-weaviate-oss.svg"
                     imgAlt="Weaviate Open Source logo"
                     linkUrl='https://github.com/creativesoftwarefdn/weaviate'
                     linkExternal=true
-                    ctaText="Explore Weaviate Open Source"
+                    ctaText="Explore on Github"
                     content=carOneContent
                 %}
                 {% capture carTwoContent %}
                     <div class="card__intro">
-                        <p><b>The power of Weaviate Open Source plus valuable enterprise tools and services.</b></p>
+                        <p><b>The power of Weaviate plus valuable enterprise tools and services.</b></p>
                     </div>
                 {% endcapture %}
 
@@ -54,35 +55,24 @@ open-graph-type: product
 
                 {% capture carThreeContent %}
                     <div class="card__intro">
-                        <p><b>Weaviate Enterprise as a customized platform with your branding and advanced monetization tools.</b></p>
+                        <p><b>Our solution engineers can help to integrate Weaviate into your business.</b></p>
                     </div>
                 {% endcapture %}
 
                 {% include components/card/card.html
-                    title="Weaviate White-Label Platform"
+                    title="Solution Engineers"
                     themeClass="card--pilar card--theme-weaviate-enterprise"
                     inverted=true
-                    imgUrl="/img/logo-icon-weaviate-whitelabel.svg"
-                    imgAlt="Weaviate White-Label Platform"
-                    linkUrl="/products/weaviate-whitelabel-platform.html"
+                    imgUrl="/img/logo-solution-engineering-logomark-color.svg"
+                    imgAlt="SeMI Solution Engineers"
+                    linkUrl="/products/solution-engineers.html"
                     linkExternal=false
-                    ctaText="Explore Weaviate White-Label Platform"
+                    ctaText="Explore Solution Engineering"
                     content=carThreeContent
                 %}
             </ul>
         </section>
     </div>
-    <section class="section-standout--secondary section-standout-padding container">
-        <div class="wrapper--wide">
-            <div class="layout layout--single">
-                <div class="space-header-section header--centered">
-                    <h2 class="title-section">Add-ons</h2>
-                    <p>Additional services to enhance what Weaviate can do for you</p>
-                </div>
-            </div>
-            {% include organism-cards-products-add-ons.html %}
-        </div>
-    </section>
     <section class="space-layout--bottom container">
         <div class="wrapper">
             <div class="layout layout--single">

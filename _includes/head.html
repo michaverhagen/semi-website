@@ -9,22 +9,28 @@
 <head>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="author" content="SeMI, the knowledge graph services" />
+	<meta name="author" content="SeMI Technologies" />
 	<meta name="description" content="{{ page.description }}" />
-	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:title" content="SeMI Technologies // {{ page.title }}" />
 	<meta property="og:type" content="{{ page.open-graph-type }}" />
 	<meta name="twitter:card" content="{{ page.open-graph-type }}">
 	<meta property="og:url" content="{{ site.baseurl }}" />
 	<meta property="og:description" content="{{ page.description }}" />
-	<meta property="og:site_name" content="SeMI, the knowledge graph services" />
-	<meta name="twitter:site" content="@seminetwork">
+	<meta property="og:site_name" content="SeMI // knowledge graph services" />
+	<meta name="twitter:site" content="@SeMI_tech">
 	<meta name="twitter:title" content="{{ page.title }}">
 	<meta name="twitter:description" content="{{ page.description }}">
-	<meta name="twitter:creator" content="@bobvanluijt">
-	<meta name="twitter:image" content="https://www.semi.technology/assets/SeMI-logo-m.png">
-	<meta property="og:image" content="https://www.semi.technology/assets/SeMI-logo-m.png" />
-	<meta itemprop="image" content="https://www.semi.technology/assets/SeMI-logo-m.png">
-	<title>{{ page.title }}</title>
+	<meta name="twitter:creator" content="@SeMI_tech">
+{% if page.og-img %}
+	<meta name="twitter:image" content="https://www.semi.technology/img/og/{{ page.og-img }}">
+	<meta property="og:image" content="https://www.semi.technology/img/og/{{ page.og-img }}" />
+	<meta itemprop="image" content="https://www.semi.technology/img/og/{{ page.og-img }}">
+{% else %}
+	<meta name="twitter:image" content="https://www.semi.technology/img/og/__all.jpg">
+	<meta property="og:image" content="https://www.semi.technology/img/og/__all.jpg" />
+	<meta itemprop="image" content="https://www.semi.technology/img/og/__all.jpg">
+{% endif %}
+	<title>SeMI Technologies // {{ page.title }}</title>
 	<link rel="canonical" href="https://www.semi.technology{{ page.url | replace:'index.html','/' | replace: '/index', '/'}}" />
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300i,400,400i,500,500i,700,700i|Alegreya:400,400i,500,500i|IBM+Plex+Mono:400,600" rel="stylesheet">
 	<link rel="shortcut icon" href="/favicon.ico" />
