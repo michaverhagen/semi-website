@@ -15,13 +15,16 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 0 1em 0 0;
     @include animateFadeIn();
 
-    source, img {
+    source, .logo img {
         padding: 1rem 0;
         width: 18rem;
     }
+}
+
+.header-button-container {
+    margin-top: 3px;
 }
 
 .header--centered {

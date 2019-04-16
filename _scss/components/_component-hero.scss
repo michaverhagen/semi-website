@@ -24,7 +24,7 @@
   margin-top: 40vh; // logo in video is a bit off from the center
   position: relative;
   vertical-align: middle;
-  z-index: 2;
+  z-index: 20;
   @include animateFadeIn();
 
   &.hero__text--centered {

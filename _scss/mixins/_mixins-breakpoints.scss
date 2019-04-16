@@ -1,44 +1,45 @@
 
-$screen-width-small: 34em;      // 680px
-$screen-width-medium: 48em;     // 960px
-$screen-width-large: 63em;      // 1260px
-$screen-width-extralarge: 72em; // 1440px
+$screen-width-small: 679px;
+$screen-width-medium: 767px;
+$screen-width-large: 959px;
+$screen-width-xl: 1259px;
+// $screen-width-xxl: 1439px;
 
 @mixin breakpoint($point) {
   // < 680px
   @if $point == smallOnly {
     @media (max-width: $screen-width-small)  { @content ; }
   }
-  // 680px - 960px
+  // 680px - 768px
   @else if $point == smallToMedium {
     @media (min-width: $screen-width-small) and (max-width: $screen-width-large) { @content ; }
   }
-  // < 960
+  // < 768
   @else if $point == toMedium {
     @media (max-width: $screen-width-medium) { @content ; }
   }
-  // 960+
+  // 768+
   @else if $point == mediumUp {
     @media (min-width: $screen-width-medium) { @content ; }
   }
-  // 960px - 1120px
+  // 768px - 960px
   @else if $point == mediumToLarge {
-    @media (min-width: $screen-width-medium) and (max-width: $screen-width-extralarge) { @content ; }
+    @media (min-width: $screen-width-medium) and (max-width: $screen-width-xl) { @content ; }
   }
-  // < 1120+
+  // < 960+
   @else if $point == toLarge {
     @media (max-width: $screen-width-large) { @content ; }
   }
-  // 1120+
+  // 960+
   @else if $point == largeUp {
     @media (min-width: $screen-width-large) { @content ; }
   }
-  // 1120px - 1260px
+  // 960px - 1120px
   @else if $point == largeToExtraLarge {
-    @media (min-width: $screen-width-large) and (max-width: $screen-width-extralarge)  { @content ; }
+    @media (min-width: $screen-width-large) and (max-width: $screen-width-xl)  { @content ; }
   }
-  // 1260+
+  // 1120+
   @else if $point == extraLargeUp {
-    @media (min-width: $screen-width-extralarge) { @content ; }
+    @media (min-width: $screen-width-xl) { @content ; }
   }
 }

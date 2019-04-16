@@ -1,8 +1,20 @@
 
+@import '../variables/var-scale';
+
 .icon--included {
   color: $color-success;
 }
 
 .icon--not-included {
   color: $color-warning;
+}
+
+.svg-icon-hamburger {
+  width: $scale-1;
+  height: $scale-1;
+  display: flex;
+}
+
+.svg-icon-hamburger--active {
+  transform: rotate(90deg);
 }

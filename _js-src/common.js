@@ -5,7 +5,7 @@ const $script = require('scriptjs');
 import cookie from './modules/cookie';
 import mailChimp from './modules/mailChimp';
 import video from './modules/video';
-import search from './modules/search';
+import siteMenu from './modules/site-menu';
 import toggle from './modules/toggle';
 import tagmanager from './modules/tagmanager';
 import tawk from './modules/tawk';
@@ -18,6 +18,11 @@ import inputTypeRangeExists from './utilities/inputTypeRangeExists';
  * Cookie handler (based on cookie bar ID)
  */
 cookie('cookie-notification');
+
+/**
+ * Progressive enhanced mobile hamburger menu
+ */
+siteMenu();
 
 /**
  * Send form submission data to mailchimp
