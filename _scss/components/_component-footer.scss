@@ -15,6 +15,13 @@ footer:not(.site-footer--overlay):not(.site-footer--square) {
     border-top-left-radius: $scale-1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    @include breakpoint(mediumUp) {
+        z-index: 9999;
+    }
+}
+.page--home footer:not(.site-footer--overlay):not(.site-footer--square) {
+    background: transparent;
 }
 
 .site-footer--overlay {
