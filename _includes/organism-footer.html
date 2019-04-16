@@ -12,9 +12,9 @@
 </footer>
 
 {% if layout.serviceManual %}
-	<script src="/js/mainSm.bundle.js"></script>
+	<script src="/js/mainSm.bundle.js?build={{ 'now' | date: '%Y%m%d%H%M' }}"></script>
 {% else %}
-	<script src="/js/main.bundle.js"></script>
+	<script src="/js/main.bundle.js?build={{ 'now' | date: '%Y%m%d%H%M' }}"></script>
 {% endif %}
 
 </body>
