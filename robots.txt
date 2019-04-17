@@ -3,4 +3,6 @@ Noindex: /playbook/*
 Noindex: /playbook/
 Noindex: /thank-you/
 Noindex: /search/
+Noindex: /privacy/
+Noindex: /disclaimer/
 SITEMAP: https://www.semi.technology/sitemap.xml
