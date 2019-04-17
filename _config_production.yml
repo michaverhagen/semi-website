@@ -1,4 +1,2 @@
 url: https://www.semi.technology
 environment: production
-plugins:
-    - jekyll-sitemap

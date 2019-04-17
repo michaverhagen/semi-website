@@ -29,9 +29,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "jekyll:clean": "bundle exec jekyll clean",
-    "jekyll:build": "bundle exec jekyll build --config _config.yml, _config_localhost.yml",
+    "jekyll:build": "bundle exec jekyll build --config _config.yml",
     "prelocal": "npm run build",
-    "local": "bundle exec jekyll serve --livereload --config _config.yml, _config_localhost.yml",
+    "local": "bundle exec jekyll serve --livereload --config _config.yml",
     "htmlmin": "html-minifier --input-dir ./_site --output-dir ./_site --collapse-whitespace --file-ext html",
     "build": "webpack --mode=production",
     "build:dev": "webpack --mode=development --display-error-details",
