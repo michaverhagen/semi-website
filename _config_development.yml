@@ -1,4 +1,2 @@
-url: https://www.semi.technology
+url: http://dev.semi.technology
 environment: development
-plugins:
-    - jekyll-sitemap
