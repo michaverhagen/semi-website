@@ -41,10 +41,12 @@ const getCookie = cname => {
 export default function(id) {
   const cookieBar = document.getElementById(id);
   const cookieCloseButton = cookieBar.querySelector('#js-cookie-button');
+  const body = document.getElementsByTagName('body')[0];
 
   /** show cookie notification if no consent has been given */
   if (getCookie('cookieConsent') === false) {
     cookieBar.style.display = 'flex';
+    body.classList.add('cookie-notice--active');
   }
 
   /**
@@ -56,6 +58,7 @@ export default function(id) {
     () => {
       cookieBar.style.display = 'none';
       setCookie('cookieConsent', true, 100);
+      body.classList.remove('cookie-notice--active');
     },
     false,
   );

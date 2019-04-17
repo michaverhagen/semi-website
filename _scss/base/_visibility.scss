@@ -1,0 +1,29 @@
+
+@import '../mixins/mixins-breakpoints';
+
+// class hides element by default,
+// is removed by JS for progressive enhancement
+.no-js-hidden {
+  display: none;
+}
+
+@include breakpoint(smallOnly) {
+  .hidden-xs {
+    display: none;
+  }
+  .visible-m-up {
+    display: none;
+  }
+}
+
+@include breakpoint(toMedium) {
+  .hidden-m-down {
+    display: none;
+  }
+}
+
+@include breakpoint(mediumUp) {
+  .hidden-m-up {
+    display: none;
+  }
+}

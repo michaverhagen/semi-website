@@ -1,24 +1,31 @@
+{%- if include.headerType == "inverted" -%}
+    {% assign logoUrl = '/img/logo-horizontal-payoff-inverted.svg' %}
+    {% assign hamburgerUrl = '/img/icon-hamburger-light.svg' %}
+{%- else -%}
+    {% assign logoUrl = '/img/logo-horizontal-payoff.svg' %}
+    {% assign hamburgerUrl = '/img/icon-hamburger-dark.svg' %}
+{%- endif -%}
+
 <div class="header-container {% if include.headerOverlay == 'true' %}site-header--overlay{% endif %}">
     {% include molecule-cookie-notice.html %}
     <div class="container">
         <header class="header-main wrapper--wide">
-            <a class="image-link" href="/">
-                {%- if include.headerType == "inverted" -%}
+            <a class="image-link logo" href="/">
                 <picture>
-                    <source media="(max-width: 48em)" srcset="/img/logo-horizontal-payoff-inverted.svg" type="image/svg+xml">
-                    <source srcset="/img/logo-horizontal-payoff-inverted.svg" type="image/svg+xml">
-                    <img src="/img/logo-horizontal-payoff-inverted.svg" alt="">
+                    {% comment %}
+                    <!--source media="(max-width: 48em)" srcset="/img/logo-horizontal-payoff-inverted.svg" type="image/svg+xml">-->
+                    <!--source srcset="/img/logo-horizontal-payoff-inverted.svg" type="image/svg+xml">-->
+                    {% endcomment %}
+                    <img src="{{logoUrl}}" alt="SeMI Technologies logo">
                 </picture>
-                {%- else -%}
-                ​<picture>
-                    <source media="(max-width: 48em)" srcset="/img/logo-horizontal-payoff.svg" type="image/svg+xml">
-                    <source srcset="/img/logo-horizontal-payoff.svg" type="image/svg+xml">
-                    <img src="/img/logo-horizontal-payoff.svg" alt="SeMI Technologies logo">
-                </picture>
-                {%- endif -%}
             </a>
-            <div>
+            <div class="hidden-m-down">
                 <a class="nav-main-console button--small" href="/console/">Console</a>
+            </div>
+            <div id="header-main-menu-trigger" class="no-js-hidden hidden-m-up header-button-container">
+                <button class="button-icon">
+                    <img class="svg-icon-hamburger" src="{{hamburgerUrl}}" alt="Image of the hamburger icon, vegan" />
+                </button>
             </div>
         </header>
     </div>

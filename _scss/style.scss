@@ -24,6 +24,8 @@
 @import 'base/style-iconography';
 @import 'base/style-typography';
 
+@import 'base/visibility';
+
 // Molecules
 @import 'molecules/molecule-anchor';
 @import 'molecules/molecule-forms';
@@ -35,6 +37,7 @@
 @import 'components/component-backgrounds';
 @import 'components/component-badge';
 @import 'components/component-breadcrumb';
+@import 'components/component-buttons';
 @import 'components/component-callout';
 @import 'components/component-card-author';
 @import 'components/component-cards';

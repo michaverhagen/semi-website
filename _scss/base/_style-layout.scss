@@ -1,5 +1,6 @@
 
 @import '../mixins/mixins-animations';
+@import '../mixins/mixins-breakpoints';
 
 body {
     background: $color-white;
@@ -11,6 +12,12 @@ body {
 
 main {
     flex: 1;
+}
+
+@include breakpoint(mediumUp) {
+    .page--home main {
+        height: 80vh;
+    }
 }
 
 .wrapper {
