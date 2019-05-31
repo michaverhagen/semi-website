@@ -8,7 +8,7 @@ task :test do
         :empty_alt_ignore => ['/.*/'],
         :internal_domains => ['www.semi.technology'],
         # codepen is behind a browser detection screen so cURL will not work
-        :url_ignore => [/codepen.io/],
+        :url_ignore => [/codepen.io/, /linkedin.com/, /twitter.com/],
         :typhoeus => {
           :connecttimeout => 20,
           :timeout => 60,
