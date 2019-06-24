@@ -35,7 +35,7 @@ Weaviate is a [decentralized]({{site.baseurl}}/playbook/nomenclature/#dn) [seman
 Weaviate focuses on hyper-organized information, also known as "Knowledge graphs." Weaviate enables companies to refine their data into knowledge graphs stored in Weaviate: a decentralized Semantic Knowledge Graph that is at the heart of Weaviate.
 
 <section class="callout">
-    <a href="/blog/technology-summary">Click here for a technical summary.</a>
+    <a href="/blog/technology-summary.html">Click here for a technical summary.</a>
 </section>
 
 ## Enable knowledge sharing on closed datasets
